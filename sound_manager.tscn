@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cf7f7hb6eoy8"]
 
-[ext_resource type="AudioStream" uid="uid://cppy2sh4qtjw8" path="res://sound_button/mixkit-smile-1076.mp3" id="1_g5net"]
+[ext_resource type="AudioStream" uid="uid://cppy2sh4qtjw8" path="res://menus/common/sound_button/mixkit-smile-1076.mp3" id="1_g5net"]
 
 [node name="SoundManager" type="Node" unique_id=1307816687]
 

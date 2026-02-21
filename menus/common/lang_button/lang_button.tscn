@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://dcnps1ubh4p87"]
+
+[ext_resource type="Texture2D" uid="uid://ccinvj64sordl" path="res://menus/common/lang_button/lang_icon.png" id="1_fi14x"]
+[ext_resource type="Script" uid="uid://bgdoc2dv63b3o" path="res://menus/common/lang_button/lang_button.gd" id="2_kvpkx"]
+[ext_resource type="Texture2D" uid="uid://s0qkmx85h1oo" path="res://menus/common/lang_button/swe.jpg" id="3_bu5xf"]
+[ext_resource type="Texture2D" uid="uid://b7b3rilglvhed" path="res://menus/common/lang_button/spa.png" id="4_3vi1l"]
+[ext_resource type="Texture2D" uid="uid://dpscl0gri5od4" path="res://menus/common/lang_button/uk.png" id="5_deuhr"]
+
+[node name="LangButton" type="Button" unique_id=95072876]
+custom_minimum_size = Vector2(64, 64)
+size_flags_horizontal = 6
+size_flags_vertical = 8
+icon = ExtResource("1_fi14x")
+expand_icon = true
+script = ExtResource("2_kvpkx")
+swe_icon = ExtResource("3_bu5xf")
+es_icon = ExtResource("4_3vi1l")
+eng_icon = ExtResource("5_deuhr")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

@@ -1,0 +1,104 @@
+[gd_scene format=3 uid="uid://c7uw6mqp13cm3"]
+
+[ext_resource type="Texture2D" uid="uid://7q5gyer3xjcg" path="res://menus/common/gfx/background.png" id="1_mtmfa"]
+[ext_resource type="Texture2D" uid="uid://ihe4i3xs7jxc" path="res://menus/common/gfx/logo.png" id="2_lqw5f"]
+[ext_resource type="PackedScene" uid="uid://bvvb57ga0cd1i" path="res://menus/common/sound_button/sound_button.tscn" id="3_mgq0h"]
+[ext_resource type="PackedScene" uid="uid://btxmn1x7v3rai" path="res://menus/level_select/level_button/level_button.tscn" id="4_d5drp"]
+[ext_resource type="Texture2D" uid="uid://c4wx6hj5c881i" path="res://menus/level_select/level_button/level_1.png" id="4_fxfc6"]
+[ext_resource type="PackedScene" uid="uid://dj108c067yisk" path="res://menus/levels/level_1/level_1.tscn" id="5_16arb"]
+[ext_resource type="Texture2D" uid="uid://b00qpth011ovv" path="res://menus/level_select/level_button/level_2_locked.png" id="5_ad3wc"]
+[ext_resource type="Texture2D" uid="uid://bpo1to8eihux7" path="res://menus/level_select/reward.png" id="5_d5drp"]
+[ext_resource type="Texture2D" uid="uid://bw7qcmvyxb6qs" path="res://menus/level_select/level_button/level_2.png" id="6_16arb"]
+[ext_resource type="Texture2D" uid="uid://cl7xgrxn27xdw" path="res://menus/level_select/level_button/level_3_locked.png" id="7_4a7ur"]
+[ext_resource type="Texture2D" uid="uid://427of7ugjjqa" path="res://menus/level_select/level_button/level_3.png" id="8_yqi8v"]
+
+[node name="LevelSelect" type="Control" unique_id=2146947680]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=675503831]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="PanelContainer" unique_id=27438743]
+layout_mode = 2
+texture = ExtResource("1_mtmfa")
+expand_mode = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer" unique_id=401815269]
+layout_mode = 2
+
+[node name="TopBar" type="HBoxContainer" parent="PanelContainer/VBoxContainer" unique_id=769645194]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Control" type="Control" parent="PanelContainer/VBoxContainer/TopBar" unique_id=2590340]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Logo" type="TextureRect" parent="PanelContainer/VBoxContainer/TopBar" unique_id=968726761]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("2_lqw5f")
+
+[node name="SoundButton" parent="PanelContainer/VBoxContainer/TopBar" unique_id=1748544731 instance=ExtResource("3_mgq0h")]
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer/VBoxContainer" unique_id=992705741]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Levels" type="VBoxContainer" parent="PanelContainer/VBoxContainer/HBoxContainer" unique_id=1739785816]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="PanelContainer/VBoxContainer/HBoxContainer/Levels" unique_id=1700461008]
+layout_mode = 2
+text = "LEVELS"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer/VBoxContainer/HBoxContainer/Levels" unique_id=1995447854]
+layout_mode = 2
+
+[node name="LevelButton" parent="PanelContainer/VBoxContainer/HBoxContainer/Levels/HBoxContainer" unique_id=904633578 instance=ExtResource("4_d5drp")]
+layout_mode = 2
+scene = ExtResource("5_16arb")
+unlocked_icon = ExtResource("4_fxfc6")
+locked_icon = ExtResource("4_fxfc6")
+
+[node name="LevelButton2" parent="PanelContainer/VBoxContainer/HBoxContainer/Levels/HBoxContainer" unique_id=944961899 instance=ExtResource("4_d5drp")]
+layout_mode = 2
+disabled = true
+icon = ExtResource("5_ad3wc")
+unlocked_icon = ExtResource("6_16arb")
+locked_icon = ExtResource("5_ad3wc")
+
+[node name="LevelButton3" parent="PanelContainer/VBoxContainer/HBoxContainer/Levels/HBoxContainer" unique_id=638962618 instance=ExtResource("4_d5drp")]
+layout_mode = 2
+disabled = true
+icon = ExtResource("7_4a7ur")
+unlocked_icon = ExtResource("8_yqi8v")
+locked_icon = ExtResource("7_4a7ur")
+
+[node name="Rewards" type="VBoxContainer" parent="PanelContainer/VBoxContainer/HBoxContainer" unique_id=1530658130]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="PanelContainer/VBoxContainer/HBoxContainer/Rewards" unique_id=474850662]
+layout_mode = 2
+text = "REWARDS"
+
+[node name="Button" type="Button" parent="PanelContainer/VBoxContainer/HBoxContainer/Rewards" unique_id=1233031521]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+icon = ExtResource("5_d5drp")
+expand_icon = true
