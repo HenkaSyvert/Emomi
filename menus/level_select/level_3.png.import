@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cl7xgrxn27xdw"
-path="res://.godot/imported/level_3_locked.png-12ad5b9cbc139f8e60a02eac8525568e.ctex"
+uid="uid://427of7ugjjqa"
+path="res://.godot/imported/level_3.png-0161a74f0adee1b6846068fecab7c54b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://menus/level_select/level_button/level_3_locked.png"
-dest_files=["res://.godot/imported/level_3_locked.png-12ad5b9cbc139f8e60a02eac8525568e.ctex"]
+source_file="res://menus/level_select/level_3.png"
+dest_files=["res://.godot/imported/level_3.png-0161a74f0adee1b6846068fecab7c54b.ctex"]
 
 [params]
 

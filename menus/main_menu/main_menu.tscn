@@ -2,8 +2,8 @@
 
 [ext_resource type="Texture2D" uid="uid://7q5gyer3xjcg" path="res://menus/common/gfx/background.png" id="1_nlkkf"]
 [ext_resource type="Texture2D" uid="uid://ihe4i3xs7jxc" path="res://menus/common/gfx/logo.png" id="2_qe12f"]
+[ext_resource type="PackedScene" uid="uid://btxmn1x7v3rai" path="res://menus/common/level_button/level_button.tscn" id="3_er5qh"]
 [ext_resource type="Texture2D" uid="uid://b7b3rilglvhed" path="res://menus/common/lang_button/spa.png" id="3_qe12f"]
-[ext_resource type="Script" uid="uid://rou2utvtjl8e" path="res://menus/main_menu/start_button.gd" id="4_j5v2v"]
 [ext_resource type="PackedScene" uid="uid://c7uw6mqp13cm3" path="res://menus/level_select/level_select.tscn" id="4_og6xe"]
 [ext_resource type="PackedScene" uid="uid://dcnps1ubh4p87" path="res://menus/common/lang_button/lang_button.tscn" id="6_t6bnd"]
 [ext_resource type="PackedScene" uid="uid://bvvb57ga0cd1i" path="res://menus/common/sound_button/sound_button.tscn" id="9_6at21"]
@@ -51,12 +51,13 @@ layout_mode = 2
 size_flags_vertical = 6
 texture = ExtResource("2_qe12f")
 
-[node name="StartButton" type="Button" parent="PanelContainer/HBoxContainer/Middle/VBoxContainer" unique_id=1490217383]
+[node name="LevelButton" parent="PanelContainer/HBoxContainer/Middle/VBoxContainer" unique_id=904633578 node_paths=PackedStringArray("to_delete") instance=ExtResource("3_er5qh")]
 layout_mode = 2
-size_flags_vertical = 6
+size_flags_horizontal = 4
+size_flags_vertical = 0
 text = "START"
-script = ExtResource("4_j5v2v")
-scene = ExtResource("4_og6xe")
+to_create = ExtResource("4_og6xe")
+to_delete = NodePath("../../../../..")
 
 [node name="Right" type="VBoxContainer" parent="PanelContainer/HBoxContainer" unique_id=1172838328]
 layout_mode = 2
@@ -88,5 +89,3 @@ layout_mode = 2
 [node name="Control" type="Control" parent="PanelContainer/HBoxContainer/Right" unique_id=1478341947]
 layout_mode = 2
 size_flags_vertical = 3
-
-[connection signal="pressed" from="PanelContainer/HBoxContainer/Middle/VBoxContainer/StartButton" to="PanelContainer/HBoxContainer/Middle/VBoxContainer/StartButton" method="_on_pressed"]
