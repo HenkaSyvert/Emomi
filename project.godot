@@ -15,6 +15,10 @@ run/main_scene="uid://dr33n08dpc743"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="uid://ihe4i3xs7jxc"
 
+[autoload]
+
+SoundManager="*uid://cf7f7hb6eoy8"
+
 [debug]
 
 gdscript/warnings/unassigned_variable=2

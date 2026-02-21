@@ -1,6 +1,6 @@
 extends Button
 
-@onready var p: AudioStreamPlayer2D = $"/root/Game/MusicPlayer"
+@onready var p: AudioStreamPlayer2D = $/root/SoundManager/MusicPlayer
 
 
 func _on_pressed() -> void:
