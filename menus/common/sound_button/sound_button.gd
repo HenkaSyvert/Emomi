@@ -1,10 +1,5 @@
 extends Button
 
-@onready var p: AudioStreamPlayer2D = $/root/SoundManager/MusicPlayer
-
 
 func _on_pressed() -> void:
-	if p.playing:
-		p.stop()
-	else:
-		p.play()
+	SoundManager.is_muted = not SoundManager.is_muted

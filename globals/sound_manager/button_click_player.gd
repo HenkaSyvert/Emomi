@@ -21,4 +21,9 @@ func connect_buttons(root: Node) -> void:
 
 
 func connect_to_button(button: Button) -> void:
-	assert(button.connect("pressed", play) == OK)
+	assert(button.connect("pressed", _on_button_pressed) == OK)
+
+
+func _on_button_pressed() -> void:
+	if not (SoundManager as SoundManager).is_muted:
+		play()
