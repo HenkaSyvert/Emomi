@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://bvvb57ga0cd1i"]
+
+[ext_resource type="Texture2D" uid="uid://cxrqyif4y54l8" path="res://sound_button/sound_icon.png" id="1_ogd44"]
+[ext_resource type="Script" uid="uid://dwmvh1bikm4em" path="res://sound_button/sound_button.gd" id="2_0utc6"]
+
+[node name="SoundButton" type="Button" unique_id=1748544731]
+custom_minimum_size = Vector2(64, 64)
+size_flags_horizontal = 6
+size_flags_vertical = 8
+icon = ExtResource("1_ogd44")
+expand_icon = true
+script = ExtResource("2_0utc6")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

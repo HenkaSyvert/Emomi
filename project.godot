@@ -13,7 +13,11 @@ config_version=5
 config/name="Emömi"
 run/main_scene="uid://dr33n08dpc743"
 config/features=PackedStringArray("4.6", "GL Compatibility")
-config/icon="res://icon.svg"
+config/icon="uid://ihe4i3xs7jxc"
+
+[gui]
+
+theme/custom="uid://c3rhtbjbxxfak"
 
 [internationalization]
 
@@ -28,3 +32,4 @@ locale/translations=PackedStringArray("res://localization/localization.en.transl
 rendering_device/driver.windows="d3d12"
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
+textures/vram_compression/import_etc2_astc=true

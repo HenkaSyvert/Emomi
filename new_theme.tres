@@ -1,0 +1,7 @@
+[gd_resource type="Theme" format=3 uid="uid://c3rhtbjbxxfak"]
+
+[ext_resource type="FontFile" uid="uid://ctv4muxxdbh6k" path="res://fonts/SourGummy-Italic-VariableFont_wdth,wght.ttf" id="1_amlv4"]
+
+[resource]
+default_font = ExtResource("1_amlv4")
+default_font_size = 24
