@@ -1,0 +1,10 @@
+keys,en,es,sv
+START,Start,Empezar,Börja
+LEVELS,Levels,Niveles,Nivåer
+REWARDS,Rewards,Premios,Priser
+ANGER,Anger,Enojo,Ilska
+FRUSTRATION,Frustration,Frustración,Frustration
+BORED,Bored,Tristeza,Uttråkad
+LEVEL_1_PROMPT,"How does the child feel?","Señala que emoción reina en esta acción","Hur känner sig barnet?"
+LEVEL_3A_PROMPT,"What would make Reizy feel better?","Qué haría sentir mejor a Reizy?","Vad skulle få Reizy att må bättre?"
+LEVEL_3B_PROMPT,"What would make Makty feel better?","Qué haría que Makty se sienta mejor?","Hur kan Makty lugna ner sig?"
