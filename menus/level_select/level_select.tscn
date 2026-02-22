@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://c7uw6mqp13cm3"]
 
 [ext_resource type="Texture2D" uid="uid://7q5gyer3xjcg" path="res://menus/common/gfx/background.png" id="1_mtmfa"]
+[ext_resource type="PackedScene" uid="uid://82gfkie70u88" path="res://menus/common/home_button/home_button.tscn" id="2_45hre"]
 [ext_resource type="Texture2D" uid="uid://ihe4i3xs7jxc" path="res://menus/common/gfx/logo.png" id="2_lqw5f"]
 [ext_resource type="PackedScene" uid="uid://bvvb57ga0cd1i" path="res://menus/common/sound_button/sound_button.tscn" id="3_mgq0h"]
 [ext_resource type="PackedScene" uid="uid://dcnps1ubh4p87" path="res://menus/common/lang_button/lang_button.tscn" id="3_vkws0"]
-[ext_resource type="Texture2D" uid="uid://sayjneenahl1" path="res://menus/common/gfx/home.png" id="4_20k11"]
 [ext_resource type="PackedScene" uid="uid://btxmn1x7v3rai" path="res://menus/common/level_button/level_button.tscn" id="4_d5drp"]
 [ext_resource type="Texture2D" uid="uid://c4wx6hj5c881i" path="res://menus/level_select/level_1.png" id="4_fxfc6"]
 [ext_resource type="Texture2D" uid="uid://b00qpth011ovv" path="res://menus/level_select/level_2_locked.png" id="5_ad3wc"]
@@ -45,12 +45,8 @@ size_flags_vertical = 3
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="LevelButton" parent="PanelContainer/VBoxContainer/TopBar" unique_id=904633578 instance=ExtResource("4_d5drp")]
+[node name="HomeButton" parent="PanelContainer/VBoxContainer/TopBar" unique_id=863912125 instance=ExtResource("2_45hre")]
 layout_mode = 2
-size_flags_vertical = 4
-icon = ExtResource("4_20k11")
-scene_path = &"res://menus/main_menu/main_menu.tscn"
-unlocked_icon = ExtResource("4_20k11")
 
 [node name="Logo" type="TextureRect" parent="PanelContainer/VBoxContainer/TopBar" unique_id=968726761]
 layout_mode = 2
