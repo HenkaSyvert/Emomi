@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://c7uw6mqp13cm3"]
 
 [ext_resource type="Texture2D" uid="uid://7q5gyer3xjcg" path="res://menus/common/gfx/background.png" id="1_mtmfa"]
-[ext_resource type="PackedScene" uid="uid://82gfkie70u88" path="res://menus/common/home_button/home_button.tscn" id="2_45hre"]
+[ext_resource type="PackedScene" uid="uid://bxejuq5yuebgn" path="res://menus/common/NavigationBar/navigation_bar.tscn" id="2_45hre"]
 [ext_resource type="Texture2D" uid="uid://ihe4i3xs7jxc" path="res://menus/common/gfx/logo.png" id="2_lqw5f"]
 [ext_resource type="PackedScene" uid="uid://bvvb57ga0cd1i" path="res://menus/common/sound_button/sound_button.tscn" id="3_mgq0h"]
 [ext_resource type="PackedScene" uid="uid://dcnps1ubh4p87" path="res://menus/common/lang_button/lang_button.tscn" id="3_vkws0"]
@@ -41,12 +41,9 @@ layout_mode = 2
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="Control" type="Control" parent="PanelContainer/VBoxContainer/TopBar" unique_id=2590340]
+[node name="NavigationBar" parent="PanelContainer/VBoxContainer/TopBar" unique_id=72496044 instance=ExtResource("2_45hre")]
 layout_mode = 2
 size_flags_horizontal = 3
-
-[node name="HomeButton" parent="PanelContainer/VBoxContainer/TopBar" unique_id=863912125 instance=ExtResource("2_45hre")]
-layout_mode = 2
 
 [node name="Logo" type="TextureRect" parent="PanelContainer/VBoxContainer/TopBar" unique_id=968726761]
 layout_mode = 2
