@@ -1,7 +1,9 @@
 [gd_scene format=3 uid="uid://cbfxal1qbaq1f"]
 
 [ext_resource type="PackedScene" uid="uid://bvvb57ga0cd1i" path="res://menus/common/sound_button/sound_button.tscn" id="1_6qhgc"]
+[ext_resource type="PackedScene" uid="uid://btxmn1x7v3rai" path="res://menus/common/level_button/level_button.tscn" id="1_h6kfo"]
 [ext_resource type="PackedScene" uid="uid://dcnps1ubh4p87" path="res://menus/common/lang_button/lang_button.tscn" id="1_wpjy0"]
+[ext_resource type="Texture2D" uid="uid://sayjneenahl1" path="res://menus/common/gfx/home.png" id="2_kq56q"]
 [ext_resource type="Texture2D" uid="uid://cpiwa2hl0gtns" path="res://menus/common/gfx/angry_guy.png" id="2_vlqjg"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_8l77y"]
@@ -55,6 +57,11 @@ offset_bottom = 40.0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer" unique_id=1045401378]
 layout_mode = 2
+
+[node name="LevelButton" parent="HBoxContainer/VBoxContainer" unique_id=904633578 instance=ExtResource("1_h6kfo")]
+layout_mode = 2
+scene_path = &"res://menus/main_menu/main_menu.tscn"
+unlocked_icon = ExtResource("2_kq56q")
 
 [node name="LangButton" parent="HBoxContainer/VBoxContainer" unique_id=2110673369 instance=ExtResource("1_wpjy0")]
 layout_mode = 2

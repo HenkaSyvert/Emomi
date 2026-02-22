@@ -1,12 +1,8 @@
 extends Button
 
-@export var to_create: PackedScene
-@export var to_delete: Node
-
+@export var scene_path: StringName
 @export var unlocked_icon: Texture2D
 @export var locked_icon: Texture2D
-
-@onready var game_node: Node = $/root/Game
 
 
 func _ready() -> void:
@@ -17,6 +13,4 @@ func _ready() -> void:
 
 
 func _on_pressed() -> void:
-	var n: Node = to_create.instantiate()
-	game_node.add_child(n)
-	to_delete.queue_free()
+	SceneManager.change_scene(scene_path)

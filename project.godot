@@ -18,6 +18,7 @@ config/icon="uid://ihe4i3xs7jxc"
 [autoload]
 
 SoundManager="*uid://cf7f7hb6eoy8"
+SceneManager="*uid://cjd6pkp681p3s"
 
 [debug]
 

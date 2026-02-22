@@ -3,7 +3,6 @@
 [ext_resource type="Texture2D" uid="uid://7q5gyer3xjcg" path="res://menus/common/gfx/background.png" id="1_nlkkf"]
 [ext_resource type="Texture2D" uid="uid://ihe4i3xs7jxc" path="res://menus/common/gfx/logo.png" id="2_qe12f"]
 [ext_resource type="PackedScene" uid="uid://btxmn1x7v3rai" path="res://menus/common/level_button/level_button.tscn" id="3_er5qh"]
-[ext_resource type="PackedScene" uid="uid://c7uw6mqp13cm3" path="res://menus/level_select/level_select.tscn" id="4_og6xe"]
 [ext_resource type="PackedScene" uid="uid://dcnps1ubh4p87" path="res://menus/common/lang_button/lang_button.tscn" id="6_t6bnd"]
 [ext_resource type="PackedScene" uid="uid://bvvb57ga0cd1i" path="res://menus/common/sound_button/sound_button.tscn" id="9_6at21"]
 
@@ -50,13 +49,12 @@ layout_mode = 2
 size_flags_vertical = 6
 texture = ExtResource("2_qe12f")
 
-[node name="LevelButton" parent="PanelContainer/HBoxContainer/Middle/VBoxContainer" unique_id=904633578 node_paths=PackedStringArray("to_delete") instance=ExtResource("3_er5qh")]
+[node name="LevelButton" parent="PanelContainer/HBoxContainer/Middle/VBoxContainer" unique_id=904633578 instance=ExtResource("3_er5qh")]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 0
 text = "START"
-to_create = ExtResource("4_og6xe")
-to_delete = NodePath("../../../../..")
+scene_path = &"res://menus/level_select/level_select.tscn"
 
 [node name="Right" type="VBoxContainer" parent="PanelContainer/HBoxContainer" unique_id=1172838328]
 layout_mode = 2
