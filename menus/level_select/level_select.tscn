@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://7q5gyer3xjcg" path="res://menus/common/gfx/background.png" id="1_mtmfa"]
 [ext_resource type="Texture2D" uid="uid://ihe4i3xs7jxc" path="res://menus/common/gfx/logo.png" id="2_lqw5f"]
 [ext_resource type="PackedScene" uid="uid://bvvb57ga0cd1i" path="res://menus/common/sound_button/sound_button.tscn" id="3_mgq0h"]
+[ext_resource type="PackedScene" uid="uid://dcnps1ubh4p87" path="res://menus/common/lang_button/lang_button.tscn" id="3_vkws0"]
 [ext_resource type="PackedScene" uid="uid://btxmn1x7v3rai" path="res://menus/common/level_button/level_button.tscn" id="4_d5drp"]
 [ext_resource type="Texture2D" uid="uid://c4wx6hj5c881i" path="res://menus/level_select/level_1.png" id="4_fxfc6"]
 [ext_resource type="PackedScene" uid="uid://dj108c067yisk" path="res://menus/levels/level_1/level_1.tscn" id="5_16arb"]
@@ -50,6 +51,10 @@ layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 texture = ExtResource("2_lqw5f")
+
+[node name="LangButton" parent="PanelContainer/VBoxContainer/TopBar" unique_id=2110673369 instance=ExtResource("3_vkws0")]
+layout_mode = 2
+size_flags_vertical = 4
 
 [node name="SoundButton" parent="PanelContainer/VBoxContainer/TopBar" unique_id=1748544731 instance=ExtResource("3_mgq0h")]
 layout_mode = 2

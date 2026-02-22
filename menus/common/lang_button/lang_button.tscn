@@ -6,15 +6,27 @@
 [ext_resource type="Texture2D" uid="uid://b7b3rilglvhed" path="res://menus/common/lang_button/spa.png" id="4_3vi1l"]
 [ext_resource type="Texture2D" uid="uid://dpscl0gri5od4" path="res://menus/common/lang_button/uk.png" id="5_deuhr"]
 
-[node name="LangButton" type="Button" unique_id=95072876]
+[node name="LangButton" type="HBoxContainer" unique_id=2110673369]
+offset_right = 132.0
+offset_bottom = 64.0
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=912091963]
 custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+texture = ExtResource("4_3vi1l")
+expand_mode = 1
+
+[node name="LangButton" type="Button" parent="." unique_id=95072876 node_paths=PackedStringArray("lang_icon")]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 8
 icon = ExtResource("1_fi14x")
 expand_icon = true
 script = ExtResource("2_kvpkx")
+lang_icon = NodePath("../TextureRect")
 swe_icon = ExtResource("3_bu5xf")
 es_icon = ExtResource("4_3vi1l")
 eng_icon = ExtResource("5_deuhr")
 
-[connection signal="pressed" from="." to="." method="_on_pressed"]
+[connection signal="pressed" from="LangButton" to="LangButton" method="_on_pressed"]

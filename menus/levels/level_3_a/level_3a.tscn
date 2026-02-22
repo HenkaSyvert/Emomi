@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://cbfxal1qbaq1f"]
 
 [ext_resource type="PackedScene" uid="uid://bvvb57ga0cd1i" path="res://menus/common/sound_button/sound_button.tscn" id="1_6qhgc"]
+[ext_resource type="PackedScene" uid="uid://dcnps1ubh4p87" path="res://menus/common/lang_button/lang_button.tscn" id="1_wpjy0"]
 [ext_resource type="Texture2D" uid="uid://cpiwa2hl0gtns" path="res://menus/common/gfx/angry_guy.png" id="2_vlqjg"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_8l77y"]
@@ -55,7 +56,7 @@ offset_bottom = 40.0
 [node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer" unique_id=1045401378]
 layout_mode = 2
 
-[node name="Button" type="Button" parent="HBoxContainer/VBoxContainer" unique_id=552708749]
+[node name="LangButton" parent="HBoxContainer/VBoxContainer" unique_id=2110673369 instance=ExtResource("1_wpjy0")]
 layout_mode = 2
 
 [node name="SoundButton" parent="HBoxContainer/VBoxContainer" unique_id=1748544731 instance=ExtResource("1_6qhgc")]
@@ -72,6 +73,8 @@ text = "LEVEL_3A_PROMPT"
 layout_mode = 2
 
 [node name="SubViewport" type="SubViewport" parent="HBoxContainer/VBoxContainer2/SubViewportContainer" unique_id=1520485287]
+handle_input_locally = false
+render_target_update_mode = 4
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="HBoxContainer/VBoxContainer2/SubViewportContainer/SubViewport" unique_id=774164118]
 position = Vector2(249.50003, 227.00003)

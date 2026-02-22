@@ -8,10 +8,19 @@ extends Button
 
 
 func _ready() -> void:
-	lang_icon.texture = es_icon
+	if TranslationServer.get_locale().contains("es"):
+		lang_icon.texture = es_icon
+	elif TranslationServer.get_locale().contains("en"):
+		lang_icon.texture = eng_icon
+	else:
+		lang_icon.texture = swe_icon
 
 
 func _on_pressed() -> void:
+	update_icon()
+
+
+func update_icon() -> void:
 	if lang_icon.texture == es_icon:
 		TranslationServer.set_locale("en")
 		lang_icon.texture = eng_icon
