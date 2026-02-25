@@ -1,0 +1,56 @@
+[gd_scene format=3 uid="uid://hhn1146b88yy"]
+
+[ext_resource type="Texture2D" uid="uid://7q5gyer3xjcg" path="res://scenes/common/gfx/background.png" id="1_nlkkf"]
+[ext_resource type="Script" uid="uid://cf4oajb2fcyoi" path="res://scenes/screens/main_menu/main_menu.gd" id="1_oic2i"]
+[ext_resource type="Texture2D" uid="uid://ihe4i3xs7jxc" path="res://scenes/common/gfx/logo.png" id="2_qe12f"]
+[ext_resource type="PackedScene" uid="uid://dcnps1ubh4p87" path="res://scenes/common/lang_button/lang_button.tscn" id="6_t6bnd"]
+[ext_resource type="PackedScene" uid="uid://bvvb57ga0cd1i" path="res://scenes/common/sound_button/sound_button.tscn" id="9_6at21"]
+
+[node name="MainMenu" type="PanelContainer" unique_id=1044244038]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_oic2i")
+
+[node name="Background" type="TextureRect" parent="." unique_id=757839577]
+layout_mode = 2
+texture = ExtResource("1_nlkkf")
+expand_mode = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=2124329533]
+layout_mode = 2
+
+[node name="Left" type="Control" parent="HBoxContainer" unique_id=770488046]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Middle" type="VBoxContainer" parent="HBoxContainer" unique_id=1224250631]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Logo" type="TextureRect" parent="HBoxContainer/Middle" unique_id=1164784242]
+layout_mode = 2
+size_flags_vertical = 10
+texture = ExtResource("2_qe12f")
+
+[node name="StartButton" type="Button" parent="HBoxContainer/Middle" unique_id=332772898]
+layout_mode = 2
+size_flags_vertical = 6
+text = "START"
+
+[node name="Right" type="HBoxContainer" parent="HBoxContainer" unique_id=2066262864]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="LangButton" parent="HBoxContainer/Right" unique_id=95072876 instance=ExtResource("6_t6bnd")]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="SoundButton" parent="HBoxContainer/Right" unique_id=1748544731 instance=ExtResource("9_6at21")]
+layout_mode = 2
+size_flags_vertical = 4
+
+[connection signal="pressed" from="HBoxContainer/Middle/StartButton" to="." method="_on_start_button_pressed"]

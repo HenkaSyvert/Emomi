@@ -1,0 +1,78 @@
+[gd_scene format=3 uid="uid://hhn1146b88yy"]
+
+[ext_resource type="Texture2D" uid="uid://7q5gyer3xjcg" path="res://menus/common/gfx/background.png" id="1_nlkkf"]
+[ext_resource type="Texture2D" uid="uid://ihe4i3xs7jxc" path="res://menus/common/gfx/logo.png" id="2_qe12f"]
+[ext_resource type="PackedScene" uid="uid://btxmn1x7v3rai" path="res://menus/common/level_button/level_button.tscn" id="3_er5qh"]
+[ext_resource type="PackedScene" uid="uid://dcnps1ubh4p87" path="res://menus/common/lang_button/lang_button.tscn" id="6_t6bnd"]
+[ext_resource type="PackedScene" uid="uid://bvvb57ga0cd1i" path="res://menus/common/sound_button/sound_button.tscn" id="9_6at21"]
+
+[node name="MainMenu" type="Control" unique_id=1760971983]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=1044244038]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="PanelContainer" unique_id=757839577]
+layout_mode = 2
+texture = ExtResource("1_nlkkf")
+expand_mode = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer" unique_id=2124329533]
+layout_mode = 2
+
+[node name="Left" type="Control" parent="PanelContainer/HBoxContainer" unique_id=770488046]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Middle" type="VBoxContainer" parent="PanelContainer/HBoxContainer" unique_id=1224250631]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/HBoxContainer/Middle" unique_id=1480828394]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="TextureRect" type="TextureRect" parent="PanelContainer/HBoxContainer/Middle/VBoxContainer" unique_id=1164784242]
+layout_mode = 2
+size_flags_vertical = 6
+texture = ExtResource("2_qe12f")
+
+[node name="LevelButton" parent="PanelContainer/HBoxContainer/Middle/VBoxContainer" unique_id=904633578 instance=ExtResource("3_er5qh")]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+scene_path = &"res://menus/level_select/level_select.tscn"
+
+[node name="Right" type="VBoxContainer" parent="PanelContainer/HBoxContainer" unique_id=1172838328]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Options" type="HBoxContainer" parent="PanelContainer/HBoxContainer/Right" unique_id=585935892]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 6
+
+[node name="Localization" type="HBoxContainer" parent="PanelContainer/HBoxContainer/Right/Options" unique_id=12818305]
+layout_mode = 2
+
+[node name="LangButton" parent="PanelContainer/HBoxContainer/Right/Options/Localization" unique_id=95072876 instance=ExtResource("6_t6bnd")]
+layout_mode = 2
+
+[node name="SoundButton" parent="PanelContainer/HBoxContainer/Right/Options" unique_id=1748544731 instance=ExtResource("9_6at21")]
+layout_mode = 2
+
+[node name="Control" type="Control" parent="PanelContainer/HBoxContainer/Right" unique_id=1478341947]
+layout_mode = 2
+size_flags_vertical = 3

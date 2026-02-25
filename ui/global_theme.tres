@@ -1,0 +1,21 @@
+[gd_resource type="Theme" format=3 uid="uid://c3rhtbjbxxfak"]
+
+[ext_resource type="StyleBox" uid="uid://crg8ensbg8h8u" path="res://ui/style_boxes/button_normal.tres" id="1_24ibd"]
+[ext_resource type="StyleBox" uid="uid://chyi5vunym75v" path="res://ui/style_boxes/button_pressed.tres" id="2_41rka"]
+[ext_resource type="FontFile" uid="uid://ctv4muxxdbh6k" path="res://ui/fonts/SourGummy-Italic-VariableFont_wdth,wght.ttf" id="3_y3nm7"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_amlv4"]
+bg_color = Color(0.95686275, 0.95686275, 0.95686275, 1)
+
+[resource]
+default_font = ExtResource("3_y3nm7")
+default_font_size = 24
+Button/colors/font_color = Color(1, 1, 1, 1)
+Button/font_sizes/font_size = 30
+Button/styles/focus = ExtResource("1_24ibd")
+Button/styles/hover = ExtResource("2_41rka")
+Button/styles/normal = ExtResource("1_24ibd")
+Button/styles/pressed = ExtResource("2_41rka")
+Label/colors/font_color = Color(0, 0, 0, 1)
+Label/font_sizes/font_size = 35
+PanelContainer/styles/panel = SubResource("StyleBoxFlat_amlv4")

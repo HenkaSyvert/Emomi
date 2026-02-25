@@ -1,0 +1,143 @@
+[gd_scene format=3 uid="uid://c7uw6mqp13cm3"]
+
+[ext_resource type="Texture2D" uid="uid://7q5gyer3xjcg" path="res://scenes/common/gfx/background.png" id="1_hlqe2"]
+[ext_resource type="Script" uid="uid://caacstl2egdu" path="res://scenes/screens/level_select_menu/level_select_menu.gd" id="1_il0m2"]
+[ext_resource type="Texture2D" uid="uid://bun5f2eo71wyy" path="res://scenes/common/gfx/home.png" id="2_turym"]
+[ext_resource type="Texture2D" uid="uid://ihe4i3xs7jxc" path="res://scenes/common/gfx/logo.png" id="3_atbfa"]
+[ext_resource type="Texture2D" uid="uid://dnhyolvb1xkbv" path="res://scenes/common/gfx/return_arrow.png" id="3_il0m2"]
+[ext_resource type="PackedScene" uid="uid://dcnps1ubh4p87" path="res://scenes/common/lang_button/lang_button.tscn" id="4_nldrk"]
+[ext_resource type="PackedScene" uid="uid://bvvb57ga0cd1i" path="res://scenes/common/sound_button/sound_button.tscn" id="5_esdt6"]
+[ext_resource type="Texture2D" uid="uid://c4wx6hj5c881i" path="res://scenes/screens/level_select_menu/level_1.png" id="7_b1gtc"]
+[ext_resource type="Texture2D" uid="uid://bw7qcmvyxb6qs" path="res://scenes/screens/level_select_menu/level_2.png" id="8_gqg0r"]
+[ext_resource type="Texture2D" uid="uid://b00qpth011ovv" path="res://scenes/screens/level_select_menu/level_2_locked.png" id="9_pl33s"]
+[ext_resource type="Texture2D" uid="uid://427of7ugjjqa" path="res://scenes/screens/level_select_menu/level_3.png" id="10_t8cmi"]
+[ext_resource type="Texture2D" uid="uid://cl7xgrxn27xdw" path="res://scenes/screens/level_select_menu/level_3_locked.png" id="11_r3nop"]
+[ext_resource type="Texture2D" uid="uid://bpo1to8eihux7" path="res://scenes/screens/level_select_menu/reward.png" id="12_mogos"]
+
+[node name="LevelSelectMenu" type="PanelContainer" unique_id=675503831]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_il0m2")
+
+[node name="Background" type="TextureRect" parent="." unique_id=27438743]
+layout_mode = 2
+texture = ExtResource("1_hlqe2")
+expand_mode = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=401815269]
+layout_mode = 2
+
+[node name="TopBar" type="HBoxContainer" parent="VBoxContainer" unique_id=769645194]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Left" type="HBoxContainer" parent="VBoxContainer/TopBar" unique_id=1555257762]
+layout_mode = 2
+size_flags_horizontal = 6
+
+[node name="HomeButton" type="TextureButton" parent="VBoxContainer/TopBar/Left" unique_id=308954984]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("2_turym")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="ReturnButton" type="TextureButton" parent="VBoxContainer/TopBar/Left" unique_id=2145423862]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("3_il0m2")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Logo" type="TextureRect" parent="VBoxContainer/TopBar" unique_id=968726761]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("3_atbfa")
+
+[node name="Right" type="HBoxContainer" parent="VBoxContainer/TopBar" unique_id=273684267]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="LangButton" parent="VBoxContainer/TopBar/Right" unique_id=2110673369 instance=ExtResource("4_nldrk")]
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="SoundButton" parent="VBoxContainer/TopBar/Right" unique_id=1748544731 instance=ExtResource("5_esdt6")]
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer" unique_id=992705741]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Levels" type="VBoxContainer" parent="VBoxContainer/HBoxContainer" unique_id=1739785816]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer/Levels" unique_id=1700461008]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "LEVELS"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/HBoxContainer/Levels" unique_id=1995447854]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="Level1Button" type="TextureButton" parent="VBoxContainer/HBoxContainer/Levels/HBoxContainer" unique_id=1852112894]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+size_flags_horizontal = 3
+texture_normal = ExtResource("7_b1gtc")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Level2Button" type="TextureButton" parent="VBoxContainer/HBoxContainer/Levels/HBoxContainer" unique_id=1733087755]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+size_flags_horizontal = 3
+disabled = true
+texture_normal = ExtResource("8_gqg0r")
+texture_disabled = ExtResource("9_pl33s")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Level3Button" type="TextureButton" parent="VBoxContainer/HBoxContainer/Levels/HBoxContainer" unique_id=111542065]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+size_flags_horizontal = 3
+texture_normal = ExtResource("10_t8cmi")
+texture_disabled = ExtResource("11_r3nop")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Rewards" type="VBoxContainer" parent="VBoxContainer/HBoxContainer" unique_id=1530658130]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer/Rewards" unique_id=474850662]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "REWARDS"
+
+[node name="RewardsButton" type="TextureButton" parent="VBoxContainer/HBoxContainer/Rewards" unique_id=1355360303]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+size_flags_horizontal = 4
+texture_normal = ExtResource("12_mogos")
+ignore_texture_size = true
+stretch_mode = 0
+
+[connection signal="pressed" from="VBoxContainer/TopBar/Left/HomeButton" to="." method="_on_home_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/TopBar/Left/ReturnButton" to="." method="_on_return_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/Levels/HBoxContainer/Level1Button" to="." method="_on_level_1_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/Levels/HBoxContainer/Level2Button" to="." method="_on_level_2_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/Levels/HBoxContainer/Level3Button" to="." method="_on_level_3_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/Rewards/RewardsButton" to="." method="_on_rewards_button_pressed"]

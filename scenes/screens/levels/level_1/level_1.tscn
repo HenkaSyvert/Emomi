@@ -1,0 +1,81 @@
+[gd_scene format=3 uid="uid://dj108c067yisk"]
+
+[ext_resource type="Texture2D" uid="uid://7q5gyer3xjcg" path="res://scenes/common/gfx/background.png" id="1_3cc4f"]
+[ext_resource type="Script" uid="uid://c251iblecit8b" path="res://scenes/screens/levels/level_1/level_1.gd" id="1_hh1ev"]
+[ext_resource type="PackedScene" uid="uid://bvvb57ga0cd1i" path="res://scenes/common/sound_button/sound_button.tscn" id="1_kbl00"]
+[ext_resource type="PackedScene" uid="uid://dcnps1ubh4p87" path="res://scenes/common/lang_button/lang_button.tscn" id="1_v5dvq"]
+[ext_resource type="Texture2D" uid="uid://bun5f2eo71wyy" path="res://scenes/common/gfx/home.png" id="2_bqc30"]
+[ext_resource type="Texture2D" uid="uid://dnhyolvb1xkbv" path="res://scenes/common/gfx/return_arrow.png" id="3_hh1ev"]
+[ext_resource type="PackedScene" uid="uid://bd8tc8n7bltc5" path="res://scenes/common/draggable_button/draggable_button.tscn" id="5_3ugx7"]
+
+[node name="Level1" type="PanelContainer" unique_id=1807752263]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_hh1ev")
+
+[node name="Background" type="TextureRect" parent="." unique_id=1987297069]
+layout_mode = 2
+texture = ExtResource("1_3cc4f")
+expand_mode = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=976410984]
+layout_mode = 2
+
+[node name="Left" type="VBoxContainer" parent="HBoxContainer" unique_id=1467610135]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="HBoxContainer/Left" unique_id=184509431]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="HomeButton" type="TextureButton" parent="HBoxContainer/Left/HBoxContainer" unique_id=297138840]
+layout_mode = 2
+size_flags_horizontal = 3
+texture_normal = ExtResource("2_bqc30")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="ReturnButton" type="TextureButton" parent="HBoxContainer/Left/HBoxContainer" unique_id=127632262]
+layout_mode = 2
+size_flags_horizontal = 3
+texture_normal = ExtResource("3_hh1ev")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="LangButton" parent="HBoxContainer/Left" unique_id=2110673369 instance=ExtResource("1_v5dvq")]
+layout_mode = 2
+
+[node name="SoundButton" parent="HBoxContainer/Left" unique_id=1748544731 instance=ExtResource("1_kbl00")]
+layout_mode = 2
+
+[node name="Middle" type="VBoxContainer" parent="HBoxContainer" unique_id=665344384]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="HBoxContainer/Middle" unique_id=747382998]
+layout_mode = 2
+text = "LEVEL_1_PROMPT"
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="HBoxContainer/Middle" unique_id=2123238141]
+layout_mode = 2
+
+[node name="SubViewport" type="SubViewport" parent="HBoxContainer/Middle/SubViewportContainer" unique_id=2118940141]
+handle_input_locally = false
+render_target_update_mode = 4
+
+[node name="Right" type="VBoxContainer" parent="HBoxContainer" unique_id=840229378]
+layout_mode = 2
+
+[node name="Option1" parent="HBoxContainer/Right" unique_id=217454214 instance=ExtResource("5_3ugx7")]
+layout_mode = 2
+
+[node name="Button2" type="Button" parent="HBoxContainer/Right" unique_id=655426182]
+layout_mode = 2
+
+[node name="Button3" type="Button" parent="HBoxContainer/Right" unique_id=2137545157]
+layout_mode = 2
+
+[connection signal="pressed" from="HBoxContainer/Left/HBoxContainer/HomeButton" to="." method="_on_home_button_pressed"]
+[connection signal="pressed" from="HBoxContainer/Left/HBoxContainer/ReturnButton" to="." method="_on_return_button_pressed"]

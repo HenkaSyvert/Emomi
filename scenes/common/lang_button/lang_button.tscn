@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://dcnps1ubh4p87"]
+
+[ext_resource type="Texture2D" uid="uid://bf1wb5qhnmwdv" path="res://scenes/common/lang_button/lang.png" id="2_axaso"]
+[ext_resource type="Script" uid="uid://bgdoc2dv63b3o" path="res://scenes/common/lang_button/lang_button.gd" id="2_kvpkx"]
+[ext_resource type="Texture2D" uid="uid://s0qkmx85h1oo" path="res://scenes/common/lang_button/swe.jpg" id="3_bu5xf"]
+[ext_resource type="Texture2D" uid="uid://b7b3rilglvhed" path="res://scenes/common/lang_button/spa.png" id="4_3vi1l"]
+[ext_resource type="Texture2D" uid="uid://dpscl0gri5od4" path="res://scenes/common/lang_button/uk.png" id="5_deuhr"]
+
+[node name="LangButton" type="HBoxContainer" unique_id=2110673369]
+offset_right = 132.0
+offset_bottom = 64.0
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=912091963]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+texture = ExtResource("4_3vi1l")
+expand_mode = 1
+
+[node name="LangButton" type="TextureButton" parent="." unique_id=507704881 node_paths=PackedStringArray("lang_icon")]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 8
+texture_normal = ExtResource("2_axaso")
+script = ExtResource("2_kvpkx")
+lang_icon = NodePath("../TextureRect")
+swe_icon = ExtResource("3_bu5xf")
+es_icon = ExtResource("4_3vi1l")
+eng_icon = ExtResource("5_deuhr")
+
+[connection signal="pressed" from="LangButton" to="LangButton" method="_on_pressed"]
