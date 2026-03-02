@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://do1blbrdmk38b"]
+
+[ext_resource type="Texture2D" uid="uid://b8mqrqssaa6ln" path="res://sprites/star.png" id="1_0fd7b"]
+[ext_resource type="Script" uid="uid://dn6368aehj8gm" path="res://popup.gd" id="1_2eskn"]
+
+[node name="Panel" type="AcceptDialog" unique_id=1714738309]
+oversampling_override = 1.0
+title = ""
+position = Vector2i(0, 36)
+size = Vector2i(326, 272)
+visible = true
+script = ExtResource("1_2eskn")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1091554143]
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 318.0
+offset_bottom = 195.0
+
+[node name="Label" type="Label" parent="VBoxContainer" unique_id=1163963607]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 6
+text = "hellohjhjhjhjh"
+
+[node name="TextureRect" type="TextureRect" parent="VBoxContainer" unique_id=1382377756]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("1_0fd7b")
+
+[connection signal="confirmed" from="." to="." method="_on_confirmed"]
