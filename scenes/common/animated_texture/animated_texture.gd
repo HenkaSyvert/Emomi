@@ -17,3 +17,11 @@ func _on_timer_timeout() -> void:
 	current_frame = current_frame + 1
 	current_frame = current_frame % frames.size()
 	texture = frames[current_frame]
+
+
+func _can_drop_data(_at_position: Vector2, _data: Variant) -> bool:
+	return true
+
+
+func _drop_data(_at_position: Vector2, data: Variant) -> void:
+	print("sdfsdf", data)
