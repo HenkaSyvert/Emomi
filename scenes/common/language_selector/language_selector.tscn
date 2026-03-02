@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://dcnps1ubh4p87"]
+
+[ext_resource type="Texture2D" uid="uid://m2w5kbyk14ph" path="res://scenes/common/language_selector/spanish_icon.png" id="1_k3sct"]
+[ext_resource type="Texture2D" uid="uid://bdomp0hmqksyi" path="res://scenes/common/language_selector/language_icon.png" id="2_k3sct"]
+[ext_resource type="Script" uid="uid://dmwf5a54p7x2a" path="res://scenes/common/language_selector/language_selector.gd" id="2_kvpkx"]
+[ext_resource type="Texture2D" uid="uid://b5ti0i3rbvpag" path="res://scenes/common/language_selector/english_icon.png" id="3_7ygs4"]
+[ext_resource type="Texture2D" uid="uid://c3tb71qn04sr0" path="res://scenes/common/language_selector/swedish_icon.png" id="5_im8td"]
+
+[node name="LanguageSelector" type="HBoxContainer" unique_id=2110673369]
+offset_right = 132.0
+offset_bottom = 64.0
+script = ExtResource("2_kvpkx")
+language_flags = Array[Texture2D]([ExtResource("3_7ygs4"), ExtResource("1_k3sct"), ExtResource("5_im8td")])
+
+[node name="LanguageIcon" type="TextureRect" parent="." unique_id=912091963]
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("1_k3sct")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="LocalizationButton" type="TextureButton" parent="." unique_id=1762425321]
+layout_mode = 2
+size_flags_horizontal = 3
+texture_normal = ExtResource("2_k3sct")
+ignore_texture_size = true
+stretch_mode = 4
+
+[connection signal="pressed" from="LocalizationButton" to="." method="_on_localization_button_pressed"]

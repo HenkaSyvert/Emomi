@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://djgs5oxgmxh5x"]
+
+[ext_resource type="Script" uid="uid://ca2sfit3jh1gy" path="res://scenes/common/animated_texture/animated_texture.gd" id="1_jv1f2"]
+[ext_resource type="Texture2D" uid="uid://bpfwuaf8jqudq" path="res://sprites/logo/logo1.png" id="2_la3g8"]
+[ext_resource type="Texture2D" uid="uid://cgv1dmmki55rb" path="res://sprites/logo/logo2.png" id="3_u37r1"]
+[ext_resource type="Texture2D" uid="uid://dvp6tff322483" path="res://sprites/logo/logo3.png" id="4_a6fin"]
+[ext_resource type="Texture2D" uid="uid://c2ql72ctamjif" path="res://sprites/logo/logo4.png" id="5_7g1u5"]
+
+[node name="AnimatedTexture" type="TextureRect" unique_id=900728642]
+offset_right = 40.0
+offset_bottom = 40.0
+expand_mode = 1
+script = ExtResource("1_jv1f2")
+frames = Array[Texture2D]([ExtResource("2_la3g8"), ExtResource("3_u37r1"), ExtResource("4_a6fin"), ExtResource("5_7g1u5"), ExtResource("2_la3g8"), ExtResource("3_u37r1"), ExtResource("4_a6fin"), ExtResource("5_7g1u5")])
+
+[node name="Timer" type="Timer" parent="." unique_id=1926510115]
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

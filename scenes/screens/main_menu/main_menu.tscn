@@ -1,9 +1,13 @@
 [gd_scene format=3 uid="uid://hhn1146b88yy"]
 
-[ext_resource type="Texture2D" uid="uid://7q5gyer3xjcg" path="res://scenes/common/gfx/background.png" id="1_nlkkf"]
+[ext_resource type="Texture2D" uid="uid://7q5gyer3xjcg" path="res://sprites/background.png" id="1_nlkkf"]
 [ext_resource type="Script" uid="uid://cf4oajb2fcyoi" path="res://scenes/screens/main_menu/main_menu.gd" id="1_oic2i"]
-[ext_resource type="Texture2D" uid="uid://ihe4i3xs7jxc" path="res://scenes/common/gfx/logo.png" id="2_qe12f"]
-[ext_resource type="PackedScene" uid="uid://dcnps1ubh4p87" path="res://scenes/common/lang_button/lang_button.tscn" id="6_t6bnd"]
+[ext_resource type="PackedScene" uid="uid://djgs5oxgmxh5x" path="res://scenes/common/animated_texture/animated_texture.tscn" id="3_0urj7"]
+[ext_resource type="Texture2D" uid="uid://bpfwuaf8jqudq" path="res://sprites/logo/logo1.png" id="4_uamlo"]
+[ext_resource type="Texture2D" uid="uid://cgv1dmmki55rb" path="res://sprites/logo/logo2.png" id="5_4kug3"]
+[ext_resource type="Texture2D" uid="uid://dvp6tff322483" path="res://sprites/logo/logo3.png" id="6_8h7de"]
+[ext_resource type="PackedScene" uid="uid://dcnps1ubh4p87" path="res://scenes/common/language_selector/language_selector.tscn" id="6_t6bnd"]
+[ext_resource type="Texture2D" uid="uid://c2ql72ctamjif" path="res://sprites/logo/logo4.png" id="7_8vo2r"]
 [ext_resource type="PackedScene" uid="uid://bvvb57ga0cd1i" path="res://scenes/common/sound_button/sound_button.tscn" id="9_6at21"]
 
 [node name="MainMenu" type="PanelContainer" unique_id=1044244038]
@@ -25,32 +29,65 @@ layout_mode = 2
 [node name="Left" type="Control" parent="HBoxContainer" unique_id=770488046]
 layout_mode = 2
 size_flags_horizontal = 3
+size_flags_stretch_ratio = 25.0
 
 [node name="Middle" type="VBoxContainer" parent="HBoxContainer" unique_id=1224250631]
 layout_mode = 2
 size_flags_horizontal = 3
+size_flags_stretch_ratio = 50.0
 
-[node name="Logo" type="TextureRect" parent="HBoxContainer/Middle" unique_id=1164784242]
+[node name="Control" type="Control" parent="HBoxContainer/Middle" unique_id=1387746007]
 layout_mode = 2
-size_flags_vertical = 10
-texture = ExtResource("2_qe12f")
+size_flags_vertical = 3
+
+[node name="AnimatedTexture" parent="HBoxContainer/Middle" unique_id=900728642 instance=ExtResource("3_0urj7")]
+layout_mode = 2
+size_flags_vertical = 3
+texture = ExtResource("4_uamlo")
+frames = Array[Texture2D]([ExtResource("4_uamlo"), ExtResource("5_4kug3"), ExtResource("6_8h7de"), ExtResource("7_8vo2r"), ExtResource("4_uamlo"), ExtResource("5_4kug3"), ExtResource("6_8h7de"), ExtResource("7_8vo2r"), ExtResource("4_uamlo"), ExtResource("5_4kug3"), ExtResource("6_8h7de"), ExtResource("7_8vo2r")])
 
 [node name="StartButton" type="Button" parent="HBoxContainer/Middle" unique_id=332772898]
 layout_mode = 2
 size_flags_vertical = 6
 text = "START"
 
-[node name="Right" type="HBoxContainer" parent="HBoxContainer" unique_id=2066262864]
+[node name="Control2" type="Control" parent="HBoxContainer/Middle" unique_id=239812507]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Right" type="VBoxContainer" parent="HBoxContainer" unique_id=1757490934]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 25.0
+
+[node name="Top" type="Control" parent="HBoxContainer/Right" unique_id=754015775]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 20.0
+
+[node name="Middle" type="HBoxContainer" parent="HBoxContainer/Right" unique_id=673770281]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 60.0
+
+[node name="LangButton" parent="HBoxContainer/Right/Middle" unique_id=95072876 instance=ExtResource("6_t6bnd")]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="LangButton" parent="HBoxContainer/Right" unique_id=95072876 instance=ExtResource("6_t6bnd")]
+[node name="HBoxContainer" type="HBoxContainer" parent="HBoxContainer/Right/Middle" unique_id=803745388]
 layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
+size_flags_horizontal = 3
 
-[node name="SoundButton" parent="HBoxContainer/Right" unique_id=1748544731 instance=ExtResource("9_6at21")]
+[node name="SoundButton" parent="HBoxContainer/Right/Middle/HBoxContainer" unique_id=1748544731 instance=ExtResource("9_6at21")]
 layout_mode = 2
-size_flags_vertical = 4
+
+[node name="Control" type="Control" parent="HBoxContainer/Right/Middle/HBoxContainer" unique_id=2139970964]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Bottom" type="Control" parent="HBoxContainer/Right" unique_id=33331371]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 20.0
 
 [connection signal="pressed" from="HBoxContainer/Middle/StartButton" to="." method="_on_start_button_pressed"]

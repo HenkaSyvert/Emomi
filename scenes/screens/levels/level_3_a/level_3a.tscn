@@ -2,24 +2,40 @@
 
 [ext_resource type="PackedScene" uid="uid://bvvb57ga0cd1i" path="res://scenes/common/sound_button/sound_button.tscn" id="1_6qhgc"]
 [ext_resource type="Script" uid="uid://evemebsfabgk" path="res://scenes/screens/levels/level_3_a/level_3a.gd" id="1_efmx1"]
-[ext_resource type="PackedScene" uid="uid://dcnps1ubh4p87" path="res://scenes/common/lang_button/lang_button.tscn" id="1_wpjy0"]
-[ext_resource type="Texture2D" uid="uid://bun5f2eo71wyy" path="res://scenes/common/gfx/home.png" id="2_q2k4m"]
-[ext_resource type="Texture2D" uid="uid://dnhyolvb1xkbv" path="res://scenes/common/gfx/return_arrow.png" id="3_efmx1"]
-[ext_resource type="Texture2D" uid="uid://ccoav1tjmfpnc" path="res://scenes/screens/levels/level_3_a/Reizy 1 Loop.png" id="4_6uj72"]
-[ext_resource type="Texture2D" uid="uid://cepngcpi7svwi" path="res://scenes/screens/levels/level_3_a/Reizy 2 Loop.png" id="5_nsi1v"]
-[ext_resource type="Texture2D" uid="uid://mf5rn5gi36al" path="res://scenes/screens/levels/level_3_a/Reizy 3 Wrong.png" id="6_vd4ux"]
-[ext_resource type="Texture2D" uid="uid://ctin3r3l768r4" path="res://scenes/screens/levels/level_3_a/Reizy 4 Wrong.png" id="7_7tagm"]
-[ext_resource type="Texture2D" uid="uid://7q5gyer3xjcg" path="res://scenes/common/gfx/background.png" id="8_nsi1v"]
+[ext_resource type="PackedScene" uid="uid://dcnps1ubh4p87" path="res://scenes/common/language_selector/language_selector.tscn" id="1_wpjy0"]
+[ext_resource type="Texture2D" uid="uid://bun5f2eo71wyy" path="res://sprites/home.png" id="2_q2k4m"]
+[ext_resource type="Texture2D" uid="uid://dnhyolvb1xkbv" path="res://sprites/return_arrow.png" id="3_efmx1"]
+[ext_resource type="Texture2D" uid="uid://ccoav1tjmfpnc" path="res://scenes/screens/levels/level_3_a/sprites/reizy/Reizy 1 Loop.png" id="4_6uj72"]
+[ext_resource type="Texture2D" uid="uid://cepngcpi7svwi" path="res://scenes/screens/levels/level_3_a/sprites/reizy/Reizy 2 Loop.png" id="5_nsi1v"]
+[ext_resource type="Texture2D" uid="uid://mf5rn5gi36al" path="res://scenes/screens/levels/level_3_a/sprites/reizy/Reizy 3 Wrong.png" id="6_vd4ux"]
+[ext_resource type="Texture2D" uid="uid://ctin3r3l768r4" path="res://scenes/screens/levels/level_3_a/sprites/reizy/Reizy 4 Wrong.png" id="7_7tagm"]
+[ext_resource type="Texture2D" uid="uid://7q5gyer3xjcg" path="res://sprites/background.png" id="8_nsi1v"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_s88nc"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("4_6uj72")
+"texture": ExtResource("5_nsi1v")
 }, {
+"duration": 1.0,
+"texture": ExtResource("4_6uj72")
+}],
+"loop": true,
+"name": &"angry_1",
+"speed": 5.0
+}, {
+"frames": [{
 "duration": 1.0,
 "texture": ExtResource("5_nsi1v")
 }, {
+"duration": 1.0,
+"texture": ExtResource("6_vd4ux")
+}],
+"loop": true,
+"name": &"angry_2",
+"speed": 2.0
+}, {
+"frames": [{
 "duration": 1.0,
 "texture": ExtResource("6_vd4ux")
 }, {
@@ -27,7 +43,7 @@ animations = [{
 "texture": ExtResource("7_7tagm")
 }],
 "loop": true,
-"name": &"default",
+"name": &"angry_3",
 "speed": 2.0
 }]
 
@@ -89,11 +105,11 @@ handle_input_locally = false
 render_target_update_mode = 4
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="HBoxContainer/Middle/SubViewportContainer/SubViewport" unique_id=113347046]
-position = Vector2(137.25, 114.75)
-scale = Vector2(0.4649123, 0.49113083)
+position = Vector2(257.3838, 248.62277)
+scale = Vector2(0.9323589, 1.086121)
 sprite_frames = SubResource("SpriteFrames_s88nc")
-autoplay = "default"
-frame_progress = 0.45930663
+animation = &"angry_1"
+autoplay = "angry_3"
 
 [node name="Right" type="HBoxContainer" parent="HBoxContainer" unique_id=8270774]
 layout_mode = 2

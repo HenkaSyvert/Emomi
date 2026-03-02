@@ -17,5 +17,5 @@ Button/styles/hover = ExtResource("2_41rka")
 Button/styles/normal = ExtResource("1_24ibd")
 Button/styles/pressed = ExtResource("2_41rka")
 Label/colors/font_color = Color(0, 0, 0, 1)
-Label/font_sizes/font_size = 35
+Label/font_sizes/font_size = 50
 PanelContainer/styles/panel = SubResource("StyleBoxFlat_amlv4")

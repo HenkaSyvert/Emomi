@@ -13,7 +13,6 @@ config_version=5
 config/name="Emömi"
 run/main_scene="uid://hhn1146b88yy"
 config/features=PackedStringArray("4.6", "GL Compatibility")
-config/icon="uid://ihe4i3xs7jxc"
 
 [autoload]
 

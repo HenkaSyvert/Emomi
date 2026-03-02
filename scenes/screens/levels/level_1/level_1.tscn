@@ -1,11 +1,11 @@
 [gd_scene format=3 uid="uid://dj108c067yisk"]
 
-[ext_resource type="Texture2D" uid="uid://7q5gyer3xjcg" path="res://scenes/common/gfx/background.png" id="1_3cc4f"]
+[ext_resource type="Texture2D" uid="uid://7q5gyer3xjcg" path="res://sprites/background.png" id="1_3cc4f"]
 [ext_resource type="Script" uid="uid://c251iblecit8b" path="res://scenes/screens/levels/level_1/level_1.gd" id="1_hh1ev"]
 [ext_resource type="PackedScene" uid="uid://bvvb57ga0cd1i" path="res://scenes/common/sound_button/sound_button.tscn" id="1_kbl00"]
-[ext_resource type="PackedScene" uid="uid://dcnps1ubh4p87" path="res://scenes/common/lang_button/lang_button.tscn" id="1_v5dvq"]
-[ext_resource type="Texture2D" uid="uid://bun5f2eo71wyy" path="res://scenes/common/gfx/home.png" id="2_bqc30"]
-[ext_resource type="Texture2D" uid="uid://dnhyolvb1xkbv" path="res://scenes/common/gfx/return_arrow.png" id="3_hh1ev"]
+[ext_resource type="PackedScene" uid="uid://dcnps1ubh4p87" path="res://scenes/common/language_selector/language_selector.tscn" id="1_v5dvq"]
+[ext_resource type="Texture2D" uid="uid://bun5f2eo71wyy" path="res://sprites/home.png" id="2_bqc30"]
+[ext_resource type="Texture2D" uid="uid://dnhyolvb1xkbv" path="res://sprites/return_arrow.png" id="3_hh1ev"]
 [ext_resource type="PackedScene" uid="uid://bd8tc8n7bltc5" path="res://scenes/common/draggable_button/draggable_button.tscn" id="5_3ugx7"]
 
 [node name="Level1" type="PanelContainer" unique_id=1807752263]
