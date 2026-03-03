@@ -8,17 +8,12 @@
 [ext_resource type="PackedScene" uid="uid://bvvb57ga0cd1i" path="res://scenes/common/sound_button/sound_button.tscn" id="6_l8uov"]
 [ext_resource type="PackedScene" uid="uid://djgs5oxgmxh5x" path="res://scenes/common/animated_texture/animated_texture.tscn" id="7_2qsp7"]
 [ext_resource type="Texture2D" uid="uid://doy86nxmkhl7u" path="res://scenes/screens/levels/level2/level_2/characters/Makty 1.png" id="8_fn3ci"]
-[ext_resource type="Texture2D" uid="uid://bpfwuaf8jqudq" path="res://sprites/logo/logo1.png" id="9_6xjta"]
-[ext_resource type="Texture2D" uid="uid://cgv1dmmki55rb" path="res://sprites/logo/logo2.png" id="10_tyqmi"]
-[ext_resource type="Texture2D" uid="uid://dvp6tff322483" path="res://sprites/logo/logo3.png" id="11_r6wrd"]
-[ext_resource type="Texture2D" uid="uid://c2ql72ctamjif" path="res://sprites/logo/logo4.png" id="12_vq18e"]
 [ext_resource type="Texture2D" uid="uid://daun1aq8tyib0" path="res://scenes/screens/levels/level2/level_2/characters/Makty 2.png" id="13_6xejg"]
 [ext_resource type="Texture2D" uid="uid://ct3pllgpgtsix" path="res://scenes/screens/levels/level1/level_1/sprites/options/eddy/unnamed (28).png" id="14_uhs3q"]
 [ext_resource type="Script" uid="uid://csd5daqhx6qad" path="res://scenes/screens/levels/level1/level_1/option_1.gd" id="15_h30nl"]
 [ext_resource type="Texture2D" uid="uid://dqgyuyuhqssjk" path="res://scenes/screens/levels/level1/level_1/sprites/options/reizy/unnamed (26).png" id="16_8cb76"]
 [ext_resource type="Texture2D" uid="uid://cnr1om4nfgchc" path="res://scenes/screens/levels/level1/level_1/sprites/options/malky/unnamed (21).png" id="17_fd7va"]
 [ext_resource type="PackedScene" uid="uid://do1blbrdmk38b" path="res://popup.tscn" id="18_qmkny"]
-[ext_resource type="PackedScene" uid="uid://c5026elgokdpe" path="res://scenes/screens/levels/level1/level_1_b/level_1_b.tscn" id="19_7tris"]
 [ext_resource type="AudioStream" uid="uid://bturhwnadpi3n" path="res://scenes/screens/levels/level1/level_1/cry.wav" id="20_s7bbq"]
 [ext_resource type="AudioStream" uid="uid://bthblg3sqamhk" path="res://scenes/screens/levels/level1/level_1/success (2).wav" id="21_fsfyk"]
 
@@ -120,7 +115,7 @@ size_flags_vertical = 3
 size_flags_stretch_ratio = 60.0
 texture = ExtResource("8_fn3ci")
 stretch_mode = 4
-frames = Array[Texture2D]([ExtResource("9_6xjta"), ExtResource("10_tyqmi"), ExtResource("11_r6wrd"), ExtResource("12_vq18e"), ExtResource("9_6xjta"), ExtResource("10_tyqmi"), ExtResource("11_r6wrd"), ExtResource("12_vq18e"), ExtResource("8_fn3ci"), ExtResource("13_6xejg")])
+frames = Array[Texture2D]([ExtResource("8_fn3ci"), ExtResource("13_6xejg")])
 
 [node name="Control" type="Control" parent="Level1/HBoxContainer/Middle/HBoxContainer" unique_id=1239098239]
 layout_mode = 2
@@ -159,9 +154,8 @@ script = ExtResource("15_h30nl")
 value = -1
 
 [node name="Popup" parent="Level1" unique_id=1714738309 instance=ExtResource("18_qmkny")]
-initial_position = 1
 visible = false
-next_scene = ExtResource("19_7tris")
+layout_mode = 2
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Level1" unique_id=180347776]
 stream = ExtResource("20_s7bbq")

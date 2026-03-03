@@ -1,24 +1,32 @@
 [gd_scene format=3 uid="uid://do1blbrdmk38b"]
 
 [ext_resource type="Texture2D" uid="uid://b8mqrqssaa6ln" path="res://sprites/star.png" id="1_0fd7b"]
-[ext_resource type="Script" uid="uid://dn6368aehj8gm" path="res://popup.gd" id="1_2eskn"]
+[ext_resource type="FontFile" uid="uid://dj4s3iaoosdl7" path="res://ui/fonts/Shortcake.otf" id="2_6nc67"]
 
-[node name="Panel" type="AcceptDialog" unique_id=1714738309]
-oversampling_override = 1.0
-title = ""
-position = Vector2i(0, 36)
-size = Vector2i(532, 337)
-visible = true
-script = ExtResource("1_2eskn")
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2eskn"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[node name="PanelContainer" type="PanelContainer" unique_id=1497230596]
+offset_right = 550.0
+offset_bottom = 380.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_2eskn")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1091554143]
-offset_right = 532.0
-offset_bottom = 268.0
+layout_mode = 2
 
 [node name="Label" type="Label" parent="VBoxContainer" unique_id=1163963607]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 6
+theme_override_colors/font_color = Color(0.2, 0.6039216, 0.78039217, 1)
+theme_override_constants/line_spacing = -15
+theme_override_constants/paragraph_spacing = 0
+theme_override_fonts/font = ExtResource("2_6nc67")
+theme_override_font_sizes/font_size = 69
 text = "POPUP1"
 horizontal_alignment = 1
 
@@ -50,4 +58,6 @@ size_flags_horizontal = 3
 [node name="Control" type="Control" parent="VBoxContainer" unique_id=76360763]
 layout_mode = 2
 
-[connection signal="confirmed" from="." to="." method="_on_confirmed"]
+[node name="Button" type="Button" parent="VBoxContainer" unique_id=1871864652]
+layout_mode = 2
+text = "POPUP_BUTTON"

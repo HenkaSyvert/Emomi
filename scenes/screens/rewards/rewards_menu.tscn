@@ -1,3 +1,60 @@
 [gd_scene format=3 uid="uid://7uwmwgor6fdm"]
 
-[node name="RewardsMenu" type="Node2D" unique_id=1864958934]
+[ext_resource type="Texture2D" uid="uid://b8mqrqssaa6ln" path="res://sprites/star.png" id="1_b2iqw"]
+
+[node name="RewardsMenu" type="PanelContainer" unique_id=18558353]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=193791044]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer" unique_id=698788287]
+layout_mode = 2
+text = "REWARDS"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="GridContainer" type="GridContainer" parent="VBoxContainer" unique_id=905130901]
+layout_mode = 2
+size_flags_vertical = 3
+columns = 3
+
+[node name="TextureButton" type="TextureButton" parent="VBoxContainer/GridContainer" unique_id=2130049467]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource("1_b2iqw")
+
+[node name="TextureButton2" type="TextureButton" parent="VBoxContainer/GridContainer" unique_id=463306627]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource("1_b2iqw")
+
+[node name="TextureButton3" type="TextureButton" parent="VBoxContainer/GridContainer" unique_id=1947124196]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource("1_b2iqw")
+
+[node name="TextureButton4" type="TextureButton" parent="VBoxContainer/GridContainer" unique_id=494282074]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource("1_b2iqw")
+
+[node name="TextureButton5" type="TextureButton" parent="VBoxContainer/GridContainer" unique_id=1389174927]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource("1_b2iqw")
+
+[node name="TextureButton6" type="TextureButton" parent="VBoxContainer/GridContainer" unique_id=379746554]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource("1_b2iqw")
