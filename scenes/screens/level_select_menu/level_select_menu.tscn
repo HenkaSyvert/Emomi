@@ -37,7 +37,7 @@ layout_mode = 2
 [node name="Top" type="HBoxContainer" parent="VBoxContainer" unique_id=769645194]
 layout_mode = 2
 size_flags_vertical = 3
-size_flags_stretch_ratio = 40.0
+size_flags_stretch_ratio = 37.95
 
 [node name="Left" type="VBoxContainer" parent="VBoxContainer/Top" unique_id=1271530614]
 layout_mode = 2
@@ -46,6 +46,7 @@ size_flags_horizontal = 3
 [node name="Control" type="Control" parent="VBoxContainer/Top/Left" unique_id=922073327]
 layout_mode = 2
 size_flags_vertical = 3
+size_flags_stretch_ratio = 1.35
 
 [node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/Top/Left" unique_id=1977946259]
 layout_mode = 2
@@ -73,6 +74,10 @@ stretch_mode = 4
 layout_mode = 2
 size_flags_horizontal = 3
 
+[node name="Control2" type="Control" parent="VBoxContainer/Top/Left" unique_id=558008303]
+layout_mode = 2
+size_flags_vertical = 3
+
 [node name="Middle" type="VBoxContainer" parent="VBoxContainer/Top" unique_id=1409300312]
 layout_mode = 2
 size_flags_horizontal = 3
@@ -87,6 +92,11 @@ size_flags_vertical = 3
 texture = ExtResource("6_bqjpd")
 frames = Array[Texture2D]([ExtResource("6_bqjpd"), ExtResource("7_awj8d"), ExtResource("8_ip61p"), ExtResource("9_y5dbk"), ExtResource("6_bqjpd"), ExtResource("7_awj8d"), ExtResource("8_ip61p"), ExtResource("9_y5dbk"), ExtResource("6_bqjpd"), ExtResource("7_awj8d"), ExtResource("8_ip61p"), ExtResource("9_y5dbk")])
 
+[node name="Control2" type="Control" parent="VBoxContainer/Top/Middle" unique_id=1361731841]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.3
+
 [node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/Top" unique_id=1063470421]
 layout_mode = 2
 size_flags_horizontal = 3
@@ -94,11 +104,17 @@ size_flags_horizontal = 3
 [node name="Control" type="Control" parent="VBoxContainer/Top/VBoxContainer" unique_id=879662056]
 layout_mode = 2
 size_flags_vertical = 3
+size_flags_stretch_ratio = 1.47
 
 [node name="Right" type="HBoxContainer" parent="VBoxContainer/Top/VBoxContainer" unique_id=273684267]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+
+[node name="Control2" type="Control" parent="VBoxContainer/Top/VBoxContainer/Right" unique_id=1572322409]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.13
 
 [node name="LangButton" parent="VBoxContainer/Top/VBoxContainer/Right" unique_id=2110673369 instance=ExtResource("4_nldrk")]
 layout_mode = 2
@@ -114,6 +130,15 @@ layout_mode = 2
 [node name="Control" type="Control" parent="VBoxContainer/Top/VBoxContainer/Right/HBoxContainer" unique_id=1834502961]
 layout_mode = 2
 size_flags_horizontal = 3
+
+[node name="Control" type="Control" parent="VBoxContainer/Top/VBoxContainer/Right" unique_id=84950366]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.13
+
+[node name="Control2" type="Control" parent="VBoxContainer/Top/VBoxContainer" unique_id=6070604]
+layout_mode = 2
+size_flags_vertical = 3
 
 [node name="Bottom" type="HBoxContainer" parent="VBoxContainer" unique_id=992705741]
 layout_mode = 2

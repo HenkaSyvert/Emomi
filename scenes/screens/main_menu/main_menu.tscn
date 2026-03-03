@@ -39,12 +39,18 @@ size_flags_stretch_ratio = 50.0
 [node name="Control" type="Control" parent="HBoxContainer/Middle" unique_id=1387746007]
 layout_mode = 2
 size_flags_vertical = 3
+size_flags_stretch_ratio = 0.7
 
 [node name="AnimatedTexture" parent="HBoxContainer/Middle" unique_id=900728642 instance=ExtResource("3_0urj7")]
 layout_mode = 2
 size_flags_vertical = 3
 texture = ExtResource("4_uamlo")
 frames = Array[Texture2D]([ExtResource("4_uamlo"), ExtResource("5_4kug3"), ExtResource("6_8h7de"), ExtResource("7_8vo2r"), ExtResource("4_uamlo"), ExtResource("5_4kug3"), ExtResource("6_8h7de"), ExtResource("7_8vo2r"), ExtResource("4_uamlo"), ExtResource("5_4kug3"), ExtResource("6_8h7de"), ExtResource("7_8vo2r")])
+
+[node name="Control3" type="Control" parent="HBoxContainer/Middle" unique_id=385790392]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.13
 
 [node name="StartButton" type="Button" parent="HBoxContainer/Middle" unique_id=332772898]
 layout_mode = 2
