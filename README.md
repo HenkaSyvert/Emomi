@@ -3,10 +3,7 @@
 
 need to find sounds for when eddy/makty/reizy gets angry/calm
 
-
-från claudia
-	- no-audio texture
-
+add text "draw correct emotion to eddy"
 
 rewards menu
 	when click image, popup to show full image, and download button

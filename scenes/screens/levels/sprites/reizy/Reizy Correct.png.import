@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dfv7dueefkb6q"
-path="res://.godot/imported/Makty wrong.png-532dd27f406a8fcedb97086c1be5e23f.ctex"
+uid="uid://brku8tgcimsjg"
+path="res://.godot/imported/Reizy Correct.png-06ff23063d8dbff9321fd3f939c2b6c6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/screens/levels/level2/sprites/makty/Makty wrong.png"
-dest_files=["res://.godot/imported/Makty wrong.png-532dd27f406a8fcedb97086c1be5e23f.ctex"]
+source_file="res://scenes/screens/levels/sprites/reizy/Reizy Correct.png"
+dest_files=["res://.godot/imported/Reizy Correct.png-06ff23063d8dbff9321fd3f939c2b6c6.ctex"]
 
 [params]
 

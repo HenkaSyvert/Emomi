@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bwgb3ecse23fx"
-path="res://.godot/imported/Eddy 2.png-ac26d4a32d130ac9f6dce66059fefb9e.ctex"
+uid="uid://daun1aq8tyib0"
+path="res://.godot/imported/Makty 2.png-e72a214dc4fe51604055ddba0a91de9f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/screens/levels/level2/sprites/eddy/Eddy 2.png"
-dest_files=["res://.godot/imported/Eddy 2.png-ac26d4a32d130ac9f6dce66059fefb9e.ctex"]
+source_file="res://scenes/screens/levels/sprites/makty/Makty 2.png"
+dest_files=["res://.godot/imported/Makty 2.png-e72a214dc4fe51604055ddba0a91de9f.ctex"]
 
 [params]
 

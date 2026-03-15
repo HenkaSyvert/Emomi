@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d3e66kbf7ncd3"
-path="res://.godot/imported/Reizy 1.png-5747cc0805d9110ea43fadec334fedca.ctex"
+path="res://.godot/imported/Reizy 1.png-d236702fb40ee95c677e89d883b86294.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/screens/levels/level2/sprites/reizy/Reizy 1.png"
-dest_files=["res://.godot/imported/Reizy 1.png-5747cc0805d9110ea43fadec334fedca.ctex"]
+source_file="res://scenes/screens/levels/sprites/reizy/Reizy 1.png"
+dest_files=["res://.godot/imported/Reizy 1.png-d236702fb40ee95c677e89d883b86294.ctex"]
 
 [params]
 

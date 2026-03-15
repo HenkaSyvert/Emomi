@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://baklicufa3nai"
-path="res://.godot/imported/Eddy Correct.png-c808a605664208bbc77f92b2eb935944.ctex"
+uid="uid://bxr3o81w5rgtx"
+path="res://.godot/imported/Eddy 1.png-5035f99ee56660cc7d67ace1afb90e9a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/screens/levels/level2/sprites/eddy/Eddy Correct.png"
-dest_files=["res://.godot/imported/Eddy Correct.png-c808a605664208bbc77f92b2eb935944.ctex"]
+source_file="res://scenes/screens/levels/sprites/eddy/Eddy 1.png"
+dest_files=["res://.godot/imported/Eddy 1.png-5035f99ee56660cc7d67ace1afb90e9a.ctex"]
 
 [params]
 

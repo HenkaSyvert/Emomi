@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://daun1aq8tyib0"
-path="res://.godot/imported/Makty 2.png-e6a3ac45eb7c93e97d8cfd8984354676.ctex"
+uid="uid://i6ortcmrfg3y"
+path="res://.godot/imported/Makty Correct.png-b02319b2e6a83792535597a155c7c831.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/screens/levels/level2/sprites/makty/Makty 2.png"
-dest_files=["res://.godot/imported/Makty 2.png-e6a3ac45eb7c93e97d8cfd8984354676.ctex"]
+source_file="res://scenes/screens/levels/sprites/makty/Makty Correct.png"
+dest_files=["res://.godot/imported/Makty Correct.png-b02319b2e6a83792535597a155c7c831.ctex"]
 
 [params]
 

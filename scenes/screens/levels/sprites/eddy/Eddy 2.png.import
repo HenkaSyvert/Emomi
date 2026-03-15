@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://df7520n7wkemv"
-path="res://.godot/imported/Reizy wrong.png-57909fc6e42e7e5c81f958300d18b26f.ctex"
+uid="uid://bwgb3ecse23fx"
+path="res://.godot/imported/Eddy 2.png-1b79d11da2822ece07260eb66bb07e65.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/screens/levels/level2/sprites/reizy/Reizy wrong.png"
-dest_files=["res://.godot/imported/Reizy wrong.png-57909fc6e42e7e5c81f958300d18b26f.ctex"]
+source_file="res://scenes/screens/levels/sprites/eddy/Eddy 2.png"
+dest_files=["res://.godot/imported/Eddy 2.png-1b79d11da2822ece07260eb66bb07e65.ctex"]
 
 [params]
 
