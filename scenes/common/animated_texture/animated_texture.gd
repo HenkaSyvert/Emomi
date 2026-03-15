@@ -4,6 +4,11 @@ extends TextureRect
 @export var fps: float = 2
 
 @onready var timer: Timer = $Timer
+@onready var aspCorrect: AudioStreamPlayer2D = $aspCorrect
+@onready var aspWrong: AudioStreamPlayer2D = $aspWrong
+@export var correctSound: AudioStream
+@export var wrongSound: AudioStream
+@export var popup: PanelContainer
 
 var current_frame: int = 0
 
@@ -11,6 +16,9 @@ var current_frame: int = 0
 func _ready() -> void:
 	texture = frames[current_frame]
 	timer.wait_time = 1.0 / fps
+
+	aspCorrect.stream = correctSound
+	aspWrong.stream = wrongSound
 
 
 func _on_timer_timeout() -> void:
@@ -24,11 +32,11 @@ func _can_drop_data(_at_position: Vector2, _data: Variant) -> bool:
 
 
 func _drop_data(_at_position: Vector2, data: Variant) -> void:
-	var value: int = data as int
-
-	if value == 1:
-		$"../../../../Popup".visible = true
-		$"../../../../AudioStreamPlayer2D2".play()
-
+	var is_correct: bool = data as bool
+	if is_correct:
+		popup.visible = true
+		if not SoundManager.is_muted:
+			aspCorrect.play()
 	else:
-		$"../../../../AudioStreamPlayer2D".play()
+		if not SoundManager.is_muted:
+			aspWrong.play()

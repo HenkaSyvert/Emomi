@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://ixajx0dg6qmk"]
 
-[ext_resource type="Texture2D" uid="uid://ct3pllgpgtsix" path="res://scenes/screens/levels/level1/level_1/sprites/options/eddy/3.png" id="1_rpfpg"]
+[ext_resource type="Texture2D" uid="uid://ct3pllgpgtsix" path="res://scenes/screens/levels/level1/sprites/options/eddy/3.png" id="1_rpfpg"]
 [ext_resource type="Script" uid="uid://csd5daqhx6qad" path="res://scenes/common/animated_button/animated_button.gd" id="2_ongq8"]
-[ext_resource type="Texture2D" uid="uid://dtj6lid7ja0xg" path="res://scenes/screens/levels/level1/level_1/sprites/options/eddy/2.png" id="3_bnx4y"]
-[ext_resource type="Texture2D" uid="uid://c853bjot2l44l" path="res://scenes/screens/levels/level1/level_1/sprites/options/eddy/0.png" id="4_7pom5"]
-[ext_resource type="Texture2D" uid="uid://djal12vj1frgp" path="res://scenes/screens/levels/level1/level_1/sprites/options/eddy/1.png" id="5_fenb0"]
+[ext_resource type="Texture2D" uid="uid://dtj6lid7ja0xg" path="res://scenes/screens/levels/level1/sprites/options/eddy/2.png" id="3_bnx4y"]
+[ext_resource type="Texture2D" uid="uid://c853bjot2l44l" path="res://scenes/screens/levels/level1/sprites/options/eddy/0.png" id="4_7pom5"]
+[ext_resource type="Texture2D" uid="uid://djal12vj1frgp" path="res://scenes/screens/levels/level1/sprites/options/eddy/1.png" id="5_fenb0"]
 
 [node name="AnimatedButton" type="TextureButton" unique_id=1779106198]
 anchors_preset = 15
