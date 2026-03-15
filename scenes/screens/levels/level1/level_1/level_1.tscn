@@ -5,15 +5,24 @@
 [ext_resource type="Texture2D" uid="uid://c3fpvwdswa80c" path="res://sprites/home.png" id="2_bqc30"]
 [ext_resource type="Texture2D" uid="uid://dk78fcithaeh7" path="res://sprites/arrow.png" id="3_hh1ev"]
 [ext_resource type="Texture2D" uid="uid://b8mqrqssaa6ln" path="res://sprites/star.png" id="4_1iax1"]
+[ext_resource type="Texture2D" uid="uid://c853bjot2l44l" path="res://scenes/screens/levels/level1/level_1/sprites/options/eddy/0.png" id="4_7rs4a"]
 [ext_resource type="FontFile" uid="uid://c0mwxbonyok3b" path="res://ui/fonts/Shortcake.ttf" id="5_0jnrr"]
+[ext_resource type="Texture2D" uid="uid://djal12vj1frgp" path="res://scenes/screens/levels/level1/level_1/sprites/options/eddy/1.png" id="5_5frum"]
+[ext_resource type="Texture2D" uid="uid://dtj6lid7ja0xg" path="res://scenes/screens/levels/level1/level_1/sprites/options/eddy/2.png" id="6_wqm1r"]
 [ext_resource type="PackedScene" uid="uid://djgs5oxgmxh5x" path="res://scenes/common/animated_texture/animated_texture.tscn" id="7_j5r16"]
-[ext_resource type="Texture2D" uid="uid://bx0ja2icw23jv" path="res://scenes/screens/levels/level1/level_1/sprites/situation/Dog 1 Loop.png" id="8_tjdos"]
-[ext_resource type="Texture2D" uid="uid://ct3pllgpgtsix" path="res://scenes/screens/levels/level1/level_1/sprites/options/eddy/unnamed (28).png" id="10_n8aa0"]
-[ext_resource type="Texture2D" uid="uid://dqgyuyuhqssjk" path="res://scenes/screens/levels/level1/level_1/sprites/options/reizy/unnamed (26).png" id="11_expbs"]
+[ext_resource type="Texture2D" uid="uid://bx0ja2icw23jv" path="res://scenes/screens/levels/level1/level_1/sprites/situation/dog/Dog 1 Loop.png" id="8_tjdos"]
+[ext_resource type="Texture2D" uid="uid://4xoo0p3yqv4a" path="res://scenes/screens/levels/level1/level_1/sprites/options/malky/1.png" id="9_pdd53"]
+[ext_resource type="Texture2D" uid="uid://bubois1y122ss" path="res://scenes/screens/levels/level1/level_1/sprites/options/malky/2.png" id="10_bs55y"]
+[ext_resource type="Texture2D" uid="uid://ct3pllgpgtsix" path="res://scenes/screens/levels/level1/level_1/sprites/options/eddy/3.png" id="10_n8aa0"]
+[ext_resource type="Texture2D" uid="uid://c4t85mqjak2t6" path="res://scenes/screens/levels/level1/level_1/sprites/options/malky/3.png" id="11_4ffmg"]
+[ext_resource type="Texture2D" uid="uid://dqgyuyuhqssjk" path="res://scenes/screens/levels/level1/level_1/sprites/options/reizy/1.png" id="11_expbs"]
 [ext_resource type="Script" uid="uid://csd5daqhx6qad" path="res://scenes/screens/levels/level1/level_1/option_1.gd" id="11_j5r16"]
-[ext_resource type="Texture2D" uid="uid://cnr1om4nfgchc" path="res://scenes/screens/levels/level1/level_1/sprites/options/malky/unnamed (21).png" id="12_j5r16"]
-[ext_resource type="Texture2D" uid="uid://btgcuj518v3x1" path="res://scenes/screens/levels/level1/level_1/sprites/situation/Dog 2 Loop.png" id="13_evb4k"]
+[ext_resource type="Texture2D" uid="uid://dgeg2024llgqr" path="res://scenes/screens/levels/level1/level_1/sprites/options/reizy/0.png" id="12_311gr"]
+[ext_resource type="Texture2D" uid="uid://cnr1om4nfgchc" path="res://scenes/screens/levels/level1/level_1/sprites/options/malky/0.png" id="12_j5r16"]
+[ext_resource type="Texture2D" uid="uid://btgcuj518v3x1" path="res://scenes/screens/levels/level1/level_1/sprites/situation/dog/Dog 2 Loop.png" id="13_evb4k"]
+[ext_resource type="Texture2D" uid="uid://swvkt7n7ib4y" path="res://scenes/screens/levels/level1/level_1/sprites/options/reizy/2.png" id="14_hbggb"]
 [ext_resource type="PackedScene" uid="uid://do1blbrdmk38b" path="res://popup.tscn" id="14_j5r16"]
+[ext_resource type="Texture2D" uid="uid://beipxpgc4ejnm" path="res://scenes/screens/levels/level1/level_1/sprites/options/reizy/3.png" id="15_r1qw8"]
 [ext_resource type="AudioStream" uid="uid://bturhwnadpi3n" path="res://scenes/screens/levels/level1/level_1/cry.wav" id="15_tjdos"]
 [ext_resource type="AudioStream" uid="uid://bthblg3sqamhk" path="res://scenes/screens/levels/level1/level_1/success (2).wav" id="16_15g5j"]
 
@@ -33,6 +42,10 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_hh1ev")
+mainAnimFrames = Array[Texture2D]([ExtResource("8_tjdos"), ExtResource("13_evb4k")])
+opt1AnimFrames = Array[Texture2D]([ExtResource("4_7rs4a"), ExtResource("5_5frum"), ExtResource("6_wqm1r"), ExtResource("10_n8aa0")])
+opt2AnimFrames = Array[Texture2D]([ExtResource("12_j5r16"), ExtResource("9_pdd53"), ExtResource("10_bs55y"), ExtResource("11_4ffmg")])
+opt3AnimFrames = Array[Texture2D]([ExtResource("12_311gr"), ExtResource("11_expbs"), ExtResource("14_hbggb"), ExtResource("15_r1qw8")])
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Level1" unique_id=976410984]
 layout_mode = 2
@@ -205,5 +218,10 @@ autoplay = true
 [node name="AudioStreamPlayer2D2" type="AudioStreamPlayer2D" parent="Level1" unique_id=1008675620]
 stream = ExtResource("16_15g5j")
 
+[node name="Timer" type="Timer" parent="Level1" unique_id=123287745]
+wait_time = 0.5
+autostart = true
+
 [connection signal="pressed" from="Level1/HBoxContainer/Left/VBoxContainer2/VBoxContainer/HBoxContainer/HomeButton" to="Level1" method="_on_home_button_pressed"]
 [connection signal="pressed" from="Level1/HBoxContainer/Left/VBoxContainer2/VBoxContainer/HBoxContainer/ReturnButton" to="Level1" method="_on_return_button_pressed"]
+[connection signal="timeout" from="Level1/Timer" to="Level1" method="_on_timer_timeout"]

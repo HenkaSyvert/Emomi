@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://1osqbxscikn8"
-path="res://.godot/imported/toy 2 loop.png-859b806059cd3cf589b5f7c21221d25a.ctex"
+uid="uid://c4t85mqjak2t6"
+path="res://.godot/imported/3.png-bbc6cd78cd56ef431126ca60d0b5d498.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/screens/levels/level1/level_1/sprites/situation/toy 2 loop.png"
-dest_files=["res://.godot/imported/toy 2 loop.png-859b806059cd3cf589b5f7c21221d25a.ctex"]
+source_file="res://scenes/screens/levels/level1/level_1/sprites/options/malky/3.png"
+dest_files=["res://.godot/imported/3.png-bbc6cd78cd56ef431126ca60d0b5d498.ctex"]
 
 [params]
 

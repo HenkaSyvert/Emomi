@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dn808kmh8nh7n"
-path="res://.godot/imported/math 1 loop.png-79a758ec74e252e25210e7a82191ae53.ctex"
+uid="uid://bubois1y122ss"
+path="res://.godot/imported/2.png-f9a32866db80e10df1995ff44562c2e9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/screens/levels/level1/level_1/sprites/situation/math 1 loop.png"
-dest_files=["res://.godot/imported/math 1 loop.png-79a758ec74e252e25210e7a82191ae53.ctex"]
+source_file="res://scenes/screens/levels/level1/level_1/sprites/options/malky/2.png"
+dest_files=["res://.godot/imported/2.png-f9a32866db80e10df1995ff44562c2e9.ctex"]
 
 [params]
 

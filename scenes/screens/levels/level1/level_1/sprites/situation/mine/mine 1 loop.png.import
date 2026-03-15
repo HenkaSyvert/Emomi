@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://4xoo0p3yqv4a"
-path="res://.godot/imported/unnamed (22).png-0205ddea3b75ba4f3af7ca34e1e98db8.ctex"
+uid="uid://cmtc6bsgmxvwv"
+path="res://.godot/imported/mine 1 loop.png-6cc6b8a0182db27cfe320c1969129213.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/screens/levels/level1/level_1/sprites/options/malky/unnamed (22).png"
-dest_files=["res://.godot/imported/unnamed (22).png-0205ddea3b75ba4f3af7ca34e1e98db8.ctex"]
+source_file="res://scenes/screens/levels/level1/level_1/sprites/situation/mine/mine 1 loop.png"
+dest_files=["res://.godot/imported/mine 1 loop.png-6cc6b8a0182db27cfe320c1969129213.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://swvkt7n7ib4y"
-path="res://.godot/imported/unnamed (27).png-8be50a70c6df86cafe16f1f00b02e239.ctex"
+uid="uid://q4y1ku44cgdd"
+path="res://.godot/imported/toy 1 loop.png-ea8ca873a68a76e4b42d4ee3c162deb1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/screens/levels/level1/level_1/sprites/options/reizy/unnamed (27).png"
-dest_files=["res://.godot/imported/unnamed (27).png-8be50a70c6df86cafe16f1f00b02e239.ctex"]
+source_file="res://scenes/screens/levels/level1/level_1/sprites/situation/toy/toy 1 loop.png"
+dest_files=["res://.godot/imported/toy 1 loop.png-ea8ca873a68a76e4b42d4ee3c162deb1.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c2nd1omno8tpm"
-path="res://.godot/imported/sleep 2.png-2a6c81f7379567334878e6e8865563c6.ctex"
+uid="uid://dtj6lid7ja0xg"
+path="res://.godot/imported/2.png-7cce820b7c2152730a95cb2ec2e44d4c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/screens/levels/level1/level_1/sprites/situation/sleep 2.png"
-dest_files=["res://.godot/imported/sleep 2.png-2a6c81f7379567334878e6e8865563c6.ctex"]
+source_file="res://scenes/screens/levels/level1/level_1/sprites/options/eddy/2.png"
+dest_files=["res://.godot/imported/2.png-7cce820b7c2152730a95cb2ec2e44d4c.ctex"]
 
 [params]
 

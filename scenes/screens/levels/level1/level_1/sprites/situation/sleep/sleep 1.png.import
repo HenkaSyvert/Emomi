@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cnr1om4nfgchc"
-path="res://.godot/imported/unnamed (21).png-01f7e820444c5101a7eedd44eced996a.ctex"
+uid="uid://dca0gtp7wxr8a"
+path="res://.godot/imported/sleep 1.png-193b671793496d5461fadc00f7581551.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/screens/levels/level1/level_1/sprites/options/malky/unnamed (21).png"
-dest_files=["res://.godot/imported/unnamed (21).png-01f7e820444c5101a7eedd44eced996a.ctex"]
+source_file="res://scenes/screens/levels/level1/level_1/sprites/situation/sleep/sleep 1.png"
+dest_files=["res://.godot/imported/sleep 1.png-193b671793496d5461fadc00f7581551.ctex"]
 
 [params]
 

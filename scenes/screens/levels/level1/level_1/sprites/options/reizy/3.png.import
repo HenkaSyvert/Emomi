@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bubois1y122ss"
-path="res://.godot/imported/unnamed (23).png-9536ec1bd3e0d979841c921ebbaaf370.ctex"
+uid="uid://beipxpgc4ejnm"
+path="res://.godot/imported/3.png-5a3794685ab57ded7e32938d5efe8fde.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/screens/levels/level1/level_1/sprites/options/malky/unnamed (23).png"
-dest_files=["res://.godot/imported/unnamed (23).png-9536ec1bd3e0d979841c921ebbaaf370.ctex"]
+source_file="res://scenes/screens/levels/level1/level_1/sprites/options/reizy/3.png"
+dest_files=["res://.godot/imported/3.png-5a3794685ab57ded7e32938d5efe8fde.ctex"]
 
 [params]
 
