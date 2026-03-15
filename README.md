@@ -8,22 +8,6 @@ från claudia
 	- no-audio texture
 
 
-level 1 functionality
-	- popup för sista sublevel
-		you unlocked a reward! and also level 2!
-
-
-level 2
-	like level 1 but mapped in reverse
-	3 makty levels
-		1 corect button with frustated child
-		1 mad child
-		1 sad child
-	repeat for all characters
-	on correct answer, correct text, ditto wrong
-	options buttons loop their 2 textures
-
-
 rewards menu
 	when click image, popup to show full image, and download button
 	home and previous buttons, and sound

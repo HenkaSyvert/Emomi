@@ -2,14 +2,17 @@
 
 [ext_resource type="Texture2D" uid="uid://bkgqfsennxs6h" path="res://scenes/common/sound_button/sound_icon.png" id="1_ogd44"]
 [ext_resource type="Script" uid="uid://dwmvh1bikm4em" path="res://scenes/common/sound_button/sound_button.gd" id="2_0utc6"]
+[ext_resource type="Texture2D" uid="uid://dcmox6510ichp" path="res://scenes/common/sound_button/audio_disabled.png" id="3_ntjvm"]
 
 [node name="SoundButton" type="TextureButton" unique_id=2010444643]
 offset_right = 64.0
 offset_bottom = 64.0
 size_flags_horizontal = 3
-texture_normal = ExtResource("1_ogd44")
+texture_normal = ExtResource("3_ntjvm")
 ignore_texture_size = true
 stretch_mode = 4
 script = ExtResource("2_0utc6")
+muted_texture = ExtResource("3_ntjvm")
+not_muted_texture = ExtResource("1_ogd44")
 
 [connection signal="pressed" from="." to="." method="_on_pressed"]
