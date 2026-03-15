@@ -11,12 +11,6 @@ från claudia
 
 
 level 1 functionality
-	- all option button are grey
-		- animated the 2 grey
-	- when dragged, both orig and preview
-		green circle if correct
-		else red
-
 	- popup för sista sublevel
 		you unlocked a reward! and also level 2!
 
