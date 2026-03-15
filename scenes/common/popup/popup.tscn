@@ -1,15 +1,21 @@
 [gd_scene format=3 uid="uid://do1blbrdmk38b"]
 
-[ext_resource type="Texture2D" uid="uid://b8mqrqssaa6ln" path="res://sprites/star.png" id="1_0fd7b"]
+[ext_resource type="Texture2D" uid="uid://b8mqrqssaa6ln" path="res://sprites/star.png" id="1_cpr3m"]
+[ext_resource type="Script" uid="uid://dn6368aehj8gm" path="res://scenes/common/popup/popup.gd" id="1_rqbcu"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2eskn"]
 bg_color = Color(1, 1, 1, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.2, 0.6039216, 0.78039217, 1)
 corner_radius_top_left = 30
 corner_radius_top_right = 30
 corner_radius_bottom_right = 30
 corner_radius_bottom_left = 30
 
-[node name="PanelContainer" type="PanelContainer" unique_id=1497230596]
+[node name="Popup" type="PanelContainer" unique_id=1497230596]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -24,6 +30,7 @@ grow_vertical = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 theme_override_styles/panel = SubResource("StyleBoxFlat_2eskn")
+script = ExtResource("1_rqbcu")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1091554143]
 layout_mode = 2
@@ -59,7 +66,7 @@ size_flags_horizontal = 3
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-texture = ExtResource("1_0fd7b")
+texture = ExtResource("1_cpr3m")
 
 [node name="Control2" type="Control" parent="VBoxContainer/HBoxContainer" unique_id=969569607]
 layout_mode = 2
@@ -68,6 +75,20 @@ size_flags_horizontal = 3
 [node name="Control" type="Control" parent="VBoxContainer" unique_id=76360763]
 layout_mode = 2
 
-[node name="Button" type="Button" parent="VBoxContainer" unique_id=1871864652]
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer" unique_id=1480872718]
 layout_mode = 2
+
+[node name="Control2" type="Control" parent="VBoxContainer/HBoxContainer2" unique_id=1651110117]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.13
+
+[node name="Button" type="Button" parent="VBoxContainer/HBoxContainer2" unique_id=1871864652]
+layout_mode = 2
+size_flags_horizontal = 3
 text = "POPUP_BUTTON"
+
+[node name="Control" type="Control" parent="VBoxContainer/HBoxContainer2" unique_id=1772336192]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.13

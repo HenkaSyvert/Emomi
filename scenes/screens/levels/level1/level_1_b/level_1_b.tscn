@@ -13,9 +13,9 @@
 [ext_resource type="Script" uid="uid://csd5daqhx6qad" path="res://scenes/common/animated_button/animated_button.gd" id="12_ejvvq"]
 [ext_resource type="Texture2D" uid="uid://swvkt7n7ib4y" path="res://scenes/screens/levels/level1/level_1/sprites/options/reizy/2.png" id="13_pgxyc"]
 [ext_resource type="Texture2D" uid="uid://4xoo0p3yqv4a" path="res://scenes/screens/levels/level1/level_1/sprites/options/malky/1.png" id="14_jd0m7"]
-[ext_resource type="PackedScene" uid="uid://do1blbrdmk38b" path="res://popup.tscn" id="15_tsoch"]
+[ext_resource type="PackedScene" uid="uid://do1blbrdmk38b" path="res://scenes/common/popup/popup.tscn" id="15_tsoch"]
 [ext_resource type="AudioStream" uid="uid://bturhwnadpi3n" path="res://scenes/screens/levels/level1/level_1/cry.wav" id="16_fm02d"]
-[ext_resource type="AudioStream" uid="uid://bthblg3sqamhk" path="res://scenes/screens/levels/level1/level_1/success (2).wav" id="17_wsr43"]
+[ext_resource type="AudioStream" uid="uid://bthblg3sqamhk" path="res://scenes/common/popup/success.wav" id="17_wsr43"]
 [ext_resource type="PackedScene" uid="uid://c7uw6mqp13cm3" path="res://scenes/screens/level_select_menu/level_select_menu.tscn" id="19_y7neo"]
 
 [node name="level1b" type="Control" unique_id=870379453]

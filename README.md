@@ -43,10 +43,6 @@ level 3
 	opts are not animated
 	character reacts to wrong/correct opt
 
-popup
-	kolla om kan minska avstånd mella correcto och andra texten
-	fixa constant size grej
-
 gör tutorial:
 	visar main_anim och att man drar en opt, loop, med dialog ok button
 

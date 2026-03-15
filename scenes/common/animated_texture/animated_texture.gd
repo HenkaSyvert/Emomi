@@ -5,8 +5,6 @@ extends TextureRect
 
 @onready var timer: Timer = $Timer
 
-@onready var popup = preload("res://popup.tscn")
-
 var current_frame: int = 0
 
 
