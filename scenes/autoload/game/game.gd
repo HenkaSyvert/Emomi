@@ -1,7 +1,6 @@
 extends Node2D
 
-var level_1_complete: bool = false
-var level_2_complete: bool = false
+var completed_levels: int = 0
 
 var nr_of_stars: int = 0
 

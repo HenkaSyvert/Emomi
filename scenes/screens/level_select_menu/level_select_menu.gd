@@ -5,8 +5,8 @@ extends PanelContainer
 
 
 func _ready():
-	level2Button.disabled = !Game.level_1_complete
-	level3Button.disabled = !Game.level_2_complete
+	level2Button.disabled = not Game.completed_levels >= 1
+	level3Button.disabled = not Game.completed_levels >= 2
 
 
 func _on_home_button_pressed() -> void:
@@ -30,7 +30,7 @@ func _on_level_1_button_pressed() -> void:
 
 func _on_level_2_button_pressed() -> void:
 	var err: Error = get_tree().change_scene_to_file(
-		"res://scenes/screens/levels/level2/level_2/level_2.tscn"
+		"res://scenes/screens/levels/level2/eddy_dog.tscn"
 	)
 	assert(err == OK)
 
