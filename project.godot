@@ -13,15 +13,13 @@ config_version=5
 config/name="Emömi"
 run/main_scene="uid://hhn1146b88yy"
 config/features=PackedStringArray("4.6", "GL Compatibility")
+run/max_fps=30
+run/low_processor_mode=true
 
 [autoload]
 
 SoundManager="*uid://cf7f7hb6eoy8"
 Game="*uid://dtik6n7bx4pr7"
-
-[display]
-
-window/size/mode=4
 
 [editor_plugins]
 

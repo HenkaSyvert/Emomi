@@ -1,7 +1,6 @@
 [gd_scene format=3 uid="uid://do1blbrdmk38b"]
 
 [ext_resource type="Texture2D" uid="uid://b8mqrqssaa6ln" path="res://sprites/star.png" id="1_0fd7b"]
-[ext_resource type="FontFile" uid="uid://dj4s3iaoosdl7" path="res://ui/fonts/Shortcake.otf" id="2_6nc67"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2eskn"]
 bg_color = Color(1, 1, 1, 1)
@@ -25,7 +24,6 @@ size_flags_vertical = 6
 theme_override_colors/font_color = Color(0.2, 0.6039216, 0.78039217, 1)
 theme_override_constants/line_spacing = -15
 theme_override_constants/paragraph_spacing = 0
-theme_override_fonts/font = ExtResource("2_6nc67")
 theme_override_font_sizes/font_size = 69
 text = "POPUP1"
 horizontal_alignment = 1

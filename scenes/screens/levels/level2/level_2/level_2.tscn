@@ -10,7 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://doy86nxmkhl7u" path="res://scenes/screens/levels/level2/level_2/characters/Makty 1.png" id="8_fn3ci"]
 [ext_resource type="Texture2D" uid="uid://daun1aq8tyib0" path="res://scenes/screens/levels/level2/level_2/characters/Makty 2.png" id="13_6xejg"]
 [ext_resource type="Texture2D" uid="uid://ct3pllgpgtsix" path="res://scenes/screens/levels/level1/level_1/sprites/options/eddy/3.png" id="14_uhs3q"]
-[ext_resource type="Script" uid="uid://csd5daqhx6qad" path="res://scenes/screens/levels/level1/level_1/option_1.gd" id="15_h30nl"]
+[ext_resource type="Script" uid="uid://csd5daqhx6qad" path="res://scenes/common/animated_button/animated_button.gd" id="15_h30nl"]
 [ext_resource type="Texture2D" uid="uid://dqgyuyuhqssjk" path="res://scenes/screens/levels/level1/level_1/sprites/options/reizy/1.png" id="16_8cb76"]
 [ext_resource type="Texture2D" uid="uid://cnr1om4nfgchc" path="res://scenes/screens/levels/level1/level_1/sprites/options/malky/0.png" id="17_fd7va"]
 [ext_resource type="PackedScene" uid="uid://do1blbrdmk38b" path="res://popup.tscn" id="18_qmkny"]

@@ -10,7 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://ewrfsbsf48oy" path="res://scenes/screens/levels/level1/level_1/sprites/situation/drawing/DRAWING 1 LOOP.png" id="7_402v3"]
 [ext_resource type="Texture2D" uid="uid://8uimh5y5bime" path="res://scenes/screens/levels/level1/level_1/sprites/situation/drawing/DRAWING 2 LOOP.png" id="10_1jlmc"]
 [ext_resource type="Texture2D" uid="uid://djal12vj1frgp" path="res://scenes/screens/levels/level1/level_1/sprites/options/eddy/1.png" id="11_xv2i0"]
-[ext_resource type="Script" uid="uid://csd5daqhx6qad" path="res://scenes/screens/levels/level1/level_1/option_1.gd" id="12_ejvvq"]
+[ext_resource type="Script" uid="uid://csd5daqhx6qad" path="res://scenes/common/animated_button/animated_button.gd" id="12_ejvvq"]
 [ext_resource type="Texture2D" uid="uid://swvkt7n7ib4y" path="res://scenes/screens/levels/level1/level_1/sprites/options/reizy/2.png" id="13_pgxyc"]
 [ext_resource type="Texture2D" uid="uid://4xoo0p3yqv4a" path="res://scenes/screens/levels/level1/level_1/sprites/options/malky/1.png" id="14_jd0m7"]
 [ext_resource type="PackedScene" uid="uid://do1blbrdmk38b" path="res://popup.tscn" id="15_tsoch"]
