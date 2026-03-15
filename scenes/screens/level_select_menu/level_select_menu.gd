@@ -25,7 +25,7 @@ func _on_return_button_pressed() -> void:
 
 func _on_level_1_button_pressed() -> void:
 	var err: Error = get_tree().change_scene_to_file(
-		"res://scenes/screens/levels/level1/level_1/level_1.tscn"
+		"res://scenes/screens/levels/level1/situations/dog/level1dog.tscn"
 	)
 	assert(err == OK)
 
