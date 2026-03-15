@@ -1,0 +1,184 @@
+[gd_scene format=3 uid="uid://cgbq1ngys8pjs"]
+
+[ext_resource type="Script" uid="uid://c251iblecit8b" path="res://scenes/screens/levels/level_template/level.gd" id="1_p6m0u"]
+[ext_resource type="Texture2D" uid="uid://c3fpvwdswa80c" path="res://scenes/screens/sprites/home.png" id="2_xom8e"]
+[ext_resource type="Texture2D" uid="uid://dk78fcithaeh7" path="res://scenes/screens/sprites/arrow.png" id="3_6mnnc"]
+[ext_resource type="PackedScene" uid="uid://ctoicx2ven6ek" path="res://scenes/common/star_counter/star_counter.tscn" id="4_ycx83"]
+[ext_resource type="PackedScene" uid="uid://bvvb57ga0cd1i" path="res://scenes/common/sound_button/sound_button.tscn" id="5_x54pj"]
+[ext_resource type="PackedScene" uid="uid://djgs5oxgmxh5x" path="res://scenes/common/animated_texture/animated_texture.tscn" id="6_nryb6"]
+[ext_resource type="Texture2D" uid="uid://bxr3o81w5rgtx" path="res://scenes/screens/levels/level2/sprites/eddy/Eddy 1.png" id="7_ymo06"]
+[ext_resource type="Texture2D" uid="uid://bwgb3ecse23fx" path="res://scenes/screens/levels/level2/sprites/eddy/Eddy 2.png" id="8_aa01o"]
+[ext_resource type="PackedScene" uid="uid://ixajx0dg6qmk" path="res://scenes/common/animated_button/animated_button.tscn" id="9_umc8g"]
+[ext_resource type="Texture2D" uid="uid://q4y1ku44cgdd" path="res://scenes/screens/levels/sprites/situations/toy/toy 1 loop.png" id="10_j5y5t"]
+[ext_resource type="Texture2D" uid="uid://1osqbxscikn8" path="res://scenes/screens/levels/sprites/situations/toy/toy 2 loop.png" id="11_8axd5"]
+[ext_resource type="Texture2D" uid="uid://cmtc6bsgmxvwv" path="res://scenes/screens/levels/sprites/situations/mine/mine 1 loop.png" id="12_m4eii"]
+[ext_resource type="Texture2D" uid="uid://1xcmn1cf81wa" path="res://scenes/screens/levels/sprites/situations/mine/mine 2 loop.png" id="13_wmcau"]
+[ext_resource type="Texture2D" uid="uid://dn808kmh8nh7n" path="res://scenes/screens/levels/sprites/situations/math/math 1 loop.png" id="14_wgyf0"]
+[ext_resource type="PackedScene" uid="uid://do1blbrdmk38b" path="res://scenes/common/popup/popup.tscn" id="15_6morg"]
+[ext_resource type="PackedScene" uid="uid://bshttsfnad4bw" path="res://scenes/screens/levels/level2/makty_math.tscn" id="16_xom8e"]
+
+[node name="EddyToy" type="Control" unique_id=451225956]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Level1Template" type="PanelContainer" parent="." unique_id=1673213105]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_p6m0u")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Level1Template" unique_id=1696587870]
+layout_mode = 2
+
+[node name="Left" type="HBoxContainer" parent="Level1Template/HBoxContainer" unique_id=139529702]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 20.0
+
+[node name="Control" type="Control" parent="Level1Template/HBoxContainer/Left" unique_id=2103026593]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.14
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="Level1Template/HBoxContainer/Left" unique_id=1507883350]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Control2" type="Control" parent="Level1Template/HBoxContainer/Left/VBoxContainer2" unique_id=539734742]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.15
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Level1Template/HBoxContainer/Left/VBoxContainer2" unique_id=370999847]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Level1Template/HBoxContainer/Left/VBoxContainer2/VBoxContainer" unique_id=1986931501]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="HomeButton" type="TextureButton" parent="Level1Template/HBoxContainer/Left/VBoxContainer2/VBoxContainer/HBoxContainer" unique_id=805304687]
+layout_mode = 2
+size_flags_horizontal = 3
+texture_normal = ExtResource("2_xom8e")
+ignore_texture_size = true
+stretch_mode = 4
+
+[node name="ReturnButton" type="TextureButton" parent="Level1Template/HBoxContainer/Left/VBoxContainer2/VBoxContainer/HBoxContainer" unique_id=1025173447]
+layout_mode = 2
+size_flags_horizontal = 3
+texture_normal = ExtResource("3_6mnnc")
+ignore_texture_size = true
+stretch_mode = 4
+
+[node name="StarCounter" parent="Level1Template/HBoxContainer/Left/VBoxContainer2/VBoxContainer" unique_id=401513187 instance=ExtResource("4_ycx83")]
+layout_mode = 2
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="Level1Template/HBoxContainer/Left/VBoxContainer2/VBoxContainer" unique_id=1502947159]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="SoundButton" parent="Level1Template/HBoxContainer/Left/VBoxContainer2/VBoxContainer/HBoxContainer2" unique_id=2010444643 instance=ExtResource("5_x54pj")]
+layout_mode = 2
+
+[node name="Control" type="Control" parent="Level1Template/HBoxContainer/Left/VBoxContainer2/VBoxContainer/HBoxContainer2" unique_id=2032767995]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Control" type="Control" parent="Level1Template/HBoxContainer/Left/VBoxContainer2" unique_id=1270183869]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.65
+
+[node name="Middle" type="VBoxContainer" parent="Level1Template/HBoxContainer" unique_id=581057291]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 60.0
+
+[node name="Control" type="Control" parent="Level1Template/HBoxContainer/Middle" unique_id=646977108]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.1
+
+[node name="Label" type="Label" parent="Level1Template/HBoxContainer/Middle" unique_id=796075809]
+layout_mode = 2
+text = "LEVEL_1_PROMPT"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Level1Template/HBoxContainer/Middle" unique_id=727213813]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Control" type="Control" parent="Level1Template/HBoxContainer/Middle/HBoxContainer" unique_id=1910442018]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 6.04
+
+[node name="AnimatedTexture" parent="Level1Template/HBoxContainer/Middle/HBoxContainer" unique_id=900728642 node_paths=PackedStringArray("popup") instance=ExtResource("6_nryb6")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 60.0
+texture = ExtResource("7_ymo06")
+stretch_mode = 4
+frames = Array[Texture2D]([ExtResource("7_ymo06"), ExtResource("8_aa01o")])
+popup = NodePath("../../../../Popup")
+
+[node name="Control2" type="Control" parent="Level1Template/HBoxContainer/Middle" unique_id=1316807428]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.05
+
+[node name="Right" type="VBoxContainer" parent="Level1Template/HBoxContainer" unique_id=9883621]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 22.05
+
+[node name="Opt1" parent="Level1Template/HBoxContainer/Right" unique_id=1779106198 instance=ExtResource("9_umc8g")]
+layout_mode = 2
+texture_normal = ExtResource("10_j5y5t")
+frame_correct = ExtResource("10_j5y5t")
+frame_wrong = ExtResource("11_8axd5")
+frames = Array[Texture2D]([ExtResource("10_j5y5t"), ExtResource("11_8axd5")])
+
+[node name="Opt2" parent="Level1Template/HBoxContainer/Right" unique_id=1604490761 instance=ExtResource("9_umc8g")]
+layout_mode = 2
+texture_normal = ExtResource("12_m4eii")
+is_correct = false
+frame_correct = ExtResource("12_m4eii")
+frame_wrong = ExtResource("13_wmcau")
+frames = Array[Texture2D]([ExtResource("12_m4eii"), ExtResource("13_wmcau")])
+
+[node name="Opt3" parent="Level1Template/HBoxContainer/Right" unique_id=216645887 instance=ExtResource("9_umc8g")]
+layout_mode = 2
+texture_normal = ExtResource("14_wgyf0")
+is_correct = false
+frame_correct = ExtResource("14_wgyf0")
+frame_wrong = ExtResource("14_wgyf0")
+frames = Array[Texture2D]([ExtResource("14_wgyf0")])
+
+[node name="Control" type="Control" parent="Level1Template/HBoxContainer/Right" unique_id=1585930967]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.14
+
+[node name="Control" type="Control" parent="Level1Template/HBoxContainer" unique_id=913804416]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Popup" parent="Level1Template" unique_id=1497230596 instance=ExtResource("15_6morg")]
+visible = false
+layout_mode = 2
+next_scene = ExtResource("16_xom8e")
+
+[connection signal="pressed" from="Level1Template/HBoxContainer/Left/VBoxContainer2/VBoxContainer/HBoxContainer/HomeButton" to="Level1Template" method="_on_home_button_pressed"]
+[connection signal="pressed" from="Level1Template/HBoxContainer/Left/VBoxContainer2/VBoxContainer/HBoxContainer/ReturnButton" to="Level1Template" method="_on_return_button_pressed"]

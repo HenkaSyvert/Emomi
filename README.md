@@ -5,8 +5,7 @@ need to find sounds for when eddy/makty/reizy gets angry/calm
 
 
 från claudia
-	- pic med correct !correcto! grej
-	- no audio texture
+	- no-audio texture
 	- 2nd math situation frame?
 
 
