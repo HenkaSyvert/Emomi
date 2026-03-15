@@ -4,21 +4,13 @@
 
 Todo:
 	- add sound effects
-	- fix generate button based on theme
-
-
-needed gfx
-	muted audio button icon
 
 
 
-	-fixa locked levels i level_select
-	-fixa i level att flagga är under translate knapp, med layout
-		hus  pil
-		trans
-		flag
-		sound
-	
+från claudia
+	- pic med correct !correcto! grej
+	- no audio texture
+
 
 
 level 1 functionality
@@ -77,6 +69,6 @@ gör tutorial:
 
 
 
-från claudia
-	- pic med correct !correcto! grej
-	- no audio texture
+byt front från shortcake, kolla svesnak funkar
+fixa popup inte ska va fullscreeen
+kolla export t apple store

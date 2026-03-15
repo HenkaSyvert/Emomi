@@ -1,5 +1,13 @@
 extends PanelContainer
 
+@onready var level2Button: TextureButton = $VBoxContainer/Bottom/HBoxContainer2/Level2Button
+@onready var level3Button: TextureButton = $VBoxContainer/Bottom/HBoxContainer2/Level3Button
+
+
+func _ready():
+	level2Button.disabled = !Game.level_1_complete
+	level3Button.disabled = !Game.level_2_complete
+
 
 func _on_home_button_pressed() -> void:
 	var err: Error = get_tree().change_scene_to_file(
