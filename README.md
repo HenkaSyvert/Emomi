@@ -1,10 +1,7 @@
 # Emomi
 
 
-
-Todo:
-	- add sound effects
-
+need to find sounds for when eddy/makty/reizy gets angry/calm
 
 
 från claudia
@@ -52,14 +49,6 @@ level 3
 	opts are not animated
 	character reacts to wrong/correct opt
 
-
-need to find sounds for when eddy/makty/reizy gets angry/calm
-
-
-
-if exit sublevel before entire level complete, level select button starts from beginning
-
-
 popup
 	kolla om kan minska avstånd mella correcto och andra texten
 	fixa constant size grej
@@ -67,8 +56,6 @@ popup
 gör tutorial:
 	visar main_anim och att man drar en opt, loop, med dialog ok button
 
-
-
-byt front från shortcake, kolla svesnak funkar
 fixa popup inte ska va fullscreeen
 kolla export t apple store
+undersök om finns default portrait v landscape setting
