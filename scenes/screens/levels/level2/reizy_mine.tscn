@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://djgs5oxgmxh5x" path="res://scenes/common/animated_texture/animated_texture.tscn" id="6_6pdtb"]
 [ext_resource type="Texture2D" uid="uid://d3e66kbf7ncd3" path="res://scenes/screens/levels/level2/sprites/reizy/Reizy 1.png" id="7_swv12"]
 [ext_resource type="Texture2D" uid="uid://boy8xuvsmqpjd" path="res://scenes/screens/levels/level2/sprites/reizy/Reizy 2.png" id="8_apsug"]
+[ext_resource type="Texture2D" uid="uid://df7520n7wkemv" path="res://scenes/screens/levels/level2/sprites/reizy/Reizy wrong.png" id="9_6r7qk"]
 [ext_resource type="PackedScene" uid="uid://ixajx0dg6qmk" path="res://scenes/common/animated_button/animated_button.tscn" id="9_a6o27"]
 [ext_resource type="Texture2D" uid="uid://q4y1ku44cgdd" path="res://scenes/screens/levels/sprites/situations/toy/toy 1 loop.png" id="10_c2i4l"]
 [ext_resource type="Texture2D" uid="uid://1osqbxscikn8" path="res://scenes/screens/levels/sprites/situations/toy/toy 2 loop.png" id="11_y1sxn"]
@@ -132,6 +133,7 @@ texture = ExtResource("7_swv12")
 stretch_mode = 4
 frames = Array[Texture2D]([ExtResource("7_swv12"), ExtResource("8_apsug")])
 popup = NodePath("../../../../Popup")
+wrong_frame = ExtResource("9_6r7qk")
 
 [node name="Control2" type="Control" parent="Level1Template/HBoxContainer/Middle" unique_id=797408884]
 layout_mode = 2

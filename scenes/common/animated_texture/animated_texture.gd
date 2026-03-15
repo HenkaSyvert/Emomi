@@ -10,6 +10,8 @@ extends TextureRect
 @export var wrongSound: AudioStream
 @export var popup: PanelContainer
 
+@export var wrong_frame: Texture2D = null
+
 var current_frame: int = 0
 
 
@@ -38,5 +40,9 @@ func _drop_data(_at_position: Vector2, data: Variant) -> void:
 		if not SoundManager.is_muted:
 			aspCorrect.play()
 	else:
+		if wrong_frame:
+			texture = wrong_frame
+		timer.stop()
+		timer.start()
 		if not SoundManager.is_muted:
 			aspWrong.play()

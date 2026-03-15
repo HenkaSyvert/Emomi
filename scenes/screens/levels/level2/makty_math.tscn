@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://djgs5oxgmxh5x" path="res://scenes/common/animated_texture/animated_texture.tscn" id="6_m11st"]
 [ext_resource type="Texture2D" uid="uid://doy86nxmkhl7u" path="res://scenes/screens/levels/level2/sprites/makty/Makty 1.png" id="7_vvbmb"]
 [ext_resource type="Texture2D" uid="uid://daun1aq8tyib0" path="res://scenes/screens/levels/level2/sprites/makty/Makty 2.png" id="8_0ceop"]
+[ext_resource type="Texture2D" uid="uid://dfv7dueefkb6q" path="res://scenes/screens/levels/level2/sprites/makty/Makty wrong.png" id="9_1ijhf"]
 [ext_resource type="PackedScene" uid="uid://ixajx0dg6qmk" path="res://scenes/common/animated_button/animated_button.tscn" id="9_7oifl"]
 [ext_resource type="Texture2D" uid="uid://q4y1ku44cgdd" path="res://scenes/screens/levels/sprites/situations/toy/toy 1 loop.png" id="10_6tdnc"]
 [ext_resource type="Texture2D" uid="uid://1osqbxscikn8" path="res://scenes/screens/levels/sprites/situations/toy/toy 2 loop.png" id="11_rfqhj"]
@@ -132,6 +133,7 @@ texture = ExtResource("7_vvbmb")
 stretch_mode = 4
 frames = Array[Texture2D]([ExtResource("7_vvbmb"), ExtResource("8_0ceop")])
 popup = NodePath("../../../../Popup")
+wrong_frame = ExtResource("9_1ijhf")
 
 [node name="Control2" type="Control" parent="Level1Template/HBoxContainer/Middle" unique_id=2009627151]
 layout_mode = 2
