@@ -146,6 +146,13 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 22.05
 
+[node name="Opt3" parent="Level1Template/HBoxContainer/Right" unique_id=272158182 instance=ExtResource("9_dif51")]
+layout_mode = 2
+texture_normal = ExtResource("14_kbolk")
+frame_correct = ExtResource("14_kbolk")
+frame_wrong = ExtResource("15_6ix7a")
+frames = Array[Texture2D]([ExtResource("14_kbolk"), ExtResource("15_6ix7a")])
+
 [node name="Opt1" parent="Level1Template/HBoxContainer/Right" unique_id=1779106198 instance=ExtResource("9_dif51")]
 layout_mode = 2
 texture_normal = ExtResource("10_bribn")
@@ -161,13 +168,6 @@ is_correct = false
 frame_correct = ExtResource("12_pa5co")
 frame_wrong = ExtResource("13_k7gbo")
 frames = Array[Texture2D]([ExtResource("12_pa5co"), ExtResource("13_k7gbo")])
-
-[node name="Opt3" parent="Level1Template/HBoxContainer/Right" unique_id=272158182 instance=ExtResource("9_dif51")]
-layout_mode = 2
-texture_normal = ExtResource("14_kbolk")
-frame_correct = ExtResource("14_kbolk")
-frame_wrong = ExtResource("15_6ix7a")
-frames = Array[Texture2D]([ExtResource("14_kbolk"), ExtResource("15_6ix7a")])
 
 [node name="Control" type="Control" parent="Level1Template/HBoxContainer/Right" unique_id=2010875344]
 layout_mode = 2

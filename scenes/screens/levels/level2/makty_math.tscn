@@ -12,11 +12,12 @@
 [ext_resource type="PackedScene" uid="uid://ixajx0dg6qmk" path="res://scenes/common/animated_button/animated_button.tscn" id="9_7oifl"]
 [ext_resource type="Texture2D" uid="uid://q4y1ku44cgdd" path="res://scenes/screens/levels/sprites/situations/toy/toy 1 loop.png" id="10_6tdnc"]
 [ext_resource type="Texture2D" uid="uid://1osqbxscikn8" path="res://scenes/screens/levels/sprites/situations/toy/toy 2 loop.png" id="11_rfqhj"]
-[ext_resource type="Texture2D" uid="uid://cmtc6bsgmxvwv" path="res://scenes/screens/levels/sprites/situations/mine/mine 1 loop.png" id="12_ppjod"]
-[ext_resource type="Texture2D" uid="uid://1xcmn1cf81wa" path="res://scenes/screens/levels/sprites/situations/mine/mine 2 loop.png" id="13_0rdtn"]
+[ext_resource type="Texture2D" uid="uid://bx0ja2icw23jv" path="res://scenes/screens/levels/sprites/situations/dog/Dog 1 Loop.png" id="13_w5kv4"]
 [ext_resource type="Texture2D" uid="uid://dn808kmh8nh7n" path="res://scenes/screens/levels/sprites/situations/math/math 1 loop.png" id="14_gcfe3"]
+[ext_resource type="Texture2D" uid="uid://btgcuj518v3x1" path="res://scenes/screens/levels/sprites/situations/dog/Dog 2 Loop.png" id="14_rce7c"]
 [ext_resource type="PackedScene" uid="uid://do1blbrdmk38b" path="res://scenes/common/popup/popup.tscn" id="15_v2cw0"]
 [ext_resource type="PackedScene" uid="uid://c3t3d1pwq2x7o" path="res://scenes/screens/levels/level2/reizy_sleep.tscn" id="16_du0sv"]
+[ext_resource type="Texture2D" uid="uid://bv3q8whvwob41" path="res://scenes/screens/levels/sprites/situations/math/math 2 loop.png" id="16_w5kv4"]
 
 [node name="MaktyMath" type="Control" unique_id=2110258413]
 layout_mode = 3
@@ -155,18 +156,18 @@ frames = Array[Texture2D]([ExtResource("10_6tdnc"), ExtResource("11_rfqhj")])
 
 [node name="Opt2" parent="Level1Template/HBoxContainer/Right" unique_id=913546970 instance=ExtResource("9_7oifl")]
 layout_mode = 2
-texture_normal = ExtResource("12_ppjod")
+texture_normal = ExtResource("13_w5kv4")
 is_correct = false
-frame_correct = ExtResource("12_ppjod")
-frame_wrong = ExtResource("13_0rdtn")
-frames = Array[Texture2D]([ExtResource("12_ppjod"), ExtResource("13_0rdtn")])
+frame_correct = ExtResource("13_w5kv4")
+frame_wrong = ExtResource("14_rce7c")
+frames = Array[Texture2D]([ExtResource("13_w5kv4"), ExtResource("14_rce7c")])
 
 [node name="Opt3" parent="Level1Template/HBoxContainer/Right" unique_id=28631258 instance=ExtResource("9_7oifl")]
 layout_mode = 2
 texture_normal = ExtResource("14_gcfe3")
 frame_correct = ExtResource("14_gcfe3")
-frame_wrong = ExtResource("14_gcfe3")
-frames = Array[Texture2D]([ExtResource("14_gcfe3")])
+frame_wrong = ExtResource("16_w5kv4")
+frames = Array[Texture2D]([ExtResource("16_w5kv4")])
 
 [node name="Control" type="Control" parent="Level1Template/HBoxContainer/Right" unique_id=884465508]
 layout_mode = 2

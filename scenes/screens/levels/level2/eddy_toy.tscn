@@ -14,8 +14,9 @@
 [ext_resource type="Texture2D" uid="uid://1osqbxscikn8" path="res://scenes/screens/levels/sprites/situations/toy/toy 2 loop.png" id="11_8axd5"]
 [ext_resource type="Texture2D" uid="uid://cmtc6bsgmxvwv" path="res://scenes/screens/levels/sprites/situations/mine/mine 1 loop.png" id="12_m4eii"]
 [ext_resource type="Texture2D" uid="uid://1xcmn1cf81wa" path="res://scenes/screens/levels/sprites/situations/mine/mine 2 loop.png" id="13_wmcau"]
-[ext_resource type="Texture2D" uid="uid://dn808kmh8nh7n" path="res://scenes/screens/levels/sprites/situations/math/math 1 loop.png" id="14_wgyf0"]
 [ext_resource type="PackedScene" uid="uid://do1blbrdmk38b" path="res://scenes/common/popup/popup.tscn" id="15_6morg"]
+[ext_resource type="Texture2D" uid="uid://dca0gtp7wxr8a" path="res://scenes/screens/levels/sprites/situations/sleep/sleep 1.png" id="15_ycx83"]
+[ext_resource type="Texture2D" uid="uid://c2nd1omno8tpm" path="res://scenes/screens/levels/sprites/situations/sleep/sleep 2.png" id="16_x54pj"]
 [ext_resource type="PackedScene" uid="uid://bshttsfnad4bw" path="res://scenes/screens/levels/level2/makty_math.tscn" id="16_xom8e"]
 
 [node name="EddyToy" type="Control" unique_id=451225956]
@@ -145,13 +146,6 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 22.05
 
-[node name="Opt1" parent="Level1Template/HBoxContainer/Right" unique_id=1779106198 instance=ExtResource("9_umc8g")]
-layout_mode = 2
-texture_normal = ExtResource("10_j5y5t")
-frame_correct = ExtResource("10_j5y5t")
-frame_wrong = ExtResource("11_8axd5")
-frames = Array[Texture2D]([ExtResource("10_j5y5t"), ExtResource("11_8axd5")])
-
 [node name="Opt2" parent="Level1Template/HBoxContainer/Right" unique_id=1604490761 instance=ExtResource("9_umc8g")]
 layout_mode = 2
 texture_normal = ExtResource("12_m4eii")
@@ -160,13 +154,20 @@ frame_correct = ExtResource("12_m4eii")
 frame_wrong = ExtResource("13_wmcau")
 frames = Array[Texture2D]([ExtResource("12_m4eii"), ExtResource("13_wmcau")])
 
+[node name="Opt1" parent="Level1Template/HBoxContainer/Right" unique_id=1779106198 instance=ExtResource("9_umc8g")]
+layout_mode = 2
+texture_normal = ExtResource("10_j5y5t")
+frame_correct = ExtResource("10_j5y5t")
+frame_wrong = ExtResource("11_8axd5")
+frames = Array[Texture2D]([ExtResource("10_j5y5t"), ExtResource("11_8axd5")])
+
 [node name="Opt3" parent="Level1Template/HBoxContainer/Right" unique_id=216645887 instance=ExtResource("9_umc8g")]
 layout_mode = 2
-texture_normal = ExtResource("14_wgyf0")
+texture_normal = ExtResource("15_ycx83")
 is_correct = false
-frame_correct = ExtResource("14_wgyf0")
-frame_wrong = ExtResource("14_wgyf0")
-frames = Array[Texture2D]([ExtResource("14_wgyf0")])
+frame_correct = ExtResource("15_ycx83")
+frame_wrong = ExtResource("16_x54pj")
+frames = Array[Texture2D]([ExtResource("15_ycx83"), ExtResource("16_x54pj")])
 
 [node name="Control" type="Control" parent="Level1Template/HBoxContainer/Right" unique_id=1585930967]
 layout_mode = 2
