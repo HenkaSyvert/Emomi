@@ -14,9 +14,6 @@ level 1 functionality
 	- popup för sista sublevel
 		you unlocked a reward! and also level 2!
 
-level 1
-	6 sublevels in total, for each situation
-
 
 level 2
 	like level 1 but mapped in reverse

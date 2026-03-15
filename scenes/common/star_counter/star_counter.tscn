@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://ctoicx2ven6ek"]
 
-[ext_resource type="Texture2D" uid="uid://b8mqrqssaa6ln" path="res://sprites/star.png" id="1_eotqn"]
+[ext_resource type="Texture2D" uid="uid://b8mqrqssaa6ln" path="res://scenes/common/star_counter/star.png" id="1_eotqn"]
 [ext_resource type="FontFile" uid="uid://c0mwxbonyok3b" path="res://ui/fonts/Shortcake.ttf" id="2_036hx"]
 [ext_resource type="Script" uid="uid://d31jhidjl36fc" path="res://scenes/common/star_counter/star_counter.gd" id="3_036hx"]
 
