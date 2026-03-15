@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bx0ja2icw23jv"
-path="res://.godot/imported/Dog 1 Loop.png-51490fee646630dcbec9a035089e9317.ctex"
+uid="uid://8uimh5y5bime"
+path="res://.godot/imported/DRAWING 2 LOOP.png-96accda6b2e9c8b1f952d89176b03f20.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/situations/dog/Dog 1 Loop.png"
-dest_files=["res://.godot/imported/Dog 1 Loop.png-51490fee646630dcbec9a035089e9317.ctex"]
+source_file="res://scenes/screens/levels/sprites/situations/drawing/DRAWING 2 LOOP.png"
+dest_files=["res://.godot/imported/DRAWING 2 LOOP.png-96accda6b2e9c8b1f952d89176b03f20.ctex"]
 
 [params]
 

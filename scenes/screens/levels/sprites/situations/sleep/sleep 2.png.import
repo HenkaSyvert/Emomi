@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://1xcmn1cf81wa"
-path="res://.godot/imported/mine 2 loop.png-faa3097b251fe8a201c031a7ff3f407b.ctex"
+uid="uid://c2nd1omno8tpm"
+path="res://.godot/imported/sleep 2.png-2f4aaf5fd2675b7f5f7747a3da8da2f8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/situations/mine/mine 2 loop.png"
-dest_files=["res://.godot/imported/mine 2 loop.png-faa3097b251fe8a201c031a7ff3f407b.ctex"]
+source_file="res://scenes/screens/levels/sprites/situations/sleep/sleep 2.png"
+dest_files=["res://.godot/imported/sleep 2.png-2f4aaf5fd2675b7f5f7747a3da8da2f8.ctex"]
 
 [params]
 

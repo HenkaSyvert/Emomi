@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dn808kmh8nh7n"
-path="res://.godot/imported/math 1 loop.png-a5d0ae07d2eb32e2c0741906885fe080.ctex"
+uid="uid://dca0gtp7wxr8a"
+path="res://.godot/imported/sleep 1.png-ff71224878a85bc4b383d3095a826ed5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/situations/math/math 1 loop.png"
-dest_files=["res://.godot/imported/math 1 loop.png-a5d0ae07d2eb32e2c0741906885fe080.ctex"]
+source_file="res://scenes/screens/levels/sprites/situations/sleep/sleep 1.png"
+dest_files=["res://.godot/imported/sleep 1.png-ff71224878a85bc4b383d3095a826ed5.ctex"]
 
 [params]
 

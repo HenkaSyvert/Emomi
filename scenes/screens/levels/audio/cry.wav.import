@@ -2,13 +2,13 @@
 
 importer="wav"
 type="AudioStreamWAV"
-uid="uid://bthblg3sqamhk"
-path="res://.godot/imported/success.wav-80e4dbca3d372c8337630445ac247f25.sample"
+uid="uid://bturhwnadpi3n"
+path="res://.godot/imported/cry.wav-c7a822bb996fde4ca999d1c4f6fdd626.sample"
 
 [deps]
 
-source_file="res://audio/success.wav"
-dest_files=["res://.godot/imported/success.wav-80e4dbca3d372c8337630445ac247f25.sample"]
+source_file="res://scenes/screens/levels/audio/cry.wav"
+dest_files=["res://.godot/imported/cry.wav-c7a822bb996fde4ca999d1c4f6fdd626.sample"]
 
 [params]
 

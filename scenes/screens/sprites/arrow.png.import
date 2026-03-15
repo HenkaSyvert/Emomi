@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://q4y1ku44cgdd"
-path="res://.godot/imported/toy 1 loop.png-a8e62bc7f2834b58ed810fb4ad7cefbb.ctex"
+uid="uid://dk78fcithaeh7"
+path="res://.godot/imported/arrow.png-22ab4e8cdaab0bedd1390be651940b03.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/situations/toy/toy 1 loop.png"
-dest_files=["res://.godot/imported/toy 1 loop.png-a8e62bc7f2834b58ed810fb4ad7cefbb.ctex"]
+source_file="res://scenes/screens/sprites/arrow.png"
+dest_files=["res://.godot/imported/arrow.png-22ab4e8cdaab0bedd1390be651940b03.ctex"]
 
 [params]
 

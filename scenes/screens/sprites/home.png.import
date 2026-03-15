@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://8uimh5y5bime"
-path="res://.godot/imported/DRAWING 2 LOOP.png-5759ad2a41cdf13c55a3a235e2447384.ctex"
+uid="uid://c3fpvwdswa80c"
+path="res://.godot/imported/home.png-493fc660bfb3fd1a1cf532a25ba3af69.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/situations/drawing/DRAWING 2 LOOP.png"
-dest_files=["res://.godot/imported/DRAWING 2 LOOP.png-5759ad2a41cdf13c55a3a235e2447384.ctex"]
+source_file="res://scenes/screens/sprites/home.png"
+dest_files=["res://.godot/imported/home.png-493fc660bfb3fd1a1cf532a25ba3af69.ctex"]
 
 [params]
 

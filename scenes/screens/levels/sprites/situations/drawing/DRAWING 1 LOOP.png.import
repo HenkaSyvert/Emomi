@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cmtc6bsgmxvwv"
-path="res://.godot/imported/mine 1 loop.png-38e9ad6e9aa5a356661431f9c21222e7.ctex"
+uid="uid://ewrfsbsf48oy"
+path="res://.godot/imported/DRAWING 1 LOOP.png-7fd4b43fb4ac0a9146248541e2b8fc43.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/situations/mine/mine 1 loop.png"
-dest_files=["res://.godot/imported/mine 1 loop.png-38e9ad6e9aa5a356661431f9c21222e7.ctex"]
+source_file="res://scenes/screens/levels/sprites/situations/drawing/DRAWING 1 LOOP.png"
+dest_files=["res://.godot/imported/DRAWING 1 LOOP.png-7fd4b43fb4ac0a9146248541e2b8fc43.ctex"]
 
 [params]
 

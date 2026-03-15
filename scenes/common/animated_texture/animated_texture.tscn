@@ -1,12 +1,12 @@
 [gd_scene format=3 uid="uid://djgs5oxgmxh5x"]
 
 [ext_resource type="Script" uid="uid://ca2sfit3jh1gy" path="res://scenes/common/animated_texture/animated_texture.gd" id="1_jv1f2"]
-[ext_resource type="Texture2D" uid="uid://bpfwuaf8jqudq" path="res://sprites/logo/logo1.png" id="2_la3g8"]
-[ext_resource type="Texture2D" uid="uid://cgv1dmmki55rb" path="res://sprites/logo/logo2.png" id="3_u37r1"]
-[ext_resource type="Texture2D" uid="uid://dvp6tff322483" path="res://sprites/logo/logo3.png" id="4_a6fin"]
-[ext_resource type="Texture2D" uid="uid://c2ql72ctamjif" path="res://sprites/logo/logo4.png" id="5_7g1u5"]
-[ext_resource type="AudioStream" uid="uid://bthblg3sqamhk" path="res://audio/success.wav" id="6_pkqr8"]
-[ext_resource type="AudioStream" uid="uid://bturhwnadpi3n" path="res://audio/cry.wav" id="7_efrrp"]
+[ext_resource type="Texture2D" uid="uid://bpfwuaf8jqudq" path="res://scenes/screens/sprites/logo/logo1.png" id="2_la3g8"]
+[ext_resource type="Texture2D" uid="uid://cgv1dmmki55rb" path="res://scenes/screens/sprites/logo/logo2.png" id="3_u37r1"]
+[ext_resource type="Texture2D" uid="uid://dvp6tff322483" path="res://scenes/screens/sprites/logo/logo3.png" id="4_a6fin"]
+[ext_resource type="Texture2D" uid="uid://c2ql72ctamjif" path="res://scenes/screens/sprites/logo/logo4.png" id="5_7g1u5"]
+[ext_resource type="AudioStream" uid="uid://bthblg3sqamhk" path="res://scenes/screens/levels/audio/success.wav" id="6_pkqr8"]
+[ext_resource type="AudioStream" uid="uid://bturhwnadpi3n" path="res://scenes/screens/levels/audio/cry.wav" id="7_efrrp"]
 
 [node name="AnimatedTexture" type="TextureRect" unique_id=900728642]
 offset_right = 40.0
