@@ -52,9 +52,11 @@ size_flags_vertical = 3
 [node name="Personality" type="FoldableContainer" parent="HBoxContainer/VBoxContainer/VBoxContainer" unique_id=1439933327]
 layout_mode = 2
 size_flags_vertical = 4
+folded = true
 title = "CHAR_PERSONALITY_TITLE"
 
 [node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/VBoxContainer/Personality" unique_id=1177154701]
+visible = false
 layout_mode = 2
 text = "sdfsdfsdf"
 autowrap_mode = 3
@@ -62,9 +64,11 @@ autowrap_mode = 3
 [node name="Likes" type="FoldableContainer" parent="HBoxContainer/VBoxContainer/VBoxContainer" unique_id=404390832]
 layout_mode = 2
 size_flags_vertical = 4
+folded = true
 title = "CHAR_LIKES_TITLE"
 
 [node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/VBoxContainer/Likes" unique_id=950927519]
+visible = false
 layout_mode = 2
 text = "sdfsdfsdf"
 autowrap_mode = 3
@@ -72,9 +76,11 @@ autowrap_mode = 3
 [node name="Dislikes" type="FoldableContainer" parent="HBoxContainer/VBoxContainer/VBoxContainer" unique_id=1436118165]
 layout_mode = 2
 size_flags_vertical = 4
+folded = true
 title = "CHAR_DISLIKE_TITLE"
 
 [node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/VBoxContainer/Dislikes" unique_id=1479506614]
+visible = false
 layout_mode = 2
 text = "sdfsdfsdf"
 autowrap_mode = 3
@@ -82,9 +88,11 @@ autowrap_mode = 3
 [node name="FavoriteFood" type="FoldableContainer" parent="HBoxContainer/VBoxContainer/VBoxContainer" unique_id=2139136961]
 layout_mode = 2
 size_flags_vertical = 4
+folded = true
 title = "CHAR_FAV_FOOD_TITLE"
 
 [node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/VBoxContainer/FavoriteFood" unique_id=47694969]
+visible = false
 layout_mode = 2
 text = "sdfsdfsdf"
 autowrap_mode = 3
@@ -92,9 +100,11 @@ autowrap_mode = 3
 [node name="UnfavoriteFood" type="FoldableContainer" parent="HBoxContainer/VBoxContainer/VBoxContainer" unique_id=1899309128]
 layout_mode = 2
 size_flags_vertical = 4
+folded = true
 title = "CHAR_BAD_FOOD_TITLE"
 
 [node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/VBoxContainer/UnfavoriteFood" unique_id=1062848363]
+visible = false
 layout_mode = 2
 text = "sdfsdfsdf"
 autowrap_mode = 3
@@ -102,9 +112,11 @@ autowrap_mode = 3
 [node name="Weight" type="FoldableContainer" parent="HBoxContainer/VBoxContainer/VBoxContainer" unique_id=942270112]
 layout_mode = 2
 size_flags_vertical = 4
+folded = true
 title = "CHAR_WEIGHT_TITLE"
 
 [node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/VBoxContainer/Weight" unique_id=210704977]
+visible = false
 layout_mode = 2
 text = "sdfsdfsdf"
 autowrap_mode = 3
@@ -112,9 +124,11 @@ autowrap_mode = 3
 [node name="Texture" type="FoldableContainer" parent="HBoxContainer/VBoxContainer/VBoxContainer" unique_id=134295868]
 layout_mode = 2
 size_flags_vertical = 4
+folded = true
 title = "CHAR_TEXTURE_TITLE"
 
 [node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/VBoxContainer/Texture" unique_id=104988082]
+visible = false
 layout_mode = 2
 text = "sdfsdfsdf"
 autowrap_mode = 3
@@ -143,3 +157,11 @@ text = "CHAR_EDDY_EMOTION"
 layout_mode = 2
 size_flags_vertical = 3
 texture = ExtResource("2_tvv3w")
+
+[connection signal="folding_changed" from="HBoxContainer/VBoxContainer/VBoxContainer/Personality" to="." method="_on_personality_folding_changed"]
+[connection signal="folding_changed" from="HBoxContainer/VBoxContainer/VBoxContainer/Likes" to="." method="_on_likes_folding_changed"]
+[connection signal="folding_changed" from="HBoxContainer/VBoxContainer/VBoxContainer/Dislikes" to="." method="_on_dislikes_folding_changed"]
+[connection signal="folding_changed" from="HBoxContainer/VBoxContainer/VBoxContainer/FavoriteFood" to="." method="_on_favorite_food_folding_changed"]
+[connection signal="folding_changed" from="HBoxContainer/VBoxContainer/VBoxContainer/UnfavoriteFood" to="." method="_on_unfavorite_food_folding_changed"]
+[connection signal="folding_changed" from="HBoxContainer/VBoxContainer/VBoxContainer/Weight" to="." method="_on_weight_folding_changed"]
+[connection signal="folding_changed" from="HBoxContainer/VBoxContainer/VBoxContainer/Texture" to="." method="_on_texture_folding_changed"]

@@ -56,3 +56,73 @@ func _ready() -> void:
 		bad_food.text = tr("CHAR_REIZY_BAD_FOOD_TEXT")
 		weight.text = tr("CHAR_REIZY_WEIGHT_TEXT")
 		texture.text = tr("CHAR_REIZY_TEXTURE_TEXT")
+
+
+var currentTab: FoldableContainer = null
+var prevTab: FoldableContainer = null
+@onready
+var personality_tab: FoldableContainer = $HBoxContainer/VBoxContainer/VBoxContainer/Personality
+@onready var likes_tab: FoldableContainer = $HBoxContainer/VBoxContainer/VBoxContainer/Likes
+@onready var dislikes_tab: FoldableContainer = $HBoxContainer/VBoxContainer/VBoxContainer/Dislikes
+@onready
+var fav_food_tab: FoldableContainer = $HBoxContainer/VBoxContainer/VBoxContainer/FavoriteFood
+@onready
+var bad_food_tab: FoldableContainer = $HBoxContainer/VBoxContainer/VBoxContainer/UnfavoriteFood
+@onready var weight_tab: FoldableContainer = $HBoxContainer/VBoxContainer/VBoxContainer/Weight
+@onready var texture_tab: FoldableContainer = $HBoxContainer/VBoxContainer/VBoxContainer/Texture
+
+
+func _on_personality_folding_changed(is_folded: bool) -> void:
+	prevTab = currentTab
+	if not is_folded:
+		currentTab = personality_tab
+	if prevTab:
+		prevTab.folded = true
+
+
+func _on_likes_folding_changed(is_folded: bool) -> void:
+	prevTab = currentTab
+	if not is_folded:
+		currentTab = likes_tab
+	if prevTab:
+		prevTab.folded = true
+
+
+func _on_dislikes_folding_changed(is_folded: bool) -> void:
+	prevTab = currentTab
+	if not is_folded:
+		currentTab = dislikes_tab
+	if prevTab:
+		prevTab.folded = true
+
+
+func _on_favorite_food_folding_changed(is_folded: bool) -> void:
+	prevTab = currentTab
+	if not is_folded:
+		currentTab = fav_food_tab
+	if prevTab:
+		prevTab.folded = true
+
+
+func _on_unfavorite_food_folding_changed(is_folded: bool) -> void:
+	prevTab = currentTab
+	if not is_folded:
+		currentTab = bad_food_tab
+	if prevTab:
+		prevTab.folded = true
+
+
+func _on_weight_folding_changed(is_folded: bool) -> void:
+	prevTab = currentTab
+	if not is_folded:
+		currentTab = weight_tab
+	if prevTab:
+		prevTab.folded = true
+
+
+func _on_texture_folding_changed(is_folded: bool) -> void:
+	prevTab = currentTab
+	if not is_folded:
+		currentTab = texture_tab
+	if prevTab:
+		prevTab.folded = true
