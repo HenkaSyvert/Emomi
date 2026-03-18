@@ -18,6 +18,7 @@
 [ext_resource type="PackedScene" uid="uid://do1blbrdmk38b" path="res://scenes/common/popup/popup.tscn" id="15_v2cw0"]
 [ext_resource type="PackedScene" uid="uid://c3t3d1pwq2x7o" path="res://scenes/screens/levels/level2/reizy_sleep.tscn" id="16_du0sv"]
 [ext_resource type="Texture2D" uid="uid://bv3q8whvwob41" path="res://scenes/screens/levels/sprites/situations/math/math 2 loop.png" id="16_w5kv4"]
+[ext_resource type="PackedScene" uid="uid://dxbpakctk1gcs" path="res://scenes/screens/character_screen/character_screen.tscn" id="19_rce7c"]
 
 [node name="MaktyMath" type="Control" unique_id=2110258413]
 layout_mode = 3
@@ -92,6 +93,18 @@ size_flags_vertical = 3
 layout_mode = 2
 
 [node name="Control" type="Control" parent="Level1Template/HBoxContainer/Left/VBoxContainer2/VBoxContainer/HBoxContainer2" unique_id=1055704338]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="Level1Template/HBoxContainer/Left/VBoxContainer2/VBoxContainer" unique_id=679883110]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="About" type="Button" parent="Level1Template/HBoxContainer/Left/VBoxContainer2/VBoxContainer/HBoxContainer3" unique_id=898975390]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Control" type="Control" parent="Level1Template/HBoxContainer/Left/VBoxContainer2/VBoxContainer/HBoxContainer3" unique_id=171776170]
 layout_mode = 2
 size_flags_horizontal = 3
 
@@ -183,5 +196,11 @@ visible = false
 layout_mode = 2
 next_scene = ExtResource("16_du0sv")
 
+[node name="CharacterInfo" parent="." unique_id=100588087 instance=ExtResource("19_rce7c")]
+visible = false
+layout_mode = 1
+character = 1
+
 [connection signal="pressed" from="Level1Template/HBoxContainer/Left/VBoxContainer2/VBoxContainer/HBoxContainer/HomeButton" to="Level1Template" method="_on_home_button_pressed"]
 [connection signal="pressed" from="Level1Template/HBoxContainer/Left/VBoxContainer2/VBoxContainer/HBoxContainer/ReturnButton" to="Level1Template" method="_on_return_button_pressed"]
+[connection signal="pressed" from="Level1Template/HBoxContainer/Left/VBoxContainer2/VBoxContainer/HBoxContainer3/About" to="Level1Template" method="_on_about_pressed"]

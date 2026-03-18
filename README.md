@@ -9,6 +9,7 @@ add pause animation when popup
 
 från daniela
 	foldable container down/up arrows
+	character screen exit button
 
 
 rewards menu
@@ -28,6 +29,5 @@ level 3
 gör tutorial:
 	visar main_anim och att man drar en opt, loop, med dialog ok button
 
-fixa popup inte ska va fullscreeen
 kolla export t apple store
 undersök om finns default portrait v landscape setting

@@ -13,3 +13,10 @@ func _on_return_button_pressed() -> void:
 		"res://scenes/screens/level_select_menu/level_select_menu.tscn"
 	)
 	assert(err == OK)
+
+
+@onready var about = $"../CharacterInfo"
+
+
+func _on_about_pressed() -> void:
+	about.visible = true
