@@ -1,6 +1,6 @@
 [gd_resource type="Theme" format=3 uid="uid://dap40rvjqooam"]
 
-[ext_resource type="StyleBox" uid="uid://bc342t0ayjj4d" path="res://scenes/screens/character_screen/eddy_title_panel.tres" id="1_ncgox"]
+[ext_resource type="StyleBox" uid="uid://bc342t0ayjj4d" path="res://scenes/screens/character_screen/themes/eddy/eddy_title_panel.tres" id="1_ncgox"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vi853"]
 content_margin_left = 40.0
@@ -11,8 +11,8 @@ border_width_left = 30
 border_width_right = 30
 border_width_bottom = 30
 border_color = Color(1, 1, 0.9529412, 1)
-corner_radius_top_left = 60
-corner_radius_top_right = 60
+corner_radius_top_left = 30
+corner_radius_top_right = 30
 corner_radius_bottom_right = 60
 corner_radius_bottom_left = 60
 

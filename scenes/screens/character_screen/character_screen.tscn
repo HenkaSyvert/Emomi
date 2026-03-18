@@ -14,7 +14,7 @@
 [ext_resource type="Texture2D" uid="uid://daun1aq8tyib0" path="res://scenes/screens/levels/sprites/makty/Makty 2.png" id="11_ccane"]
 [ext_resource type="Texture2D" uid="uid://i6ortcmrfg3y" path="res://scenes/screens/levels/sprites/makty/Makty Correct.png" id="12_gxgls"]
 [ext_resource type="Texture2D" uid="uid://dfv7dueefkb6q" path="res://scenes/screens/levels/sprites/makty/Makty wrong.png" id="13_8et8n"]
-[ext_resource type="Theme" uid="uid://dap40rvjqooam" path="res://scenes/screens/character_screen/eddy_theme.tres" id="14_gv133"]
+[ext_resource type="Texture2D" uid="uid://dhv16ncnuu0bd" path="res://docs/index.icon.png" id="16_8ut3d"]
 
 [node name="CharacterInfo" type="Control" unique_id=100588087]
 layout_mode = 3
@@ -29,6 +29,7 @@ script = ExtResource("1_tvv3w")
 eddy_frames = Array[Texture2D]([ExtResource("2_tvv3w"), ExtResource("7_cma1x"), ExtResource("8_ravl0"), ExtResource("9_dfop4")])
 reizy_frames = Array[Texture2D]([ExtResource("6_i71in"), ExtResource("7_rv4pd"), ExtResource("8_0lv86"), ExtResource("9_i1w2t")])
 makty_frames = Array[Texture2D]([ExtResource("10_a3ndm"), ExtResource("11_ccane"), ExtResource("12_gxgls"), ExtResource("13_8et8n")])
+character = 2
 
 [node name="PanelContainer" type="PanelContainer" parent="." unique_id=1973348732]
 layout_mode = 1
@@ -58,14 +59,15 @@ size_flags_vertical = 3
 [node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/HBoxContainer/VBoxContainer" unique_id=706419043]
 layout_mode = 2
 size_flags_vertical = 3
-theme = ExtResource("14_gv133")
 
 [node name="Personality" type="FoldableContainer" parent="PanelContainer/HBoxContainer/VBoxContainer/VBoxContainer" unique_id=1439933327]
 layout_mode = 2
 size_flags_vertical = 4
+folded = true
 title = "CHAR_PERSONALITY_TITLE"
 
 [node name="Label" type="Label" parent="PanelContainer/HBoxContainer/VBoxContainer/VBoxContainer/Personality" unique_id=1177154701]
+visible = false
 layout_mode = 2
 text = "CHAR_EDDY_PERSONALITY_TEXT"
 autowrap_mode = 3
@@ -151,27 +153,67 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 70.0
 
-[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/HBoxContainer/VBoxContainer2" unique_id=189570640]
+[node name="Control" type="Control" parent="PanelContainer/HBoxContainer/VBoxContainer2" unique_id=2060321552]
 layout_mode = 2
 size_flags_vertical = 3
+size_flags_stretch_ratio = 0.0
 
-[node name="Label" type="Label" parent="PanelContainer/HBoxContainer/VBoxContainer2/VBoxContainer" unique_id=1880871673]
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/HBoxContainer/VBoxContainer2" unique_id=189570640]
 layout_mode = 2
+size_flags_vertical = 10
+size_flags_stretch_ratio = 70.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer/HBoxContainer/VBoxContainer2/VBoxContainer" unique_id=1575928700]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="Label" type="Label" parent="PanelContainer/HBoxContainer/VBoxContainer2/VBoxContainer/HBoxContainer" unique_id=1880871673]
+layout_mode = 2
+theme_override_font_sizes/font_size = 113
+text = "CHAR_NAME"
+
+[node name="Label2" type="Label" parent="PanelContainer/HBoxContainer/VBoxContainer2/VBoxContainer/HBoxContainer" unique_id=1772331814]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0.88235295, 1)
+theme_override_font_sizes/font_size = 113
 text = "Eddy"
 
 [node name="Label2" type="Label" parent="PanelContainer/HBoxContainer/VBoxContainer2/VBoxContainer" unique_id=117345089]
 layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 71
 text = "CHAR_EDDY_EMOTION"
 
 [node name="AnimatedTexture" parent="PanelContainer/HBoxContainer/VBoxContainer2" unique_id=900728642 instance=ExtResource("1_glpxk")]
 layout_mode = 2
 size_flags_vertical = 3
+size_flags_stretch_ratio = 90.0
 texture = ExtResource("2_tvv3w")
 
-[node name="Control2" type="Control" parent="PanelContainer/HBoxContainer" unique_id=409086464]
+[node name="Control2" type="Control" parent="PanelContainer/HBoxContainer/VBoxContainer2" unique_id=1852194902]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 19.22
+
+[node name="Control2" type="VBoxContainer" parent="PanelContainer/HBoxContainer" unique_id=1327682475]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 10.0
+
+[node name="Control" type="Control" parent="PanelContainer/HBoxContainer/Control2" unique_id=2062656648]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Button" type="TextureButton" parent="PanelContainer/HBoxContainer/Control2" unique_id=1645929876]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 40.0
+texture_normal = ExtResource("16_8ut3d")
+
+[node name="Control3" type="Control" parent="PanelContainer/HBoxContainer" unique_id=500098245]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.91
 
 [connection signal="folding_changed" from="PanelContainer/HBoxContainer/VBoxContainer/VBoxContainer/Personality" to="." method="_on_personality_folding_changed"]
 [connection signal="folding_changed" from="PanelContainer/HBoxContainer/VBoxContainer/VBoxContainer/Likes" to="." method="_on_likes_folding_changed"]
@@ -180,3 +222,4 @@ size_flags_stretch_ratio = 10.0
 [connection signal="folding_changed" from="PanelContainer/HBoxContainer/VBoxContainer/VBoxContainer/UnfavoriteFood" to="." method="_on_unfavorite_food_folding_changed"]
 [connection signal="folding_changed" from="PanelContainer/HBoxContainer/VBoxContainer/VBoxContainer/Weight" to="." method="_on_weight_folding_changed"]
 [connection signal="folding_changed" from="PanelContainer/HBoxContainer/VBoxContainer/VBoxContainer/Texture" to="." method="_on_texture_folding_changed"]
+[connection signal="pressed" from="PanelContainer/HBoxContainer/Control2/Button" to="." method="_on_button_pressed"]

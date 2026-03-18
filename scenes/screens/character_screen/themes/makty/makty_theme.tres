@@ -1,0 +1,25 @@
+[gd_resource type="Theme" format=3 uid="uid://dntseayxjrbm"]
+
+[ext_resource type="StyleBox" uid="uid://tb7756k0vu3n" path="res://scenes/screens/character_screen/themes/makty/makty_title_panel.tres" id="1_7soy7"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vi853"]
+content_margin_left = 40.0
+content_margin_top = 10.0
+content_margin_bottom = 30.0
+bg_color = Color(0.94509804, 0.8352941, 0.68235296, 1)
+border_width_left = 30
+border_width_right = 30
+border_width_bottom = 30
+border_color = Color(1, 1, 0.9529412, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 60
+corner_radius_bottom_left = 60
+
+[resource]
+FoldableContainer/constants/h_separation = 50
+FoldableContainer/styles/panel = SubResource("StyleBoxFlat_vi853")
+FoldableContainer/styles/title_collapsed_hover_panel = ExtResource("1_7soy7")
+FoldableContainer/styles/title_collapsed_panel = ExtResource("1_7soy7")
+FoldableContainer/styles/title_hover_panel = ExtResource("1_7soy7")
+FoldableContainer/styles/title_panel = ExtResource("1_7soy7")

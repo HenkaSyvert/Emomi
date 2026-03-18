@@ -15,7 +15,8 @@ LEVEL_2B_PROMPT,"Why is Eddy sad?","Qué señales ponen triste a Eddy?", "Varfö
 POPUP_BUTTON,"Continue", "Continuar","Fortsätt"
 POPUP_REWARD,"Level Completed!\nYou won a reward!","Nivel completado.\n¡Has ganado una recompensa!","Nivå avklarad.\ndu har fått en belöning!"
 
-CHAR_EDDY_EMOTION,"Sadness","Tristeza","Ledsen"
+CHAR_NAME,"get to know ","Conoce a ","lär känna "
+CHAR_EDDY_EMOTION,"(Sadness)","(Tristeza)","(Ledsen)"
 
 CHAR_PERSONALITY_TITLE,"Personality","Personalidad","Personlighet"
 CHAR_EDDY_PERSONALITY_TEXT,"He is friendly, kind, and very emotional. He is patient, sweet, and affectionate with everyone, but especially with animals. He worries a lot about others and faints easily.
@@ -29,7 +30,7 @@ CHAR_LIKES_TITLE,"What he likes","Lo que le gusta","vad han tycker om"
 CHAR_EDDY_LIKES_TEXT,"Watching sunsets, taking nature photos, running, helping animals, meditating, painting with watercolors, eating with company, and watching romantic movies.","Ver los atardeceres, tomar fotos a la naturaleza, correr, ayudar a los animalitos, meditar, pintar con acuarela, comer con compañía y ver películas románticas.","Titta på solnedgångar, ta naturbilder, springa, hjälpa djur, meditera, måla med akvareller, äta i sällskap och titta på romantiska filmer."
 
 CHAR_DISLIKE_TITLE,"What he dislikes","No le gusta","vad han inte tycker om"
-CHAR_EDDY_DISLIKE_TEXT,"When they call him sensitive, when they rush him when he's getting ready to go out, when his feet get wet in the rain, when he has to train with very heavy dumbbells, and when animal abuse occurs.","cuando lo llaman sensible,, que lo apresuren cuando se arregla para salir, que se le mojen los pies en la lluvia, entrenar con mancuernas muy pesadas y el maltrato animal","När de kallar honom känslig, när de stressar honom när han ska gå ut, när hans fötter blir blöta i regnet, när han måste träna med väldigt tunga hantlar och när djurplågeri förekommer."
+CHAR_EDDY_DISLIKE_TEXT,"When they call him sensitive, when they rush him when he's getting ready to go out, when his feet get wet in the rain, when he has to train with very heavy dumbbells, and when animal abuse occurs.","cuando lo llaman sensible, que lo apresuren cuando se arregla para salir, que se le mojen los pies en la lluvia, entrenar con mancuernas muy pesadas y el maltrato animal","När de kallar honom känslig, när de stressar honom när han ska gå ut, när hans fötter blir blöta i regnet, när han måste träna med väldigt tunga hantlar och när djurplågeri förekommer."
 
 CHAR_FAV_FOOD_TITLE,"Favorite food","Comida favorita","favoritmat"
 CHAR_EDDY_FAV_FOOD_TEXT,"Chocolate cookies","Pastel de chocolate","chokladkakor"
@@ -45,7 +46,7 @@ CHAR_EDDY_TEXTURE_TEXT,"Similar to cotton candy in water","Similar al de un algo
 
 
 
-CHAR_REIZY_EMOTION,"Anger","enojo","ilska"
+CHAR_REIZY_EMOTION,"(Anger)","(enojo)","(ilska)"
 
 CHAR_REIZY_PERSONALITY_TEXT,"He's kind, aloof, stubborn, a little shy, and impatient. He has a strong sense of justice and cares deeply for others. He looks tough, but inside he hides a big heart. He's very protective of Edy.","Es amable, huraño, testarudo, un poco tímido e impaciente. Tiene un fuerte sentido de la justicia, cuida mucho a los demás. Luce rudo, pero por dentro esconde un gran corazón. Suele proteger mucho a Edy.","Han är snäll, reserverad, envis, lite blyg och otålig. Han har en stark rättvisekänsla och bryr sig djupt om andra. Han ser tuff ut, men inuti döljer han ett stort hjärta. Han är väldigt beskyddande mot Edy.","Han är snäll, reserverad, envis, lite blyg och otålig. Han har en stark rättvisekänsla och bryr sig djupt om andra. Han ser tuff ut, men inuti döljer han ett stort hjärta. Han är väldigt beskyddande mot Eddy."
 
@@ -60,7 +61,7 @@ CHAR_REIZY_TEXTURE_TEXT,"Similar to wet sand","Similar al de la arena mojada.","
 
 
 
-CHAR_MAKTY_EMOTION,"Frustration","Frustración","Frustration"
+CHAR_MAKTY_EMOTION,"(Frustration)","(Frustración)","(Frustration)"
 CHAR_MAKTY_PERSONALITY_TEXT,"He is very impatient, quite stubborn, and prone to complaining. He is rigid in his ideas and believes that if something doesn't go right the first time, it's not worth it. Although he looks unpleasant (like a cloud), inside he is sensitive to slowness and prolonged effort.","Es muy impaciente, bastante obstinado y con tendencia a la queja. Es rígido en sus ideas y cree que si algo no sale bien a la primera, ya no vale la pena. Aunque luce desagradable (como una nube), su interior es sensible a la lentitud y el esfuerzo prolongado.","Han är väldigt otålig, ganska envis och benägen att klaga. Han är stel i sina idéer och tror att om något inte går bra första gången är det inte värt det. Även om han ser obehaglig ut (som ett moln), är han inuti känslig för långsamhet och långvarig ansträngning."
 
 CHAR_MAKTY_LIKES_TEXT,"Silence and absolute stillness, things being resolved immediately without complications, the color gray, well-defined corners, she likes cats and cute and funny videos of them.","El silencio y la quietud absoluta, que las cosas se resuelvan de inmediato sin complicaciones, el color gris, las esquinas bien definidas, le gustan los gatos y los videos tiernos y graciosos de estos.","Tystnad och absolut stillhet, saker som löses omedelbart utan komplikationer, färgen grå, väldefinierade hörn, hon gillar katter och söta och roliga videor av dem."

@@ -1,0 +1,25 @@
+[gd_resource type="Theme" format=3 uid="uid://c7jbcn16rslv2"]
+
+[ext_resource type="StyleBox" uid="uid://bggl2be5exi34" path="res://scenes/screens/character_screen/themes/reizy/reizy_title_panel.tres" id="1_s237w"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vi853"]
+content_margin_left = 40.0
+content_margin_top = 10.0
+content_margin_bottom = 30.0
+bg_color = Color(0.8666667, 0.6509804, 0.62352943, 1)
+border_width_left = 30
+border_width_right = 30
+border_width_bottom = 30
+border_color = Color(1, 1, 0.9529412, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 60
+corner_radius_bottom_left = 60
+
+[resource]
+FoldableContainer/constants/h_separation = 50
+FoldableContainer/styles/panel = SubResource("StyleBoxFlat_vi853")
+FoldableContainer/styles/title_collapsed_hover_panel = ExtResource("1_s237w")
+FoldableContainer/styles/title_collapsed_panel = ExtResource("1_s237w")
+FoldableContainer/styles/title_hover_panel = ExtResource("1_s237w")
+FoldableContainer/styles/title_panel = ExtResource("1_s237w")
