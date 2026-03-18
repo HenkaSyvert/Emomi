@@ -7,16 +7,20 @@ extends Control
 enum CHARACTER { EDDY, MAKTY, REIZY }
 @export var character: CHARACTER
 
-@onready var personality: Label = $HBoxContainer/VBoxContainer/VBoxContainer/Personality/Label
-@onready var likes: Label = $HBoxContainer/VBoxContainer/VBoxContainer/Likes/Label
-@onready var dislikes: Label = $HBoxContainer/VBoxContainer/VBoxContainer/Dislikes/Label
-@onready var fav_food: Label = $HBoxContainer/VBoxContainer/VBoxContainer/FavoriteFood/Label
-@onready var bad_food: Label = $HBoxContainer/VBoxContainer/VBoxContainer/UnfavoriteFood/Label
-@onready var weight: Label = $HBoxContainer/VBoxContainer/VBoxContainer/Weight/Label
-@onready var texture: Label = $HBoxContainer/VBoxContainer/VBoxContainer/Texture/Label
-@onready var characterName: Label = $HBoxContainer/VBoxContainer2/VBoxContainer/Label
-@onready var emotion: Label = $HBoxContainer/VBoxContainer2/VBoxContainer/Label2
-@onready var animTexture = $HBoxContainer/VBoxContainer2/AnimatedTexture
+@onready
+var personality: Label = $PanelContainer/HBoxContainer/VBoxContainer/VBoxContainer/Personality/Label
+@onready var likes: Label = $PanelContainer/HBoxContainer/VBoxContainer/VBoxContainer/Likes/Label
+@onready
+var dislikes: Label = $PanelContainer/HBoxContainer/VBoxContainer/VBoxContainer/Dislikes/Label
+@onready
+var fav_food: Label = $PanelContainer/HBoxContainer/VBoxContainer/VBoxContainer/FavoriteFood/Label
+@onready
+var bad_food: Label = $PanelContainer/HBoxContainer/VBoxContainer/VBoxContainer/UnfavoriteFood/Label
+@onready var weight: Label = $PanelContainer/HBoxContainer/VBoxContainer/VBoxContainer/Weight/Label
+@onready var texture: Label = $PanelContainer/HBoxContainer/VBoxContainer/VBoxContainer/Texture/Label
+@onready var characterName: Label = $PanelContainer/HBoxContainer/VBoxContainer2/VBoxContainer/Label
+@onready var emotion: Label = $PanelContainer/HBoxContainer/VBoxContainer2/VBoxContainer/Label2
+@onready var animTexture = $PanelContainer/HBoxContainer/VBoxContainer2/AnimatedTexture
 
 
 func _ready() -> void:
@@ -61,15 +65,19 @@ func _ready() -> void:
 var currentTab: FoldableContainer = null
 var prevTab: FoldableContainer = null
 @onready
-var personality_tab: FoldableContainer = $HBoxContainer/VBoxContainer/VBoxContainer/Personality
-@onready var likes_tab: FoldableContainer = $HBoxContainer/VBoxContainer/VBoxContainer/Likes
-@onready var dislikes_tab: FoldableContainer = $HBoxContainer/VBoxContainer/VBoxContainer/Dislikes
+var personality_tab: FoldableContainer = $PanelContainer/HBoxContainer/VBoxContainer/VBoxContainer/Personality
 @onready
-var fav_food_tab: FoldableContainer = $HBoxContainer/VBoxContainer/VBoxContainer/FavoriteFood
+var likes_tab: FoldableContainer = $PanelContainer/HBoxContainer/VBoxContainer/VBoxContainer/Likes
 @onready
-var bad_food_tab: FoldableContainer = $HBoxContainer/VBoxContainer/VBoxContainer/UnfavoriteFood
-@onready var weight_tab: FoldableContainer = $HBoxContainer/VBoxContainer/VBoxContainer/Weight
-@onready var texture_tab: FoldableContainer = $HBoxContainer/VBoxContainer/VBoxContainer/Texture
+var dislikes_tab: FoldableContainer = $PanelContainer/HBoxContainer/VBoxContainer/VBoxContainer/Dislikes
+@onready
+var fav_food_tab: FoldableContainer = $PanelContainer/HBoxContainer/VBoxContainer/VBoxContainer/FavoriteFood
+@onready
+var bad_food_tab: FoldableContainer = $PanelContainer/HBoxContainer/VBoxContainer/VBoxContainer/UnfavoriteFood
+@onready
+var weight_tab: FoldableContainer = $PanelContainer/HBoxContainer/VBoxContainer/VBoxContainer/Weight
+@onready
+var texture_tab: FoldableContainer = $PanelContainer/HBoxContainer/VBoxContainer/VBoxContainer/Texture
 
 
 func _on_personality_folding_changed(is_folded: bool) -> void:

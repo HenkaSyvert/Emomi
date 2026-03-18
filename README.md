@@ -7,6 +7,10 @@ add text "draw correct emotion to eddy"
 add pause animation when popup
 
 
+från daniela
+	foldable container down/up arrows
+
+
 rewards menu
 	when click image, popup to show full image, and download button
 	home and previous buttons, and sound

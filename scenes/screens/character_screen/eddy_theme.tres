@@ -1,0 +1,25 @@
+[gd_resource type="Theme" format=3 uid="uid://dap40rvjqooam"]
+
+[ext_resource type="StyleBox" uid="uid://bc342t0ayjj4d" path="res://scenes/screens/character_screen/eddy_title_panel.tres" id="1_ncgox"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vi853"]
+content_margin_left = 40.0
+content_margin_top = 10.0
+content_margin_bottom = 30.0
+bg_color = Color(0.61960787, 0.81960785, 0.9254902, 1)
+border_width_left = 30
+border_width_right = 30
+border_width_bottom = 30
+border_color = Color(1, 1, 0.9529412, 1)
+corner_radius_top_left = 60
+corner_radius_top_right = 60
+corner_radius_bottom_right = 60
+corner_radius_bottom_left = 60
+
+[resource]
+FoldableContainer/constants/h_separation = 50
+FoldableContainer/styles/panel = SubResource("StyleBoxFlat_vi853")
+FoldableContainer/styles/title_collapsed_hover_panel = ExtResource("1_ncgox")
+FoldableContainer/styles/title_collapsed_panel = ExtResource("1_ncgox")
+FoldableContainer/styles/title_hover_panel = ExtResource("1_ncgox")
+FoldableContainer/styles/title_panel = ExtResource("1_ncgox")
