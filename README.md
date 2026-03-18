@@ -4,6 +4,8 @@
 need to find sounds for when eddy/makty/reizy gets angry/calm
 
 add text "draw correct emotion to eddy"
+add pause animation when popup
+
 
 rewards menu
 	when click image, popup to show full image, and download button

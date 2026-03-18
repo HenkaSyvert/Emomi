@@ -21,6 +21,14 @@ run/low_processor_mode=true
 SoundManager="*uid://cf7f7hb6eoy8"
 Game="*uid://dtik6n7bx4pr7"
 
+[display]
+
+window/size/viewport_width=2160
+window/size/viewport_height=1620
+window/size/mode=4
+window/size/borderless=true
+window/stretch/mode="canvas_items"
+
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/format_on_save/plugin.cfg", "res://addons/gdLinter/plugin.cfg")

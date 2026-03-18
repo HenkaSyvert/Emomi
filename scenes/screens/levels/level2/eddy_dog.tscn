@@ -17,6 +17,7 @@
 [ext_resource type="Texture2D" uid="uid://dn808kmh8nh7n" path="res://scenes/screens/levels/sprites/situations/math/math 1 loop.png" id="14_5j7g5"]
 [ext_resource type="PackedScene" uid="uid://do1blbrdmk38b" path="res://scenes/common/popup/popup.tscn" id="15_p4kwg"]
 [ext_resource type="PackedScene" uid="uid://bwcpky57a0fue" path="res://scenes/screens/levels/level2/makty_draw.tscn" id="16_ecpyq"]
+[ext_resource type="Texture2D" uid="uid://bv3q8whvwob41" path="res://scenes/screens/levels/sprites/situations/math/math 2 loop.png" id="16_vs7vh"]
 
 [node name="EddyDog" type="Control" unique_id=1355370560]
 layout_mode = 3
@@ -166,7 +167,7 @@ texture_normal = ExtResource("14_5j7g5")
 is_correct = false
 frame_correct = ExtResource("14_5j7g5")
 frame_wrong = ExtResource("14_5j7g5")
-frames = Array[Texture2D]([ExtResource("14_5j7g5")])
+frames = Array[Texture2D]([ExtResource("14_5j7g5"), ExtResource("16_vs7vh")])
 
 [node name="Control" type="Control" parent="Level1Template/HBoxContainer/Right" unique_id=506541653]
 layout_mode = 2

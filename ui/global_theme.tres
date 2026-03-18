@@ -17,6 +17,7 @@ Button/styles/focus = ExtResource("1_24ibd")
 Button/styles/hover = ExtResource("2_41rka")
 Button/styles/normal = ExtResource("1_24ibd")
 Button/styles/pressed = ExtResource("2_41rka")
+FoldableContainer/font_sizes/font_size = 66
 Label/colors/font_color = Color(0, 0, 0, 1)
 Label/constants/line_spacing = -15
 Label/font_sizes/font_size = 50

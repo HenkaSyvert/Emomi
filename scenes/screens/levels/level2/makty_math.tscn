@@ -167,7 +167,7 @@ layout_mode = 2
 texture_normal = ExtResource("14_gcfe3")
 frame_correct = ExtResource("14_gcfe3")
 frame_wrong = ExtResource("16_w5kv4")
-frames = Array[Texture2D]([ExtResource("16_w5kv4")])
+frames = Array[Texture2D]([ExtResource("14_gcfe3"), ExtResource("16_w5kv4")])
 
 [node name="Control" type="Control" parent="Level1Template/HBoxContainer/Right" unique_id=884465508]
 layout_mode = 2

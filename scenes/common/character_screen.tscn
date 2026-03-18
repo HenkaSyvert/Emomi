@@ -1,0 +1,145 @@
+[gd_scene format=3 uid="uid://dxbpakctk1gcs"]
+
+[ext_resource type="PackedScene" uid="uid://djgs5oxgmxh5x" path="res://scenes/common/animated_texture/animated_texture.tscn" id="1_glpxk"]
+[ext_resource type="Script" uid="uid://btuykmyx7x031" path="res://scenes/common/character_screen.gd" id="1_tvv3w"]
+[ext_resource type="Texture2D" uid="uid://bxr3o81w5rgtx" path="res://scenes/screens/levels/sprites/eddy/Eddy 1.png" id="2_tvv3w"]
+[ext_resource type="Texture2D" uid="uid://d3e66kbf7ncd3" path="res://scenes/screens/levels/sprites/reizy/Reizy 1.png" id="6_i71in"]
+[ext_resource type="Texture2D" uid="uid://bwgb3ecse23fx" path="res://scenes/screens/levels/sprites/eddy/Eddy 2.png" id="7_cma1x"]
+[ext_resource type="Texture2D" uid="uid://boy8xuvsmqpjd" path="res://scenes/screens/levels/sprites/reizy/Reizy 2.png" id="7_rv4pd"]
+[ext_resource type="Texture2D" uid="uid://brku8tgcimsjg" path="res://scenes/screens/levels/sprites/reizy/Reizy Correct.png" id="8_0lv86"]
+[ext_resource type="Texture2D" uid="uid://baklicufa3nai" path="res://scenes/screens/levels/sprites/eddy/Eddy Correct.png" id="8_ravl0"]
+[ext_resource type="Texture2D" uid="uid://gc4vqcy2atjt" path="res://scenes/screens/levels/sprites/eddy/Eddy wrong.png" id="9_dfop4"]
+[ext_resource type="Texture2D" uid="uid://df7520n7wkemv" path="res://scenes/screens/levels/sprites/reizy/Reizy wrong.png" id="9_i1w2t"]
+[ext_resource type="Texture2D" uid="uid://doy86nxmkhl7u" path="res://scenes/screens/levels/sprites/makty/Makty 1.png" id="10_a3ndm"]
+[ext_resource type="Texture2D" uid="uid://daun1aq8tyib0" path="res://scenes/screens/levels/sprites/makty/Makty 2.png" id="11_ccane"]
+[ext_resource type="Texture2D" uid="uid://i6ortcmrfg3y" path="res://scenes/screens/levels/sprites/makty/Makty Correct.png" id="12_gxgls"]
+[ext_resource type="Texture2D" uid="uid://dfv7dueefkb6q" path="res://scenes/screens/levels/sprites/makty/Makty wrong.png" id="13_8et8n"]
+
+[node name="CharacterInfo" type="Control" unique_id=100588087]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_tvv3w")
+eddy_frames = Array[Texture2D]([ExtResource("2_tvv3w"), ExtResource("7_cma1x"), ExtResource("8_ravl0"), ExtResource("9_dfop4")])
+reizy_frames = Array[Texture2D]([ExtResource("6_i71in"), ExtResource("7_rv4pd"), ExtResource("8_0lv86"), ExtResource("9_i1w2t")])
+makty_frames = Array[Texture2D]([ExtResource("10_a3ndm"), ExtResource("11_ccane"), ExtResource("12_gxgls"), ExtResource("13_8et8n")])
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1865515513]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer" unique_id=1989021726]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Control" type="Control" parent="HBoxContainer/VBoxContainer" unique_id=1169109616]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/VBoxContainer" unique_id=706419043]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Personality" type="FoldableContainer" parent="HBoxContainer/VBoxContainer/VBoxContainer" unique_id=1439933327]
+layout_mode = 2
+size_flags_vertical = 4
+title = "CHAR_PERSONALITY_TITLE"
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/VBoxContainer/Personality" unique_id=1177154701]
+layout_mode = 2
+text = "sdfsdfsdf"
+autowrap_mode = 3
+
+[node name="Likes" type="FoldableContainer" parent="HBoxContainer/VBoxContainer/VBoxContainer" unique_id=404390832]
+layout_mode = 2
+size_flags_vertical = 4
+title = "CHAR_LIKES_TITLE"
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/VBoxContainer/Likes" unique_id=950927519]
+layout_mode = 2
+text = "sdfsdfsdf"
+autowrap_mode = 3
+
+[node name="Dislikes" type="FoldableContainer" parent="HBoxContainer/VBoxContainer/VBoxContainer" unique_id=1436118165]
+layout_mode = 2
+size_flags_vertical = 4
+title = "CHAR_DISLIKE_TITLE"
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/VBoxContainer/Dislikes" unique_id=1479506614]
+layout_mode = 2
+text = "sdfsdfsdf"
+autowrap_mode = 3
+
+[node name="FavoriteFood" type="FoldableContainer" parent="HBoxContainer/VBoxContainer/VBoxContainer" unique_id=2139136961]
+layout_mode = 2
+size_flags_vertical = 4
+title = "CHAR_FAV_FOOD_TITLE"
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/VBoxContainer/FavoriteFood" unique_id=47694969]
+layout_mode = 2
+text = "sdfsdfsdf"
+autowrap_mode = 3
+
+[node name="UnfavoriteFood" type="FoldableContainer" parent="HBoxContainer/VBoxContainer/VBoxContainer" unique_id=1899309128]
+layout_mode = 2
+size_flags_vertical = 4
+title = "CHAR_BAD_FOOD_TITLE"
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/VBoxContainer/UnfavoriteFood" unique_id=1062848363]
+layout_mode = 2
+text = "sdfsdfsdf"
+autowrap_mode = 3
+
+[node name="Weight" type="FoldableContainer" parent="HBoxContainer/VBoxContainer/VBoxContainer" unique_id=942270112]
+layout_mode = 2
+size_flags_vertical = 4
+title = "CHAR_WEIGHT_TITLE"
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/VBoxContainer/Weight" unique_id=210704977]
+layout_mode = 2
+text = "sdfsdfsdf"
+autowrap_mode = 3
+
+[node name="Texture" type="FoldableContainer" parent="HBoxContainer/VBoxContainer/VBoxContainer" unique_id=134295868]
+layout_mode = 2
+size_flags_vertical = 4
+title = "CHAR_TEXTURE_TITLE"
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/VBoxContainer/Texture" unique_id=104988082]
+layout_mode = 2
+text = "sdfsdfsdf"
+autowrap_mode = 3
+
+[node name="Control2" type="Control" parent="HBoxContainer/VBoxContainer" unique_id=1027166358]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="HBoxContainer" unique_id=1611263757]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/VBoxContainer2" unique_id=189570640]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer2/VBoxContainer" unique_id=1880871673]
+layout_mode = 2
+text = "Eddy"
+
+[node name="Label2" type="Label" parent="HBoxContainer/VBoxContainer2/VBoxContainer" unique_id=117345089]
+layout_mode = 2
+text = "CHAR_EDDY_EMOTION"
+
+[node name="AnimatedTexture" parent="HBoxContainer/VBoxContainer2" unique_id=900728642 instance=ExtResource("1_glpxk")]
+layout_mode = 2
+size_flags_vertical = 3
+texture = ExtResource("2_tvv3w")
