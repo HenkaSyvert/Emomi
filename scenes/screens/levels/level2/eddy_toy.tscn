@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://ctoicx2ven6ek" path="res://scenes/common/star_counter/star_counter.tscn" id="4_ycx83"]
 [ext_resource type="PackedScene" uid="uid://bvvb57ga0cd1i" path="res://scenes/common/sound_button/sound_button.tscn" id="5_x54pj"]
 [ext_resource type="PackedScene" uid="uid://djgs5oxgmxh5x" path="res://scenes/common/animated_texture/animated_texture.tscn" id="6_nryb6"]
+[ext_resource type="Texture2D" uid="uid://crqahntqkoku5" path="res://scenes/screens/character_screen/sprites/eddy_info.png" id="6_ymo06"]
 [ext_resource type="Texture2D" uid="uid://bxr3o81w5rgtx" path="res://scenes/screens/levels/sprites/eddy/Eddy 1.png" id="7_ymo06"]
 [ext_resource type="Texture2D" uid="uid://bwgb3ecse23fx" path="res://scenes/screens/levels/sprites/eddy/Eddy 2.png" id="8_aa01o"]
 [ext_resource type="Texture2D" uid="uid://gc4vqcy2atjt" path="res://scenes/screens/levels/sprites/eddy/Eddy wrong.png" id="9_6mnnc"]
@@ -100,9 +101,11 @@ size_flags_horizontal = 3
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="About" type="Button" parent="Level1Template/HBoxContainer/Left/VBoxContainer2/VBoxContainer/HBoxContainer3" unique_id=1916155778]
+[node name="About" type="TextureButton" parent="Level1Template/HBoxContainer/Left/VBoxContainer2/VBoxContainer/HBoxContainer3" unique_id=1664433538]
 layout_mode = 2
 size_flags_horizontal = 3
+texture_normal = ExtResource("6_ymo06")
+stretch_mode = 4
 
 [node name="Control" type="Control" parent="Level1Template/HBoxContainer/Left/VBoxContainer2/VBoxContainer/HBoxContainer3" unique_id=2106023551]
 layout_mode = 2

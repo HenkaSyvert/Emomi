@@ -5,12 +5,14 @@ need to find sounds for when eddy/makty/reizy gets angry/calm
 
 add text "draw correct emotion to eddy"
 add pause animation when popup
+fixa resolution
+add pause animations
+byt level 1 och 2
+sdd reward screen back btn
 
 
 från daniela
 	foldable container down/up arrows
-	character screen exit button
-
 
 rewards menu
 	when click image, popup to show full image, and download button
