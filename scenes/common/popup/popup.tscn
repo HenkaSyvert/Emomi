@@ -2,18 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://b8mqrqssaa6ln" path="res://scenes/common/star_counter/star.png" id="1_cpr3m"]
 [ext_resource type="Script" uid="uid://dn6368aehj8gm" path="res://scenes/common/popup/popup.gd" id="1_rqbcu"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2eskn"]
-bg_color = Color(1, 1, 1, 1)
-border_width_left = 4
-border_width_top = 4
-border_width_right = 4
-border_width_bottom = 4
-border_color = Color(0.2, 0.6039216, 0.78039217, 1)
-corner_radius_top_left = 30
-corner_radius_top_right = 30
-corner_radius_bottom_right = 30
-corner_radius_bottom_left = 30
+[ext_resource type="StyleBox" uid="uid://bnp6m13wovw7n" path="res://ui/themes/popup_theme.tres" id="1_rrvo2"]
 
 [node name="Popup" type="PanelContainer" unique_id=1497230596]
 anchors_preset = 8
@@ -29,7 +18,7 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
-theme_override_styles/panel = SubResource("StyleBoxFlat_2eskn")
+theme_override_styles/panel = ExtResource("1_rrvo2")
 script = ExtResource("1_rqbcu")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1091554143]

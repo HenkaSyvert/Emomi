@@ -1,6 +1,5 @@
 [gd_scene format=3 uid="uid://7uwmwgor6fdm"]
 
-[ext_resource type="Texture2D" uid="uid://b8mqrqssaa6ln" path="res://scenes/common/star_counter/star.png" id="1_b2iqw"]
 [ext_resource type="Script" uid="uid://c3lww2lmjd0c4" path="res://scenes/screens/rewards/rewards_menu.gd" id="1_qn6d6"]
 [ext_resource type="Texture2D" uid="uid://c3fpvwdswa80c" path="res://scenes/screens/sprites/home.png" id="2_010sm"]
 [ext_resource type="Texture2D" uid="uid://dk78fcithaeh7" path="res://scenes/screens/sprites/arrow.png" id="3_qq887"]
@@ -12,8 +11,16 @@
 [ext_resource type="Texture2D" uid="uid://c2ql72ctamjif" path="res://scenes/screens/sprites/logo/logo4.png" id="8_vy0a1"]
 [ext_resource type="PackedScene" uid="uid://dcnps1ubh4p87" path="res://scenes/common/language_selector/language_selector.tscn" id="9_tfmse"]
 [ext_resource type="PackedScene" uid="uid://bvvb57ga0cd1i" path="res://scenes/common/sound_button/sound_button.tscn" id="10_sjwty"]
+[ext_resource type="Texture2D" uid="uid://b5m3g6tcpyrm4" path="res://scenes/screens/rewards/sprites/reward1.png" id="12_e6hfi"]
+[ext_resource type="Texture2D" uid="uid://d0dbrexnsik5v" path="res://scenes/screens/rewards/sprites/reward2.png" id="13_vy0a1"]
+[ext_resource type="Texture2D" uid="uid://11a11qy6aou3" path="res://scenes/screens/rewards/sprites/reward3.png" id="14_tfmse"]
+[ext_resource type="Texture2D" uid="uid://c2jms72pvciv7" path="res://scenes/screens/rewards/sprites/reward4.png" id="15_sjwty"]
+[ext_resource type="Texture2D" uid="uid://ccdea3gmpeowa" path="res://scenes/screens/rewards/sprites/rewards5.png" id="16_537ma"]
+[ext_resource type="Texture2D" uid="uid://7j45f5sjsut3" path="res://scenes/screens/rewards/sprites/rewards6.png" id="17_jll2o"]
+[ext_resource type="StyleBox" uid="uid://bnp6m13wovw7n" path="res://ui/themes/popup_theme.tres" id="18_tfmse"]
+[ext_resource type="Texture2D" uid="uid://dc1t8yrrsbrpi" path="res://scenes/screens/character_screen/sprites/cross.png" id="19_sjwty"]
 
-[node name="RewardsMenu" type="PanelContainer" unique_id=18558353]
+[node name="RewardsMenu" type="PanelContainer" unique_id=18558353 node_paths=PackedStringArray("pics")]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -22,6 +29,7 @@ grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 script = ExtResource("1_qn6d6")
+pics = [NodePath("VBoxContainer2/VBoxContainer/GridContainer/pic1"), NodePath("VBoxContainer2/VBoxContainer/GridContainer/pic2"), NodePath("VBoxContainer2/VBoxContainer/GridContainer/pic3"), NodePath("VBoxContainer2/VBoxContainer/GridContainer/pic4"), NodePath("VBoxContainer2/VBoxContainer/GridContainer/pic5"), NodePath("VBoxContainer2/VBoxContainer/GridContainer/pic6")]
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="." unique_id=879359893]
 layout_mode = 2
@@ -156,41 +164,98 @@ layout_mode = 2
 size_flags_vertical = 3
 columns = 3
 
-[node name="TextureButton" type="TextureButton" parent="VBoxContainer2/VBoxContainer/GridContainer" unique_id=2130049467]
+[node name="pic1" type="TextureButton" parent="VBoxContainer2/VBoxContainer/GridContainer" unique_id=2130049467]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-texture_normal = ExtResource("1_b2iqw")
+texture_normal = ExtResource("12_e6hfi")
 
-[node name="TextureButton2" type="TextureButton" parent="VBoxContainer2/VBoxContainer/GridContainer" unique_id=463306627]
+[node name="pic2" type="TextureButton" parent="VBoxContainer2/VBoxContainer/GridContainer" unique_id=463306627]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-texture_normal = ExtResource("1_b2iqw")
+texture_normal = ExtResource("13_vy0a1")
 
-[node name="TextureButton3" type="TextureButton" parent="VBoxContainer2/VBoxContainer/GridContainer" unique_id=1947124196]
+[node name="pic3" type="TextureButton" parent="VBoxContainer2/VBoxContainer/GridContainer" unique_id=1947124196]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-texture_normal = ExtResource("1_b2iqw")
+texture_normal = ExtResource("14_tfmse")
 
-[node name="TextureButton4" type="TextureButton" parent="VBoxContainer2/VBoxContainer/GridContainer" unique_id=494282074]
+[node name="pic4" type="TextureButton" parent="VBoxContainer2/VBoxContainer/GridContainer" unique_id=494282074]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-texture_normal = ExtResource("1_b2iqw")
+texture_normal = ExtResource("15_sjwty")
 
-[node name="TextureButton5" type="TextureButton" parent="VBoxContainer2/VBoxContainer/GridContainer" unique_id=1389174927]
+[node name="pic5" type="TextureButton" parent="VBoxContainer2/VBoxContainer/GridContainer" unique_id=1389174927]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-texture_normal = ExtResource("1_b2iqw")
+texture_normal = ExtResource("16_537ma")
 
-[node name="TextureButton6" type="TextureButton" parent="VBoxContainer2/VBoxContainer/GridContainer" unique_id=379746554]
+[node name="pic6" type="TextureButton" parent="VBoxContainer2/VBoxContainer/GridContainer" unique_id=379746554]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-texture_normal = ExtResource("1_b2iqw")
+texture_normal = ExtResource("17_jll2o")
+
+[node name="ImageViewer" type="VBoxContainer" parent="." unique_id=1481212989]
+visible = false
+layout_mode = 2
+
+[node name="Control" type="Control" parent="ImageViewer" unique_id=57833540]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ImageViewer" unique_id=377545677]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Control" type="Control" parent="ImageViewer/HBoxContainer" unique_id=2099585974]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.3
+
+[node name="ImageViewer" type="PanelContainer" parent="ImageViewer/HBoxContainer" unique_id=108956276]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/panel = ExtResource("18_tfmse")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ImageViewer/HBoxContainer/ImageViewer" unique_id=1633821199]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ImageViewer/HBoxContainer/ImageViewer/VBoxContainer" unique_id=296430585]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="CloseButton" type="TextureButton" parent="ImageViewer/HBoxContainer/ImageViewer/VBoxContainer/HBoxContainer" unique_id=1464317765]
+layout_mode = 2
+texture_normal = ExtResource("19_sjwty")
+
+[node name="TextureRect" type="TextureRect" parent="ImageViewer/HBoxContainer/ImageViewer/VBoxContainer" unique_id=1293606628]
+layout_mode = 2
+size_flags_vertical = 3
+texture = ExtResource("14_tfmse")
+
+[node name="Control2" type="Control" parent="ImageViewer/HBoxContainer" unique_id=271025824]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.3
+
+[node name="Control2" type="Control" parent="ImageViewer" unique_id=1658878310]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.3
 
 [connection signal="pressed" from="VBoxContainer2/Top/Left/HBoxContainer/HomeButton" to="." method="_on_home_button_pressed"]
 [connection signal="pressed" from="VBoxContainer2/Top/Left/HBoxContainer/ReturnButton" to="." method="_on_return_button_pressed"]
+[connection signal="pressed" from="VBoxContainer2/VBoxContainer/GridContainer/pic1" to="." method="_on_pic_1_pressed"]
+[connection signal="pressed" from="VBoxContainer2/VBoxContainer/GridContainer/pic2" to="." method="_on_pic_2_pressed"]
+[connection signal="pressed" from="VBoxContainer2/VBoxContainer/GridContainer/pic3" to="." method="_on_pic_3_pressed"]
+[connection signal="pressed" from="VBoxContainer2/VBoxContainer/GridContainer/pic4" to="." method="_on_pic_4_pressed"]
+[connection signal="pressed" from="VBoxContainer2/VBoxContainer/GridContainer/pic5" to="." method="_on_pic_5_pressed"]
+[connection signal="pressed" from="VBoxContainer2/VBoxContainer/GridContainer/pic6" to="." method="_on_pic_6_pressed"]
+[connection signal="pressed" from="ImageViewer/HBoxContainer/ImageViewer/VBoxContainer/HBoxContainer/CloseButton" to="." method="_on_close_button_pressed"]
