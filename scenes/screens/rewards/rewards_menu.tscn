@@ -1,6 +1,17 @@
 [gd_scene format=3 uid="uid://7uwmwgor6fdm"]
 
 [ext_resource type="Texture2D" uid="uid://b8mqrqssaa6ln" path="res://scenes/common/star_counter/star.png" id="1_b2iqw"]
+[ext_resource type="Script" uid="uid://c3lww2lmjd0c4" path="res://scenes/screens/rewards/rewards_menu.gd" id="1_qn6d6"]
+[ext_resource type="Texture2D" uid="uid://c3fpvwdswa80c" path="res://scenes/screens/sprites/home.png" id="2_010sm"]
+[ext_resource type="Texture2D" uid="uid://dk78fcithaeh7" path="res://scenes/screens/sprites/arrow.png" id="3_qq887"]
+[ext_resource type="PackedScene" uid="uid://ctoicx2ven6ek" path="res://scenes/common/star_counter/star_counter.tscn" id="4_010sm"]
+[ext_resource type="PackedScene" uid="uid://djgs5oxgmxh5x" path="res://scenes/common/animated_texture/animated_texture.tscn" id="4_o0a1b"]
+[ext_resource type="Texture2D" uid="uid://bpfwuaf8jqudq" path="res://scenes/screens/sprites/logo/logo1.png" id="5_tm7an"]
+[ext_resource type="Texture2D" uid="uid://cgv1dmmki55rb" path="res://scenes/screens/sprites/logo/logo2.png" id="6_yhq6a"]
+[ext_resource type="Texture2D" uid="uid://dvp6tff322483" path="res://scenes/screens/sprites/logo/logo3.png" id="7_e6hfi"]
+[ext_resource type="Texture2D" uid="uid://c2ql72ctamjif" path="res://scenes/screens/sprites/logo/logo4.png" id="8_vy0a1"]
+[ext_resource type="PackedScene" uid="uid://dcnps1ubh4p87" path="res://scenes/common/language_selector/language_selector.tscn" id="9_tfmse"]
+[ext_resource type="PackedScene" uid="uid://bvvb57ga0cd1i" path="res://scenes/common/sound_button/sound_button.tscn" id="10_sjwty"]
 
 [node name="RewardsMenu" type="PanelContainer" unique_id=18558353]
 anchors_preset = 15
@@ -8,53 +19,178 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_qn6d6")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=193791044]
+[node name="VBoxContainer2" type="VBoxContainer" parent="." unique_id=879359893]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="VBoxContainer" unique_id=698788287]
+[node name="Top" type="HBoxContainer" parent="VBoxContainer2" unique_id=646128208]
 layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 9.21
+
+[node name="Left" type="VBoxContainer" parent="VBoxContainer2/Top" unique_id=1709576100]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Control" type="Control" parent="VBoxContainer2/Top/Left" unique_id=1895580949]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 1.35
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer2/Top/Left" unique_id=1941134098]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Control" type="Control" parent="VBoxContainer2/Top/Left/HBoxContainer" unique_id=1469882208]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.3
+
+[node name="HomeButton" type="TextureButton" parent="VBoxContainer2/Top/Left/HBoxContainer" unique_id=543671882]
+layout_mode = 2
+size_flags_horizontal = 3
+texture_normal = ExtResource("2_010sm")
+ignore_texture_size = true
+stretch_mode = 4
+
+[node name="ReturnButton" type="TextureButton" parent="VBoxContainer2/Top/Left/HBoxContainer" unique_id=293821843]
+layout_mode = 2
+size_flags_horizontal = 3
+texture_normal = ExtResource("3_qq887")
+ignore_texture_size = true
+stretch_mode = 4
+
+[node name="StarCounter" parent="VBoxContainer2/Top/Left/HBoxContainer" unique_id=401513187 instance=ExtResource("4_010sm")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Control2" type="Control" parent="VBoxContainer2/Top/Left/HBoxContainer" unique_id=1476974067]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.3
+
+[node name="Control2" type="Control" parent="VBoxContainer2/Top/Left" unique_id=512440352]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Middle" type="VBoxContainer" parent="VBoxContainer2/Top" unique_id=1908644410]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Control" type="Control" parent="VBoxContainer2/Top/Middle" unique_id=1770017533]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.47
+
+[node name="AnimatedTexture" parent="VBoxContainer2/Top/Middle" unique_id=900728642 instance=ExtResource("4_o0a1b")]
+layout_mode = 2
+size_flags_vertical = 3
+texture = ExtResource("5_tm7an")
+frames = Array[Texture2D]([ExtResource("5_tm7an"), ExtResource("6_yhq6a"), ExtResource("7_e6hfi"), ExtResource("8_vy0a1"), ExtResource("5_tm7an"), ExtResource("6_yhq6a"), ExtResource("7_e6hfi"), ExtResource("8_vy0a1"), ExtResource("5_tm7an"), ExtResource("6_yhq6a"), ExtResource("7_e6hfi"), ExtResource("8_vy0a1")])
+
+[node name="Control2" type="Control" parent="VBoxContainer2/Top/Middle" unique_id=454354467]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer2/Top" unique_id=2021985628]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Control" type="Control" parent="VBoxContainer2/Top/VBoxContainer" unique_id=1283506622]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 1.47
+
+[node name="Right" type="HBoxContainer" parent="VBoxContainer2/Top/VBoxContainer" unique_id=1412896818]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Control2" type="Control" parent="VBoxContainer2/Top/VBoxContainer/Right" unique_id=555166793]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.13
+
+[node name="LangButton" parent="VBoxContainer2/Top/VBoxContainer/Right" unique_id=2110673369 instance=ExtResource("9_tfmse")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer2/Top/VBoxContainer/Right" unique_id=1056066318]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="SoundButton" parent="VBoxContainer2/Top/VBoxContainer/Right/HBoxContainer" unique_id=2010444643 instance=ExtResource("10_sjwty")]
+layout_mode = 2
+
+[node name="Control" type="Control" parent="VBoxContainer2/Top/VBoxContainer/Right/HBoxContainer" unique_id=380574660]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Control" type="Control" parent="VBoxContainer2/Top/VBoxContainer/Right" unique_id=1045362394]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.13
+
+[node name="Control2" type="Control" parent="VBoxContainer2/Top/VBoxContainer" unique_id=32425817]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer2" unique_id=193791044]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 20.0
+
+[node name="Label" type="Label" parent="VBoxContainer2/VBoxContainer" unique_id=698788287]
+layout_mode = 2
+theme_override_font_sizes/font_size = 151
 text = "REWARDS"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="GridContainer" type="GridContainer" parent="VBoxContainer" unique_id=905130901]
+[node name="GridContainer" type="GridContainer" parent="VBoxContainer2/VBoxContainer" unique_id=905130901]
 layout_mode = 2
 size_flags_vertical = 3
 columns = 3
 
-[node name="TextureButton" type="TextureButton" parent="VBoxContainer/GridContainer" unique_id=2130049467]
+[node name="TextureButton" type="TextureButton" parent="VBoxContainer2/VBoxContainer/GridContainer" unique_id=2130049467]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 texture_normal = ExtResource("1_b2iqw")
 
-[node name="TextureButton2" type="TextureButton" parent="VBoxContainer/GridContainer" unique_id=463306627]
+[node name="TextureButton2" type="TextureButton" parent="VBoxContainer2/VBoxContainer/GridContainer" unique_id=463306627]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 texture_normal = ExtResource("1_b2iqw")
 
-[node name="TextureButton3" type="TextureButton" parent="VBoxContainer/GridContainer" unique_id=1947124196]
+[node name="TextureButton3" type="TextureButton" parent="VBoxContainer2/VBoxContainer/GridContainer" unique_id=1947124196]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 texture_normal = ExtResource("1_b2iqw")
 
-[node name="TextureButton4" type="TextureButton" parent="VBoxContainer/GridContainer" unique_id=494282074]
+[node name="TextureButton4" type="TextureButton" parent="VBoxContainer2/VBoxContainer/GridContainer" unique_id=494282074]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 texture_normal = ExtResource("1_b2iqw")
 
-[node name="TextureButton5" type="TextureButton" parent="VBoxContainer/GridContainer" unique_id=1389174927]
+[node name="TextureButton5" type="TextureButton" parent="VBoxContainer2/VBoxContainer/GridContainer" unique_id=1389174927]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 texture_normal = ExtResource("1_b2iqw")
 
-[node name="TextureButton6" type="TextureButton" parent="VBoxContainer/GridContainer" unique_id=379746554]
+[node name="TextureButton6" type="TextureButton" parent="VBoxContainer2/VBoxContainer/GridContainer" unique_id=379746554]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 texture_normal = ExtResource("1_b2iqw")
+
+[connection signal="pressed" from="VBoxContainer2/Top/Left/HBoxContainer/HomeButton" to="." method="_on_home_button_pressed"]
+[connection signal="pressed" from="VBoxContainer2/Top/Left/HBoxContainer/ReturnButton" to="." method="_on_return_button_pressed"]

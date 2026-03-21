@@ -23,5 +23,7 @@ autostart = true
 [node name="aspCorrect" type="AudioStreamPlayer2D" parent="." unique_id=1149492843]
 
 [node name="aspWrong" type="AudioStreamPlayer2D" parent="." unique_id=374884138]
+stream = ExtResource("7_efrrp")
+autoplay = true
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

@@ -15,7 +15,7 @@
 [ext_resource type="Texture2D" uid="uid://lox0t5mp6r0q" path="res://scenes/screens/levels/level3/sprites/pos/unnamed (32).png" id="13_7r5kt"]
 [ext_resource type="Texture2D" uid="uid://d2w6hp8i0svbw" path="res://scenes/screens/levels/level3/sprites/neg/unnamed (40).png" id="14_6x41h"]
 [ext_resource type="PackedScene" uid="uid://do1blbrdmk38b" path="res://scenes/common/popup/popup.tscn" id="17_a8fjs"]
-[ext_resource type="PackedScene" uid="uid://da2vvkfe4i3sw" path="res://scenes/screens/levels/level2/reizy_mine.tscn" id="18_kkcy1"]
+[ext_resource type="PackedScene" uid="uid://da2vvkfe4i3sw" path="res://scenes/screens/levels/level1/reizy_mine.tscn" id="18_kkcy1"]
 
 [node name="Makty" type="Control" unique_id=429072203]
 layout_mode = 3

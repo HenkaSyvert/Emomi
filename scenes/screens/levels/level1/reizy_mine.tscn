@@ -1,0 +1,208 @@
+[gd_scene format=3 uid="uid://da2vvkfe4i3sw"]
+
+[ext_resource type="Script" uid="uid://c251iblecit8b" path="res://scenes/screens/levels/level_template/level.gd" id="1_5xinv"]
+[ext_resource type="Texture2D" uid="uid://c3fpvwdswa80c" path="res://scenes/screens/sprites/home.png" id="2_3fbfk"]
+[ext_resource type="Texture2D" uid="uid://dk78fcithaeh7" path="res://scenes/screens/sprites/arrow.png" id="3_6r7qk"]
+[ext_resource type="PackedScene" uid="uid://ctoicx2ven6ek" path="res://scenes/common/star_counter/star_counter.tscn" id="4_yt5y6"]
+[ext_resource type="PackedScene" uid="uid://bvvb57ga0cd1i" path="res://scenes/common/sound_button/sound_button.tscn" id="5_ilrjr"]
+[ext_resource type="PackedScene" uid="uid://djgs5oxgmxh5x" path="res://scenes/common/animated_texture/animated_texture.tscn" id="6_6pdtb"]
+[ext_resource type="Texture2D" uid="uid://bm4qohhvogdf4" path="res://scenes/screens/character_screen/sprites/reizy_info.png" id="6_swv12"]
+[ext_resource type="Texture2D" uid="uid://d3e66kbf7ncd3" path="res://scenes/screens/levels/sprites/reizy/Reizy 1.png" id="7_swv12"]
+[ext_resource type="Texture2D" uid="uid://boy8xuvsmqpjd" path="res://scenes/screens/levels/sprites/reizy/Reizy 2.png" id="8_apsug"]
+[ext_resource type="Texture2D" uid="uid://df7520n7wkemv" path="res://scenes/screens/levels/sprites/reizy/Reizy wrong.png" id="9_6r7qk"]
+[ext_resource type="PackedScene" uid="uid://ixajx0dg6qmk" path="res://scenes/common/animated_button/animated_button.tscn" id="9_a6o27"]
+[ext_resource type="Texture2D" uid="uid://q4y1ku44cgdd" path="res://scenes/screens/levels/sprites/situations/toy/toy 1 loop.png" id="10_c2i4l"]
+[ext_resource type="Texture2D" uid="uid://1osqbxscikn8" path="res://scenes/screens/levels/sprites/situations/toy/toy 2 loop.png" id="11_y1sxn"]
+[ext_resource type="Texture2D" uid="uid://cmtc6bsgmxvwv" path="res://scenes/screens/levels/sprites/situations/mine/mine 1 loop.png" id="12_4mn3i"]
+[ext_resource type="Texture2D" uid="uid://bv3q8whvwob41" path="res://scenes/screens/levels/sprites/situations/math/math 2 loop.png" id="12_yt5y6"]
+[ext_resource type="Texture2D" uid="uid://1xcmn1cf81wa" path="res://scenes/screens/levels/sprites/situations/mine/mine 2 loop.png" id="13_quogp"]
+[ext_resource type="Texture2D" uid="uid://dn808kmh8nh7n" path="res://scenes/screens/levels/sprites/situations/math/math 1 loop.png" id="14_tc1vq"]
+[ext_resource type="PackedScene" uid="uid://do1blbrdmk38b" path="res://scenes/common/popup/popup.tscn" id="15_urstb"]
+[ext_resource type="PackedScene" uid="uid://cgbq1ngys8pjs" path="res://scenes/screens/levels/level1/eddy_toy.tscn" id="16_3fbfk"]
+[ext_resource type="PackedScene" uid="uid://dxbpakctk1gcs" path="res://scenes/screens/character_screen/character_screen.tscn" id="19_ilrjr"]
+
+[node name="ReizyMine" type="Control" unique_id=1298852086]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Level1Template" type="PanelContainer" parent="." unique_id=2000378622]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5xinv")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Level1Template" unique_id=489607803]
+layout_mode = 2
+
+[node name="Left" type="HBoxContainer" parent="Level1Template/HBoxContainer" unique_id=1796227273]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 20.0
+
+[node name="Control" type="Control" parent="Level1Template/HBoxContainer/Left" unique_id=610949511]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.14
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="Level1Template/HBoxContainer/Left" unique_id=599210329]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Control2" type="Control" parent="Level1Template/HBoxContainer/Left/VBoxContainer2" unique_id=1506118408]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.15
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Level1Template/HBoxContainer/Left/VBoxContainer2" unique_id=2024702787]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Level1Template/HBoxContainer/Left/VBoxContainer2/VBoxContainer" unique_id=469003284]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="HomeButton" type="TextureButton" parent="Level1Template/HBoxContainer/Left/VBoxContainer2/VBoxContainer/HBoxContainer" unique_id=1880218]
+layout_mode = 2
+size_flags_horizontal = 3
+texture_normal = ExtResource("2_3fbfk")
+ignore_texture_size = true
+stretch_mode = 4
+
+[node name="ReturnButton" type="TextureButton" parent="Level1Template/HBoxContainer/Left/VBoxContainer2/VBoxContainer/HBoxContainer" unique_id=254095866]
+layout_mode = 2
+size_flags_horizontal = 3
+texture_normal = ExtResource("3_6r7qk")
+ignore_texture_size = true
+stretch_mode = 4
+
+[node name="StarCounter" parent="Level1Template/HBoxContainer/Left/VBoxContainer2/VBoxContainer" unique_id=401513187 instance=ExtResource("4_yt5y6")]
+layout_mode = 2
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="Level1Template/HBoxContainer/Left/VBoxContainer2/VBoxContainer" unique_id=399111435]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="SoundButton" parent="Level1Template/HBoxContainer/Left/VBoxContainer2/VBoxContainer/HBoxContainer2" unique_id=2010444643 instance=ExtResource("5_ilrjr")]
+layout_mode = 2
+
+[node name="Control" type="Control" parent="Level1Template/HBoxContainer/Left/VBoxContainer2/VBoxContainer/HBoxContainer2" unique_id=2130782136]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="Level1Template/HBoxContainer/Left/VBoxContainer2/VBoxContainer" unique_id=291103257]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="About" type="TextureButton" parent="Level1Template/HBoxContainer/Left/VBoxContainer2/VBoxContainer/HBoxContainer3" unique_id=1469408358]
+layout_mode = 2
+size_flags_horizontal = 3
+texture_normal = ExtResource("6_swv12")
+stretch_mode = 4
+
+[node name="Control" type="Control" parent="Level1Template/HBoxContainer/Left/VBoxContainer2/VBoxContainer/HBoxContainer3" unique_id=1549409236]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Control" type="Control" parent="Level1Template/HBoxContainer/Left/VBoxContainer2" unique_id=1686318456]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.65
+
+[node name="Middle" type="VBoxContainer" parent="Level1Template/HBoxContainer" unique_id=174410974]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 60.0
+
+[node name="Control" type="Control" parent="Level1Template/HBoxContainer/Middle" unique_id=1574689730]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.1
+
+[node name="Label" type="Label" parent="Level1Template/HBoxContainer/Middle" unique_id=2001502489]
+layout_mode = 2
+text = "LEVEL_1_PROMPT"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Level1Template/HBoxContainer/Middle" unique_id=2074270579]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Control" type="Control" parent="Level1Template/HBoxContainer/Middle/HBoxContainer" unique_id=213314209]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 6.04
+
+[node name="AnimatedTexture" parent="Level1Template/HBoxContainer/Middle/HBoxContainer" unique_id=900728642 node_paths=PackedStringArray("popup") instance=ExtResource("6_6pdtb")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 60.0
+texture = ExtResource("7_swv12")
+stretch_mode = 4
+frames = Array[Texture2D]([ExtResource("7_swv12"), ExtResource("8_apsug")])
+popup = NodePath("../../../../Popup")
+wrong_frame = ExtResource("9_6r7qk")
+
+[node name="Control2" type="Control" parent="Level1Template/HBoxContainer/Middle" unique_id=797408884]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.05
+
+[node name="Right" type="VBoxContainer" parent="Level1Template/HBoxContainer" unique_id=580566425]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 22.05
+
+[node name="Opt3" parent="Level1Template/HBoxContainer/Right" unique_id=418530064 instance=ExtResource("9_a6o27")]
+layout_mode = 2
+texture_normal = ExtResource("14_tc1vq")
+is_correct = false
+frame_correct = ExtResource("14_tc1vq")
+frame_wrong = ExtResource("14_tc1vq")
+frames = Array[Texture2D]([ExtResource("14_tc1vq"), ExtResource("12_yt5y6")])
+
+[node name="Opt2" parent="Level1Template/HBoxContainer/Right" unique_id=335640778 instance=ExtResource("9_a6o27")]
+layout_mode = 2
+texture_normal = ExtResource("12_4mn3i")
+frame_correct = ExtResource("12_4mn3i")
+frame_wrong = ExtResource("13_quogp")
+frames = Array[Texture2D]([ExtResource("12_4mn3i"), ExtResource("13_quogp")])
+
+[node name="Opt1" parent="Level1Template/HBoxContainer/Right" unique_id=1779106198 instance=ExtResource("9_a6o27")]
+layout_mode = 2
+texture_normal = ExtResource("10_c2i4l")
+is_correct = false
+frame_correct = ExtResource("10_c2i4l")
+frame_wrong = ExtResource("11_y1sxn")
+frames = Array[Texture2D]([ExtResource("10_c2i4l"), ExtResource("11_y1sxn")])
+
+[node name="Control" type="Control" parent="Level1Template/HBoxContainer/Right" unique_id=1500218761]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.14
+
+[node name="Control" type="Control" parent="Level1Template/HBoxContainer" unique_id=546796532]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Popup" parent="Level1Template" unique_id=1497230596 instance=ExtResource("15_urstb")]
+visible = false
+layout_mode = 2
+next_scene = ExtResource("16_3fbfk")
+
+[node name="CharacterInfo" parent="." unique_id=100588087 instance=ExtResource("19_ilrjr")]
+visible = false
+layout_mode = 1
+
+[connection signal="pressed" from="Level1Template/HBoxContainer/Left/VBoxContainer2/VBoxContainer/HBoxContainer/HomeButton" to="Level1Template" method="_on_home_button_pressed"]
+[connection signal="pressed" from="Level1Template/HBoxContainer/Left/VBoxContainer2/VBoxContainer/HBoxContainer/ReturnButton" to="Level1Template" method="_on_return_button_pressed"]
+[connection signal="pressed" from="Level1Template/HBoxContainer/Left/VBoxContainer2/VBoxContainer/HBoxContainer3/About" to="Level1Template" method="_on_about_pressed"]

@@ -37,6 +37,7 @@ func _drop_data(_at_position: Vector2, data: Variant) -> void:
 	var is_correct: bool = data as bool
 	if is_correct:
 		popup.visible = true
+		Engine.time_scale = 0
 		if not SoundManager.is_muted:
 			aspCorrect.play()
 	else:

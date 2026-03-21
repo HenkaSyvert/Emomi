@@ -24,14 +24,14 @@ func _on_return_button_pressed() -> void:
 
 
 func _on_level_1_button_pressed() -> void:
-	var err: Error = get_tree().change_scene_to_file("res://scenes/screens/levels/level1/dog.tscn")
+	var err: Error = get_tree().change_scene_to_file(
+		"res://scenes/screens/levels/level1/eddy_dog.tscn"
+	)
 	assert(err == OK)
 
 
 func _on_level_2_button_pressed() -> void:
-	var err: Error = get_tree().change_scene_to_file(
-		"res://scenes/screens/levels/level2/eddy_dog.tscn"
-	)
+	var err: Error = get_tree().change_scene_to_file("res://scenes/screens/levels/level2/dog.tscn")
 	assert(err == OK)
 
 
