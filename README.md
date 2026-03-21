@@ -10,10 +10,6 @@ add pause animations
 byt level 1 och 2
 sdd reward screen back btn
 
-
-från daniela
-	foldable container down/up arrows
-
 rewards menu
 	when click image, popup to show full image, and download button
 	home and previous buttons, and sound
