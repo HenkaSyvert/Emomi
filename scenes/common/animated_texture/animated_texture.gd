@@ -14,6 +14,10 @@ extends TextureRect
 
 var current_frame: int = 0
 
+@export var isLevel3: bool = false
+@export var anger_level: int = 1
+@export var max_anger_level: int = 1
+
 
 func _ready() -> void:
 	texture = frames[current_frame]
@@ -36,11 +40,18 @@ func _can_drop_data(_at_position: Vector2, _data: Variant) -> bool:
 func _drop_data(_at_position: Vector2, data: Variant) -> void:
 	var is_correct: bool = data as bool
 	if is_correct:
-		popup.visible = true
-		Engine.time_scale = 0
+		anger_level -= 1
+		if anger_level == 0:
+			popup.visible = true
+			Engine.time_scale = 0
+
 		if not SoundManager.is_muted:
 			aspCorrect.play()
+
 	else:
+		anger_level += 1
+		anger_level = min(anger_level, max_anger_level)
+
 		if wrong_frame:
 			texture = wrong_frame
 		timer.stop()

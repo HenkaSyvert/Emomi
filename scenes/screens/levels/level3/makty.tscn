@@ -134,6 +134,9 @@ stretch_mode = 4
 frames = Array[Texture2D]([ExtResource("7_xknha"), ExtResource("8_tjbc5")])
 popup = NodePath("../../../../Popup")
 wrong_frame = ExtResource("9_iavup")
+isLevel3 = true
+anger_level = 2
+max_anger_level = 2
 
 [node name="Control2" type="Control" parent="Level1Template/HBoxContainer/Middle" unique_id=658410364]
 layout_mode = 2
