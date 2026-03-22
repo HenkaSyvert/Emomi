@@ -1,0 +1,235 @@
+[gd_scene format=3 uid="uid://br2ox5sejwof5"]
+
+[ext_resource type="Script" uid="uid://c4ep23mdxojok" path="res://scenes/screens/levels/level3/level_3.gd" id="1_1cf2h"]
+[ext_resource type="Script" uid="uid://c251iblecit8b" path="res://scenes/screens/levels/level_template/level.gd" id="1_yeckm"]
+[ext_resource type="Texture2D" uid="uid://c3fpvwdswa80c" path="res://scenes/screens/sprites/home.png" id="2_1cf2h"]
+[ext_resource type="Texture2D" uid="uid://dk78fcithaeh7" path="res://scenes/screens/sprites/arrow.png" id="3_bvx3q"]
+[ext_resource type="Texture2D" uid="uid://beehh1pvpb53" path="res://scenes/screens/levels/level3/sprites/pos/unnamed (33).png" id="3_wkqnc"]
+[ext_resource type="PackedScene" uid="uid://ctoicx2ven6ek" path="res://scenes/common/star_counter/star_counter.tscn" id="4_3mcu2"]
+[ext_resource type="Texture2D" uid="uid://cfrhgrqie88e5" path="res://scenes/screens/levels/level3/sprites/pos/unnamed (34).png" id="4_46enw"]
+[ext_resource type="PackedScene" uid="uid://bvvb57ga0cd1i" path="res://scenes/common/sound_button/sound_button.tscn" id="5_35i17"]
+[ext_resource type="Texture2D" uid="uid://be8gdhwxo13dj" path="res://scenes/screens/levels/level3/sprites/pos/unnamed (35).png" id="5_xmrbc"]
+[ext_resource type="Texture2D" uid="uid://ba458nu6qptru" path="res://scenes/screens/levels/level3/sprites/pos/unnamed (36).png" id="6_1idft"]
+[ext_resource type="PackedScene" uid="uid://djgs5oxgmxh5x" path="res://scenes/common/animated_texture/animated_texture.tscn" id="6_5tll1"]
+[ext_resource type="Texture2D" uid="uid://cfvpjw8o0i5rv" path="res://scenes/screens/levels/level3/sprites/pos/unnamed (37).png" id="7_2unj2"]
+[ext_resource type="Texture2D" uid="uid://cna0kg0u533g" path="res://scenes/screens/levels/level3/sprites/pos/unnamed (38).png" id="8_5crfy"]
+[ext_resource type="Texture2D" uid="uid://bnj7vtfhfkiyy" path="res://scenes/screens/levels/level3/sprites/pos/unnamed (46).png" id="9_3fpe8"]
+[ext_resource type="Texture2D" uid="uid://bgk1llwqyys88" path="res://scenes/screens/levels/level3/sprites/pos/unnamed (47).png" id="10_40gcq"]
+[ext_resource type="PackedScene" uid="uid://ixajx0dg6qmk" path="res://scenes/common/animated_button/animated_button.tscn" id="11_onvmi"]
+[ext_resource type="Texture2D" uid="uid://bwm7sbcvcix6l" path="res://scenes/screens/levels/level3/sprites/neg/unnamed (39).png" id="12_fxg6a"]
+[ext_resource type="Texture2D" uid="uid://dgtthlesw4crr" path="res://scenes/screens/levels/level3/sprites/neg/unnamed (41).png" id="13_5j5wg"]
+[ext_resource type="Texture2D" uid="uid://lox0t5mp6r0q" path="res://scenes/screens/levels/level3/sprites/pos/unnamed (32).png" id="13_w22ap"]
+[ext_resource type="Texture2D" uid="uid://d2w6hp8i0svbw" path="res://scenes/screens/levels/level3/sprites/neg/unnamed (40).png" id="14_3orvs"]
+[ext_resource type="Texture2D" uid="uid://caulpm1f6jxos" path="res://scenes/screens/levels/level3/sprites/neg/unnamed (42).png" id="14_kgquc"]
+[ext_resource type="Texture2D" uid="uid://c2q61lmbth52" path="res://scenes/screens/levels/level3/sprites/neg/unnamed (43).png" id="15_6cuhh"]
+[ext_resource type="PackedScene" uid="uid://do1blbrdmk38b" path="res://scenes/common/popup/popup.tscn" id="15_wkqnc"]
+[ext_resource type="Texture2D" uid="uid://duuxlfoa736mm" path="res://scenes/screens/levels/level3/sprites/neg/unnamed (44).png" id="16_c2bpu"]
+[ext_resource type="Texture2D" uid="uid://y38ra8bxjw18" path="res://scenes/screens/levels/level3/sprites/neg/unnamed (45).png" id="17_mgjan"]
+[ext_resource type="Texture2D" uid="uid://crqahntqkoku5" path="res://scenes/screens/character_screen/sprites/eddy_info.png" id="23_46enw"]
+[ext_resource type="Texture2D" uid="uid://gc4vqcy2atjt" path="res://scenes/screens/levels/sprites/eddy/Eddy wrong.png" id="24_wkqnc"]
+[ext_resource type="Texture2D" uid="uid://baklicufa3nai" path="res://scenes/screens/levels/sprites/eddy/Eddy Correct.png" id="25_46enw"]
+[ext_resource type="Texture2D" uid="uid://bxr3o81w5rgtx" path="res://scenes/screens/levels/sprites/eddy/Eddy 1.png" id="26_xmrbc"]
+[ext_resource type="Texture2D" uid="uid://bwgb3ecse23fx" path="res://scenes/screens/levels/sprites/eddy/Eddy 2.png" id="27_1idft"]
+[ext_resource type="PackedScene" uid="uid://b1t13o3cf1jg3" path="res://scenes/screens/levels/level3/makty.tscn" id="31_xmrbc"]
+[ext_resource type="PackedScene" uid="uid://dxbpakctk1gcs" path="res://scenes/screens/character_screen/character_screen.tscn" id="32_xmrbc"]
+
+[node name="Eddy" type="Control" unique_id=1006910285 node_paths=PackedStringArray("opts")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_1cf2h")
+poss = Array[Texture2D]([ExtResource("13_w22ap"), ExtResource("3_wkqnc"), ExtResource("4_46enw"), ExtResource("5_xmrbc"), ExtResource("6_1idft"), ExtResource("7_2unj2"), ExtResource("8_5crfy"), ExtResource("9_3fpe8"), ExtResource("10_40gcq")])
+negs = Array[Texture2D]([ExtResource("12_fxg6a"), ExtResource("14_3orvs"), ExtResource("13_5j5wg"), ExtResource("14_kgquc"), ExtResource("15_6cuhh"), ExtResource("16_c2bpu"), ExtResource("17_mgjan")])
+opts = [NodePath("Level1Template/HBoxContainer/Right/Opt3"), NodePath("Level1Template/HBoxContainer/Right/Opt1"), NodePath("Level1Template/HBoxContainer/Right/Opt2")]
+
+[node name="Level1Template" type="PanelContainer" parent="." unique_id=516723603]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_yeckm")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Level1Template" unique_id=1065102618]
+layout_mode = 2
+
+[node name="Left" type="HBoxContainer" parent="Level1Template/HBoxContainer" unique_id=596008978]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 20.0
+
+[node name="Control" type="Control" parent="Level1Template/HBoxContainer/Left" unique_id=2054747694]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.14
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="Level1Template/HBoxContainer/Left" unique_id=780091676]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Control2" type="Control" parent="Level1Template/HBoxContainer/Left/VBoxContainer2" unique_id=1950729399]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.15
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Level1Template/HBoxContainer/Left/VBoxContainer2" unique_id=983805762]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Level1Template/HBoxContainer/Left/VBoxContainer2/VBoxContainer" unique_id=1590069205]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="HomeButton" type="TextureButton" parent="Level1Template/HBoxContainer/Left/VBoxContainer2/VBoxContainer/HBoxContainer" unique_id=1028727287]
+layout_mode = 2
+size_flags_horizontal = 3
+texture_normal = ExtResource("2_1cf2h")
+ignore_texture_size = true
+stretch_mode = 4
+
+[node name="ReturnButton" type="TextureButton" parent="Level1Template/HBoxContainer/Left/VBoxContainer2/VBoxContainer/HBoxContainer" unique_id=309264567]
+layout_mode = 2
+size_flags_horizontal = 3
+texture_normal = ExtResource("3_bvx3q")
+ignore_texture_size = true
+stretch_mode = 4
+
+[node name="StarCounter" parent="Level1Template/HBoxContainer/Left/VBoxContainer2/VBoxContainer" unique_id=401513187 instance=ExtResource("4_3mcu2")]
+layout_mode = 2
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="Level1Template/HBoxContainer/Left/VBoxContainer2/VBoxContainer" unique_id=2015284478]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="SoundButton" parent="Level1Template/HBoxContainer/Left/VBoxContainer2/VBoxContainer/HBoxContainer2" unique_id=2010444643 instance=ExtResource("5_35i17")]
+layout_mode = 2
+
+[node name="Control" type="Control" parent="Level1Template/HBoxContainer/Left/VBoxContainer2/VBoxContainer/HBoxContainer2" unique_id=562129546]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="Level1Template/HBoxContainer/Left/VBoxContainer2/VBoxContainer" unique_id=1730900690]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="About" type="TextureButton" parent="Level1Template/HBoxContainer/Left/VBoxContainer2/VBoxContainer/HBoxContainer3" unique_id=1987261424]
+layout_mode = 2
+size_flags_horizontal = 3
+texture_normal = ExtResource("23_46enw")
+stretch_mode = 4
+
+[node name="Control" type="Control" parent="Level1Template/HBoxContainer/Left/VBoxContainer2/VBoxContainer/HBoxContainer3" unique_id=1786878655]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Control" type="Control" parent="Level1Template/HBoxContainer/Left/VBoxContainer2" unique_id=1181680676]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.65
+
+[node name="Middle" type="VBoxContainer" parent="Level1Template/HBoxContainer" unique_id=2129213982]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 60.0
+
+[node name="Control" type="Control" parent="Level1Template/HBoxContainer/Middle" unique_id=1136054080]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.1
+
+[node name="Label" type="Label" parent="Level1Template/HBoxContainer/Middle" unique_id=1477957034]
+layout_mode = 2
+text = "LEVEL_1_PROMPT"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Level1Template/HBoxContainer/Middle" unique_id=1916671510]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Control" type="Control" parent="Level1Template/HBoxContainer/Middle/HBoxContainer" unique_id=912719706]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 6.04
+
+[node name="AnimatedTexture" parent="Level1Template/HBoxContainer/Middle/HBoxContainer" unique_id=900728642 node_paths=PackedStringArray("popup") instance=ExtResource("6_5tll1")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 60.0
+texture = ExtResource("24_wkqnc")
+stretch_mode = 4
+frames = Array[Texture2D]([ExtResource("25_46enw"), ExtResource("27_1idft"), ExtResource("26_xmrbc"), ExtResource("24_wkqnc")])
+popup = NodePath("../../../../Popup")
+wrong_frame = ExtResource("24_wkqnc")
+isLevel3 = true
+anger_level = 3
+max_anger_level = 3
+
+[node name="Control2" type="Control" parent="Level1Template/HBoxContainer/Middle" unique_id=263507731]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.05
+
+[node name="Right" type="VBoxContainer" parent="Level1Template/HBoxContainer" unique_id=518403235]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 22.05
+
+[node name="Opt3" parent="Level1Template/HBoxContainer/Right" unique_id=1779106198 node_paths=PackedStringArray("level3") instance=ExtResource("11_onvmi")]
+layout_mode = 2
+texture_normal = ExtResource("12_fxg6a")
+is_correct = false
+frame_correct = ExtResource("12_fxg6a")
+frame_wrong = ExtResource("12_fxg6a")
+frames = Array[Texture2D]([ExtResource("12_fxg6a")])
+isLevel3 = true
+level3 = NodePath("../../../..")
+
+[node name="Opt1" parent="Level1Template/HBoxContainer/Right" unique_id=1286579092 node_paths=PackedStringArray("level3") instance=ExtResource("11_onvmi")]
+layout_mode = 2
+texture_normal = ExtResource("13_w22ap")
+frame_correct = ExtResource("13_w22ap")
+frame_wrong = ExtResource("13_w22ap")
+frames = Array[Texture2D]([ExtResource("13_w22ap")])
+isLevel3 = true
+level3 = NodePath("../../../..")
+
+[node name="Opt2" parent="Level1Template/HBoxContainer/Right" unique_id=1687824362 node_paths=PackedStringArray("level3") instance=ExtResource("11_onvmi")]
+layout_mode = 2
+texture_normal = ExtResource("14_3orvs")
+is_correct = false
+frame_correct = ExtResource("14_3orvs")
+frame_wrong = ExtResource("14_3orvs")
+frames = Array[Texture2D]([ExtResource("14_3orvs")])
+isLevel3 = true
+level3 = NodePath("../../../..")
+
+[node name="Control" type="Control" parent="Level1Template/HBoxContainer/Right" unique_id=1969087455]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.14
+
+[node name="Control" type="Control" parent="Level1Template/HBoxContainer" unique_id=652981015]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Popup" parent="Level1Template" unique_id=1497230596 instance=ExtResource("15_wkqnc")]
+visible = false
+layout_mode = 2
+next_scene = ExtResource("31_xmrbc")
+level_index = 3
+
+[node name="CharacterInfo" parent="." unique_id=100588087 instance=ExtResource("32_xmrbc")]
+visible = false
+layout_mode = 1
+character = 0
+
+[connection signal="pressed" from="Level1Template/HBoxContainer/Left/VBoxContainer2/VBoxContainer/HBoxContainer/HomeButton" to="Level1Template" method="_on_home_button_pressed"]
+[connection signal="pressed" from="Level1Template/HBoxContainer/Left/VBoxContainer2/VBoxContainer/HBoxContainer/ReturnButton" to="Level1Template" method="_on_return_button_pressed"]
+[connection signal="pressed" from="Level1Template/HBoxContainer/Left/VBoxContainer2/VBoxContainer/HBoxContainer3/About" to="Level1Template" method="_on_about_pressed"]

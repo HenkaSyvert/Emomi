@@ -18,8 +18,16 @@ var current_frame: int = 0
 @export var anger_level: int = 1
 @export var max_anger_level: int = 1
 
+var actual_frames: Array[Texture2D]
+var allFrames: Array[Texture2D]
+
 
 func _ready() -> void:
+	if isLevel3:
+		allFrames = frames
+		actual_frames = [allFrames[anger_level], allFrames[anger_level - 1]]
+		frames = actual_frames
+
 	texture = frames[current_frame]
 	timer.wait_time = 1.0 / fps
 
@@ -44,6 +52,8 @@ func _drop_data(_at_position: Vector2, data: Variant) -> void:
 		if anger_level == 0:
 			popup.visible = true
 			Engine.time_scale = 0
+		if isLevel3:
+			frames = [allFrames[anger_level], allFrames[anger_level - 1]]
 
 		if not SoundManager.is_muted:
 			aspCorrect.play()
@@ -51,6 +61,9 @@ func _drop_data(_at_position: Vector2, data: Variant) -> void:
 	else:
 		anger_level += 1
 		anger_level = min(anger_level, max_anger_level)
+
+		if isLevel3:
+			frames = [allFrames[anger_level], allFrames[anger_level - 1]]
 
 		if wrong_frame:
 			texture = wrong_frame

@@ -12,6 +12,9 @@ var current_frame: int = 0
 
 var is_dragging: bool = false
 
+@export var isLevel3: bool = false
+@export var level3: Node
+
 
 func _ready() -> void:
 	timer.wait_time = 1.0 / fps
@@ -42,6 +45,13 @@ func _on_timer_timeout() -> void:
 
 
 func _notification(what):
-	if what == NOTIFICATION_DRAG_END:
+	if what == NOTIFICATION_DRAG_END and is_dragging:
 		is_dragging = false
 		timer.start()
+		if get_window().gui_is_drag_successful() and isLevel3:
+			var d = level3.new_opt(is_correct)
+			frames = [d["texture"]]
+			frame_correct = frames[0]
+			frame_wrong = frames[0]
+			is_correct = d["is_correct"]
+			_on_timer_timeout()

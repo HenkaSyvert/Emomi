@@ -36,9 +36,7 @@ func _on_level_2_button_pressed() -> void:
 
 
 func _on_level_3_button_pressed() -> void:
-	var err: Error = get_tree().change_scene_to_file(
-		"res://scenes/screens/levels/level3/makty.tscn"
-	)
+	var err: Error = get_tree().change_scene_to_file("res://scenes/screens/levels/level3/eddy.tscn")
 	assert(err == OK)
 
 

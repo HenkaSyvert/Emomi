@@ -4,20 +4,36 @@
 [ext_resource type="Script" uid="uid://c4ep23mdxojok" path="res://scenes/screens/levels/level3/level_3.gd" id="1_ex073"]
 [ext_resource type="Texture2D" uid="uid://c3fpvwdswa80c" path="res://scenes/screens/sprites/home.png" id="2_ex073"]
 [ext_resource type="Texture2D" uid="uid://dk78fcithaeh7" path="res://scenes/screens/sprites/arrow.png" id="3_0thkf"]
+[ext_resource type="Texture2D" uid="uid://beehh1pvpb53" path="res://scenes/screens/levels/level3/sprites/pos/unnamed (33).png" id="3_tsjiw"]
+[ext_resource type="Texture2D" uid="uid://cfrhgrqie88e5" path="res://scenes/screens/levels/level3/sprites/pos/unnamed (34).png" id="4_7v06a"]
 [ext_resource type="PackedScene" uid="uid://ctoicx2ven6ek" path="res://scenes/common/star_counter/star_counter.tscn" id="4_o66k5"]
 [ext_resource type="PackedScene" uid="uid://bvvb57ga0cd1i" path="res://scenes/common/sound_button/sound_button.tscn" id="5_3773w"]
+[ext_resource type="Texture2D" uid="uid://be8gdhwxo13dj" path="res://scenes/screens/levels/level3/sprites/pos/unnamed (35).png" id="5_oy5xb"]
+[ext_resource type="Texture2D" uid="uid://ba458nu6qptru" path="res://scenes/screens/levels/level3/sprites/pos/unnamed (36).png" id="6_hayoe"]
 [ext_resource type="PackedScene" uid="uid://djgs5oxgmxh5x" path="res://scenes/common/animated_texture/animated_texture.tscn" id="6_mxuc4"]
+[ext_resource type="Texture2D" uid="uid://cfvpjw8o0i5rv" path="res://scenes/screens/levels/level3/sprites/pos/unnamed (37).png" id="7_a8fjs"]
 [ext_resource type="Texture2D" uid="uid://doy86nxmkhl7u" path="res://scenes/screens/levels/sprites/makty/Makty 1.png" id="7_xknha"]
+[ext_resource type="Texture2D" uid="uid://cna0kg0u533g" path="res://scenes/screens/levels/level3/sprites/pos/unnamed (38).png" id="8_kkcy1"]
 [ext_resource type="Texture2D" uid="uid://daun1aq8tyib0" path="res://scenes/screens/levels/sprites/makty/Makty 2.png" id="8_tjbc5"]
+[ext_resource type="Texture2D" uid="uid://i6ortcmrfg3y" path="res://scenes/screens/levels/sprites/makty/Makty Correct.png" id="9_7r5kt"]
+[ext_resource type="Texture2D" uid="uid://bnj7vtfhfkiyy" path="res://scenes/screens/levels/level3/sprites/pos/unnamed (46).png" id="9_be77f"]
 [ext_resource type="Texture2D" uid="uid://dfv7dueefkb6q" path="res://scenes/screens/levels/sprites/makty/Makty wrong.png" id="9_iavup"]
+[ext_resource type="Texture2D" uid="uid://bgk1llwqyys88" path="res://scenes/screens/levels/level3/sprites/pos/unnamed (47).png" id="10_6v4td"]
 [ext_resource type="PackedScene" uid="uid://ixajx0dg6qmk" path="res://scenes/common/animated_button/animated_button.tscn" id="10_gxh31"]
 [ext_resource type="Texture2D" uid="uid://bwm7sbcvcix6l" path="res://scenes/screens/levels/level3/sprites/neg/unnamed (39).png" id="12_qsdjg"]
 [ext_resource type="Texture2D" uid="uid://lox0t5mp6r0q" path="res://scenes/screens/levels/level3/sprites/pos/unnamed (32).png" id="13_7r5kt"]
+[ext_resource type="Texture2D" uid="uid://dgtthlesw4crr" path="res://scenes/screens/levels/level3/sprites/neg/unnamed (41).png" id="13_grapy"]
 [ext_resource type="Texture2D" uid="uid://d2w6hp8i0svbw" path="res://scenes/screens/levels/level3/sprites/neg/unnamed (40).png" id="14_6x41h"]
+[ext_resource type="Texture2D" uid="uid://caulpm1f6jxos" path="res://scenes/screens/levels/level3/sprites/neg/unnamed (42).png" id="14_xk7cr"]
+[ext_resource type="Texture2D" uid="uid://c2q61lmbth52" path="res://scenes/screens/levels/level3/sprites/neg/unnamed (43).png" id="15_0av2n"]
+[ext_resource type="Texture2D" uid="uid://duuxlfoa736mm" path="res://scenes/screens/levels/level3/sprites/neg/unnamed (44).png" id="16_3p6pi"]
 [ext_resource type="PackedScene" uid="uid://do1blbrdmk38b" path="res://scenes/common/popup/popup.tscn" id="17_a8fjs"]
-[ext_resource type="PackedScene" uid="uid://da2vvkfe4i3sw" path="res://scenes/screens/levels/level1/reizy_mine.tscn" id="18_kkcy1"]
+[ext_resource type="Texture2D" uid="uid://y38ra8bxjw18" path="res://scenes/screens/levels/level3/sprites/neg/unnamed (45).png" id="17_c528d"]
+[ext_resource type="Texture2D" uid="uid://d26rfygcpjgan" path="res://scenes/screens/character_screen/sprites/makty_info.png" id="23_oy5xb"]
+[ext_resource type="PackedScene" uid="uid://bfbmtrjcstyxe" path="res://scenes/screens/levels/level3/reizy.tscn" id="31_oy5xb"]
+[ext_resource type="PackedScene" uid="uid://dxbpakctk1gcs" path="res://scenes/screens/character_screen/character_screen.tscn" id="32_hayoe"]
 
-[node name="Makty" type="Control" unique_id=429072203]
+[node name="Makty" type="Control" unique_id=429072203 node_paths=PackedStringArray("opts")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -25,6 +41,9 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_ex073")
+poss = Array[Texture2D]([ExtResource("13_7r5kt"), ExtResource("3_tsjiw"), ExtResource("4_7v06a"), ExtResource("5_oy5xb"), ExtResource("6_hayoe"), ExtResource("7_a8fjs"), ExtResource("8_kkcy1"), ExtResource("9_be77f"), ExtResource("10_6v4td")])
+negs = Array[Texture2D]([ExtResource("12_qsdjg"), ExtResource("14_6x41h"), ExtResource("13_grapy"), ExtResource("14_xk7cr"), ExtResource("15_0av2n"), ExtResource("16_3p6pi"), ExtResource("17_c528d")])
+opts = [NodePath("Level1Template/HBoxContainer/Right/Opt3"), NodePath("Level1Template/HBoxContainer/Right/Opt1"), NodePath("Level1Template/HBoxContainer/Right/Opt2")]
 
 [node name="Level1Template" type="PanelContainer" parent="." unique_id=1589522805]
 layout_mode = 1
@@ -94,6 +113,20 @@ layout_mode = 2
 layout_mode = 2
 size_flags_horizontal = 3
 
+[node name="HBoxContainer3" type="HBoxContainer" parent="Level1Template/HBoxContainer/Left/VBoxContainer2/VBoxContainer" unique_id=1014292768]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="About" type="TextureButton" parent="Level1Template/HBoxContainer/Left/VBoxContainer2/VBoxContainer/HBoxContainer3" unique_id=353150517]
+layout_mode = 2
+size_flags_horizontal = 3
+texture_normal = ExtResource("23_oy5xb")
+stretch_mode = 4
+
+[node name="Control" type="Control" parent="Level1Template/HBoxContainer/Left/VBoxContainer2/VBoxContainer/HBoxContainer3" unique_id=129253084]
+layout_mode = 2
+size_flags_horizontal = 3
+
 [node name="Control" type="Control" parent="Level1Template/HBoxContainer/Left/VBoxContainer2" unique_id=1237879110]
 layout_mode = 2
 size_flags_vertical = 3
@@ -131,12 +164,12 @@ size_flags_vertical = 3
 size_flags_stretch_ratio = 60.0
 texture = ExtResource("7_xknha")
 stretch_mode = 4
-frames = Array[Texture2D]([ExtResource("7_xknha"), ExtResource("8_tjbc5")])
+frames = Array[Texture2D]([ExtResource("9_7r5kt"), ExtResource("7_xknha"), ExtResource("8_tjbc5"), ExtResource("9_iavup")])
 popup = NodePath("../../../../Popup")
 wrong_frame = ExtResource("9_iavup")
 isLevel3 = true
-anger_level = 2
-max_anger_level = 2
+anger_level = 3
+max_anger_level = 3
 
 [node name="Control2" type="Control" parent="Level1Template/HBoxContainer/Middle" unique_id=658410364]
 layout_mode = 2
@@ -148,28 +181,34 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 22.05
 
-[node name="Opt3" parent="Level1Template/HBoxContainer/Right" unique_id=1779106198 instance=ExtResource("10_gxh31")]
+[node name="Opt3" parent="Level1Template/HBoxContainer/Right" unique_id=1779106198 node_paths=PackedStringArray("level3") instance=ExtResource("10_gxh31")]
 layout_mode = 2
 texture_normal = ExtResource("12_qsdjg")
 is_correct = false
 frame_correct = ExtResource("12_qsdjg")
 frame_wrong = ExtResource("12_qsdjg")
 frames = Array[Texture2D]([ExtResource("12_qsdjg")])
+isLevel3 = true
+level3 = NodePath("../../../..")
 
-[node name="Opt1" parent="Level1Template/HBoxContainer/Right" unique_id=730269157 instance=ExtResource("10_gxh31")]
+[node name="Opt1" parent="Level1Template/HBoxContainer/Right" unique_id=730269157 node_paths=PackedStringArray("level3") instance=ExtResource("10_gxh31")]
 layout_mode = 2
 texture_normal = ExtResource("13_7r5kt")
 frame_correct = ExtResource("13_7r5kt")
 frame_wrong = ExtResource("13_7r5kt")
 frames = Array[Texture2D]([ExtResource("13_7r5kt")])
+isLevel3 = true
+level3 = NodePath("../../../..")
 
-[node name="Opt2" parent="Level1Template/HBoxContainer/Right" unique_id=686073908 instance=ExtResource("10_gxh31")]
+[node name="Opt2" parent="Level1Template/HBoxContainer/Right" unique_id=686073908 node_paths=PackedStringArray("level3") instance=ExtResource("10_gxh31")]
 layout_mode = 2
 texture_normal = ExtResource("14_6x41h")
 is_correct = false
 frame_correct = ExtResource("14_6x41h")
 frame_wrong = ExtResource("14_6x41h")
 frames = Array[Texture2D]([ExtResource("14_6x41h")])
+isLevel3 = true
+level3 = NodePath("../../../..")
 
 [node name="Control" type="Control" parent="Level1Template/HBoxContainer/Right" unique_id=866786466]
 layout_mode = 2
@@ -183,7 +222,14 @@ size_flags_horizontal = 3
 [node name="Popup" parent="Level1Template" unique_id=1497230596 instance=ExtResource("17_a8fjs")]
 visible = false
 layout_mode = 2
-next_scene = ExtResource("18_kkcy1")
+next_scene = ExtResource("31_oy5xb")
+level_index = 3
+
+[node name="CharacterInfo" parent="." unique_id=100588087 instance=ExtResource("32_hayoe")]
+visible = false
+layout_mode = 1
+character = 1
 
 [connection signal="pressed" from="Level1Template/HBoxContainer/Left/VBoxContainer2/VBoxContainer/HBoxContainer/HomeButton" to="Level1Template" method="_on_home_button_pressed"]
 [connection signal="pressed" from="Level1Template/HBoxContainer/Left/VBoxContainer2/VBoxContainer/HBoxContainer/ReturnButton" to="Level1Template" method="_on_return_button_pressed"]
+[connection signal="pressed" from="Level1Template/HBoxContainer/Left/VBoxContainer2/VBoxContainer/HBoxContainer3/About" to="Level1Template" method="_on_about_pressed"]

@@ -18,4 +18,4 @@ func _on_button_pressed() -> void:
 	Game.nr_of_stars += 1
 	Engine.time_scale = 1
 	if is_end_of_level:
-		Game.completed_levels = level_index
+		Game.completed_levels += 1
