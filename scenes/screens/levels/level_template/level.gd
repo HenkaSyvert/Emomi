@@ -15,7 +15,7 @@ func _on_return_button_pressed() -> void:
 	assert(err == OK)
 
 
-@onready var about = $"../CharacterInfo"
+@onready var about: Control = $"../CharacterInfo"
 
 
 func _on_about_pressed() -> void:

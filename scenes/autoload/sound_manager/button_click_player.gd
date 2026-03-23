@@ -4,7 +4,8 @@ extends AudioStreamPlayer2D
 func _ready() -> void:
 	# when _ready is called, there might already be nodes in the tree, so connect all existing buttons
 	connect_buttons(get_tree().root)
-	assert(get_tree().connect("node_added", _on_scene_tree_node_added) == OK)
+	var error: Error = get_tree().connect("node_added", _on_scene_tree_node_added)
+	assert(error == OK)
 
 
 func _on_scene_tree_node_added(node: Node) -> void:
@@ -21,7 +22,8 @@ func connect_buttons(root: Node) -> void:
 
 
 func connect_to_button(button: BaseButton) -> void:
-	assert(button.connect("pressed", _on_button_pressed) == OK)
+	var error: Error = button.connect("pressed", _on_button_pressed)
+	assert(error == OK)
 
 
 func _on_button_pressed() -> void:

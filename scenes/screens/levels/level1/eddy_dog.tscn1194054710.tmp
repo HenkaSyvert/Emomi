@@ -149,8 +149,8 @@ size_flags_stretch_ratio = 60.0
 texture = ExtResource("7_b5blr")
 stretch_mode = 4
 frames = Array[Texture2D]([ExtResource("7_b5blr"), ExtResource("8_5okhu")])
-popup = NodePath("../../../../Popup")
 wrong_frame = ExtResource("9_2xty4")
+popup = NodePath("../../../../Popup")
 
 [node name="Control2" type="Control" parent="Level1Template/HBoxContainer/Middle" unique_id=2029690723]
 layout_mode = 2

@@ -21,7 +21,8 @@ var bad_food: Label = $PanelContainer/HBoxContainer/VBoxContainer/VBoxContainer/
 @onready
 var characterName: Label = $PanelContainer/HBoxContainer/VBoxContainer2/VBoxContainer/HBoxContainer/Label2
 @onready var emotion: Label = $PanelContainer/HBoxContainer/VBoxContainer2/VBoxContainer/Label2
-@onready var animTexture = $PanelContainer/HBoxContainer/VBoxContainer2/AnimatedTexture
+@onready
+var animTexture: AnimatedTextureRect = $PanelContainer/HBoxContainer/VBoxContainer2/AnimatedTexture
 
 @onready var tabContainer: VBoxContainer = $PanelContainer/HBoxContainer/VBoxContainer/VBoxContainer
 

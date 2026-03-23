@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://c3fpvwdswa80c" path="res://scenes/screens/sprites/home.png" id="2_010sm"]
 [ext_resource type="Texture2D" uid="uid://dk78fcithaeh7" path="res://scenes/screens/sprites/arrow.png" id="3_qq887"]
 [ext_resource type="PackedScene" uid="uid://ctoicx2ven6ek" path="res://scenes/common/star_counter/star_counter.tscn" id="4_010sm"]
-[ext_resource type="PackedScene" uid="uid://djgs5oxgmxh5x" path="res://scenes/common/animated_texture/animated_texture.tscn" id="4_o0a1b"]
+[ext_resource type="PackedScene" uid="uid://djgs5oxgmxh5x" path="res://scenes/common/animated_texture/animated_texture_rect.tscn" id="4_o0a1b"]
 [ext_resource type="Texture2D" uid="uid://bpfwuaf8jqudq" path="res://scenes/screens/sprites/logo/logo1.png" id="5_tm7an"]
 [ext_resource type="Texture2D" uid="uid://cgv1dmmki55rb" path="res://scenes/screens/sprites/logo/logo2.png" id="6_yhq6a"]
 [ext_resource type="Texture2D" uid="uid://dvp6tff322483" path="res://scenes/screens/sprites/logo/logo3.png" id="7_e6hfi"]
@@ -20,7 +20,7 @@
 [ext_resource type="StyleBox" uid="uid://bnp6m13wovw7n" path="res://ui/themes/popup_theme.tres" id="18_tfmse"]
 [ext_resource type="Texture2D" uid="uid://dc1t8yrrsbrpi" path="res://scenes/screens/character_screen/sprites/cross.png" id="19_sjwty"]
 
-[node name="RewardsMenu" type="PanelContainer" unique_id=18558353 node_paths=PackedStringArray("pics")]
+[node name="RewardsMenu" type="PanelContainer" unique_id=18558353]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -29,7 +29,6 @@ grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 script = ExtResource("1_qn6d6")
-pics = [NodePath("VBoxContainer2/VBoxContainer/GridContainer/pic1"), NodePath("VBoxContainer2/VBoxContainer/GridContainer/pic2"), NodePath("VBoxContainer2/VBoxContainer/GridContainer/pic3"), NodePath("VBoxContainer2/VBoxContainer/GridContainer/pic4"), NodePath("VBoxContainer2/VBoxContainer/GridContainer/pic5"), NodePath("VBoxContainer2/VBoxContainer/GridContainer/pic6")]
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="." unique_id=879359893]
 layout_mode = 2

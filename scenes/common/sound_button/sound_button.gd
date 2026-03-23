@@ -4,7 +4,7 @@ extends TextureButton
 @export var not_muted_texture: Texture2D
 
 
-func _ready():
+func _ready() -> void:
 	texture_normal = muted_texture if SoundManager.is_muted else not_muted_texture
 
 

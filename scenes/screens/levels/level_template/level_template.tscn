@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://dk78fcithaeh7" path="res://scenes/screens/sprites/arrow.png" id="3_hh1ev"]
 [ext_resource type="Texture2D" uid="uid://c853bjot2l44l" path="res://scenes/screens/levels/level2/sprites/eddy/0.png" id="4_7rs4a"]
 [ext_resource type="PackedScene" uid="uid://ctoicx2ven6ek" path="res://scenes/common/star_counter/star_counter.tscn" id="4_nf4ix"]
-[ext_resource type="PackedScene" uid="uid://djgs5oxgmxh5x" path="res://scenes/common/animated_texture/animated_texture.tscn" id="7_j5r16"]
+[ext_resource type="PackedScene" uid="uid://djgs5oxgmxh5x" path="res://scenes/common/animated_texture/animated_texture_rect.tscn" id="7_j5r16"]
 [ext_resource type="Texture2D" uid="uid://bx0ja2icw23jv" path="res://scenes/screens/levels/sprites/situations/dog/Dog 1 Loop.png" id="8_tjdos"]
 [ext_resource type="Texture2D" uid="uid://4xoo0p3yqv4a" path="res://scenes/screens/levels/level2/sprites/malky/1.png" id="9_pdd53"]
 [ext_resource type="Texture2D" uid="uid://bubois1y122ss" path="res://scenes/screens/levels/level2/sprites/malky/2.png" id="10_bs55y"]

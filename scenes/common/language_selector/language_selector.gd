@@ -2,9 +2,9 @@ extends HBoxContainer
 
 @export var language_flags: Array[Texture2D]
 
-@onready var language_icon: TextureRect = $LanguageIcon
-
 var locale_index: int = 1
+
+@onready var language_icon: TextureRect = $LanguageIcon
 @onready var locales: Array[String]
 
 

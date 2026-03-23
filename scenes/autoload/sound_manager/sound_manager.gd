@@ -1,7 +1,5 @@
 extends Node
 
-@onready var music_player: AudioStreamPlayer2D = $MusicPlayer
-
 @export var is_muted: bool = true:
 	set(value):
 		is_muted = value
@@ -13,3 +11,5 @@ extends Node
 
 	get:
 		return is_muted
+
+@onready var music_player: AudioStreamPlayer2D = $MusicPlayer

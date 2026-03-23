@@ -1,19 +1,19 @@
-extends TextureButton
 class_name AnimatedButton
+extends TextureButton
 
 @export var is_correct: bool = true
 @export var frame_correct: Texture2D
 @export var frame_wrong: Texture2D
-
 @export var frames: Array[Texture2D]
 @export var fps: int = 2
-var current_frame: int = 0
-@onready var timer: Timer = $Timer
+
+@export var is_level_3: bool = false
+@export var level_3: Level3
 
 var is_dragging: bool = false
+var current_frame: int = 0
 
-@export var isLevel3: bool = false
-@export var level3: Node
+@onready var timer: Timer = $Timer
 
 
 func _ready() -> void:
@@ -44,12 +44,12 @@ func _on_timer_timeout() -> void:
 	texture_normal = frames[current_frame]
 
 
-func _notification(what):
+func _notification(what: int) -> void:
 	if what == NOTIFICATION_DRAG_END and is_dragging:
 		is_dragging = false
 		timer.start()
-		if get_window().gui_is_drag_successful() and isLevel3:
-			var d = level3.new_opt(is_correct)
+		if get_window().gui_is_drag_successful() and is_level_3:
+			var d: Dictionary = level_3.new_opt(is_correct)
 			frames = [d["texture"]]
 			frame_correct = frames[0]
 			frame_wrong = frames[0]

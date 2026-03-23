@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dxbpakctk1gcs"]
 
-[ext_resource type="PackedScene" uid="uid://djgs5oxgmxh5x" path="res://scenes/common/animated_texture/animated_texture.tscn" id="1_glpxk"]
+[ext_resource type="PackedScene" uid="uid://djgs5oxgmxh5x" path="res://scenes/common/animated_texture/animated_texture_rect.tscn" id="1_glpxk"]
 [ext_resource type="Script" uid="uid://btuykmyx7x031" path="res://scenes/screens/character_screen/character_screen.gd" id="1_tvv3w"]
 [ext_resource type="Texture2D" uid="uid://bxr3o81w5rgtx" path="res://scenes/screens/levels/sprites/eddy/Eddy 1.png" id="2_tvv3w"]
 [ext_resource type="Texture2D" uid="uid://d3e66kbf7ncd3" path="res://scenes/screens/levels/sprites/reizy/Reizy 1.png" id="6_i71in"]

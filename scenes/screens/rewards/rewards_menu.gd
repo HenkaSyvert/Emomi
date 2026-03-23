@@ -15,7 +15,7 @@ func _on_return_button_pressed() -> void:
 	assert(err == OK)
 
 
-@onready var imageViewer = $ImageViewer
+@onready var imageViewer: Control = $ImageViewer
 
 
 func _on_close_button_pressed() -> void:
