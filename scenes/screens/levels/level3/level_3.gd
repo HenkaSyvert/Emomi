@@ -3,7 +3,7 @@ class_name Level3
 
 @export var poss: Array[Texture2D]
 @export var negs: Array[Texture2D]
-@export var opts: Array[AnimatedButton]
+@export var opts: Array[DraggableOption]
 
 @export var balance: int = -1
 

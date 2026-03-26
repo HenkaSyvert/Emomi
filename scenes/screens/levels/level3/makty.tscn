@@ -19,7 +19,7 @@
 [ext_resource type="Texture2D" uid="uid://bnj7vtfhfkiyy" path="res://scenes/screens/levels/level3/sprites/pos/unnamed (46).png" id="9_be77f"]
 [ext_resource type="Texture2D" uid="uid://dfv7dueefkb6q" path="res://scenes/screens/levels/sprites/makty/Makty wrong.png" id="9_iavup"]
 [ext_resource type="Texture2D" uid="uid://bgk1llwqyys88" path="res://scenes/screens/levels/level3/sprites/pos/unnamed (47).png" id="10_6v4td"]
-[ext_resource type="PackedScene" uid="uid://ixajx0dg6qmk" path="res://scenes/common/animated_button/animated_button.tscn" id="10_gxh31"]
+[ext_resource type="PackedScene" uid="uid://ixajx0dg6qmk" path="res://scenes/common/draggable_option/draggable_option.tscn" id="10_gxh31"]
 [ext_resource type="Texture2D" uid="uid://bwm7sbcvcix6l" path="res://scenes/screens/levels/level3/sprites/neg/unnamed (39).png" id="12_qsdjg"]
 [ext_resource type="Texture2D" uid="uid://lox0t5mp6r0q" path="res://scenes/screens/levels/level3/sprites/pos/unnamed (32).png" id="13_7r5kt"]
 [ext_resource type="Texture2D" uid="uid://dgtthlesw4crr" path="res://scenes/screens/levels/level3/sprites/neg/unnamed (41).png" id="13_grapy"]

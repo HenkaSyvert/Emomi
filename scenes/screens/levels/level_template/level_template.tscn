@@ -18,7 +18,7 @@
 [ext_resource type="Texture2D" uid="uid://swvkt7n7ib4y" path="res://scenes/screens/levels/level2/sprites/reizy/2.png" id="14_hbggb"]
 [ext_resource type="PackedScene" uid="uid://do1blbrdmk38b" path="res://scenes/common/popup/popup.tscn" id="14_j5r16"]
 [ext_resource type="Texture2D" uid="uid://beipxpgc4ejnm" path="res://scenes/screens/levels/level2/sprites/reizy/3.png" id="15_r1qw8"]
-[ext_resource type="PackedScene" uid="uid://ixajx0dg6qmk" path="res://scenes/common/animated_button/animated_button.tscn" id="22_5frum"]
+[ext_resource type="PackedScene" uid="uid://ixajx0dg6qmk" path="res://scenes/common/draggable_option/draggable_option.tscn" id="22_5frum"]
 
 [node name="Level1Template" type="Control" unique_id=2101351925]
 layout_mode = 3

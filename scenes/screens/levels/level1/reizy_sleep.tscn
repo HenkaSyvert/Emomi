@@ -9,7 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://bm4qohhvogdf4" path="res://scenes/screens/character_screen/sprites/reizy_info.png" id="6_vrpda"]
 [ext_resource type="Texture2D" uid="uid://d3e66kbf7ncd3" path="res://scenes/screens/levels/sprites/reizy/Reizy 1.png" id="7_vrpda"]
 [ext_resource type="Texture2D" uid="uid://boy8xuvsmqpjd" path="res://scenes/screens/levels/sprites/reizy/Reizy 2.png" id="8_boryb"]
-[ext_resource type="PackedScene" uid="uid://ixajx0dg6qmk" path="res://scenes/common/animated_button/animated_button.tscn" id="9_4fnhb"]
+[ext_resource type="PackedScene" uid="uid://ixajx0dg6qmk" path="res://scenes/common/draggable_option/draggable_option.tscn" id="9_4fnhb"]
 [ext_resource type="Texture2D" uid="uid://df7520n7wkemv" path="res://scenes/screens/levels/sprites/reizy/Reizy wrong.png" id="10_wynqc"]
 [ext_resource type="Texture2D" uid="uid://bx0ja2icw23jv" path="res://scenes/screens/levels/sprites/situations/dog/Dog 1 Loop.png" id="11_xqtge"]
 [ext_resource type="Texture2D" uid="uid://btgcuj518v3x1" path="res://scenes/screens/levels/sprites/situations/dog/Dog 2 Loop.png" id="12_wynqc"]

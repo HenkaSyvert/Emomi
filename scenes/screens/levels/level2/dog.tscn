@@ -8,7 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://djgs5oxgmxh5x" path="res://scenes/common/animated_texture/animated_texture_rect.tscn" id="6_fi7e5"]
 [ext_resource type="Texture2D" uid="uid://bx0ja2icw23jv" path="res://scenes/screens/levels/sprites/situations/dog/Dog 1 Loop.png" id="7_kb21o"]
 [ext_resource type="Texture2D" uid="uid://btgcuj518v3x1" path="res://scenes/screens/levels/sprites/situations/dog/Dog 2 Loop.png" id="8_rxe22"]
-[ext_resource type="PackedScene" uid="uid://ixajx0dg6qmk" path="res://scenes/common/animated_button/animated_button.tscn" id="9_gb55v"]
+[ext_resource type="PackedScene" uid="uid://ixajx0dg6qmk" path="res://scenes/common/draggable_option/draggable_option.tscn" id="9_gb55v"]
 [ext_resource type="Texture2D" uid="uid://c853bjot2l44l" path="res://scenes/screens/levels/level2/sprites/eddy/0.png" id="10_rohhh"]
 [ext_resource type="Texture2D" uid="uid://dgeg2024llgqr" path="res://scenes/screens/levels/level2/sprites/reizy/0.png" id="11_xqxqa"]
 [ext_resource type="Texture2D" uid="uid://beipxpgc4ejnm" path="res://scenes/screens/levels/level2/sprites/reizy/3.png" id="12_ibxbt"]

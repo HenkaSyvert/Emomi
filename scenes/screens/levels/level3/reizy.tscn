@@ -15,7 +15,7 @@
 [ext_resource type="Texture2D" uid="uid://cna0kg0u533g" path="res://scenes/screens/levels/level3/sprites/pos/unnamed (38).png" id="8_6h1rq"]
 [ext_resource type="Texture2D" uid="uid://bnj7vtfhfkiyy" path="res://scenes/screens/levels/level3/sprites/pos/unnamed (46).png" id="9_3gqyo"]
 [ext_resource type="Texture2D" uid="uid://bgk1llwqyys88" path="res://scenes/screens/levels/level3/sprites/pos/unnamed (47).png" id="10_0po6u"]
-[ext_resource type="PackedScene" uid="uid://ixajx0dg6qmk" path="res://scenes/common/animated_button/animated_button.tscn" id="11_o64y7"]
+[ext_resource type="PackedScene" uid="uid://ixajx0dg6qmk" path="res://scenes/common/draggable_option/draggable_option.tscn" id="11_o64y7"]
 [ext_resource type="Texture2D" uid="uid://bwm7sbcvcix6l" path="res://scenes/screens/levels/level3/sprites/neg/unnamed (39).png" id="12_p2nsf"]
 [ext_resource type="Texture2D" uid="uid://dgtthlesw4crr" path="res://scenes/screens/levels/level3/sprites/neg/unnamed (41).png" id="13_4ytgv"]
 [ext_resource type="Texture2D" uid="uid://lox0t5mp6r0q" path="res://scenes/screens/levels/level3/sprites/pos/unnamed (32).png" id="13_8tfsl"]

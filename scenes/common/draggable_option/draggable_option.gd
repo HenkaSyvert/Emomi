@@ -1,4 +1,4 @@
-class_name AnimatedButton
+class_name DraggableOption
 extends Control
 
 @export var is_correct: bool = true
