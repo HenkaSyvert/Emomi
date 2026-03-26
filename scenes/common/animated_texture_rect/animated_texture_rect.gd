@@ -1,4 +1,4 @@
-class_name AnimTemp
+class_name AnimatedTextureRect
 extends TextureRect
 
 const FPS: int = 2

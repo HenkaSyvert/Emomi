@@ -9,7 +9,7 @@ extends Control
 @export var is_level_3: bool = false
 @export var level_3: Level3
 
-@onready var _anim: AnimTemp = $AnimTemp
+@onready var _anim: AnimatedTextureRect = $AnimTemp
 @onready var _drag_source: DragSource = $DragSource
 
 
@@ -26,7 +26,7 @@ func _on_drag_source_drag_started() -> void:
 	else:
 		_anim.texture = frame_wrong if frame_wrong else frames[0]
 
-	var drag_preview: AnimTemp = _anim.duplicate()
+	var drag_preview: AnimatedTextureRect = _anim.duplicate()
 	drag_preview.pause()
 	_drag_source.drag_preview = drag_preview
 

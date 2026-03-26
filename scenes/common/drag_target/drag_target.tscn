@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://4a6vwaaq53ae"]
+
+[ext_resource type="Script" uid="uid://133rep8cd4m8" path="res://scenes/common/drag_target/drag_target.gd" id="1_5yiqj"]
+
+[node name="DragTarget" type="Control" unique_id=468617735]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_5yiqj")

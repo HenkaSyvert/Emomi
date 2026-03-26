@@ -22,7 +22,7 @@ var bad_food: Label = $PanelContainer/HBoxContainer/VBoxContainer/VBoxContainer/
 var characterName: Label = $PanelContainer/HBoxContainer/VBoxContainer2/VBoxContainer/HBoxContainer/Label2
 @onready var emotion: Label = $PanelContainer/HBoxContainer/VBoxContainer2/VBoxContainer/Label2
 @onready
-var animTexture: AnimatedTextureRect = $PanelContainer/HBoxContainer/VBoxContainer2/AnimatedTexture
+var animTexture: QuestionDragTarget = $PanelContainer/HBoxContainer/VBoxContainer2/AnimatedTexture
 
 @onready var tabContainer: VBoxContainer = $PanelContainer/HBoxContainer/VBoxContainer/VBoxContainer
 
@@ -37,7 +37,6 @@ func _ready() -> void:
 
 		emotion.text = tr("CHAR_EDDY_EMOTION")
 		animTexture.frames = eddy_frames
-		animTexture.texture = eddy_frames[-1]
 		personality.text = tr("CHAR_EDDY_PERSONALITY_TEXT")
 		likes.text = tr("CHAR_EDDY_LIKES_TEXT")
 		dislikes.text = tr("CHAR_EDDY_DISLIKE_TEXT")
@@ -53,7 +52,6 @@ func _ready() -> void:
 		)
 		emotion.text = tr("CHAR_MAKTY_EMOTION")
 		animTexture.frames = makty_frames
-		animTexture.texture = makty_frames[-1]
 		personality.text = tr("CHAR_MAKTY_PERSONALITY_TEXT")
 		likes.text = tr("CHAR_MAKTY_LIKES_TEXT")
 		dislikes.text = tr("CHAR_MAKTY_DISLIKES_TEXT")
@@ -69,7 +67,6 @@ func _ready() -> void:
 		characterName.add_theme_color_override(&"font_color", "#CF4B34")
 		emotion.text = tr("CHAR_REIZY_EMOTION")
 		animTexture.frames = reizy_frames
-		animTexture.texture = reizy_frames[-1]
 		personality.text = tr("CHAR_REIZY_PERSONALITY_TEXT")
 		likes.text = tr("CHAR_REIZY_LIKES_TEXT")
 		dislikes.text = tr("CHAR_REIZY_DISLIKES_TEXT")
