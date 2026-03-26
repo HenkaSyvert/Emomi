@@ -1,10 +1,11 @@
 [gd_scene format=3 uid="uid://ixajx0dg6qmk"]
 
-[ext_resource type="Texture2D" uid="uid://crqahntqkoku5" path="res://scenes/screens/character_screen/sprites/eddy_info.png" id="2_fenb0"]
+[ext_resource type="Texture2D" uid="uid://ct3pllgpgtsix" path="res://scenes/screens/levels/level2/sprites/eddy/3.png" id="1_rpfpg"]
 [ext_resource type="Script" uid="uid://csd5daqhx6qad" path="res://scenes/common/animated_button/animated_button.gd" id="2_ongq8"]
-[ext_resource type="Texture2D" uid="uid://d26rfygcpjgan" path="res://scenes/screens/character_screen/sprites/makty_info.png" id="3_pcm1r"]
+[ext_resource type="Texture2D" uid="uid://dtj6lid7ja0xg" path="res://scenes/screens/levels/level2/sprites/eddy/2.png" id="3_bnx4y"]
+[ext_resource type="Texture2D" uid="uid://c853bjot2l44l" path="res://scenes/screens/levels/level2/sprites/eddy/0.png" id="4_7pom5"]
 [ext_resource type="Script" uid="uid://bboq2mnurak57" path="res://scenes/common/AnimTemp/anim_temp.gd" id="4_65crg"]
-[ext_resource type="Texture2D" uid="uid://bm4qohhvogdf4" path="res://scenes/screens/character_screen/sprites/reizy_info.png" id="4_hi84c"]
+[ext_resource type="Texture2D" uid="uid://djal12vj1frgp" path="res://scenes/screens/levels/level2/sprites/eddy/1.png" id="5_fenb0"]
 
 [node name="AnimatedButton" type="Control" unique_id=327432511]
 layout_mode = 3
@@ -16,7 +17,9 @@ grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 script = ExtResource("2_ongq8")
-frames = Array[Texture2D]([ExtResource("2_fenb0"), ExtResource("3_pcm1r"), ExtResource("4_hi84c")])
+frames = Array[Texture2D]([ExtResource("4_7pom5"), ExtResource("5_fenb0")])
+frame_correct = ExtResource("1_rpfpg")
+frame_wrong = ExtResource("3_bnx4y")
 
 [node name="AnimTemp" type="TextureRect" parent="." unique_id=2111867759]
 layout_mode = 1
@@ -26,4 +29,5 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("4_65crg")
+frames = Array[Texture2D]([ExtResource("4_7pom5"), ExtResource("5_fenb0")])
 metadata/_custom_type_script = "uid://bboq2mnurak57"

@@ -149,8 +149,8 @@ size_flags_stretch_ratio = 60.0
 texture = ExtResource("7_b5blr")
 stretch_mode = 4
 frames = Array[Texture2D]([ExtResource("7_b5blr"), ExtResource("8_5okhu")])
-popup = NodePath("../../../../Popup")
 wrong_frame = ExtResource("9_2xty4")
+popup = NodePath("../../../../Popup")
 
 [node name="Control2" type="Control" parent="Level1Template/HBoxContainer/Middle" unique_id=2029690723]
 layout_mode = 2
@@ -164,26 +164,21 @@ size_flags_stretch_ratio = 22.05
 
 [node name="Opt1" parent="Level1Template/HBoxContainer/Right" unique_id=1779106198 instance=ExtResource("9_bwio4")]
 layout_mode = 2
-texture_normal = ExtResource("10_jyobs")
-frame_correct = ExtResource("10_jyobs")
-frame_wrong = ExtResource("11_wdkv2")
 frames = Array[Texture2D]([ExtResource("10_jyobs"), ExtResource("11_wdkv2")])
 
 [node name="Opt2" parent="Level1Template/HBoxContainer/Right" unique_id=588101842 instance=ExtResource("9_bwio4")]
 layout_mode = 2
-texture_normal = ExtResource("12_3ijcl")
 is_correct = false
+frames = Array[Texture2D]([ExtResource("12_3ijcl"), ExtResource("13_rvkck")])
 frame_correct = ExtResource("12_3ijcl")
 frame_wrong = ExtResource("13_rvkck")
-frames = Array[Texture2D]([ExtResource("12_3ijcl"), ExtResource("13_rvkck")])
 
 [node name="Opt3" parent="Level1Template/HBoxContainer/Right" unique_id=857832238 instance=ExtResource("9_bwio4")]
 layout_mode = 2
-texture_normal = ExtResource("14_5j7g5")
 is_correct = false
+frames = Array[Texture2D]([ExtResource("14_5j7g5"), ExtResource("16_vs7vh")])
 frame_correct = ExtResource("14_5j7g5")
 frame_wrong = ExtResource("14_5j7g5")
-frames = Array[Texture2D]([ExtResource("14_5j7g5"), ExtResource("16_vs7vh")])
 
 [node name="Control" type="Control" parent="Level1Template/HBoxContainer/Right" unique_id=506541653]
 layout_mode = 2

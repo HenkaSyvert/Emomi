@@ -24,10 +24,6 @@ func new_opt(is_correct: bool) -> Dictionary:
 			f = poss.pick_random()
 		else:
 			f = negs.pick_random()
-		if (
-			f != opts[0].texture_normal
-			and f != opts[1].texture_normal
-			and f != opts[2].texture_normal
-		):
+		if f != opts[0]._anim.texture and f != opts[1]._anim.texture and f != opts[2]._anim.texture:
 			break
 	return {"texture": f, "is_correct": new_correct}
