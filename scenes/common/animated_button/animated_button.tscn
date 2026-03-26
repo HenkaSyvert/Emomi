@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://d26rfygcpjgan" path="res://scenes/screens/character_screen/sprites/makty_info.png" id="3_pcm1r"]
 [ext_resource type="Script" uid="uid://bboq2mnurak57" path="res://scenes/common/AnimTemp/anim_temp.gd" id="4_65crg"]
 [ext_resource type="Texture2D" uid="uid://bm4qohhvogdf4" path="res://scenes/screens/character_screen/sprites/reizy_info.png" id="4_hi84c"]
+[ext_resource type="PackedScene" uid="uid://bqfstcgqbkmby" path="res://scenes/common/drag_source/drag_source.tscn" id="6_7pom5"]
 
 [node name="AnimatedButton" type="Control" unique_id=327432511]
 layout_mode = 3
@@ -27,3 +28,9 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("4_65crg")
 metadata/_custom_type_script = "uid://bboq2mnurak57"
+
+[node name="DragSource" parent="." unique_id=422901149 instance=ExtResource("6_7pom5")]
+layout_mode = 1
+
+[connection signal="drag_started" from="DragSource" to="." method="_on_drag_source_drag_started"]
+[connection signal="drag_stopped" from="DragSource" to="." method="_on_drag_source_drag_stopped"]

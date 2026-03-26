@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://bqfstcgqbkmby"]
+
+[ext_resource type="Script" uid="uid://bnoe010lw5434" path="res://scenes/common/drag_source/drag_source.gd" id="1_t53qg"]
+
+[node name="DragSource" type="Control" unique_id=422901149]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_t53qg")
