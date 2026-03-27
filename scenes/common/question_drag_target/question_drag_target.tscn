@@ -1,15 +1,8 @@
 [gd_scene format=3 uid="uid://djgs5oxgmxh5x"]
 
 [ext_resource type="Script" uid="uid://ca2sfit3jh1gy" path="res://scenes/common/question_drag_target/question_drag_target.gd" id="1_wprbw"]
-[ext_resource type="Texture2D" uid="uid://bpfwuaf8jqudq" path="res://scenes/screens/sprites/logo/logo1.png" id="2_4pwco"]
-[ext_resource type="Texture2D" uid="uid://cgv1dmmki55rb" path="res://scenes/screens/sprites/logo/logo2.png" id="3_06gju"]
-[ext_resource type="Texture2D" uid="uid://dvp6tff322483" path="res://scenes/screens/sprites/logo/logo3.png" id="4_dh4fj"]
-[ext_resource type="Texture2D" uid="uid://c2ql72ctamjif" path="res://scenes/screens/sprites/logo/logo4.png" id="5_y87oh"]
+[ext_resource type="Texture2D" uid="uid://d25u3dm6iu44f" path="res://docs/index.apple-touch-icon.png" id="2_1sxys"]
 [ext_resource type="Script" uid="uid://bboq2mnurak57" path="res://scenes/common/animated_texture_rect/animated_texture_rect.gd" id="7_wprbw"]
-[ext_resource type="Texture2D" uid="uid://dc1t8yrrsbrpi" path="res://scenes/screens/character_screen/sprites/cross.png" id="8_y87oh"]
-[ext_resource type="Texture2D" uid="uid://crqahntqkoku5" path="res://scenes/screens/character_screen/sprites/eddy_info.png" id="9_4s7ix"]
-[ext_resource type="Texture2D" uid="uid://d26rfygcpjgan" path="res://scenes/screens/character_screen/sprites/makty_info.png" id="10_h4m7k"]
-[ext_resource type="Texture2D" uid="uid://bm4qohhvogdf4" path="res://scenes/screens/character_screen/sprites/reizy_info.png" id="11_65qyy"]
 [ext_resource type="Script" uid="uid://133rep8cd4m8" path="res://scenes/common/drag_target/drag_target.gd" id="12_4s7ix"]
 
 [node name="QuestionDragTarget" type="Control" unique_id=1256382982]
@@ -22,7 +15,7 @@ grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 script = ExtResource("1_wprbw")
-frames = Array[Texture2D]([ExtResource("2_4pwco"), ExtResource("3_06gju"), ExtResource("4_dh4fj"), ExtResource("5_y87oh"), ExtResource("2_4pwco"), ExtResource("3_06gju"), ExtResource("4_dh4fj"), ExtResource("5_y87oh")])
+frames = Array[Texture2D]([ExtResource("2_1sxys")])
 
 [node name="AnimTemp" type="TextureRect" parent="." unique_id=1908441981]
 layout_mode = 1
@@ -32,7 +25,6 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("7_wprbw")
-frames = Array[Texture2D]([ExtResource("8_y87oh"), ExtResource("9_4s7ix"), ExtResource("10_h4m7k"), ExtResource("11_65qyy")])
 metadata/_custom_type_script = "uid://bboq2mnurak57"
 
 [node name="DragTarget" type="Control" parent="." unique_id=1608215138]

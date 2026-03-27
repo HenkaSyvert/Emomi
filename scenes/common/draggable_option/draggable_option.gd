@@ -1,3 +1,4 @@
+@tool
 class_name DraggableOption
 extends Control
 
@@ -9,7 +10,7 @@ extends Control
 @export var is_level_3: bool = false
 @export var level_3: Level3
 
-@onready var _anim: AnimatedTextureRect = $AnimTemp
+@onready var _anim: AnimatedTextureRect = $AnimatedTextureRect
 @onready var _drag_source: DragSource = $DragSource
 
 
