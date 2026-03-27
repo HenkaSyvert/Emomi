@@ -14,6 +14,7 @@ add text "draw correct emotion to eddy"
 rewards menu
 	when click image, popup to show full image, and download button
 	images are unlocked based on nr stars
+	make "click outside image" closes it
 
 gör tutorial:
 	visar main_anim och att man drar en opt, loop, med dialog ok button

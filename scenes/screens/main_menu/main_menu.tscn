@@ -36,19 +36,20 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 50.0
 
-[node name="Control" type="Control" parent="HBoxContainer/Middle" unique_id=1387746007]
+[node name="Top" type="Control" parent="HBoxContainer/Middle" unique_id=1387746007]
 layout_mode = 2
 size_flags_vertical = 3
 size_flags_stretch_ratio = 0.7
 
-[node name="AnimatedTextureRect" type="TextureRect" parent="HBoxContainer/Middle" unique_id=1538488211]
+[node name="Logo" type="TextureRect" parent="HBoxContainer/Middle" unique_id=1538488211]
 layout_mode = 2
 size_flags_vertical = 3
+texture = ExtResource("4_uamlo")
 script = ExtResource("3_0urj7")
 frames = Array[Texture2D]([ExtResource("4_uamlo"), ExtResource("5_4kug3"), ExtResource("6_8h7de"), ExtResource("7_8vo2r")])
 metadata/_custom_type_script = "uid://bboq2mnurak57"
 
-[node name="Control3" type="Control" parent="HBoxContainer/Middle" unique_id=385790392]
+[node name="Spacing" type="Control" parent="HBoxContainer/Middle" unique_id=385790392]
 layout_mode = 2
 size_flags_vertical = 3
 size_flags_stretch_ratio = 0.13
@@ -58,7 +59,7 @@ layout_mode = 2
 size_flags_vertical = 6
 text = "START"
 
-[node name="Control2" type="Control" parent="HBoxContainer/Middle" unique_id=239812507]
+[node name="Bottom" type="Control" parent="HBoxContainer/Middle" unique_id=239812507]
 layout_mode = 2
 size_flags_vertical = 3
 

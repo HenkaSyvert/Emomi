@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d0dbrexnsik5v"
-path="res://.godot/imported/reward2.png-269e02132a7964b6c1e9caed38e76849.ctex"
+uid="uid://b5m3g6tcpyrm4"
+path="res://.godot/imported/reward1.png-ae255a60e358093aa5edbaf47b94ee54.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/screens/rewards/sprites/reward2.png"
-dest_files=["res://.godot/imported/reward2.png-269e02132a7964b6c1e9caed38e76849.ctex"]
+source_file="res://scenes/screens/rewards_menu/sprites/reward1.png"
+dest_files=["res://.godot/imported/reward1.png-ae255a60e358093aa5edbaf47b94ee54.ctex"]
 
 [params]
 
