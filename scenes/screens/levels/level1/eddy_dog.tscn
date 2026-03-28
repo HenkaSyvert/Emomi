@@ -27,124 +27,100 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Contents" type="HBoxContainer" parent="." unique_id=132921288]
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=864518872]
 layout_mode = 2
 
-[node name="Left" type="VBoxContainer" parent="Contents" unique_id=1167998286]
+[node name="Contents" type="HBoxContainer" parent="MarginContainer" unique_id=132921288]
+layout_mode = 2
+
+[node name="Left" type="VBoxContainer" parent="MarginContainer/Contents" unique_id=1167998286]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 size_flags_stretch_ratio = 19.47
 
-[node name="Top" type="Control" parent="Contents/Left" unique_id=1669731356]
+[node name="Top" type="Control" parent="MarginContainer/Contents/Left" unique_id=1669731356]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="NavigationBar" parent="Contents/Left" unique_id=1563900071 instance=ExtResource("1_tul5k")]
+[node name="NavigationBar" parent="MarginContainer/Contents/Left" unique_id=1563900071 instance=ExtResource("1_tul5k")]
 layout_mode = 2
 previous_scene_file_path = "uid://c7uw6mqp13cm3"
 
-[node name="StarCounter" parent="Contents/Left" unique_id=401513187 instance=ExtResource("4_vs7vh")]
+[node name="StarCounter" parent="MarginContainer/Contents/Left" unique_id=401513187 instance=ExtResource("4_vs7vh")]
 layout_mode = 2
 
-[node name="SoundButton" parent="Contents/Left" unique_id=2010444643 instance=ExtResource("5_4t0is")]
+[node name="SoundButton" parent="MarginContainer/Contents/Left" unique_id=2010444643 instance=ExtResource("5_4t0is")]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="About" type="TextureButton" parent="Contents/Left" unique_id=593576803]
+[node name="About" type="TextureButton" parent="MarginContainer/Contents/Left" unique_id=593576803]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 texture_normal = ExtResource("6_b5blr")
 stretch_mode = 4
 
-[node name="Bottom" type="Control" parent="Contents/Left" unique_id=506364803]
+[node name="Bottom" type="Control" parent="MarginContainer/Contents/Left" unique_id=506364803]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="Top3" type="Control" parent="Contents/Left" unique_id=1579703880]
+[node name="Top3" type="Control" parent="MarginContainer/Contents/Left" unique_id=1579703880]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="Top2" type="Control" parent="Contents/Left" unique_id=2075173646]
+[node name="Top2" type="Control" parent="MarginContainer/Contents/Left" unique_id=2075173646]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="MarginContainer" type="MarginContainer" parent="Contents/Left" unique_id=1951694451]
-layout_mode = 2
-
-[node name="Middle" type="VBoxContainer" parent="Contents" unique_id=992920742]
+[node name="Middle" type="VBoxContainer" parent="MarginContainer/Contents" unique_id=992920742]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 60.0
 
-[node name="Top" type="Control" parent="Contents/Middle" unique_id=1648813324]
+[node name="Top" type="Control" parent="MarginContainer/Contents/Middle" unique_id=1648813324]
 layout_mode = 2
 size_flags_vertical = 3
 size_flags_stretch_ratio = 6.36
 
-[node name="Label" type="Label" parent="Contents/Middle" unique_id=540570896]
+[node name="Label" type="Label" parent="MarginContainer/Contents/Middle" unique_id=540570896]
 layout_mode = 2
 size_flags_vertical = 6
 text = "LEVEL_1_PROMPT"
 horizontal_alignment = 1
 autowrap_mode = 3
 
-[node name="AnimatedTexture" parent="Contents/Middle" unique_id=900728642 instance=ExtResource("6_iynck")]
+[node name="AnimatedTexture" parent="MarginContainer/Contents/Middle" unique_id=900728642 instance=ExtResource("6_iynck")]
 layout_mode = 2
 size_flags_stretch_ratio = 60.0
 frames = Array[Texture2D]([ExtResource("7_b5blr"), ExtResource("8_5okhu"), ExtResource("10_hyhlq")])
 wrong_frame = ExtResource("9_2xty4")
 
-[node name="Bottom" type="Control" parent="Contents/Middle" unique_id=2029690723]
-layout_mode = 2
-size_flags_vertical = 3
-size_flags_stretch_ratio = 6.36
-
-[node name="Right" type="HBoxContainer" parent="Contents" unique_id=1260950396]
+[node name="Right" type="VBoxContainer" parent="MarginContainer/Contents" unique_id=534911238]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 22.05
 
-[node name="Options" type="VBoxContainer" parent="Contents/Right" unique_id=1388738362]
-layout_mode = 2
-size_flags_horizontal = 3
-
-[node name="Top" type="Control" parent="Contents/Right/Options" unique_id=450325327]
-layout_mode = 2
-size_flags_vertical = 3
-size_flags_stretch_ratio = 0.14
-
-[node name="Option1" parent="Contents/Right/Options" unique_id=1779106198 instance=ExtResource("9_bwio4")]
+[node name="Option1" parent="MarginContainer/Contents/Right" unique_id=1779106198 instance=ExtResource("9_bwio4")]
 layout_mode = 2
 frames = Array[Texture2D]([ExtResource("10_jyobs"), ExtResource("11_wdkv2")])
 
-[node name="Option2" parent="Contents/Right/Options" unique_id=588101842 instance=ExtResource("9_bwio4")]
+[node name="Option2" parent="MarginContainer/Contents/Right" unique_id=588101842 instance=ExtResource("9_bwio4")]
 layout_mode = 2
 is_correct = false
 frames = Array[Texture2D]([ExtResource("12_3ijcl"), ExtResource("13_rvkck")])
 
-[node name="Option3" parent="Contents/Right/Options" unique_id=857832238 instance=ExtResource("9_bwio4")]
+[node name="Option3" parent="MarginContainer/Contents/Right" unique_id=857832238 instance=ExtResource("9_bwio4")]
 layout_mode = 2
 is_correct = false
 frames = Array[Texture2D]([ExtResource("14_5j7g5"), ExtResource("16_vs7vh")])
 
-[node name="Bottom" type="Control" parent="Contents/Right/Options" unique_id=506541653]
-layout_mode = 2
-size_flags_vertical = 3
-size_flags_stretch_ratio = 0.14
-
-[node name="Right" type="Control" parent="Contents/Right" unique_id=396340296]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_stretch_ratio = 0.1
-
-[node name="Popup" parent="." unique_id=1497230596 instance=ExtResource("15_p4kwg")]
+[node name="Popup" parent="MarginContainer" unique_id=1497230596 instance=ExtResource("15_p4kwg")]
 visible = false
 layout_mode = 2
 next_scene = ExtResource("16_ecpyq")
 
-[node name="CharacterInfo" parent="." unique_id=100588087 instance=ExtResource("19_4t0is")]
+[node name="CharacterInfo" parent="MarginContainer" unique_id=100588087 instance=ExtResource("19_4t0is")]
 visible = false
 layout_mode = 2
 character = 0

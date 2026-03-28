@@ -25,71 +25,74 @@ offset_bottom = 1620.0
 grow_horizontal = 1
 grow_vertical = 1
 
-[node name="Contents" type="VBoxContainer" parent="Background" unique_id=865509400]
+[node name="MarginContainer" type="MarginContainer" parent="Background" unique_id=877134892]
 layout_mode = 2
 
-[node name="Top" type="Control" parent="Background/Contents" unique_id=770488046]
+[node name="Contents" type="VBoxContainer" parent="Background/MarginContainer" unique_id=865509400]
 layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-size_flags_stretch_ratio = 25.0
 
-[node name="Middle" type="HBoxContainer" parent="Background/Contents" unique_id=1890335202]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-size_flags_stretch_ratio = 50.0
-
-[node name="Left" type="Control" parent="Background/Contents/Middle" unique_id=1387746007]
+[node name="Top" type="Control" parent="Background/MarginContainer/Contents" unique_id=770488046]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 size_flags_stretch_ratio = 25.0
 
-[node name="Middle" type="VBoxContainer" parent="Background/Contents/Middle" unique_id=1624127893]
+[node name="Middle" type="HBoxContainer" parent="Background/MarginContainer/Contents" unique_id=1890335202]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 50.0
+
+[node name="Left" type="Control" parent="Background/MarginContainer/Contents/Middle" unique_id=1387746007]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 25.0
+
+[node name="Middle" type="VBoxContainer" parent="Background/MarginContainer/Contents/Middle" unique_id=1624127893]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 50.0
 
-[node name="AnimatedLogo" parent="Background/Contents/Middle/Middle" unique_id=2011953226 instance=ExtResource("3_g4j36")]
+[node name="AnimatedLogo" parent="Background/MarginContainer/Contents/Middle/Middle" unique_id=2011953226 instance=ExtResource("3_g4j36")]
 layout_mode = 2
 
-[node name="Spacing" type="Control" parent="Background/Contents/Middle/Middle" unique_id=385790392]
+[node name="Spacing" type="Control" parent="Background/MarginContainer/Contents/Middle/Middle" unique_id=385790392]
 layout_mode = 2
 size_flags_vertical = 3
 size_flags_stretch_ratio = 0.13
 
-[node name="StartButton" type="Button" parent="Background/Contents/Middle/Middle" unique_id=332772898]
+[node name="StartButton" type="Button" parent="Background/MarginContainer/Contents/Middle/Middle" unique_id=332772898]
 layout_mode = 2
 size_flags_vertical = 6
-text = "START"
+text = "main_menu.start"
 
-[node name="Right" type="VBoxContainer" parent="Background/Contents/Middle" unique_id=1757490934]
+[node name="Right" type="VBoxContainer" parent="Background/MarginContainer/Contents/Middle" unique_id=1757490934]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 size_flags_stretch_ratio = 25.0
 
-[node name="Buttons" type="HBoxContainer" parent="Background/Contents/Middle/Right" unique_id=673770281]
+[node name="Buttons" type="HBoxContainer" parent="Background/MarginContainer/Contents/Middle/Right" unique_id=673770281]
 layout_mode = 2
 size_flags_vertical = 3
 size_flags_stretch_ratio = 20.0
 
-[node name="LocalizationBar" parent="Background/Contents/Middle/Right/Buttons" unique_id=95072876 instance=ExtResource("6_t6bnd")]
+[node name="LocalizationBar" parent="Background/MarginContainer/Contents/Middle/Right/Buttons" unique_id=95072876 instance=ExtResource("6_t6bnd")]
 layout_mode = 2
 
-[node name="AudioBar" parent="Background/Contents/Middle/Right/Buttons" unique_id=1748544731 instance=ExtResource("9_6at21")]
+[node name="AudioBar" parent="Background/MarginContainer/Contents/Middle/Right/Buttons" unique_id=1748544731 instance=ExtResource("9_6at21")]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="Bottom" type="Control" parent="Background/Contents/Middle/Right" unique_id=33331371]
+[node name="Bottom" type="Control" parent="Background/MarginContainer/Contents/Middle/Right" unique_id=33331371]
 layout_mode = 2
 size_flags_vertical = 3
 size_flags_stretch_ratio = 60.0
 
-[node name="Bottom" type="Control" parent="Background/Contents" unique_id=1106697991]
+[node name="Bottom" type="Control" parent="Background/MarginContainer/Contents" unique_id=1106697991]
 layout_mode = 2
 size_flags_vertical = 3
 size_flags_stretch_ratio = 25.0
 
-[connection signal="pressed" from="Background/Contents/Middle/Middle/StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="Background/MarginContainer/Contents/Middle/Middle/StartButton" to="." method="_on_start_button_pressed"]

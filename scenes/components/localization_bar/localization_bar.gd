@@ -1,10 +1,10 @@
-extends HBoxContainer
+extends AspectRatioContainer
 
 @export var language_flags: Array[Texture2D]
 
 var locale_index: int = 1
 
-@onready var language_icon: TextureRect = $LanguageIcon
+@onready var language_icon: TextureRect = $HBoxContainer/LanguageIcon
 @onready var locales: Array[String]
 
 
