@@ -7,7 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://dk78fcithaeh7" path="res://sprites/arrow.png" id="3_qutgm"]
 [ext_resource type="Texture2D" uid="uid://cfrhgrqie88e5" path="res://sprites/pos/unnamed (34).png" id="4_27yqc"]
 [ext_resource type="PackedScene" uid="uid://ctoicx2ven6ek" path="res://scenes/components/star_counter/star_counter.tscn" id="4_33xp5"]
-[ext_resource type="PackedScene" uid="uid://bvvb57ga0cd1i" path="res://scenes/components/sound_button/sound_button.tscn" id="5_exkpa"]
+[ext_resource type="PackedScene" uid="uid://bvvb57ga0cd1i" path="res://scenes/components/audio_bar/audio_bar.tscn" id="5_exkpa"]
 [ext_resource type="Texture2D" uid="uid://be8gdhwxo13dj" path="res://sprites/pos/unnamed (35).png" id="5_vc8m6"]
 [ext_resource type="Texture2D" uid="uid://ba458nu6qptru" path="res://sprites/pos/unnamed (36).png" id="6_3qhq1"]
 [ext_resource type="PackedScene" uid="uid://djgs5oxgmxh5x" path="res://scenes/primitives/question_drag_target/question_drag_target.tscn" id="6_ay1bu"]

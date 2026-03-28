@@ -5,8 +5,9 @@
 [ext_resource type="PackedScene" uid="uid://bjmccii1ugoyr" path="res://scenes/components/navigation_bar/navigation_bar.tscn" id="3_uh3yb"]
 [ext_resource type="PackedScene" uid="uid://ctoicx2ven6ek" path="res://scenes/components/star_counter/star_counter.tscn" id="4_010sm"]
 [ext_resource type="PackedScene" uid="uid://7ygu5amhj7gr" path="res://scenes/components/animated_logo/animated_logo.tscn" id="6_uh3yb"]
-[ext_resource type="PackedScene" uid="uid://dcnps1ubh4p87" path="res://scenes/components/language_selector/language_selector.tscn" id="9_tfmse"]
-[ext_resource type="PackedScene" uid="uid://bvvb57ga0cd1i" path="res://scenes/components/sound_button/sound_button.tscn" id="10_sjwty"]
+[ext_resource type="Texture2D" uid="uid://dvp6tff322483" path="res://scenes/components/animated_logo/logo3.png" id="7_e6hfi"]
+[ext_resource type="PackedScene" uid="uid://dcnps1ubh4p87" path="res://scenes/components/localization_bar/localization_bar.tscn" id="9_tfmse"]
+[ext_resource type="PackedScene" uid="uid://bvvb57ga0cd1i" path="res://scenes/components/audio_bar/audio_bar.tscn" id="10_sjwty"]
 [ext_resource type="Texture2D" uid="uid://b5m3g6tcpyrm4" path="res://scenes/screens/rewards_menu/sprites/reward1.png" id="12_e6hfi"]
 [ext_resource type="Texture2D" uid="uid://d0dbrexnsik5v" path="res://scenes/screens/rewards_menu/sprites/reward2.png" id="13_vy0a1"]
 [ext_resource type="Texture2D" uid="uid://11a11qy6aou3" path="res://scenes/screens/rewards_menu/sprites/reward3.png" id="14_tfmse"]
@@ -65,7 +66,6 @@ size_flags_stretch_ratio = 0.3
 
 [node name="NavigationBar" parent="Background/Contents/Top/Left/Buttoms" unique_id=1563900071 instance=ExtResource("3_uh3yb")]
 layout_mode = 2
-previous_scene_file_path = "uid://c7uw6mqp13cm3"
 
 [node name="StarCounter" parent="Background/Contents/Top/Left/Buttoms" unique_id=401513187 instance=ExtResource("4_010sm")]
 layout_mode = 2
@@ -86,6 +86,7 @@ size_flags_stretch_ratio = 0.47
 
 [node name="AnimatedLogo" parent="Background/Contents/Top/Middle" unique_id=2011953226 instance=ExtResource("6_uh3yb")]
 layout_mode = 2
+texture = ExtResource("7_e6hfi")
 
 [node name="Bottom" type="Control" parent="Background/Contents/Top/Middle" unique_id=454354467]
 layout_mode = 2
@@ -111,18 +112,10 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 0.13
 
-[node name="LangButton" parent="Background/Contents/Top/Right/Buttons" unique_id=2110673369 instance=ExtResource("9_tfmse")]
-layout_mode = 2
-size_flags_horizontal = 3
-
-[node name="HBoxContainer" type="HBoxContainer" parent="Background/Contents/Top/Right/Buttons" unique_id=1056066318]
-layout_mode = 2
-size_flags_horizontal = 3
-
-[node name="SoundButton" parent="Background/Contents/Top/Right/Buttons/HBoxContainer" unique_id=2010444643 instance=ExtResource("10_sjwty")]
+[node name="LocalizationBar" parent="Background/Contents/Top/Right/Buttons" unique_id=2110673369 instance=ExtResource("9_tfmse")]
 layout_mode = 2
 
-[node name="Control" type="Control" parent="Background/Contents/Top/Right/Buttons/HBoxContainer" unique_id=380574660]
+[node name="AudioBar" parent="Background/Contents/Top/Right/Buttons" unique_id=2010444643 instance=ExtResource("10_sjwty")]
 layout_mode = 2
 size_flags_horizontal = 3
 

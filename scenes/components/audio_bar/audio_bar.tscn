@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://bvvb57ga0cd1i"]
+
+[ext_resource type="Texture2D" uid="uid://bkgqfsennxs6h" path="res://scenes/components/audio_bar/audio_enabled.png" id="1_ogd44"]
+[ext_resource type="Script" uid="uid://dwmvh1bikm4em" path="res://scenes/components/audio_bar/audio_bar.gd" id="2_0utc6"]
+[ext_resource type="Texture2D" uid="uid://dcmox6510ichp" path="res://scenes/components/audio_bar/audio_disabled.png" id="3_ntjvm"]
+
+[node name="AudioBar" type="AspectRatioContainer" unique_id=984182281]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+ratio = 2.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=258230393]
+layout_mode = 2
+
+[node name="AudioButton" type="TextureButton" parent="HBoxContainer" unique_id=2010444643]
+layout_mode = 2
+size_flags_horizontal = 3
+texture_normal = ExtResource("3_ntjvm")
+ignore_texture_size = true
+stretch_mode = 4
+script = ExtResource("2_0utc6")
+muted_texture = ExtResource("3_ntjvm")
+not_muted_texture = ExtResource("1_ogd44")
+
+[node name="Control" type="Control" parent="HBoxContainer" unique_id=629377306]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[connection signal="pressed" from="HBoxContainer/AudioButton" to="HBoxContainer/AudioButton" method="_on_pressed"]

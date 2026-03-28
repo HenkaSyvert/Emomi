@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://dcnps1ubh4p87"]
+
+[ext_resource type="Texture2D" uid="uid://m2w5kbyk14ph" path="res://scenes/components/localization_bar/spanish_icon.png" id="1_k3sct"]
+[ext_resource type="Texture2D" uid="uid://bdomp0hmqksyi" path="res://scenes/components/localization_bar/language_icon.png" id="2_k3sct"]
+
+[node name="LocalizationBar" type="AspectRatioContainer" unique_id=1116144105]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+ratio = 2.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1684973036]
+layout_mode = 2
+
+[node name="LanguageIcon" type="TextureRect" parent="HBoxContainer" unique_id=912091963]
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("1_k3sct")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="LocalizationButton" type="TextureButton" parent="HBoxContainer" unique_id=1762425321]
+layout_mode = 2
+size_flags_horizontal = 3
+texture_normal = ExtResource("2_k3sct")
+ignore_texture_size = true
+stretch_mode = 4

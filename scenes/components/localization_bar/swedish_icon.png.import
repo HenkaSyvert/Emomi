@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bkgqfsennxs6h"
-path="res://.godot/imported/sound_icon.png-21b666ae346e2e0ebd5ae7ab1d191ff7.ctex"
+uid="uid://c3tb71qn04sr0"
+path="res://.godot/imported/swedish_icon.png-8a1ac3b615c28374223e9adfcc98e61b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/components/sound_button/sound_icon.png"
-dest_files=["res://.godot/imported/sound_icon.png-21b666ae346e2e0ebd5ae7ab1d191ff7.ctex"]
+source_file="res://scenes/components/localization_bar/swedish_icon.png"
+dest_files=["res://.godot/imported/swedish_icon.png-8a1ac3b615c28374223e9adfcc98e61b.ctex"]
 
 [params]
 

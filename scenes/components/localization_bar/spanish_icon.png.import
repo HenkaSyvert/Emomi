@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://m2w5kbyk14ph"
-path="res://.godot/imported/spanish_icon.png-39c203976524ac742efd07acf7748724.ctex"
+path="res://.godot/imported/spanish_icon.png-eda2c647dc5a54c650af061e92703ab1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/components/language_selector/spanish_icon.png"
-dest_files=["res://.godot/imported/spanish_icon.png-39c203976524ac742efd07acf7748724.ctex"]
+source_file="res://scenes/components/localization_bar/spanish_icon.png"
+dest_files=["res://.godot/imported/spanish_icon.png-eda2c647dc5a54c650af061e92703ab1.ctex"]
 
 [params]
 

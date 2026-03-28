@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bdomp0hmqksyi"
-path="res://.godot/imported/language_icon.png-0a770f02e43a6084a4d5cbcc106f29e2.ctex"
+path="res://.godot/imported/language_icon.png-ed25dd6eeebb4aa8ecbf04b0aef14c86.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/components/language_selector/language_icon.png"
-dest_files=["res://.godot/imported/language_icon.png-0a770f02e43a6084a4d5cbcc106f29e2.ctex"]
+source_file="res://scenes/components/localization_bar/language_icon.png"
+dest_files=["res://.godot/imported/language_icon.png-ed25dd6eeebb4aa8ecbf04b0aef14c86.ctex"]
 
 [params]
 

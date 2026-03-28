@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://wx5ks08qavh6" path="res://scenes/primitives/change_level_button/change_level_button.tscn" id="2_pwajg"]
 [ext_resource type="Texture2D" uid="uid://dk78fcithaeh7" path="res://sprites/arrow.png" id="3_vqhig"]
 
-[node name="NavigationBar" type="HBoxContainer" unique_id=1563900071]
+[node name="NavigationBar" type="AspectRatioContainer" unique_id=418342270]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -13,11 +13,17 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+ratio = 2.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1563900071]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
 script = ExtResource("1_pwajg")
 
-[node name="HomeButton" parent="." unique_id=1037807675 instance=ExtResource("1_61tb8")]
+[node name="HomeButton" parent="HBoxContainer" unique_id=1037807675 instance=ExtResource("1_61tb8")]
 layout_mode = 2
 
-[node name="ReturnButton" parent="." unique_id=1375336497 instance=ExtResource("2_pwajg")]
+[node name="ReturnButton" parent="HBoxContainer" unique_id=1375336497 instance=ExtResource("2_pwajg")]
 layout_mode = 2
 texture_normal = ExtResource("3_vqhig")

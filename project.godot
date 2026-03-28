@@ -83,6 +83,7 @@ window/size/extend_to_title=true
 window/size/minimize_disabled=true
 window/size/maximize_disabled=true
 window/stretch/mode="canvas_items"
+window/stretch/aspect="ignore"
 window/ios/allow_high_refresh_rate=false
 
 [editor_plugins]
