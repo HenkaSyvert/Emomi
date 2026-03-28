@@ -8,8 +8,10 @@ needed dann gfx
 
 
 need to find sounds for when eddy/makty/reizy gets angry/calm
-
 add text "draw correct emotion to eddy"
+
+character info
+	replace with bubbles and popups
 
 rewards menu
 	when click image, popup to show full image, and download button
