@@ -2,10 +2,10 @@
 
 [ext_resource type="Script" uid="uid://caacstl2egdu" path="res://scenes/screens/level_select_menu/level_select_menu.gd" id="1_il0m2"]
 [ext_resource type="PackedScene" uid="uid://qb6v72gtm3bf" path="res://scenes/components/background/background.tscn" id="2_46mq1"]
-[ext_resource type="PackedScene" uid="uid://o0xttlxxppdv" path="res://scenes/components/home_button/home_button.tscn" id="3_46mq1"]
+[ext_resource type="PackedScene" uid="uid://bjmccii1ugoyr" path="res://scenes/components/navigation_bar/navigation_bar.tscn" id="3_ali73"]
 [ext_resource type="PackedScene" uid="uid://wx5ks08qavh6" path="res://scenes/primitives/change_level_button/change_level_button.tscn" id="3_bqjpd"]
-[ext_resource type="Texture2D" uid="uid://dk78fcithaeh7" path="res://sprites/arrow.png" id="4_l63os"]
 [ext_resource type="PackedScene" uid="uid://dcnps1ubh4p87" path="res://scenes/components/language_selector/language_selector.tscn" id="4_nldrk"]
+[ext_resource type="Texture2D" uid="uid://bpfwuaf8jqudq" path="res://scenes/components/animated_logo/logo1.png" id="5_46mq1"]
 [ext_resource type="PackedScene" uid="uid://bvvb57ga0cd1i" path="res://scenes/components/sound_button/sound_button.tscn" id="5_esdt6"]
 [ext_resource type="PackedScene" uid="uid://7ygu5amhj7gr" path="res://scenes/components/animated_logo/animated_logo.tscn" id="6_46mq1"]
 [ext_resource type="Texture2D" uid="uid://bh3jq1jfl0nwy" path="res://scenes/screens/level_select_menu/sprites/level_1.png" id="7_b1gtc"]
@@ -31,6 +31,8 @@ anchor_right = 0.0
 anchor_bottom = 0.0
 offset_right = 2160.0
 offset_bottom = 1620.0
+grow_horizontal = 1
+grow_vertical = 1
 
 [node name="Contents" type="VBoxContainer" parent="Background" unique_id=401815269]
 layout_mode = 2
@@ -56,18 +58,16 @@ size_flags_vertical = 3
 [node name="Left" type="Control" parent="Background/Contents/Top/Left/Buttons" unique_id=1048029063]
 layout_mode = 2
 size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.5
 
-[node name="HomeButton" parent="Background/Contents/Top/Left/Buttons" unique_id=1037807675 instance=ExtResource("3_46mq1")]
+[node name="NavigationBar" parent="Background/Contents/Top/Left/Buttons" unique_id=1563900071 instance=ExtResource("3_ali73")]
 layout_mode = 2
-
-[node name="ReturnButton" parent="Background/Contents/Top/Left/Buttons" unique_id=190150924 instance=ExtResource("3_bqjpd")]
-layout_mode = 2
-texture_normal = ExtResource("4_l63os")
-scene_path = "uid://hhn1146b88yy"
+previous_scene_file_path = "uid://hhn1146b88yy"
 
 [node name="Right" type="Control" parent="Background/Contents/Top/Left/Buttons" unique_id=1682775938]
 layout_mode = 2
 size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.5
 
 [node name="Bottom" type="Control" parent="Background/Contents/Top/Left" unique_id=558008303]
 layout_mode = 2
@@ -84,6 +84,7 @@ size_flags_stretch_ratio = 0.47
 
 [node name="AnimatedLogo" parent="Background/Contents/Top/Middle" unique_id=2011953226 instance=ExtResource("6_46mq1")]
 layout_mode = 2
+texture = ExtResource("5_46mq1")
 
 [node name="Bottom" type="Control" parent="Background/Contents/Top/Middle" unique_id=1361731841]
 layout_mode = 2

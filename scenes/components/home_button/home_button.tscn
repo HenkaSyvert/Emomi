@@ -17,3 +17,5 @@ stretch_mode = 4
 script = ExtResource("2_7k8l6")
 scene_path = "uid://hhn1146b88yy"
 metadata/_custom_type_script = "uid://dak7o0ap0jaca"
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

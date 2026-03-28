@@ -1,8 +1,6 @@
 [gd_scene format=3 uid="uid://cxogw4sdxk8e3"]
 
-[ext_resource type="Script" uid="uid://c251iblecit8b" path="res://scenes/screens/levels/level_template/level.gd" id="1_7tu50"]
-[ext_resource type="Texture2D" uid="uid://c3fpvwdswa80c" path="res://scenes/components/home_button/home.png" id="2_ecpyq"]
-[ext_resource type="Texture2D" uid="uid://dk78fcithaeh7" path="res://sprites/arrow.png" id="3_2xty4"]
+[ext_resource type="PackedScene" uid="uid://bjmccii1ugoyr" path="res://scenes/components/navigation_bar/navigation_bar.tscn" id="1_tul5k"]
 [ext_resource type="PackedScene" uid="uid://ctoicx2ven6ek" path="res://scenes/components/star_counter/star_counter.tscn" id="4_vs7vh"]
 [ext_resource type="PackedScene" uid="uid://bvvb57ga0cd1i" path="res://scenes/components/sound_button/sound_button.tscn" id="5_4t0is"]
 [ext_resource type="Texture2D" uid="uid://crqahntqkoku5" path="res://sprites/eddy_info.png" id="6_b5blr"]
@@ -11,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://bwgb3ecse23fx" path="res://sprites/eddy/Eddy 2.png" id="8_5okhu"]
 [ext_resource type="Texture2D" uid="uid://gc4vqcy2atjt" path="res://sprites/eddy/Eddy wrong.png" id="9_2xty4"]
 [ext_resource type="PackedScene" uid="uid://ixajx0dg6qmk" path="res://scenes/primitives/draggable_option/draggable_option.tscn" id="9_bwio4"]
+[ext_resource type="Texture2D" uid="uid://baklicufa3nai" path="res://sprites/eddy/Eddy Correct.png" id="10_hyhlq"]
 [ext_resource type="Texture2D" uid="uid://bx0ja2icw23jv" path="res://sprites/situations/dog/Dog 1 Loop.png" id="10_jyobs"]
 [ext_resource type="Texture2D" uid="uid://btgcuj518v3x1" path="res://sprites/situations/dog/Dog 2 Loop.png" id="11_wdkv2"]
 [ext_resource type="Texture2D" uid="uid://cmtc6bsgmxvwv" path="res://sprites/situations/mine/mine 1 loop.png" id="12_3ijcl"]
@@ -21,7 +20,7 @@
 [ext_resource type="Texture2D" uid="uid://bv3q8whvwob41" path="res://sprites/situations/math/math 2 loop.png" id="16_vs7vh"]
 [ext_resource type="PackedScene" uid="uid://dxbpakctk1gcs" path="res://scenes/screens/character_screen/character_screen.tscn" id="19_4t0is"]
 
-[node name="EddyDog" type="Control" unique_id=1355370560]
+[node name="Level" type="Control" unique_id=1355370560]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -29,162 +28,164 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Level1Template" type="PanelContainer" parent="." unique_id=1023970581]
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=1023970581]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_7tu50")
 
-[node name="HBoxContainer" type="HBoxContainer" parent="Level1Template" unique_id=132921288]
+[node name="Contents" type="HBoxContainer" parent="PanelContainer" unique_id=132921288]
 layout_mode = 2
 
-[node name="Left" type="HBoxContainer" parent="Level1Template/HBoxContainer" unique_id=1634020309]
+[node name="Left" type="HBoxContainer" parent="PanelContainer/Contents" unique_id=1634020309]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 20.0
 
-[node name="Control" type="Control" parent="Level1Template/HBoxContainer/Left" unique_id=1202172369]
+[node name="Left" type="Control" parent="PanelContainer/Contents/Left" unique_id=1202172369]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 0.14
 
-[node name="VBoxContainer2" type="VBoxContainer" parent="Level1Template/HBoxContainer/Left" unique_id=1167998286]
+[node name="Buttons" type="VBoxContainer" parent="PanelContainer/Contents/Left" unique_id=1167998286]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Control2" type="Control" parent="Level1Template/HBoxContainer/Left/VBoxContainer2" unique_id=1669731356]
+[node name="Top" type="Control" parent="PanelContainer/Contents/Left/Buttons" unique_id=1669731356]
 layout_mode = 2
 size_flags_vertical = 3
 size_flags_stretch_ratio = 0.15
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Level1Template/HBoxContainer/Left/VBoxContainer2" unique_id=950992391]
+[node name="Buttons" type="VBoxContainer" parent="PanelContainer/Contents/Left/Buttons" unique_id=950992391]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="HBoxContainer" type="HBoxContainer" parent="Level1Template/HBoxContainer/Left/VBoxContainer2/VBoxContainer" unique_id=823249769]
+[node name="NavigationBar" parent="PanelContainer/Contents/Left/Buttons/Buttons" unique_id=1563900071 instance=ExtResource("1_tul5k")]
+layout_mode = 2
+previous_scene_file_path = "uid://c7uw6mqp13cm3"
+
+[node name="StarCounter" parent="PanelContainer/Contents/Left/Buttons/Buttons" unique_id=401513187 instance=ExtResource("4_vs7vh")]
+layout_mode = 2
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="PanelContainer/Contents/Left/Buttons/Buttons" unique_id=1917709694]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="HomeButton" type="TextureButton" parent="Level1Template/HBoxContainer/Left/VBoxContainer2/VBoxContainer/HBoxContainer" unique_id=1622409057]
-layout_mode = 2
-size_flags_horizontal = 3
-texture_normal = ExtResource("2_ecpyq")
-ignore_texture_size = true
-stretch_mode = 4
-
-[node name="ReturnButton" type="TextureButton" parent="Level1Template/HBoxContainer/Left/VBoxContainer2/VBoxContainer/HBoxContainer" unique_id=703359409]
-layout_mode = 2
-size_flags_horizontal = 3
-texture_normal = ExtResource("3_2xty4")
-ignore_texture_size = true
-stretch_mode = 4
-
-[node name="StarCounter" parent="Level1Template/HBoxContainer/Left/VBoxContainer2/VBoxContainer" unique_id=401513187 instance=ExtResource("4_vs7vh")]
+[node name="SoundButton" parent="PanelContainer/Contents/Left/Buttons/Buttons/HBoxContainer2" unique_id=2010444643 instance=ExtResource("5_4t0is")]
 layout_mode = 2
 
-[node name="HBoxContainer2" type="HBoxContainer" parent="Level1Template/HBoxContainer/Left/VBoxContainer2/VBoxContainer" unique_id=1917709694]
-layout_mode = 2
-size_flags_vertical = 3
-
-[node name="SoundButton" parent="Level1Template/HBoxContainer/Left/VBoxContainer2/VBoxContainer/HBoxContainer2" unique_id=2010444643 instance=ExtResource("5_4t0is")]
-layout_mode = 2
-
-[node name="Control" type="Control" parent="Level1Template/HBoxContainer/Left/VBoxContainer2/VBoxContainer/HBoxContainer2" unique_id=1614258962]
+[node name="Control" type="Control" parent="PanelContainer/Contents/Left/Buttons/Buttons/HBoxContainer2" unique_id=1614258962]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="HBoxContainer3" type="HBoxContainer" parent="Level1Template/HBoxContainer/Left/VBoxContainer2/VBoxContainer" unique_id=1071285002]
+[node name="HBoxContainer3" type="HBoxContainer" parent="PanelContainer/Contents/Left/Buttons/Buttons" unique_id=1071285002]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="About" type="TextureButton" parent="Level1Template/HBoxContainer/Left/VBoxContainer2/VBoxContainer/HBoxContainer3" unique_id=593576803]
+[node name="About" type="TextureButton" parent="PanelContainer/Contents/Left/Buttons/Buttons/HBoxContainer3" unique_id=593576803]
 layout_mode = 2
 size_flags_horizontal = 3
 texture_normal = ExtResource("6_b5blr")
 stretch_mode = 4
 
-[node name="Control" type="Control" parent="Level1Template/HBoxContainer/Left/VBoxContainer2/VBoxContainer/HBoxContainer3" unique_id=597616476]
+[node name="Control" type="Control" parent="PanelContainer/Contents/Left/Buttons/Buttons/HBoxContainer3" unique_id=597616476]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="Control" type="Control" parent="Level1Template/HBoxContainer/Left/VBoxContainer2" unique_id=506364803]
+[node name="Bottom" type="Control" parent="PanelContainer/Contents/Left/Buttons" unique_id=506364803]
 layout_mode = 2
 size_flags_vertical = 3
 size_flags_stretch_ratio = 0.65
 
-[node name="Middle" type="VBoxContainer" parent="Level1Template/HBoxContainer" unique_id=992920742]
+[node name="Middle" type="VBoxContainer" parent="PanelContainer/Contents" unique_id=992920742]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 60.0
 
-[node name="Control" type="Control" parent="Level1Template/HBoxContainer/Middle" unique_id=1648813324]
+[node name="Control" type="Control" parent="PanelContainer/Contents/Middle" unique_id=1648813324]
 layout_mode = 2
 size_flags_vertical = 3
 size_flags_stretch_ratio = 0.1
 
-[node name="Label" type="Label" parent="Level1Template/HBoxContainer/Middle" unique_id=540570896]
+[node name="Label" type="Label" parent="PanelContainer/Contents/Middle" unique_id=540570896]
 layout_mode = 2
 text = "LEVEL_1_PROMPT"
 horizontal_alignment = 1
 autowrap_mode = 3
 
-[node name="HBoxContainer" type="HBoxContainer" parent="Level1Template/HBoxContainer/Middle" unique_id=721845198]
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer/Contents/Middle" unique_id=721845198]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="Control" type="Control" parent="Level1Template/HBoxContainer/Middle/HBoxContainer" unique_id=190511251]
+[node name="Control" type="Control" parent="PanelContainer/Contents/Middle/HBoxContainer" unique_id=190511251]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 6.04
 
-[node name="AnimatedTexture" parent="Level1Template/HBoxContainer/Middle/HBoxContainer" unique_id=900728642 instance=ExtResource("6_iynck")]
+[node name="AnimatedTexture" parent="PanelContainer/Contents/Middle/HBoxContainer" unique_id=900728642 instance=ExtResource("6_iynck")]
 layout_mode = 2
 size_flags_stretch_ratio = 60.0
-frames = Array[Texture2D]([ExtResource("7_b5blr"), ExtResource("8_5okhu")])
+frames = Array[Texture2D]([ExtResource("7_b5blr"), ExtResource("8_5okhu"), ExtResource("10_hyhlq")])
 wrong_frame = ExtResource("9_2xty4")
 
-[node name="Control2" type="Control" parent="Level1Template/HBoxContainer/Middle" unique_id=2029690723]
+[node name="Control2" type="Control" parent="PanelContainer/Contents/Middle" unique_id=2029690723]
 layout_mode = 2
 size_flags_vertical = 3
 size_flags_stretch_ratio = 0.05
 
-[node name="Right" type="VBoxContainer" parent="Level1Template/HBoxContainer" unique_id=1796294091]
+[node name="Right" type="HBoxContainer" parent="PanelContainer/Contents" unique_id=1260950396]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 22.05
 
-[node name="Opt1" parent="Level1Template/HBoxContainer/Right" unique_id=1779106198 instance=ExtResource("9_bwio4")]
+[node name="Options" type="VBoxContainer" parent="PanelContainer/Contents/Right" unique_id=1388738362]
 layout_mode = 2
-frames = Array[Texture2D]([ExtResource("10_jyobs"), ExtResource("11_wdkv2")])
+size_flags_horizontal = 3
 
-[node name="Opt2" parent="Level1Template/HBoxContainer/Right" unique_id=588101842 instance=ExtResource("9_bwio4")]
-layout_mode = 2
-is_correct = false
-frames = Array[Texture2D]([ExtResource("12_3ijcl"), ExtResource("13_rvkck")])
-
-[node name="Opt3" parent="Level1Template/HBoxContainer/Right" unique_id=857832238 instance=ExtResource("9_bwio4")]
-layout_mode = 2
-is_correct = false
-frames = Array[Texture2D]([ExtResource("14_5j7g5"), ExtResource("16_vs7vh")])
-frame_correct = ExtResource("14_5j7g5")
-frame_wrong = ExtResource("14_5j7g5")
-
-[node name="Control" type="Control" parent="Level1Template/HBoxContainer/Right" unique_id=506541653]
+[node name="Top" type="Control" parent="PanelContainer/Contents/Right/Options" unique_id=450325327]
 layout_mode = 2
 size_flags_vertical = 3
 size_flags_stretch_ratio = 0.14
 
-[node name="Control" type="Control" parent="Level1Template/HBoxContainer" unique_id=2109188626]
+[node name="Option1" parent="PanelContainer/Contents/Right/Options" unique_id=1779106198 instance=ExtResource("9_bwio4")]
+layout_mode = 2
+frames = Array[Texture2D]([ExtResource("10_jyobs"), ExtResource("11_wdkv2")])
+
+[node name="Option2" parent="PanelContainer/Contents/Right/Options" unique_id=588101842 instance=ExtResource("9_bwio4")]
+layout_mode = 2
+is_correct = false
+frames = Array[Texture2D]([ExtResource("12_3ijcl"), ExtResource("13_rvkck")])
+
+[node name="Option3" parent="PanelContainer/Contents/Right/Options" unique_id=857832238 instance=ExtResource("9_bwio4")]
+layout_mode = 2
+is_correct = false
+frames = Array[Texture2D]([ExtResource("14_5j7g5"), ExtResource("16_vs7vh")])
+
+[node name="Bottom" type="Control" parent="PanelContainer/Contents/Right/Options" unique_id=506541653]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.14
+
+[node name="Right" type="Control" parent="PanelContainer/Contents/Right" unique_id=396340296]
 layout_mode = 2
 size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.1
 
-[node name="Popup" parent="Level1Template" unique_id=1497230596 instance=ExtResource("15_p4kwg")]
+[node name="Popup" parent="." unique_id=1497230596 instance=ExtResource("15_p4kwg")]
 visible = false
-layout_mode = 2
+layout_mode = 0
+anchors_preset = 0
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 872.0
+offset_top = 600.0
+offset_right = 1288.0
+offset_bottom = 1019.0
 next_scene = ExtResource("16_ecpyq")
 
 [node name="CharacterInfo" parent="." unique_id=100588087 instance=ExtResource("19_4t0is")]
@@ -192,6 +193,4 @@ visible = false
 layout_mode = 1
 character = 0
 
-[connection signal="pressed" from="Level1Template/HBoxContainer/Left/VBoxContainer2/VBoxContainer/HBoxContainer/HomeButton" to="Level1Template" method="_on_home_button_pressed"]
-[connection signal="pressed" from="Level1Template/HBoxContainer/Left/VBoxContainer2/VBoxContainer/HBoxContainer/ReturnButton" to="Level1Template" method="_on_return_button_pressed"]
-[connection signal="pressed" from="Level1Template/HBoxContainer/Left/VBoxContainer2/VBoxContainer/HBoxContainer3/About" to="Level1Template" method="_on_about_pressed"]
+[connection signal="pressed" from="PanelContainer/Contents/Left/Buttons/Buttons/HBoxContainer3/About" to="PanelContainer" method="_on_about_pressed"]
