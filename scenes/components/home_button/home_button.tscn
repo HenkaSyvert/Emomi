@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://o0xttlxxppdv"]
+
+[ext_resource type="Texture2D" uid="uid://c3fpvwdswa80c" path="res://scenes/components/home_button/home.png" id="1_vlpah"]
+[ext_resource type="Script" uid="uid://dak7o0ap0jaca" path="res://scenes/primitives/change_level_button/change_level_button.gd" id="2_7k8l6"]
+
+[node name="HomeButton" type="TextureButton" unique_id=1037807675]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource("1_vlpah")
+ignore_texture_size = true
+stretch_mode = 4
+script = ExtResource("2_7k8l6")
+scene_path = "uid://hhn1146b88yy"
+metadata/_custom_type_script = "uid://dak7o0ap0jaca"

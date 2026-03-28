@@ -1,14 +1,13 @@
 [gd_scene format=3 uid="uid://c7uw6mqp13cm3"]
 
-[ext_resource type="Texture2D" uid="uid://7q5gyer3xjcg" path="res://scenes/screens/sprites/background.png" id="1_hlqe2"]
 [ext_resource type="Script" uid="uid://caacstl2egdu" path="res://scenes/screens/level_select_menu/level_select_menu.gd" id="1_il0m2"]
-[ext_resource type="Texture2D" uid="uid://c3fpvwdswa80c" path="res://scenes/screens/sprites/home.png" id="2_turym"]
+[ext_resource type="PackedScene" uid="uid://qb6v72gtm3bf" path="res://scenes/components/background/background.tscn" id="2_46mq1"]
+[ext_resource type="PackedScene" uid="uid://o0xttlxxppdv" path="res://scenes/components/home_button/home_button.tscn" id="3_46mq1"]
 [ext_resource type="PackedScene" uid="uid://wx5ks08qavh6" path="res://scenes/primitives/change_level_button/change_level_button.tscn" id="3_bqjpd"]
 [ext_resource type="Texture2D" uid="uid://dk78fcithaeh7" path="res://scenes/screens/sprites/arrow.png" id="4_l63os"]
 [ext_resource type="PackedScene" uid="uid://dcnps1ubh4p87" path="res://scenes/components/language_selector/language_selector.tscn" id="4_nldrk"]
 [ext_resource type="PackedScene" uid="uid://bvvb57ga0cd1i" path="res://scenes/components/sound_button/sound_button.tscn" id="5_esdt6"]
 [ext_resource type="PackedScene" uid="uid://7ygu5amhj7gr" path="res://scenes/components/animated_logo/animated_logo.tscn" id="6_46mq1"]
-[ext_resource type="Texture2D" uid="uid://cgv1dmmki55rb" path="res://scenes/components/animated_logo/logo2.png" id="7_awj8d"]
 [ext_resource type="Texture2D" uid="uid://bh3jq1jfl0nwy" path="res://scenes/screens/level_select_menu/sprites/level_1.png" id="7_b1gtc"]
 [ext_resource type="Texture2D" uid="uid://dcu3mg3vwyg82" path="res://scenes/screens/level_select_menu/sprites/level_2.png" id="8_gqg0r"]
 [ext_resource type="Texture2D" uid="uid://ifqwoeqhuttk" path="res://scenes/screens/level_select_menu/sprites/level_2_locked.png" id="9_pl33s"]
@@ -16,7 +15,8 @@
 [ext_resource type="Texture2D" uid="uid://cwks30haneg0n" path="res://scenes/screens/level_select_menu/sprites/level_3_locked.png" id="11_r3nop"]
 [ext_resource type="Texture2D" uid="uid://bevbp5p6ar5oy" path="res://scenes/screens/level_select_menu/sprites/rewards.png" id="17_bqjpd"]
 
-[node name="LevelSelectMenu" type="PanelContainer" unique_id=675503831]
+[node name="LevelSelectMenu" type="Control" unique_id=1074194068]
+layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -24,195 +24,195 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_il0m2")
 
-[node name="Background" type="TextureRect" parent="." unique_id=27438743]
-layout_mode = 2
-texture = ExtResource("1_hlqe2")
-expand_mode = 1
+[node name="Background" parent="." unique_id=2060586972 instance=ExtResource("2_46mq1")]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_right = 2160.0
+offset_bottom = 1620.0
 
-[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=401815269]
+[node name="Contents" type="VBoxContainer" parent="Background" unique_id=401815269]
 layout_mode = 2
 
-[node name="Top" type="HBoxContainer" parent="VBoxContainer" unique_id=769645194]
+[node name="Top" type="HBoxContainer" parent="Background/Contents" unique_id=769645194]
 layout_mode = 2
 size_flags_vertical = 3
 size_flags_stretch_ratio = 37.95
 
-[node name="Left" type="VBoxContainer" parent="VBoxContainer/Top" unique_id=1271530614]
+[node name="Left" type="VBoxContainer" parent="Background/Contents/Top" unique_id=1271530614]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="Top" type="Control" parent="VBoxContainer/Top/Left" unique_id=922073327]
+[node name="Top" type="Control" parent="Background/Contents/Top/Left" unique_id=922073327]
 layout_mode = 2
 size_flags_vertical = 3
 size_flags_stretch_ratio = 1.35
 
-[node name="Buttons" type="HBoxContainer" parent="VBoxContainer/Top/Left" unique_id=1977946259]
+[node name="Buttons" type="HBoxContainer" parent="Background/Contents/Top/Left" unique_id=1977946259]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="Left" type="Control" parent="VBoxContainer/Top/Left/Buttons" unique_id=1048029063]
+[node name="Left" type="Control" parent="Background/Contents/Top/Left/Buttons" unique_id=1048029063]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="HomeButton" parent="VBoxContainer/Top/Left/Buttons" unique_id=1375336497 instance=ExtResource("3_bqjpd")]
+[node name="HomeButton" parent="Background/Contents/Top/Left/Buttons" unique_id=1037807675 instance=ExtResource("3_46mq1")]
 layout_mode = 2
-texture_normal = ExtResource("2_turym")
-scene_path = "uid://hhn1146b88yy"
 
-[node name="ReturnButton" parent="VBoxContainer/Top/Left/Buttons" unique_id=190150924 instance=ExtResource("3_bqjpd")]
+[node name="ReturnButton" parent="Background/Contents/Top/Left/Buttons" unique_id=190150924 instance=ExtResource("3_bqjpd")]
 layout_mode = 2
 texture_normal = ExtResource("4_l63os")
 scene_path = "uid://hhn1146b88yy"
 
-[node name="Right" type="Control" parent="VBoxContainer/Top/Left/Buttons" unique_id=1682775938]
+[node name="Right" type="Control" parent="Background/Contents/Top/Left/Buttons" unique_id=1682775938]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="Bottom" type="Control" parent="VBoxContainer/Top/Left" unique_id=558008303]
+[node name="Bottom" type="Control" parent="Background/Contents/Top/Left" unique_id=558008303]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="Middle" type="VBoxContainer" parent="VBoxContainer/Top" unique_id=1409300312]
+[node name="Middle" type="VBoxContainer" parent="Background/Contents/Top" unique_id=1409300312]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="Top" type="Control" parent="VBoxContainer/Top/Middle" unique_id=1079079607]
+[node name="Top" type="Control" parent="Background/Contents/Top/Middle" unique_id=1079079607]
 layout_mode = 2
 size_flags_vertical = 3
 size_flags_stretch_ratio = 0.47
 
-[node name="AnimatedLogo" parent="VBoxContainer/Top/Middle" unique_id=2011953226 instance=ExtResource("6_46mq1")]
+[node name="AnimatedLogo" parent="Background/Contents/Top/Middle" unique_id=2011953226 instance=ExtResource("6_46mq1")]
 layout_mode = 2
-texture = ExtResource("7_awj8d")
 
-[node name="Bottom" type="Control" parent="VBoxContainer/Top/Middle" unique_id=1361731841]
+[node name="Bottom" type="Control" parent="Background/Contents/Top/Middle" unique_id=1361731841]
 layout_mode = 2
 size_flags_vertical = 3
 size_flags_stretch_ratio = 0.0
 
-[node name="Right" type="VBoxContainer" parent="VBoxContainer/Top" unique_id=1063470421]
+[node name="Right" type="VBoxContainer" parent="Background/Contents/Top" unique_id=1063470421]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="Top" type="Control" parent="VBoxContainer/Top/Right" unique_id=879662056]
+[node name="Top" type="Control" parent="Background/Contents/Top/Right" unique_id=879662056]
 layout_mode = 2
 size_flags_vertical = 3
 size_flags_stretch_ratio = 1.47
 
-[node name="Buttons" type="HBoxContainer" parent="VBoxContainer/Top/Right" unique_id=273684267]
+[node name="Buttons" type="HBoxContainer" parent="Background/Contents/Top/Right" unique_id=273684267]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Left" type="Control" parent="VBoxContainer/Top/Right/Buttons" unique_id=1572322409]
+[node name="Left" type="Control" parent="Background/Contents/Top/Right/Buttons" unique_id=1572322409]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 0.13
 
-[node name="LangButton" parent="VBoxContainer/Top/Right/Buttons" unique_id=2110673369 instance=ExtResource("4_nldrk")]
+[node name="LangButton" parent="Background/Contents/Top/Right/Buttons" unique_id=2110673369 instance=ExtResource("4_nldrk")]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/Top/Right/Buttons" unique_id=436843066]
+[node name="HBoxContainer" type="HBoxContainer" parent="Background/Contents/Top/Right/Buttons" unique_id=436843066]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="SoundButton" parent="VBoxContainer/Top/Right/Buttons/HBoxContainer" unique_id=1748544731 instance=ExtResource("5_esdt6")]
+[node name="SoundButton" parent="Background/Contents/Top/Right/Buttons/HBoxContainer" unique_id=1748544731 instance=ExtResource("5_esdt6")]
 layout_mode = 2
 
-[node name="Control" type="Control" parent="VBoxContainer/Top/Right/Buttons/HBoxContainer" unique_id=1834502961]
+[node name="Control" type="Control" parent="Background/Contents/Top/Right/Buttons/HBoxContainer" unique_id=1834502961]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="Right" type="Control" parent="VBoxContainer/Top/Right/Buttons" unique_id=84950366]
+[node name="Right" type="Control" parent="Background/Contents/Top/Right/Buttons" unique_id=84950366]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 0.13
 
-[node name="Bottom" type="Control" parent="VBoxContainer/Top/Right" unique_id=6070604]
+[node name="Bottom" type="Control" parent="Background/Contents/Top/Right" unique_id=6070604]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="Bottom" type="VBoxContainer" parent="VBoxContainer" unique_id=685306029]
+[node name="Bottom" type="VBoxContainer" parent="Background/Contents" unique_id=685306029]
 layout_mode = 2
 size_flags_vertical = 3
 size_flags_stretch_ratio = 79.4
 
-[node name="Top" type="Control" parent="VBoxContainer/Bottom" unique_id=577804636]
+[node name="Top" type="Control" parent="Background/Contents/Bottom" unique_id=577804636]
 layout_mode = 2
 size_flags_vertical = 3
 size_flags_stretch_ratio = 0.14
 
-[node name="Labels" type="HBoxContainer" parent="VBoxContainer/Bottom" unique_id=1095226667]
+[node name="Labels" type="HBoxContainer" parent="Background/Contents/Bottom" unique_id=1095226667]
 layout_mode = 2
 
-[node name="Left" type="Control" parent="VBoxContainer/Bottom/Labels" unique_id=1079756062]
+[node name="Left" type="Control" parent="Background/Contents/Bottom/Labels" unique_id=1079756062]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 2.04
 
-[node name="LevelsLabel" type="Label" parent="VBoxContainer/Bottom/Labels" unique_id=1700461008]
+[node name="LevelsLabel" type="Label" parent="Background/Contents/Bottom/Labels" unique_id=1700461008]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 1
 text = "LEVELS"
 vertical_alignment = 1
 
-[node name="Middle" type="Control" parent="VBoxContainer/Bottom/Labels" unique_id=1065871474]
+[node name="Middle" type="Control" parent="Background/Contents/Bottom/Labels" unique_id=1065871474]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 2.74
 
-[node name="RewardsLabel" type="Label" parent="VBoxContainer/Bottom/Labels" unique_id=474850662]
+[node name="RewardsLabel" type="Label" parent="Background/Contents/Bottom/Labels" unique_id=474850662]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 1
 text = "REWARDS"
 vertical_alignment = 1
 
-[node name="Right" type="Control" parent="VBoxContainer/Bottom/Labels" unique_id=562095810]
+[node name="Right" type="Control" parent="Background/Contents/Bottom/Labels" unique_id=562095810]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 0.85
 
-[node name="Buttons" type="HBoxContainer" parent="VBoxContainer/Bottom" unique_id=792465034]
+[node name="Buttons" type="HBoxContainer" parent="Background/Contents/Bottom" unique_id=792465034]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="Left" type="Control" parent="VBoxContainer/Bottom/Buttons" unique_id=693481143]
+[node name="Left" type="Control" parent="Background/Contents/Bottom/Buttons" unique_id=693481143]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 0.5
 
-[node name="Level1Button" parent="VBoxContainer/Bottom/Buttons" unique_id=1119098335 instance=ExtResource("3_bqjpd")]
+[node name="Level1Button" parent="Background/Contents/Bottom/Buttons" unique_id=1119098335 instance=ExtResource("3_bqjpd")]
 layout_mode = 2
 texture_normal = ExtResource("7_b1gtc")
 scene_path = "uid://cxogw4sdxk8e3"
 
-[node name="Level2Button" parent="VBoxContainer/Bottom/Buttons" unique_id=722376649 instance=ExtResource("3_bqjpd")]
+[node name="Level2Button" parent="Background/Contents/Bottom/Buttons" unique_id=722376649 instance=ExtResource("3_bqjpd")]
 layout_mode = 2
 disabled = true
 texture_normal = ExtResource("8_gqg0r")
 texture_disabled = ExtResource("9_pl33s")
 scene_path = "uid://cj1onqqcxwl16"
 
-[node name="Level3Button" parent="VBoxContainer/Bottom/Buttons" unique_id=1253051907 instance=ExtResource("3_bqjpd")]
+[node name="Level3Button" parent="Background/Contents/Bottom/Buttons" unique_id=1253051907 instance=ExtResource("3_bqjpd")]
 layout_mode = 2
 disabled = true
 texture_normal = ExtResource("10_t8cmi")
 texture_disabled = ExtResource("11_r3nop")
 scene_path = "uid://br2ox5sejwof5"
 
-[node name="Middle" type="Control" parent="VBoxContainer/Bottom/Buttons" unique_id=978541098]
+[node name="Middle" type="Control" parent="Background/Contents/Bottom/Buttons" unique_id=978541098]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="RewardsButton" parent="VBoxContainer/Bottom/Buttons" unique_id=1095349452 instance=ExtResource("3_bqjpd")]
+[node name="RewardsButton" parent="Background/Contents/Bottom/Buttons" unique_id=1095349452 instance=ExtResource("3_bqjpd")]
 layout_mode = 2
 texture_normal = ExtResource("17_bqjpd")
 scene_path = "uid://7uwmwgor6fdm"
 
-[node name="Right" type="Control" parent="VBoxContainer/Bottom/Buttons" unique_id=3176046]
+[node name="Right" type="Control" parent="Background/Contents/Bottom/Buttons" unique_id=3176046]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 0.5

@@ -1,4 +1,4 @@
-extends PanelContainer
+extends Control
 
 var _viewed_image: TextureRect
 var _pictures: Array[TextureButton]

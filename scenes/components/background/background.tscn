@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://qb6v72gtm3bf"]
+
+[ext_resource type="Texture2D" uid="uid://7q5gyer3xjcg" path="res://scenes/components/background/background.png" id="1_ak2jc"]
+
+[node name="Background" type="PanelContainer" unique_id=2060586972]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=394463514]
+layout_mode = 2
+texture = ExtResource("1_ak2jc")
+expand_mode = 1
