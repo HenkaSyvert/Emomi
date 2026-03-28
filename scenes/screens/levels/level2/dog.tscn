@@ -2,22 +2,21 @@
 
 [ext_resource type="Script" uid="uid://c251iblecit8b" path="res://scenes/screens/levels/level_template/level.gd" id="1_6auhs"]
 [ext_resource type="Texture2D" uid="uid://c3fpvwdswa80c" path="res://scenes/components/home_button/home.png" id="2_ix23y"]
-[ext_resource type="Texture2D" uid="uid://dk78fcithaeh7" path="res://scenes/screens/sprites/arrow.png" id="3_bh015"]
+[ext_resource type="Texture2D" uid="uid://dk78fcithaeh7" path="res://sprites/arrow.png" id="3_bh015"]
 [ext_resource type="PackedScene" uid="uid://ctoicx2ven6ek" path="res://scenes/components/star_counter/star_counter.tscn" id="4_fxk8u"]
 [ext_resource type="PackedScene" uid="uid://bvvb57ga0cd1i" path="res://scenes/components/sound_button/sound_button.tscn" id="5_0cdc6"]
-[ext_resource type="PackedScene" uid="uid://djgs5oxgmxh5x" path="res://scenes/components/question_drag_target/question_drag_target.tscn" id="6_fi7e5"]
-[ext_resource type="Texture2D" uid="uid://bx0ja2icw23jv" path="res://scenes/screens/levels/sprites/situations/dog/Dog 1 Loop.png" id="7_kb21o"]
-[ext_resource type="Texture2D" uid="uid://btgcuj518v3x1" path="res://scenes/screens/levels/sprites/situations/dog/Dog 2 Loop.png" id="8_rxe22"]
-[ext_resource type="PackedScene" uid="uid://ixajx0dg6qmk" path="res://scenes/components/draggable_option/draggable_option.tscn" id="9_gb55v"]
-[ext_resource type="Texture2D" uid="uid://c853bjot2l44l" path="res://scenes/screens/levels/level2/sprites/eddy/0.png" id="10_rohhh"]
-[ext_resource type="Texture2D" uid="uid://dgeg2024llgqr" path="res://scenes/screens/levels/level2/sprites/reizy/0.png" id="11_xqxqa"]
-[ext_resource type="Texture2D" uid="uid://beipxpgc4ejnm" path="res://scenes/screens/levels/level2/sprites/reizy/3.png" id="12_ibxbt"]
-[ext_resource type="Texture2D" uid="uid://swvkt7n7ib4y" path="res://scenes/screens/levels/level2/sprites/reizy/2.png" id="13_q6q63"]
-[ext_resource type="Texture2D" uid="uid://dqgyuyuhqssjk" path="res://scenes/screens/levels/level2/sprites/reizy/1.png" id="14_cif71"]
-[ext_resource type="Texture2D" uid="uid://4xoo0p3yqv4a" path="res://scenes/screens/levels/level2/sprites/malky/1.png" id="15_52j0q"]
-[ext_resource type="Texture2D" uid="uid://c4t85mqjak2t6" path="res://scenes/screens/levels/level2/sprites/malky/3.png" id="16_e1p2v"]
-[ext_resource type="Texture2D" uid="uid://bubois1y122ss" path="res://scenes/screens/levels/level2/sprites/malky/2.png" id="17_lcs0o"]
-[ext_resource type="Texture2D" uid="uid://cnr1om4nfgchc" path="res://scenes/screens/levels/level2/sprites/malky/0.png" id="18_yljlj"]
+[ext_resource type="PackedScene" uid="uid://djgs5oxgmxh5x" path="res://scenes/primitives/question_drag_target/question_drag_target.tscn" id="6_fi7e5"]
+[ext_resource type="Texture2D" uid="uid://bx0ja2icw23jv" path="res://sprites/situations/dog/Dog 1 Loop.png" id="7_kb21o"]
+[ext_resource type="Texture2D" uid="uid://btgcuj518v3x1" path="res://sprites/situations/dog/Dog 2 Loop.png" id="8_rxe22"]
+[ext_resource type="PackedScene" uid="uid://ixajx0dg6qmk" path="res://scenes/primitives/draggable_option/draggable_option.tscn" id="9_gb55v"]
+[ext_resource type="Texture2D" uid="uid://dgeg2024llgqr" path="res://sprites/reizy_option/0.png" id="11_xqxqa"]
+[ext_resource type="Texture2D" uid="uid://beipxpgc4ejnm" path="res://sprites/reizy_option/3.png" id="12_ibxbt"]
+[ext_resource type="Texture2D" uid="uid://swvkt7n7ib4y" path="res://sprites/reizy_option/2.png" id="13_q6q63"]
+[ext_resource type="Texture2D" uid="uid://dqgyuyuhqssjk" path="res://sprites/reizy_option/1.png" id="14_cif71"]
+[ext_resource type="Texture2D" uid="uid://4xoo0p3yqv4a" path="res://sprites/malky_option/1.png" id="15_52j0q"]
+[ext_resource type="Texture2D" uid="uid://c4t85mqjak2t6" path="res://sprites/malky_option/3.png" id="16_e1p2v"]
+[ext_resource type="Texture2D" uid="uid://bubois1y122ss" path="res://sprites/malky_option/2.png" id="17_lcs0o"]
+[ext_resource type="Texture2D" uid="uid://cnr1om4nfgchc" path="res://sprites/malky_option/0.png" id="18_yljlj"]
 [ext_resource type="PackedScene" uid="uid://do1blbrdmk38b" path="res://scenes/components/popup/popup.tscn" id="19_p0bss"]
 [ext_resource type="PackedScene" uid="uid://hunkv41wpc1q" path="res://scenes/screens/levels/level2/drawing.tscn" id="20_ix23y"]
 
@@ -127,15 +126,10 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 6.04
 
-[node name="AnimatedTexture" parent="Level1Template/HBoxContainer/Middle/HBoxContainer" unique_id=900728642 node_paths=PackedStringArray("popup") instance=ExtResource("6_fi7e5")]
+[node name="AnimatedTexture" parent="Level1Template/HBoxContainer/Middle/HBoxContainer" unique_id=900728642 instance=ExtResource("6_fi7e5")]
 layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
 size_flags_stretch_ratio = 60.0
-texture = ExtResource("7_kb21o")
-stretch_mode = 4
 frames = Array[Texture2D]([ExtResource("7_kb21o"), ExtResource("8_rxe22")])
-popup = NodePath("../../../../Popup")
 
 [node name="Control2" type="Control" parent="Level1Template/HBoxContainer/Middle" unique_id=1646793948]
 layout_mode = 2
@@ -149,23 +143,20 @@ size_flags_stretch_ratio = 22.05
 
 [node name="Opt1" parent="Level1Template/HBoxContainer/Right" unique_id=1779106198 instance=ExtResource("9_gb55v")]
 layout_mode = 2
-texture_normal = ExtResource("10_rohhh")
 
 [node name="Opt2" parent="Level1Template/HBoxContainer/Right" unique_id=1866522908 instance=ExtResource("9_gb55v")]
 layout_mode = 2
-texture_normal = ExtResource("11_xqxqa")
 is_correct = false
+frames = Array[Texture2D]([ExtResource("11_xqxqa"), ExtResource("14_cif71")])
 frame_correct = ExtResource("12_ibxbt")
 frame_wrong = ExtResource("13_q6q63")
-frames = Array[Texture2D]([ExtResource("11_xqxqa"), ExtResource("14_cif71")])
 
 [node name="Opt3" parent="Level1Template/HBoxContainer/Right" unique_id=1821953838 instance=ExtResource("9_gb55v")]
 layout_mode = 2
-texture_normal = ExtResource("15_52j0q")
 is_correct = false
+frames = Array[Texture2D]([ExtResource("18_yljlj"), ExtResource("15_52j0q")])
 frame_correct = ExtResource("16_e1p2v")
 frame_wrong = ExtResource("17_lcs0o")
-frames = Array[Texture2D]([ExtResource("18_yljlj"), ExtResource("15_52j0q")])
 
 [node name="Control" type="Control" parent="Level1Template/HBoxContainer/Right" unique_id=1785323072]
 layout_mode = 2

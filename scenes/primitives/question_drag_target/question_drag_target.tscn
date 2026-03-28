@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://djgs5oxgmxh5x"]
+
+[ext_resource type="Script" uid="uid://ca2sfit3jh1gy" path="res://scenes/primitives/question_drag_target/question_drag_target.gd" id="1_wprbw"]
+[ext_resource type="Script" uid="uid://bboq2mnurak57" path="res://scenes/primitives/animated_texture_rect/animated_texture_rect.gd" id="7_wprbw"]
+[ext_resource type="Script" uid="uid://133rep8cd4m8" path="res://scenes/primitives/drag_target/drag_target.gd" id="12_4s7ix"]
+
+[node name="QuestionDragTarget" type="Control" unique_id=1256382982]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_wprbw")
+
+[node name="AnimatedTextureRect" type="TextureRect" parent="." unique_id=1908441981]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("7_wprbw")
+metadata/_custom_type_script = "uid://bboq2mnurak57"
+
+[node name="DragTarget" type="Control" parent="." unique_id=1608215138]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("12_4s7ix")
+metadata/_custom_type_script = "uid://133rep8cd4m8"
+
+[connection signal="drag_data_dropped" from="DragTarget" to="." method="_on_drag_target_drag_data_dropped"]

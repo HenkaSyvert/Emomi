@@ -2,23 +2,23 @@
 
 [ext_resource type="Script" uid="uid://c251iblecit8b" path="res://scenes/screens/levels/level_template/level.gd" id="1_76qwk"]
 [ext_resource type="Texture2D" uid="uid://c3fpvwdswa80c" path="res://scenes/components/home_button/home.png" id="2_du0sv"]
-[ext_resource type="Texture2D" uid="uid://dk78fcithaeh7" path="res://scenes/screens/sprites/arrow.png" id="3_1ijhf"]
+[ext_resource type="Texture2D" uid="uid://dk78fcithaeh7" path="res://sprites/arrow.png" id="3_1ijhf"]
 [ext_resource type="PackedScene" uid="uid://ctoicx2ven6ek" path="res://scenes/components/star_counter/star_counter.tscn" id="4_w5kv4"]
 [ext_resource type="PackedScene" uid="uid://bvvb57ga0cd1i" path="res://scenes/components/sound_button/sound_button.tscn" id="5_rce7c"]
-[ext_resource type="PackedScene" uid="uid://djgs5oxgmxh5x" path="res://scenes/components/question_drag_target/question_drag_target.tscn" id="6_m11st"]
-[ext_resource type="Texture2D" uid="uid://d26rfygcpjgan" path="res://scenes/screens/character_screen/sprites/makty_info.png" id="6_vvbmb"]
-[ext_resource type="Texture2D" uid="uid://doy86nxmkhl7u" path="res://scenes/screens/levels/sprites/makty/Makty 1.png" id="7_vvbmb"]
-[ext_resource type="Texture2D" uid="uid://daun1aq8tyib0" path="res://scenes/screens/levels/sprites/makty/Makty 2.png" id="8_0ceop"]
-[ext_resource type="Texture2D" uid="uid://dfv7dueefkb6q" path="res://scenes/screens/levels/sprites/makty/Makty wrong.png" id="9_1ijhf"]
-[ext_resource type="PackedScene" uid="uid://ixajx0dg6qmk" path="res://scenes/components/draggable_option/draggable_option.tscn" id="9_7oifl"]
-[ext_resource type="Texture2D" uid="uid://q4y1ku44cgdd" path="res://scenes/screens/levels/sprites/situations/toy/toy 1 loop.png" id="10_6tdnc"]
-[ext_resource type="Texture2D" uid="uid://1osqbxscikn8" path="res://scenes/screens/levels/sprites/situations/toy/toy 2 loop.png" id="11_rfqhj"]
-[ext_resource type="Texture2D" uid="uid://bx0ja2icw23jv" path="res://scenes/screens/levels/sprites/situations/dog/Dog 1 Loop.png" id="13_w5kv4"]
-[ext_resource type="Texture2D" uid="uid://dn808kmh8nh7n" path="res://scenes/screens/levels/sprites/situations/math/math 1 loop.png" id="14_gcfe3"]
-[ext_resource type="Texture2D" uid="uid://btgcuj518v3x1" path="res://scenes/screens/levels/sprites/situations/dog/Dog 2 Loop.png" id="14_rce7c"]
+[ext_resource type="PackedScene" uid="uid://djgs5oxgmxh5x" path="res://scenes/primitives/question_drag_target/question_drag_target.tscn" id="6_m11st"]
+[ext_resource type="Texture2D" uid="uid://d26rfygcpjgan" path="res://sprites/makty_info.png" id="6_vvbmb"]
+[ext_resource type="Texture2D" uid="uid://doy86nxmkhl7u" path="res://sprites/makty/Makty 1.png" id="7_vvbmb"]
+[ext_resource type="Texture2D" uid="uid://daun1aq8tyib0" path="res://sprites/makty/Makty 2.png" id="8_0ceop"]
+[ext_resource type="Texture2D" uid="uid://dfv7dueefkb6q" path="res://sprites/makty/Makty wrong.png" id="9_1ijhf"]
+[ext_resource type="PackedScene" uid="uid://ixajx0dg6qmk" path="res://scenes/primitives/draggable_option/draggable_option.tscn" id="9_7oifl"]
+[ext_resource type="Texture2D" uid="uid://q4y1ku44cgdd" path="res://sprites/situations/toy/toy 1 loop.png" id="10_6tdnc"]
+[ext_resource type="Texture2D" uid="uid://1osqbxscikn8" path="res://sprites/situations/toy/toy 2 loop.png" id="11_rfqhj"]
+[ext_resource type="Texture2D" uid="uid://bx0ja2icw23jv" path="res://sprites/situations/dog/Dog 1 Loop.png" id="13_w5kv4"]
+[ext_resource type="Texture2D" uid="uid://dn808kmh8nh7n" path="res://sprites/situations/math/math 1 loop.png" id="14_gcfe3"]
+[ext_resource type="Texture2D" uid="uid://btgcuj518v3x1" path="res://sprites/situations/dog/Dog 2 Loop.png" id="14_rce7c"]
 [ext_resource type="PackedScene" uid="uid://do1blbrdmk38b" path="res://scenes/components/popup/popup.tscn" id="15_v2cw0"]
 [ext_resource type="PackedScene" uid="uid://c3t3d1pwq2x7o" path="res://scenes/screens/levels/level1/reizy_sleep.tscn" id="16_du0sv"]
-[ext_resource type="Texture2D" uid="uid://bv3q8whvwob41" path="res://scenes/screens/levels/sprites/situations/math/math 2 loop.png" id="16_w5kv4"]
+[ext_resource type="Texture2D" uid="uid://bv3q8whvwob41" path="res://sprites/situations/math/math 2 loop.png" id="16_w5kv4"]
 [ext_resource type="PackedScene" uid="uid://dxbpakctk1gcs" path="res://scenes/screens/character_screen/character_screen.tscn" id="19_rce7c"]
 
 [node name="MaktyMath" type="Control" unique_id=2110258413]
@@ -141,15 +141,10 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 6.04
 
-[node name="AnimatedTexture" parent="Level1Template/HBoxContainer/Middle/HBoxContainer" unique_id=900728642 node_paths=PackedStringArray("popup") instance=ExtResource("6_m11st")]
+[node name="AnimatedTexture" parent="Level1Template/HBoxContainer/Middle/HBoxContainer" unique_id=900728642 instance=ExtResource("6_m11st")]
 layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
 size_flags_stretch_ratio = 60.0
-texture = ExtResource("7_vvbmb")
-stretch_mode = 4
 frames = Array[Texture2D]([ExtResource("7_vvbmb"), ExtResource("8_0ceop")])
-popup = NodePath("../../../../Popup")
 wrong_frame = ExtResource("9_1ijhf")
 
 [node name="Control2" type="Control" parent="Level1Template/HBoxContainer/Middle" unique_id=2009627151]
@@ -164,26 +159,23 @@ size_flags_stretch_ratio = 22.05
 
 [node name="Opt1" parent="Level1Template/HBoxContainer/Right" unique_id=1779106198 instance=ExtResource("9_7oifl")]
 layout_mode = 2
-texture_normal = ExtResource("10_6tdnc")
 is_correct = false
+frames = Array[Texture2D]([ExtResource("10_6tdnc"), ExtResource("11_rfqhj")])
 frame_correct = ExtResource("10_6tdnc")
 frame_wrong = ExtResource("11_rfqhj")
-frames = Array[Texture2D]([ExtResource("10_6tdnc"), ExtResource("11_rfqhj")])
 
 [node name="Opt2" parent="Level1Template/HBoxContainer/Right" unique_id=913546970 instance=ExtResource("9_7oifl")]
 layout_mode = 2
-texture_normal = ExtResource("13_w5kv4")
 is_correct = false
+frames = Array[Texture2D]([ExtResource("13_w5kv4"), ExtResource("14_rce7c")])
 frame_correct = ExtResource("13_w5kv4")
 frame_wrong = ExtResource("14_rce7c")
-frames = Array[Texture2D]([ExtResource("13_w5kv4"), ExtResource("14_rce7c")])
 
 [node name="Opt3" parent="Level1Template/HBoxContainer/Right" unique_id=28631258 instance=ExtResource("9_7oifl")]
 layout_mode = 2
-texture_normal = ExtResource("14_gcfe3")
+frames = Array[Texture2D]([ExtResource("14_gcfe3"), ExtResource("16_w5kv4")])
 frame_correct = ExtResource("14_gcfe3")
 frame_wrong = ExtResource("16_w5kv4")
-frames = Array[Texture2D]([ExtResource("14_gcfe3"), ExtResource("16_w5kv4")])
 
 [node name="Control" type="Control" parent="Level1Template/HBoxContainer/Right" unique_id=884465508]
 layout_mode = 2

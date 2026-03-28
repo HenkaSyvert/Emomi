@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://c3lww2lmjd0c4" path="res://scenes/screens/rewards_menu/rewards_menu.gd" id="1_qn6d6"]
 [ext_resource type="PackedScene" uid="uid://qb6v72gtm3bf" path="res://scenes/components/background/background.tscn" id="2_for7e"]
 [ext_resource type="PackedScene" uid="uid://wx5ks08qavh6" path="res://scenes/primitives/change_level_button/change_level_button.tscn" id="2_jgorb"]
-[ext_resource type="Texture2D" uid="uid://dk78fcithaeh7" path="res://scenes/screens/sprites/arrow.png" id="3_qq887"]
+[ext_resource type="Texture2D" uid="uid://dk78fcithaeh7" path="res://sprites/arrow.png" id="3_qq887"]
 [ext_resource type="PackedScene" uid="uid://o0xttlxxppdv" path="res://scenes/components/home_button/home_button.tscn" id="3_rxshx"]
 [ext_resource type="PackedScene" uid="uid://ctoicx2ven6ek" path="res://scenes/components/star_counter/star_counter.tscn" id="4_010sm"]
 [ext_resource type="PackedScene" uid="uid://7ygu5amhj7gr" path="res://scenes/components/animated_logo/animated_logo.tscn" id="6_uh3yb"]
@@ -17,7 +17,7 @@
 [ext_resource type="Texture2D" uid="uid://ccdea3gmpeowa" path="res://scenes/screens/rewards_menu/sprites/rewards5.png" id="16_537ma"]
 [ext_resource type="Texture2D" uid="uid://7j45f5sjsut3" path="res://scenes/screens/rewards_menu/sprites/rewards6.png" id="17_jll2o"]
 [ext_resource type="StyleBox" uid="uid://bnp6m13wovw7n" path="res://ui/themes/popup_theme.tres" id="18_tfmse"]
-[ext_resource type="Texture2D" uid="uid://dc1t8yrrsbrpi" path="res://scenes/screens/character_screen/sprites/cross.png" id="19_sjwty"]
+[ext_resource type="Texture2D" uid="uid://dc1t8yrrsbrpi" path="res://sprites/cross.png" id="19_sjwty"]
 
 [node name="RewardsMenu" type="Control" unique_id=1440523561]
 layout_mode = 3

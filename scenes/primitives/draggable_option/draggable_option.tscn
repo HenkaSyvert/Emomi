@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://ixajx0dg6qmk"]
+
+[ext_resource type="PackedScene" uid="uid://b1h8pnrwrcgb2" path="res://scenes/primitives/animated_texture_rect/animated_texture_rect.tscn" id="2_nos76"]
+[ext_resource type="Script" uid="uid://csd5daqhx6qad" path="res://scenes/primitives/draggable_option/draggable_option.gd" id="2_ongq8"]
+[ext_resource type="PackedScene" uid="uid://bqfstcgqbkmby" path="res://scenes/primitives/drag_source/drag_source.tscn" id="6_7pom5"]
+
+[node name="DraggableOption" type="Control" unique_id=327432511]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("2_ongq8")
+
+[node name="AnimatedTextureRect" parent="." unique_id=547000239 instance=ExtResource("2_nos76")]
+layout_mode = 1
+
+[node name="DragSource" parent="." unique_id=422901149 instance=ExtResource("6_7pom5")]
+layout_mode = 1
+drag_data = true
+
+[connection signal="drag_started" from="DragSource" to="." method="_on_drag_source_drag_started"]
+[connection signal="drag_stopped" from="DragSource" to="." method="_on_drag_source_drag_stopped"]
