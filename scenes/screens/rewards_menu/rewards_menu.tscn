@@ -140,7 +140,7 @@ size_flags_stretch_ratio = 20.0
 [node name="Label" type="Label" parent="Background/MarginContainer/Contents/Bottom" unique_id=698788287]
 layout_mode = 2
 theme_override_font_sizes/font_size = 151
-text = "REWARDS"
+text = "menu.rewards"
 horizontal_alignment = 1
 vertical_alignment = 1
 

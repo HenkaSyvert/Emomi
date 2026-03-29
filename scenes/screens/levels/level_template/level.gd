@@ -1,5 +1,7 @@
 extends PanelContainer
 
+@onready var about: Control = $"../CharacterInfo"
+
 
 func _on_home_button_pressed() -> void:
 	var err: Error = get_tree().change_scene_to_file(
@@ -13,9 +15,6 @@ func _on_return_button_pressed() -> void:
 		"res://scenes/screens/level_select_menu/level_select_menu.tscn"
 	)
 	assert(err == OK)
-
-
-@onready var about: Control = $"../CharacterInfo"
 
 
 func _on_about_pressed() -> void:

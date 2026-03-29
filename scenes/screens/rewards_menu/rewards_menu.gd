@@ -2,10 +2,11 @@ extends Control
 
 var _viewed_image: TextureRect
 var _pictures: Array[TextureButton]
-@onready var image_viewer: Control = $ImageViewer
+@onready var image_viewer: Control
 
 
 func _ready() -> void:
+	image_viewer = find_child("ImageViewer")
 	_viewed_image = find_child("ViewedImage")
 
 	for i: int in range(16):

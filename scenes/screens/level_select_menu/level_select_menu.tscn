@@ -135,7 +135,7 @@ size_flags_stretch_ratio = 2.04
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 1
-text = "LEVELS"
+text = "menu.levels"
 vertical_alignment = 1
 
 [node name="Middle" type="Control" parent="Background/MarginContainer/Contents/Bottom/Labels" unique_id=1065871474]
@@ -147,7 +147,7 @@ size_flags_stretch_ratio = 2.74
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 1
-text = "REWARDS"
+text = "menu.rewards"
 vertical_alignment = 1
 
 [node name="Right" type="Control" parent="Background/MarginContainer/Contents/Bottom/Labels" unique_id=562095810]

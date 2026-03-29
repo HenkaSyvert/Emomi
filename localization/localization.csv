@@ -1,15 +1,22 @@
 keys,en,es,sv
-START,Start,Empezar,Börja
-LEVELS,Levels,Niveles,Nivåer
-REWARDS,Rewards,Premios,Priser
+
+menu.start,Start,Empezar,Börja
+
+menu.levels,Levels,Niveles,Nivåer
+menu.rewards,Rewards,Premios,Priser
+
 ANGER,Anger,Enojo,Ilska
 FRUSTRATION,Frustration,Frustración,Frustration
 BORED,Bored,Tristeza,Uttråkad
-LEVEL_1_PROMPT,"How does the child feel?","Señala que emoción reina en esta acción","Hur känner sig barnet?"
+
+level_1.prompt,"How does the child feel?","Señala que emoción reina en esta acción","Hur känner sig barnet?"
+
 LEVEL_3A_PROMPT,"What would make Reizy feel better?","Qué haría sentir mejor a Reizy?","Vad skulle få Reizy att må bättre?"
 LEVEL_3B_PROMPT,"What would make Makty feel better?","Qué haría que Makty se sienta mejor?","Hur kan Makty lugna ner sig?"
+
 POPUP1,"Correct!", "¡correcto!", "Rätt!"
 POPUP2,"You won a star!","¡Ganaste una estrella!","Du vann en stjärna!"
+
 LEVEL_2A_PROMPT,"What's bothering Makty?","Qué señales frustran a Makty","Vad har hänt med Makty?"
 LEVEL_2B_PROMPT,"Why is Eddy sad?","Qué señales ponen triste a Eddy?", "Varför är Eddy ledsen?"
 POPUP_BUTTON,"Continue", "Continuar","Fortsätt"

@@ -1,5 +1,5 @@
-extends Control
 class_name Level3
+extends Control
 
 @export var poss: Array[Texture2D]
 @export var negs: Array[Texture2D]
