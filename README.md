@@ -10,8 +10,5 @@
 - make level template, and inherit scene for others
 - find more sounds: "happy sound" for correct answer
 - add splash loading screen
-- fix translation.csv with namspaces lowercase keys
-- rename soundManager -> audioManager
-- fix audio manager global mute
 - fix proper icon size
 - maybe shorter names for signals, remove redundant, see convnetions

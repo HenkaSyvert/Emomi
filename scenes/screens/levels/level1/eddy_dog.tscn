@@ -86,7 +86,7 @@ size_flags_stretch_ratio = 6.36
 [node name="Label" type="Label" parent="MarginContainer/Contents/Middle" unique_id=540570896]
 layout_mode = 2
 size_flags_vertical = 6
-text = "LEVEL_1_PROMPT"
+text = "prompt.level_1"
 horizontal_alignment = 1
 autowrap_mode = 3
 
@@ -123,4 +123,3 @@ next_scene = ExtResource("16_ecpyq")
 [node name="CharacterInfo" parent="MarginContainer" unique_id=100588087 instance=ExtResource("19_4t0is")]
 visible = false
 layout_mode = 2
-character = 0
