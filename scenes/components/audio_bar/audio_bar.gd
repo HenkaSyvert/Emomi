@@ -1,13 +1,13 @@
 extends TextureButton
 
-@export var muted_texture: Texture2D
-@export var not_muted_texture: Texture2D
+@export var texture_muted: Texture2D
+@export var texture_unmuted: Texture2D
 
 
 func _ready() -> void:
-	texture_normal = muted_texture if SoundManager.is_muted else not_muted_texture
+	texture_normal = texture_muted if AudioServer.is_bus_mute(0) else texture_unmuted
 
 
 func _on_pressed() -> void:
-	SoundManager.is_muted = not SoundManager.is_muted
-	texture_normal = muted_texture if SoundManager.is_muted else not_muted_texture
+	AudioServer.set_bus_mute(0, not AudioServer.is_bus_mute(0))
+	texture_normal = texture_muted if AudioServer.is_bus_mute(0) else texture_unmuted

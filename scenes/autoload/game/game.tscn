@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://c1lq03icii4ud"]
+
+[ext_resource type="Script" uid="uid://nfandha4rr2" path="res://scenes/autoload/game/game.gd" id="1_32w33"]
+[ext_resource type="AudioStream" uid="uid://cppy2sh4qtjw8" path="res://audio/background_music.mp3" id="2_1innd"]
+[ext_resource type="AudioStream" uid="uid://jjcofiru1el" path="res://audio/button_click.mp3" id="3_gsgju"]
+[ext_resource type="Script" uid="uid://eqqa4ooro4bt" path="res://scenes/autoload/game/button_click_player.gd" id="4_oenpp"]
+
+[node name="Game" type="Node" unique_id=1032278260]
+script = ExtResource("1_32w33")
+
+[node name="BackgroundMusicPlayer" type="AudioStreamPlayer2D" parent="." unique_id=927213764]
+stream = ExtResource("2_1innd")
+autoplay = true
+
+[node name="ButtonClickPlayer" type="AudioStreamPlayer2D" parent="." unique_id=2056618592]
+stream = ExtResource("3_gsgju")
+script = ExtResource("4_oenpp")

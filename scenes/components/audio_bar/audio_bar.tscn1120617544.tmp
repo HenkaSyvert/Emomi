@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://bvvb57ga0cd1i"]
 
+[ext_resource type="Texture2D" uid="uid://bkgqfsennxs6h" path="res://scenes/components/audio_bar/audio_enabled.png" id="1_ogd44"]
 [ext_resource type="Script" uid="uid://dwmvh1bikm4em" path="res://scenes/components/audio_bar/audio_bar.gd" id="2_0utc6"]
-[ext_resource type="Texture2D" uid="uid://bkgqfsennxs6h" path="res://scenes/components/audio_bar/audio_unmuted.png" id="3_bt4kx"]
-[ext_resource type="Texture2D" uid="uid://dcmox6510ichp" path="res://scenes/components/audio_bar/audio_muted.png" id="3_ntjvm"]
+[ext_resource type="Texture2D" uid="uid://dcmox6510ichp" path="res://scenes/components/audio_bar/audio_disabled.png" id="3_ntjvm"]
 
 [node name="AudioBar" type="AspectRatioContainer" unique_id=984182281]
 anchors_preset = 15
@@ -22,8 +22,8 @@ texture_normal = ExtResource("3_ntjvm")
 ignore_texture_size = true
 stretch_mode = 4
 script = ExtResource("2_0utc6")
-texture_muted = ExtResource("3_ntjvm")
-texture_unmuted = ExtResource("3_bt4kx")
+muted_texture = ExtResource("3_ntjvm")
+not_muted_texture = ExtResource("1_ogd44")
 
 [node name="Control" type="Control" parent="HBoxContainer" unique_id=629377306]
 layout_mode = 2
