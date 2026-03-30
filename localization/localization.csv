@@ -17,8 +17,8 @@ popup.complete,"Level Completed!\nYou won a reward!","Nivel completado.\n¡Has g
 
 info.prefix,"get to know ","Conoce a ","lär känna "
 info.personality,"Personality","Personalidad","Personlighet"
-info.likes,"What he likes","Lo que le gusta","vad han tycker om"
-info.dislikes,"What he dislikes","No le gusta","vad han inte tycker om"
+info.likes,"What he likes","Lo que le gusta","vad han gillar"
+info.dislikes,"What he dislikes","No le gusta","vad han ogillar"
 info.fav_food,"Favorite food","Comida favorita","favoritmat"
 info.bad_food,"Least favorite food","Comida menos favorita","Mat han ogillar"
 info.weight,"Weight","Peso","Vikt"

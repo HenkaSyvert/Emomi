@@ -10,7 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://ccdea3gmpeowa" path="res://scenes/screens/rewards_menu/sprites/rewards5.png" id="16_537ma"]
 [ext_resource type="Texture2D" uid="uid://7j45f5sjsut3" path="res://scenes/screens/rewards_menu/sprites/rewards6.png" id="17_jll2o"]
 [ext_resource type="StyleBox" uid="uid://bnp6m13wovw7n" path="res://ui/themes/popup_theme.tres" id="18_tfmse"]
-[ext_resource type="Texture2D" uid="uid://dc1t8yrrsbrpi" path="res://sprites/cross.png" id="19_sjwty"]
+[ext_resource type="Texture2D" uid="uid://dc1t8yrrsbrpi" path="res://scenes/screens/character_screen/cross.png" id="19_sjwty"]
 
 [node name="RewardsMenu" type="Control" unique_id=1440523561]
 layout_mode = 3

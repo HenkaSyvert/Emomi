@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://bceb0okbt6ny0"]
+
+[ext_resource type="Script" uid="uid://tsf6sb4rwrug" path="res://scenes/primitives/circular_button/cicular_button.gd" id="1_0l4ug"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0l4ug"]
+corner_radius_top_left = 392
+corner_radius_top_right = 392
+corner_radius_bottom_right = 392
+corner_radius_bottom_left = 392
+corner_detail = 20
+
+[node name="CicularButton" type="Button" unique_id=1042425011]
+offset_right = 784.0
+offset_bottom = 784.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_0l4ug")
+autowrap_mode = 3
+script = ExtResource("1_0l4ug")
