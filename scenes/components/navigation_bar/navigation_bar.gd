@@ -1,3 +1,4 @@
+class_name NavigationBar
 extends AspectRatioContainer
 
 @export_file("*.tscn") var previous_scene_file_path: String

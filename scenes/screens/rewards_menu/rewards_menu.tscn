@@ -2,12 +2,7 @@
 
 [ext_resource type="Script" uid="uid://c3lww2lmjd0c4" path="res://scenes/screens/rewards_menu/rewards_menu.gd" id="1_qn6d6"]
 [ext_resource type="PackedScene" uid="uid://qb6v72gtm3bf" path="res://scenes/components/background/background.tscn" id="2_for7e"]
-[ext_resource type="PackedScene" uid="uid://bjmccii1ugoyr" path="res://scenes/components/navigation_bar/navigation_bar.tscn" id="3_uh3yb"]
-[ext_resource type="PackedScene" uid="uid://ctoicx2ven6ek" path="res://scenes/components/star_counter/star_counter.tscn" id="4_010sm"]
-[ext_resource type="PackedScene" uid="uid://7ygu5amhj7gr" path="res://scenes/components/animated_logo/animated_logo.tscn" id="6_uh3yb"]
-[ext_resource type="Texture2D" uid="uid://dvp6tff322483" path="res://scenes/components/animated_logo/logo3.png" id="7_e6hfi"]
-[ext_resource type="PackedScene" uid="uid://dcnps1ubh4p87" path="res://scenes/components/localization_bar/localization_bar.tscn" id="9_tfmse"]
-[ext_resource type="PackedScene" uid="uid://bvvb57ga0cd1i" path="res://scenes/components/audio_bar/audio_bar.tscn" id="10_sjwty"]
+[ext_resource type="PackedScene" uid="uid://cxw1nqmejgk5v" path="res://scenes/components/menu_top/menu_top.tscn" id="3_3pp2v"]
 [ext_resource type="Texture2D" uid="uid://b5m3g6tcpyrm4" path="res://scenes/screens/rewards_menu/sprites/reward1.png" id="12_e6hfi"]
 [ext_resource type="Texture2D" uid="uid://d0dbrexnsik5v" path="res://scenes/screens/rewards_menu/sprites/reward2.png" id="13_vy0a1"]
 [ext_resource type="Texture2D" uid="uid://11a11qy6aou3" path="res://scenes/screens/rewards_menu/sprites/reward3.png" id="14_tfmse"]
@@ -44,93 +39,11 @@ layout_mode = 2
 [node name="Contents" type="VBoxContainer" parent="Background/MarginContainer" unique_id=879359893]
 layout_mode = 2
 
-[node name="Top" type="HBoxContainer" parent="Background/MarginContainer/Contents" unique_id=646128208]
+[node name="MenuTop" parent="Background/MarginContainer/Contents" unique_id=1579455231 instance=ExtResource("3_3pp2v")]
 layout_mode = 2
 size_flags_vertical = 3
-size_flags_stretch_ratio = 9.21
-
-[node name="Left" type="VBoxContainer" parent="Background/MarginContainer/Contents/Top" unique_id=1709576100]
-layout_mode = 2
-size_flags_horizontal = 3
-
-[node name="Top" type="Control" parent="Background/MarginContainer/Contents/Top/Left" unique_id=1895580949]
-layout_mode = 2
-size_flags_vertical = 3
-size_flags_stretch_ratio = 1.35
-
-[node name="Buttoms" type="HBoxContainer" parent="Background/MarginContainer/Contents/Top/Left" unique_id=1941134098]
-layout_mode = 2
-size_flags_vertical = 3
-
-[node name="Left" type="Control" parent="Background/MarginContainer/Contents/Top/Left/Buttoms" unique_id=1469882208]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_stretch_ratio = 0.3
-
-[node name="NavigationBar" parent="Background/MarginContainer/Contents/Top/Left/Buttoms" unique_id=1563900071 instance=ExtResource("3_uh3yb")]
-layout_mode = 2
+size_flags_stretch_ratio = 40.0
 previous_scene_file_path = "uid://c7uw6mqp13cm3"
-
-[node name="StarCounter" parent="Background/MarginContainer/Contents/Top/Left/Buttoms" unique_id=401513187 instance=ExtResource("4_010sm")]
-layout_mode = 2
-size_flags_horizontal = 3
-
-[node name="Bottom" type="Control" parent="Background/MarginContainer/Contents/Top/Left" unique_id=512440352]
-layout_mode = 2
-size_flags_vertical = 3
-
-[node name="Middle" type="VBoxContainer" parent="Background/MarginContainer/Contents/Top" unique_id=1908644410]
-layout_mode = 2
-size_flags_horizontal = 3
-
-[node name="Top" type="Control" parent="Background/MarginContainer/Contents/Top/Middle" unique_id=1770017533]
-layout_mode = 2
-size_flags_vertical = 3
-size_flags_stretch_ratio = 0.47
-
-[node name="AnimatedLogo" parent="Background/MarginContainer/Contents/Top/Middle" unique_id=2011953226 instance=ExtResource("6_uh3yb")]
-layout_mode = 2
-texture = ExtResource("7_e6hfi")
-
-[node name="Bottom" type="Control" parent="Background/MarginContainer/Contents/Top/Middle" unique_id=454354467]
-layout_mode = 2
-size_flags_vertical = 3
-size_flags_stretch_ratio = 0.0
-
-[node name="Right" type="VBoxContainer" parent="Background/MarginContainer/Contents/Top" unique_id=2021985628]
-layout_mode = 2
-size_flags_horizontal = 3
-
-[node name="Top" type="Control" parent="Background/MarginContainer/Contents/Top/Right" unique_id=1283506622]
-layout_mode = 2
-size_flags_vertical = 3
-size_flags_stretch_ratio = 1.47
-
-[node name="Buttons" type="HBoxContainer" parent="Background/MarginContainer/Contents/Top/Right" unique_id=1412896818]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-
-[node name="Left" type="Control" parent="Background/MarginContainer/Contents/Top/Right/Buttons" unique_id=555166793]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_stretch_ratio = 0.13
-
-[node name="LocalizationBar" parent="Background/MarginContainer/Contents/Top/Right/Buttons" unique_id=2110673369 instance=ExtResource("9_tfmse")]
-layout_mode = 2
-
-[node name="AudioBar" parent="Background/MarginContainer/Contents/Top/Right/Buttons" unique_id=2010444643 instance=ExtResource("10_sjwty")]
-layout_mode = 2
-size_flags_horizontal = 3
-
-[node name="Right" type="Control" parent="Background/MarginContainer/Contents/Top/Right/Buttons" unique_id=1045362394]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_stretch_ratio = 0.13
-
-[node name="Bottom" type="Control" parent="Background/MarginContainer/Contents/Top/Right" unique_id=32425817]
-layout_mode = 2
-size_flags_vertical = 3
 
 [node name="Bottom" type="VBoxContainer" parent="Background/MarginContainer/Contents" unique_id=193791044]
 layout_mode = 2

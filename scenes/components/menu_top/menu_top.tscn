@@ -1,0 +1,64 @@
+[gd_scene format=3 uid="uid://cxw1nqmejgk5v"]
+
+[ext_resource type="Script" uid="uid://dohot43gcsv52" path="res://scenes/components/menu_top/menu_top.gd" id="1_p8kng"]
+[ext_resource type="PackedScene" uid="uid://bjmccii1ugoyr" path="res://scenes/components/navigation_bar/navigation_bar.tscn" id="1_w27cl"]
+[ext_resource type="PackedScene" uid="uid://7ygu5amhj7gr" path="res://scenes/components/animated_logo/animated_logo.tscn" id="2_p8kng"]
+[ext_resource type="Texture2D" uid="uid://bpfwuaf8jqudq" path="res://scenes/components/animated_logo/logo1.png" id="4_p8kng"]
+[ext_resource type="PackedScene" uid="uid://dcnps1ubh4p87" path="res://scenes/components/localization_bar/localization_bar.tscn" id="4_r2v03"]
+[ext_resource type="PackedScene" uid="uid://bvvb57ga0cd1i" path="res://scenes/components/audio_bar/audio_bar.tscn" id="5_qapg1"]
+
+[node name="MenuTop" type="Control" unique_id=1579455231]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_p8kng")
+
+[node name="Contents" type="HBoxContainer" parent="." unique_id=229938977]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Left" type="HBoxContainer" parent="Contents" unique_id=150146581]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 20.0
+
+[node name="Left" type="Control" parent="Contents/Left" unique_id=1222608019]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="NavigationBar" parent="Contents/Left" unique_id=418342270 instance=ExtResource("1_w27cl")]
+layout_mode = 2
+size_flags_stretch_ratio = 2.0
+
+[node name="Right" type="Control" parent="Contents/Left" unique_id=782416573]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Middle" type="VBoxContainer" parent="Contents" unique_id=651989226]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 30.0
+
+[node name="AnimatedLogo" parent="Contents/Middle" unique_id=2011953226 instance=ExtResource("2_p8kng")]
+layout_mode = 2
+texture = ExtResource("4_p8kng")
+stretch_mode = 5
+
+[node name="Right" type="HBoxContainer" parent="Contents" unique_id=261671206]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 20.0
+
+[node name="LocalizationBar" parent="Contents/Right" unique_id=1116144105 instance=ExtResource("4_r2v03")]
+layout_mode = 2
+
+[node name="AudioBar" parent="Contents/Right" unique_id=984182281 instance=ExtResource("5_qapg1")]
+layout_mode = 2
+size_flags_horizontal = 3
