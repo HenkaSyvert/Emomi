@@ -5,9 +5,10 @@
 - add proper icon
 
 screens:
-	- set mfixed width for all buttons?
+	- set fixed width for all buttons?
 	- fråga dann: which have all white vs backgrounds?
 	- undersök tween text?
+	- fix so doesnt rearrange when translating
 
 level select:
 	- fix så labels algisn med level buttons
@@ -26,4 +27,8 @@ levels
 	- gör tutorial: visa dra en opt, loop, med dialog ok button
 	- add text: draw correct emotion to eddy
 	- find correct/wrong sounds per character
-	- lägg till, när correct asnwer, play correct_frame for 1sec, then popup
+	- ask dann: add translate button?
+
+programming
+	- mayhaps rename signals to less redundant
+	- expose sub-objects through getters or properties, ie questionDragTarget.animatedTexture
