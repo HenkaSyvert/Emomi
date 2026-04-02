@@ -274,7 +274,7 @@ text = "info.eddy.emotion"
 [node name="AnimatedTextureRect" type="TextureRect" parent="PanelContainer/MarginContainer/Contents/Right" unique_id=1357413796]
 layout_mode = 2
 size_flags_vertical = 3
-texture = ExtResource("9_dfop4")
+texture = ExtResource("7_cma1x")
 script = ExtResource("16_8ut3d")
 frames = Array[Texture2D]([ExtResource("2_tvv3w"), ExtResource("7_cma1x"), ExtResource("8_ravl0"), ExtResource("9_dfop4")])
 metadata/_custom_type_script = "uid://bboq2mnurak57"

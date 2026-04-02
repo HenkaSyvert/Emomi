@@ -8,9 +8,9 @@ extends PanelContainer
 
 
 func _ready() -> void:
-	label.text = tr("POPUP2")
+	label.text = tr("popup.reward")
 	if is_end_of_level:
-		label.text += "\n" + tr("POPUP_REWARD")
+		label.text += "\n" + tr("popup.complete")
 
 
 func _on_button_pressed() -> void:

@@ -37,7 +37,7 @@ func _prepare_popup(title: String) -> void:
 	if popup.visible:
 		return
 
-	popup_title.text = title
+	popup_title.text = tr("info." + title)
 	popup_text.text = tr("info." + str(Character.keys()[character]).to_lower() + "." + title)
 	popup.visible = true
 
