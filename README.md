@@ -1,14 +1,29 @@
 # Emomi
 
-- character info, replace with bubbles and popups
-- gör tutorial: visar main_anim och att man drar en opt, loop, med dialog ok button
-- add level text "draw correct emotion to eddy"
-- rewards menu
-	- add download button
+- make into apple app
+- add spalsh loading screen
+- add proper icon
+
+screens:
+	- set mfixed width for all buttons?
+	- fråga dann: which have all white vs backgrounds?
+	- undersök tween text?
+
+level select:
+	- fix så labels algisn med level buttons
+	- fråga dann om ska va både home + return arrow
+
+rewards menu
+	- add popup download button
+	- make popup look better
+	- ska det va nån border runt clickable images?
 	- unlock images based on nr stars
 	- click outside popup closes it
-- make level template, and inherit scene for others
-- find more sounds: "happy sound" for correct answer
-- add splash loading screen
-- fix proper icon size
-- maybe shorter names for signals, remove redundant, see convnetions
+
+levels
+	- make inherited levels
+	- fix så levels work again
+	- gör tutorial: visa dra en opt, loop, med dialog ok button
+	- add text: draw correct emotion to eddy
+	- find correct/wrong sounds per character
+	- lägg till, när correct asnwer, play correct_frame for 1sec, then popup

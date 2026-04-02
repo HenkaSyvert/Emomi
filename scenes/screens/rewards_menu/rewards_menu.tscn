@@ -42,13 +42,13 @@ layout_mode = 2
 [node name="MenuTop" parent="Background/MarginContainer/Contents" unique_id=1579455231 instance=ExtResource("3_3pp2v")]
 layout_mode = 2
 size_flags_vertical = 3
-size_flags_stretch_ratio = 40.0
+size_flags_stretch_ratio = 30.0
 previous_scene_file_path = "uid://c7uw6mqp13cm3"
 
 [node name="Bottom" type="VBoxContainer" parent="Background/MarginContainer/Contents" unique_id=193791044]
 layout_mode = 2
 size_flags_vertical = 3
-size_flags_stretch_ratio = 20.0
+size_flags_stretch_ratio = 70.0
 
 [node name="Label" type="Label" parent="Background/MarginContainer/Contents/Bottom" unique_id=698788287]
 layout_mode = 2
@@ -67,36 +67,48 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 texture_normal = ExtResource("12_e6hfi")
+ignore_texture_size = true
+stretch_mode = 5
 
 [node name="Picture2" type="TextureButton" parent="Background/MarginContainer/Contents/Bottom/GridContainer" unique_id=463306627]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 texture_normal = ExtResource("13_vy0a1")
+ignore_texture_size = true
+stretch_mode = 5
 
 [node name="Picture3" type="TextureButton" parent="Background/MarginContainer/Contents/Bottom/GridContainer" unique_id=1947124196]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 texture_normal = ExtResource("14_tfmse")
+ignore_texture_size = true
+stretch_mode = 5
 
 [node name="Picture4" type="TextureButton" parent="Background/MarginContainer/Contents/Bottom/GridContainer" unique_id=494282074]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 texture_normal = ExtResource("15_sjwty")
+ignore_texture_size = true
+stretch_mode = 5
 
 [node name="Picture5" type="TextureButton" parent="Background/MarginContainer/Contents/Bottom/GridContainer" unique_id=1389174927]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 texture_normal = ExtResource("16_537ma")
+ignore_texture_size = true
+stretch_mode = 5
 
 [node name="Picture6" type="TextureButton" parent="Background/MarginContainer/Contents/Bottom/GridContainer" unique_id=379746554]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 texture_normal = ExtResource("17_jll2o")
+ignore_texture_size = true
+stretch_mode = 5
 
 [node name="ImageViewer" type="VBoxContainer" parent="Background/MarginContainer" unique_id=1481212989]
 visible = false

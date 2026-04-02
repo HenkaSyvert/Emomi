@@ -21,53 +21,53 @@
 [ext_resource type="Texture2D" uid="uid://dc1t8yrrsbrpi" path="res://scenes/screens/character_screen/cross.png" id="15_gv133"]
 [ext_resource type="Script" uid="uid://bboq2mnurak57" path="res://scenes/primitives/animated_texture_rect/animated_texture_rect.gd" id="16_8ut3d"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dnguo"]
-corner_radius_top_left = 256
-corner_radius_top_right = 256
-corner_radius_bottom_right = 256
-corner_radius_bottom_left = 256
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1c50o"]
+corner_radius_top_left = 305
+corner_radius_top_right = 305
+corner_radius_bottom_right = 305
+corner_radius_bottom_left = 305
 corner_detail = 20
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_v5erc"]
-corner_radius_top_left = 167
-corner_radius_top_right = 167
-corner_radius_bottom_right = 167
-corner_radius_bottom_left = 167
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_b6ire"]
+corner_radius_top_left = 216
+corner_radius_top_right = 216
+corner_radius_bottom_right = 216
+corner_radius_bottom_left = 216
 corner_detail = 20
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rd65b"]
-corner_radius_top_left = 147
-corner_radius_top_right = 147
-corner_radius_bottom_right = 147
-corner_radius_bottom_left = 147
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ohoys"]
+corner_radius_top_left = 196
+corner_radius_top_right = 196
+corner_radius_bottom_right = 196
+corner_radius_bottom_left = 196
 corner_detail = 20
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j6asy"]
-corner_radius_top_left = 165
-corner_radius_top_right = 165
-corner_radius_bottom_right = 165
-corner_radius_bottom_left = 165
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oimik"]
+corner_radius_top_left = 214
+corner_radius_top_right = 214
+corner_radius_bottom_right = 214
+corner_radius_bottom_left = 214
 corner_detail = 20
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nvntq"]
-corner_radius_top_left = 194
-corner_radius_top_right = 194
-corner_radius_bottom_right = 194
-corner_radius_bottom_left = 194
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ol3si"]
+corner_radius_top_left = 243
+corner_radius_top_right = 243
+corner_radius_bottom_right = 243
+corner_radius_bottom_left = 243
 corner_detail = 20
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gv133"]
-corner_radius_top_left = 97
-corner_radius_top_right = 97
-corner_radius_bottom_right = 97
-corner_radius_bottom_left = 97
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_q0me0"]
+corner_radius_top_left = 146
+corner_radius_top_right = 146
+corner_radius_bottom_right = 146
+corner_radius_bottom_left = 146
 corner_detail = 20
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8ut3d"]
-corner_radius_top_left = 149
-corner_radius_top_right = 149
-corner_radius_bottom_right = 149
-corner_radius_bottom_left = 149
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4q1kj"]
+corner_radius_top_left = 198
+corner_radius_top_right = 198
+corner_radius_bottom_right = 198
+corner_radius_bottom_left = 198
 corner_detail = 20
 
 [node name="CharacterInfo" type="Control" unique_id=100588087]
@@ -110,9 +110,9 @@ anchor_left = 0.36912066
 anchor_top = 0.4225352
 anchor_right = 0.89366055
 anchor_bottom = 0.7838028
-offset_right = 0.0
-offset_bottom = 0.0
-theme_override_styles/normal = SubResource("StyleBoxFlat_dnguo")
+offset_right = 98.0
+offset_bottom = 98.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_1c50o")
 text = "info.personality"
 metadata/_edit_use_anchors_ = true
 
@@ -123,9 +123,9 @@ anchor_left = -0.042944785
 anchor_top = 0.39929578
 anchor_right = 0.299591
 anchor_bottom = 0.6352113
-offset_right = 0.0
-offset_bottom = 0.0
-theme_override_styles/normal = SubResource("StyleBoxFlat_v5erc")
+offset_right = 98.0
+offset_bottom = 98.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_b6ire")
 text = "info.likes"
 metadata/_edit_use_anchors_ = true
 
@@ -136,9 +136,9 @@ anchor_left = 0.5
 anchor_top = 0.14647888
 anchor_right = 0.8006135
 anchor_bottom = 0.35352114
-offset_right = 0.0
-offset_bottom = 0.0
-theme_override_styles/normal = SubResource("StyleBoxFlat_rd65b")
+offset_right = 98.0
+offset_bottom = 97.99997
+theme_override_styles/normal = SubResource("StyleBoxFlat_ohoys")
 text = "info.dislikes"
 metadata/_edit_use_anchors_ = true
 
@@ -149,9 +149,9 @@ anchor_left = 0.1206544
 anchor_top = 0.8176056
 anchor_right = 0.4580777
 anchor_bottom = 1.05
-offset_right = 0.0
-offset_bottom = 0.0
-theme_override_styles/normal = SubResource("StyleBoxFlat_j6asy")
+offset_right = 98.0
+offset_bottom = 98.00012
+theme_override_styles/normal = SubResource("StyleBoxFlat_oimik")
 text = "info.fav_food"
 metadata/_edit_use_anchors_ = true
 
@@ -162,9 +162,9 @@ anchor_left = -0.0040899795
 anchor_top = 0.04859155
 anchor_right = 0.39366055
 anchor_bottom = 0.32253525
-offset_right = 0.0
-offset_bottom = -3.0517578e-05
-theme_override_styles/normal = SubResource("StyleBoxFlat_nvntq")
+offset_right = 98.00006
+offset_bottom = 98.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_ol3si")
 text = "info.bad_food"
 metadata/_edit_use_anchors_ = true
 
@@ -175,9 +175,9 @@ anchor_left = -0.038854804
 anchor_top = 0.71549296
 anchor_right = 0.1595092
 anchor_bottom = 0.85211265
-offset_right = 0.0
-offset_bottom = 0.0
-theme_override_styles/normal = SubResource("StyleBoxFlat_gv133")
+offset_right = 98.0
+offset_bottom = 98.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_q0me0")
 text = "info.weight"
 metadata/_edit_use_anchors_ = true
 
@@ -188,9 +188,9 @@ anchor_left = 0.48977506
 anchor_top = 0.8176056
 anchor_right = 0.79447854
 anchor_bottom = 1.0274649
-offset_right = 0.0
-offset_bottom = 0.0
-theme_override_styles/normal = SubResource("StyleBoxFlat_8ut3d")
+offset_right = 98.00012
+offset_bottom = 98.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_4q1kj")
 text = "info.texture"
 metadata/_edit_use_anchors_ = true
 
@@ -274,7 +274,7 @@ text = "info.eddy.emotion"
 [node name="AnimatedTextureRect" type="TextureRect" parent="PanelContainer/MarginContainer/Contents/Right" unique_id=1357413796]
 layout_mode = 2
 size_flags_vertical = 3
-texture = ExtResource("8_ravl0")
+texture = ExtResource("9_dfop4")
 script = ExtResource("16_8ut3d")
 frames = Array[Texture2D]([ExtResource("2_tvv3w"), ExtResource("7_cma1x"), ExtResource("8_ravl0"), ExtResource("9_dfop4")])
 metadata/_custom_type_script = "uid://bboq2mnurak57"

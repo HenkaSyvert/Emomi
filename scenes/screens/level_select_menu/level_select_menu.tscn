@@ -39,13 +39,13 @@ layout_mode = 2
 [node name="MenuTop" parent="Background/MarginContainer/Contents" unique_id=1579455231 instance=ExtResource("3_w5l6t")]
 layout_mode = 2
 size_flags_vertical = 3
-size_flags_stretch_ratio = 40.0
+size_flags_stretch_ratio = 30.0
 previous_scene_file_path = "uid://hhn1146b88yy"
 
 [node name="Bottom" type="VBoxContainer" parent="Background/MarginContainer/Contents" unique_id=685306029]
 layout_mode = 2
 size_flags_vertical = 3
-size_flags_stretch_ratio = 79.4
+size_flags_stretch_ratio = 70.0
 
 [node name="Top" type="Control" parent="Background/MarginContainer/Contents/Bottom" unique_id=577804636]
 layout_mode = 2
