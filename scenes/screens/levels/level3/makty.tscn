@@ -29,7 +29,7 @@
 [ext_resource type="Texture2D" uid="uid://duuxlfoa736mm" path="res://sprites/drag_source/neg/unnamed (44).png" id="16_3p6pi"]
 [ext_resource type="PackedScene" uid="uid://do1blbrdmk38b" path="res://scenes/components/popup/popup.tscn" id="17_a8fjs"]
 [ext_resource type="Texture2D" uid="uid://y38ra8bxjw18" path="res://sprites/drag_source/neg/unnamed (45).png" id="17_c528d"]
-[ext_resource type="Texture2D" uid="uid://d26rfygcpjgan" path="res://sprites/makty/makty_info.png" id="23_oy5xb"]
+[ext_resource type="Texture2D" uid="uid://d26rfygcpjgan" path="res://scenes/components/about_bar/makty_info.png" id="23_oy5xb"]
 [ext_resource type="PackedScene" uid="uid://bfbmtrjcstyxe" path="res://scenes/screens/levels/level3/reizy.tscn" id="31_oy5xb"]
 [ext_resource type="PackedScene" uid="uid://dxbpakctk1gcs" path="res://scenes/screens/character_screen/character_screen.tscn" id="32_hayoe"]
 

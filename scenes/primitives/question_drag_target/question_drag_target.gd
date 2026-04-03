@@ -16,8 +16,7 @@ signal answered(is_correct: bool)
 
 func _apply_properties() -> void:
 	if is_inside_tree() and has_node("AnimatedTextureRect"):
-		return
-	_anim.frames = frames
+		_anim.frames = frames
 
 
 func _ready() -> void:

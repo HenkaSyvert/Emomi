@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://crqahntqkoku5"
-path="res://.godot/imported/eddy_info.png-d608064a9048b67ad729f2cf135ca9cb.ctex"
+path="res://.godot/imported/eddy_info.png-19280c5d0f4d4d0ce028a4c727cff177.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/eddy/eddy_info.png"
-dest_files=["res://.godot/imported/eddy_info.png-d608064a9048b67ad729f2cf135ca9cb.ctex"]
+source_file="res://scenes/components/about_bar/eddy_info.png"
+dest_files=["res://.godot/imported/eddy_info.png-19280c5d0f4d4d0ce028a4c727cff177.ctex"]
 
 [params]
 

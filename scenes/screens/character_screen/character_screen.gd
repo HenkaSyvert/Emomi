@@ -1,7 +1,12 @@
+@tool
+class_name CharacterScreen
 extends Control
 
 enum Character { EDDY, REIZY, MAKTY }
-@export var character: Character = Character.EDDY
+@export var character: Character = Character.EDDY:
+	set(value):
+		character = value
+		_apply_properties()
 
 @export var eddy_frames: Array[Texture2D]
 @export var reizy_frames: Array[Texture2D]
@@ -16,13 +21,18 @@ var popup_text: Label = $PanelContainer/MarginContainer/Contents/Buttons/InfoPop
 var _anim: AnimatedTextureRect = $PanelContainer/MarginContainer/Contents/Right/AnimatedTextureRect
 
 
+func _apply_properties() -> void:
+	if is_inside_tree() and _anim:
+		if character == Character.EDDY:
+			_anim.frames = eddy_frames
+		elif character == Character.REIZY:
+			_anim.frames = reizy_frames
+		else:
+			_anim.frames = makty_frames
+
+
 func _ready() -> void:
-	if character == Character.EDDY:
-		_anim.frames = eddy_frames
-	elif character == Character.REIZY:
-		_anim.frames = reizy_frames
-	else:
-		_anim.frames = makty_frames
+	_apply_properties()
 
 
 func _on_close_button_pressed() -> void:

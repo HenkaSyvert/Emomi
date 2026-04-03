@@ -25,7 +25,7 @@
 [ext_resource type="Texture2D" uid="uid://c2q61lmbth52" path="res://sprites/drag_source/neg/unnamed (43).png" id="15_ksuy3"]
 [ext_resource type="Texture2D" uid="uid://duuxlfoa736mm" path="res://sprites/drag_source/neg/unnamed (44).png" id="16_c7g76"]
 [ext_resource type="Texture2D" uid="uid://y38ra8bxjw18" path="res://sprites/drag_source/neg/unnamed (45).png" id="17_2b2yc"]
-[ext_resource type="Texture2D" uid="uid://bm4qohhvogdf4" path="res://sprites/reizy/reizy_info.png" id="23_27yqc"]
+[ext_resource type="Texture2D" uid="uid://bm4qohhvogdf4" path="res://scenes/components/about_bar/reizy_info.png" id="23_27yqc"]
 [ext_resource type="Texture2D" uid="uid://df7520n7wkemv" path="res://sprites/reizy/drag_target/Reizy wrong.png" id="24_2bp64"]
 [ext_resource type="Texture2D" uid="uid://brku8tgcimsjg" path="res://sprites/reizy/drag_target/Reizy Correct.png" id="25_aanqc"]
 [ext_resource type="Texture2D" uid="uid://boy8xuvsmqpjd" path="res://sprites/reizy/drag_target/Reizy 2.png" id="26_opjha"]

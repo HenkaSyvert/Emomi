@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://ctoicx2ven6ek" path="res://scenes/components/star_counter/star_counter.tscn" id="4_ycx83"]
 [ext_resource type="PackedScene" uid="uid://bvvb57ga0cd1i" path="res://scenes/components/audio_bar/audio_bar.tscn" id="5_x54pj"]
 [ext_resource type="PackedScene" uid="uid://djgs5oxgmxh5x" path="res://scenes/primitives/question_drag_target/question_drag_target.tscn" id="6_nryb6"]
-[ext_resource type="Texture2D" uid="uid://crqahntqkoku5" path="res://sprites/eddy/eddy_info.png" id="6_ymo06"]
+[ext_resource type="Texture2D" uid="uid://crqahntqkoku5" path="res://scenes/components/about_bar/eddy_info.png" id="6_ymo06"]
 [ext_resource type="Texture2D" uid="uid://bxr3o81w5rgtx" path="res://sprites/eddy/drag_target/Eddy 1.png" id="7_ymo06"]
 [ext_resource type="Texture2D" uid="uid://bwgb3ecse23fx" path="res://sprites/eddy/drag_target/Eddy 2.png" id="8_aa01o"]
 [ext_resource type="Texture2D" uid="uid://gc4vqcy2atjt" path="res://sprites/eddy/drag_target/Eddy wrong.png" id="9_6mnnc"]
@@ -161,8 +161,6 @@ size_flags_stretch_ratio = 22.05
 layout_mode = 2
 is_correct = false
 frames = Array[Texture2D]([ExtResource("12_m4eii"), ExtResource("13_wmcau")])
-frame_correct = ExtResource("12_m4eii")
-frame_wrong = ExtResource("13_wmcau")
 
 [node name="Opt1" parent="Level1Template/HBoxContainer/Right" unique_id=1779106198 instance=ExtResource("9_umc8g")]
 layout_mode = 2
@@ -194,7 +192,6 @@ next_scene = ExtResource("16_xom8e")
 [node name="CharacterInfo" parent="." unique_id=100588087 instance=ExtResource("19_x54pj")]
 visible = false
 layout_mode = 1
-character = 0
 
 [connection signal="pressed" from="Level1Template/HBoxContainer/Left/VBoxContainer2/VBoxContainer/HBoxContainer/HomeButton" to="Level1Template" method="_on_home_button_pressed"]
 [connection signal="pressed" from="Level1Template/HBoxContainer/Left/VBoxContainer2/VBoxContainer/HBoxContainer/ReturnButton" to="Level1Template" method="_on_return_button_pressed"]

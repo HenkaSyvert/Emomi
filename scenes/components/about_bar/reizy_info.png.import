@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bm4qohhvogdf4"
-path="res://.godot/imported/reizy_info.png-eea6d7ffecf61a1611acdad6045252f5.ctex"
+path="res://.godot/imported/reizy_info.png-4473a9733f9751bac1e92a88e10ca67c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/reizy/reizy_info.png"
-dest_files=["res://.godot/imported/reizy_info.png-eea6d7ffecf61a1611acdad6045252f5.ctex"]
+source_file="res://scenes/components/about_bar/reizy_info.png"
+dest_files=["res://.godot/imported/reizy_info.png-4473a9733f9751bac1e92a88e10ca67c.ctex"]
 
 [params]
 
