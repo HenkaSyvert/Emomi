@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://bwgb3ecse23fx" path="res://sprites/eddy/drag_target/Eddy 2.png" id="3_t1iu4"]
 [ext_resource type="Texture2D" uid="uid://gc4vqcy2atjt" path="res://sprites/eddy/drag_target/Eddy wrong.png" id="4_i0bbf"]
 [ext_resource type="Texture2D" uid="uid://baklicufa3nai" path="res://sprites/eddy/drag_target/Eddy Correct.png" id="5_22fdw"]
+[ext_resource type="PackedScene" uid="uid://i8str1muw16j" path="res://scenes/screens/levels/level1/level_1_makty_draw.tscn" id="6_t1iu4"]
 
 [node name="Level1EddyDog" unique_id=120889486 instance=ExtResource("1_br3ua")]
 
@@ -12,3 +13,7 @@
 frames = Array[Texture2D]([ExtResource("2_bugp4"), ExtResource("3_t1iu4")])
 wrong_frame = ExtResource("4_i0bbf")
 correct_frame = ExtResource("5_22fdw")
+
+[node name="Popup" parent="MarginContainer" parent_id_path=PackedInt32Array(864518872) index="1" unique_id=1497230596]
+next_scene = ExtResource("6_t1iu4")
+level_index = 1

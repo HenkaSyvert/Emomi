@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://dxw4vhn274u8o"]
+
+[ext_resource type="PackedScene" uid="uid://dultb67w4vfq1" path="res://scenes/screens/levels/level1/level_1_base.tscn" id="1_bb1p6"]
+[ext_resource type="Texture2D" uid="uid://d3e66kbf7ncd3" path="res://sprites/reizy/drag_target/Reizy 1.png" id="2_ysbv3"]
+[ext_resource type="Texture2D" uid="uid://boy8xuvsmqpjd" path="res://sprites/reizy/drag_target/Reizy 2.png" id="3_onlya"]
+[ext_resource type="Texture2D" uid="uid://df7520n7wkemv" path="res://sprites/reizy/drag_target/Reizy wrong.png" id="4_mictc"]
+[ext_resource type="Texture2D" uid="uid://brku8tgcimsjg" path="res://sprites/reizy/drag_target/Reizy Correct.png" id="5_rrmcm"]
+[ext_resource type="Texture2D" uid="uid://dn808kmh8nh7n" path="res://sprites/situations/math/math 1 loop.png" id="6_rrmcm"]
+[ext_resource type="Texture2D" uid="uid://bv3q8whvwob41" path="res://sprites/situations/math/math 2 loop.png" id="7_f0evy"]
+[ext_resource type="Texture2D" uid="uid://q4y1ku44cgdd" path="res://sprites/situations/toy/toy 1 loop.png" id="8_xxrjs"]
+[ext_resource type="Texture2D" uid="uid://1osqbxscikn8" path="res://sprites/situations/toy/toy 2 loop.png" id="9_wu74o"]
+[ext_resource type="PackedScene" uid="uid://saarove47e0s" path="res://scenes/screens/levels/level1/level_1_eddy_toy.tscn" id="10_f0evy"]
+
+[node name="Level1ReizyMine" unique_id=120889486 instance=ExtResource("1_bb1p6")]
+
+[node name="AboutBar" parent="MarginContainer/Contents/Left" parent_id_path=PackedInt32Array(1167998286) index="4" unique_id=2033146772]
+character = 1
+
+[node name="QuestionDragTarget" parent="MarginContainer/Contents/Middle" parent_id_path=PackedInt32Array(992920742) index="2" unique_id=900728642]
+frames = Array[Texture2D]([ExtResource("2_ysbv3"), ExtResource("3_onlya")])
+wrong_frame = ExtResource("4_mictc")
+correct_frame = ExtResource("5_rrmcm")
+
+[node name="Option1" parent="MarginContainer/Contents/Right" parent_id_path=PackedInt32Array(534911238) index="0" unique_id=1779106198]
+is_correct = false
+frames = Array[Texture2D]([ExtResource("6_rrmcm"), ExtResource("7_f0evy")])
+
+[node name="Option2" parent="MarginContainer/Contents/Right" parent_id_path=PackedInt32Array(534911238) index="1" unique_id=588101842]
+is_correct = true
+
+[node name="Option3" parent="MarginContainer/Contents/Right" parent_id_path=PackedInt32Array(534911238) index="2" unique_id=857832238]
+frames = Array[Texture2D]([ExtResource("8_xxrjs"), ExtResource("9_wu74o")])
+
+[node name="Popup" parent="MarginContainer" parent_id_path=PackedInt32Array(864518872) index="1" unique_id=1497230596]
+next_scene = ExtResource("10_f0evy")
+
+[node name="CharacterInfo" parent="MarginContainer" parent_id_path=PackedInt32Array(864518872) index="2" unique_id=100588087]
+character = 1

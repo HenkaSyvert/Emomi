@@ -11,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://1osqbxscikn8" path="res://sprites/situations/toy/toy 2 loop.png" id="9_tyq88"]
 [ext_resource type="Texture2D" uid="uid://cmtc6bsgmxvwv" path="res://sprites/situations/mine/mine 1 loop.png" id="10_w6ckt"]
 [ext_resource type="Texture2D" uid="uid://1xcmn1cf81wa" path="res://sprites/situations/mine/mine 2 loop.png" id="11_1xc41"]
+[ext_resource type="PackedScene" uid="uid://dxw4vhn274u8o" path="res://scenes/screens/levels/level1/level_1_reizy_mine.tscn" id="12_2ltju"]
 
 [node name="Level1MaktyDraw" unique_id=120889486 instance=ExtResource("1_i3haw")]
 
@@ -30,3 +31,9 @@ frames = Array[Texture2D]([ExtResource("8_gn1pn"), ExtResource("9_tyq88")])
 
 [node name="Option3" parent="MarginContainer/Contents/Right" parent_id_path=PackedInt32Array(534911238) index="2" unique_id=857832238]
 frames = Array[Texture2D]([ExtResource("10_w6ckt"), ExtResource("11_1xc41")])
+
+[node name="Popup" parent="MarginContainer" parent_id_path=PackedInt32Array(864518872) index="1" unique_id=1497230596]
+next_scene = ExtResource("12_2ltju")
+
+[node name="CharacterInfo" parent="MarginContainer" parent_id_path=PackedInt32Array(864518872) index="2" unique_id=100588087]
+character = 2

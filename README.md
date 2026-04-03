@@ -22,12 +22,16 @@ rewards menu
 	- click outside popup closes it
 
 levels
-	- make inherited levels
 	- fix så levels work again
 	- gör tutorial: visa dra en opt, loop, med dialog ok button
 	- add text: draw correct emotion to eddy
 	- find correct/wrong sounds per character
 	- ask dann: add translate button?
+
+character info
+	- fix diameter of circles
+	- fix so name is dynamic and color
+	
 
 programming
 	- mayhaps rename signals to less redundant

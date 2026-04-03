@@ -14,7 +14,6 @@
 [ext_resource type="Texture2D" uid="uid://dn808kmh8nh7n" path="res://sprites/situations/math/math 1 loop.png" id="16_sawnt"]
 [ext_resource type="Texture2D" uid="uid://bv3q8whvwob41" path="res://sprites/situations/math/math 2 loop.png" id="17_jjswr"]
 [ext_resource type="PackedScene" uid="uid://do1blbrdmk38b" path="res://scenes/components/popup/popup.tscn" id="18_knoda"]
-[ext_resource type="PackedScene" uid="uid://bwcpky57a0fue" path="res://scenes/screens/levels/level1/makty_draw.tscn" id="19_eolfy"]
 [ext_resource type="PackedScene" uid="uid://dxbpakctk1gcs" path="res://scenes/screens/character_screen/character_screen.tscn" id="20_st83n"]
 [ext_resource type="AudioStream" uid="uid://bturhwnadpi3n" path="res://audio/cry.wav" id="21_1ky73"]
 
@@ -113,7 +112,7 @@ frames = Array[Texture2D]([ExtResource("16_sawnt"), ExtResource("17_jjswr")])
 [node name="Popup" parent="MarginContainer" unique_id=1497230596 instance=ExtResource("18_knoda")]
 visible = false
 layout_mode = 2
-next_scene = ExtResource("19_eolfy")
+level_index = 1
 
 [node name="CharacterInfo" parent="MarginContainer" unique_id=100588087 instance=ExtResource("20_st83n")]
 visible = false

@@ -96,7 +96,7 @@ size_flags_stretch_ratio = 0.5
 [node name="Level1Button" parent="Background/MarginContainer/Contents/Bottom/Buttons" unique_id=1119098335 instance=ExtResource("3_bqjpd")]
 layout_mode = 2
 texture_normal = ExtResource("7_b1gtc")
-scene_path = "uid://cxogw4sdxk8e3"
+scene_path = "uid://b268g84tiu8ju"
 
 [node name="Level2Button" parent="Background/MarginContainer/Contents/Bottom/Buttons" unique_id=722376649 instance=ExtResource("3_bqjpd")]
 layout_mode = 2
