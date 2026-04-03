@@ -4,16 +4,24 @@ extends Control
 
 signal answered(is_correct: bool)
 
-@export var frames: Array[Texture2D]
+@export var frames: Array[Texture2D]:
+	set(value):
+		frames = value
+		_apply_properties()
 @export var wrong_frame: Texture2D
 @export var correct_frame: Texture2D
 
-@onready var _anim: AnimatedTextureRect
+@onready var _anim: AnimatedTextureRect = $AnimatedTextureRect
+
+
+func _apply_properties() -> void:
+	if is_inside_tree() and has_node("AnimatedTextureRect"):
+		return
+	_anim.frames = frames
 
 
 func _ready() -> void:
-	_anim = find_child("AnimatedTextureRect")
-	_anim.frames = frames
+	_apply_properties()
 
 
 func _on_drag_target_drag_data_dropped(data: Variant) -> void:
@@ -22,7 +30,6 @@ func _on_drag_target_drag_data_dropped(data: Variant) -> void:
 
 		if is_correct and correct_frame:
 			_anim.stop()
-			_anim.play()
 			_anim.texture = correct_frame
 
 		if not is_correct and wrong_frame:

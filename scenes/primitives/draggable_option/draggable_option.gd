@@ -3,7 +3,10 @@ class_name DraggableOption
 extends Control
 
 @export var is_correct: bool = true
-@export var frames: Array[Texture2D]
+@export var frames: Array[Texture2D]:
+	set(value):
+		frames = value
+		_apply_properties()
 @export var frame_correct: Texture2D
 @export var frame_wrong: Texture2D
 
@@ -14,8 +17,13 @@ extends Control
 @onready var _drag_source: DragSource = $DragSource
 
 
+func _apply_properties() -> void:
+	if is_inside_tree() and has_node("AnimatedTextureRect"):
+		_anim.frames = frames
+
+
 func _ready() -> void:
-	_anim.frames = frames
+	_apply_properties()
 	_drag_source.drag_data = is_correct
 
 

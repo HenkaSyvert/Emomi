@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://b268g84tiu8ju"]
+
+[ext_resource type="PackedScene" uid="uid://dultb67w4vfq1" path="res://scenes/screens/levels/level1/level_1_base.tscn" id="1_br3ua"]
+
+[node name="Level1EddyDog" unique_id=120889486 instance=ExtResource("1_br3ua")]

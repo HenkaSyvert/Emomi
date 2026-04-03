@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://saarove47e0s"]
+
+[ext_resource type="PackedScene" uid="uid://dultb67w4vfq1" path="res://scenes/screens/levels/level1/level_1_base.tscn" id="1_gdjon"]
+[ext_resource type="Texture2D" uid="uid://cmtc6bsgmxvwv" path="res://sprites/situations/mine/mine 1 loop.png" id="2_kq2i4"]
+[ext_resource type="Texture2D" uid="uid://1xcmn1cf81wa" path="res://sprites/situations/mine/mine 2 loop.png" id="3_jhdew"]
+[ext_resource type="Texture2D" uid="uid://q4y1ku44cgdd" path="res://sprites/situations/toy/toy 1 loop.png" id="4_7ghss"]
+[ext_resource type="Texture2D" uid="uid://1osqbxscikn8" path="res://sprites/situations/toy/toy 2 loop.png" id="5_7nehi"]
+[ext_resource type="Texture2D" uid="uid://dca0gtp7wxr8a" path="res://sprites/situations/sleep/sleep 1.png" id="6_p7ewd"]
+[ext_resource type="Texture2D" uid="uid://c2nd1omno8tpm" path="res://sprites/situations/sleep/sleep 2.png" id="7_pci2n"]
+
+[node name="Level1EddyToy" unique_id=120889486 instance=ExtResource("1_gdjon")]
+
+[node name="Option1" parent="MarginContainer/Contents/Right" parent_id_path=PackedInt32Array(534911238) index="0" unique_id=1779106198]
+is_correct = false
+frames = Array[Texture2D]([ExtResource("2_kq2i4"), ExtResource("3_jhdew")])
+
+[node name="Option2" parent="MarginContainer/Contents/Right" parent_id_path=PackedInt32Array(534911238) index="1" unique_id=588101842]
+is_correct = true
+frames = Array[Texture2D]([ExtResource("4_7ghss"), ExtResource("5_7nehi")])
+
+[node name="Option3" parent="MarginContainer/Contents/Right" parent_id_path=PackedInt32Array(534911238) index="2" unique_id=857832238]
+frames = Array[Texture2D]([ExtResource("6_p7ewd"), ExtResource("7_pci2n")])

@@ -1,0 +1,138 @@
+[gd_scene format=3 uid="uid://dultb67w4vfq1"]
+
+[ext_resource type="Script" uid="uid://byot3krayoyu6" path="res://scenes/screens/levels/level1/level_1_base.gd" id="1_sk6mx"]
+[ext_resource type="PackedScene" uid="uid://bjmccii1ugoyr" path="res://scenes/components/navigation_bar/navigation_bar.tscn" id="2_1ky73"]
+[ext_resource type="PackedScene" uid="uid://ctoicx2ven6ek" path="res://scenes/components/star_counter/star_counter.tscn" id="3_pkx2s"]
+[ext_resource type="PackedScene" uid="uid://bvvb57ga0cd1i" path="res://scenes/components/audio_bar/audio_bar.tscn" id="4_pjuag"]
+[ext_resource type="Texture2D" uid="uid://crqahntqkoku5" path="res://sprites/eddy/eddy_info.png" id="5_0a8nh"]
+[ext_resource type="PackedScene" uid="uid://djgs5oxgmxh5x" path="res://scenes/primitives/question_drag_target/question_drag_target.tscn" id="6_vvccn"]
+[ext_resource type="Texture2D" uid="uid://bxr3o81w5rgtx" path="res://sprites/eddy/drag_target/Eddy 1.png" id="7_ytltm"]
+[ext_resource type="Texture2D" uid="uid://bwgb3ecse23fx" path="res://sprites/eddy/drag_target/Eddy 2.png" id="8_fwygs"]
+[ext_resource type="Texture2D" uid="uid://gc4vqcy2atjt" path="res://sprites/eddy/drag_target/Eddy wrong.png" id="9_mfoe5"]
+[ext_resource type="Texture2D" uid="uid://baklicufa3nai" path="res://sprites/eddy/drag_target/Eddy Correct.png" id="10_823pi"]
+[ext_resource type="PackedScene" uid="uid://ixajx0dg6qmk" path="res://scenes/primitives/draggable_option/draggable_option.tscn" id="11_n1qqq"]
+[ext_resource type="Texture2D" uid="uid://bx0ja2icw23jv" path="res://sprites/situations/dog/Dog 1 Loop.png" id="12_cn3kq"]
+[ext_resource type="Texture2D" uid="uid://btgcuj518v3x1" path="res://sprites/situations/dog/Dog 2 Loop.png" id="13_phtej"]
+[ext_resource type="Texture2D" uid="uid://cmtc6bsgmxvwv" path="res://sprites/situations/mine/mine 1 loop.png" id="14_sacgg"]
+[ext_resource type="Texture2D" uid="uid://1xcmn1cf81wa" path="res://sprites/situations/mine/mine 2 loop.png" id="15_6svjj"]
+[ext_resource type="Texture2D" uid="uid://dn808kmh8nh7n" path="res://sprites/situations/math/math 1 loop.png" id="16_sawnt"]
+[ext_resource type="Texture2D" uid="uid://bv3q8whvwob41" path="res://sprites/situations/math/math 2 loop.png" id="17_jjswr"]
+[ext_resource type="PackedScene" uid="uid://do1blbrdmk38b" path="res://scenes/components/popup/popup.tscn" id="18_knoda"]
+[ext_resource type="PackedScene" uid="uid://bwcpky57a0fue" path="res://scenes/screens/levels/level1/makty_draw.tscn" id="19_eolfy"]
+[ext_resource type="PackedScene" uid="uid://dxbpakctk1gcs" path="res://scenes/screens/character_screen/character_screen.tscn" id="20_st83n"]
+[ext_resource type="AudioStream" uid="uid://bturhwnadpi3n" path="res://audio/cry.wav" id="21_1ky73"]
+
+[node name="Level1" type="PanelContainer" unique_id=120889486]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_sk6mx")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=864518872]
+layout_mode = 2
+
+[node name="Contents" type="HBoxContainer" parent="MarginContainer" unique_id=132921288]
+layout_mode = 2
+
+[node name="Left" type="VBoxContainer" parent="MarginContainer/Contents" unique_id=1167998286]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 19.47
+
+[node name="Top" type="Control" parent="MarginContainer/Contents/Left" unique_id=1669731356]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="NavigationBar" parent="MarginContainer/Contents/Left" unique_id=1563900071 instance=ExtResource("2_1ky73")]
+layout_mode = 2
+previous_scene_file_path = "uid://c7uw6mqp13cm3"
+
+[node name="StarCounter" parent="MarginContainer/Contents/Left" unique_id=401513187 instance=ExtResource("3_pkx2s")]
+layout_mode = 2
+
+[node name="SoundButton" parent="MarginContainer/Contents/Left" unique_id=2010444643 instance=ExtResource("4_pjuag")]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="AboutButton" type="TextureButton" parent="MarginContainer/Contents/Left" unique_id=593576803]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource("5_0a8nh")
+ignore_texture_size = true
+stretch_mode = 4
+
+[node name="Bottom" type="Control" parent="MarginContainer/Contents/Left" unique_id=506364803]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Top3" type="Control" parent="MarginContainer/Contents/Left" unique_id=1579703880]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Top2" type="Control" parent="MarginContainer/Contents/Left" unique_id=2075173646]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Middle" type="VBoxContainer" parent="MarginContainer/Contents" unique_id=992920742]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 60.0
+
+[node name="Top" type="Control" parent="MarginContainer/Contents/Middle" unique_id=1648813324]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 6.36
+
+[node name="Label" type="Label" parent="MarginContainer/Contents/Middle" unique_id=540570896]
+layout_mode = 2
+size_flags_vertical = 6
+text = "prompt.level_1"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="QuestionDragTarget" parent="MarginContainer/Contents/Middle" unique_id=900728642 instance=ExtResource("6_vvccn")]
+layout_mode = 2
+size_flags_stretch_ratio = 60.0
+frames = Array[Texture2D]([ExtResource("7_ytltm"), ExtResource("8_fwygs")])
+wrong_frame = ExtResource("9_mfoe5")
+correct_frame = ExtResource("10_823pi")
+
+[node name="Right" type="VBoxContainer" parent="MarginContainer/Contents" unique_id=534911238]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 22.05
+
+[node name="Option1" parent="MarginContainer/Contents/Right" unique_id=1779106198 instance=ExtResource("11_n1qqq")]
+layout_mode = 2
+frames = Array[Texture2D]([ExtResource("12_cn3kq"), ExtResource("13_phtej")])
+
+[node name="Option2" parent="MarginContainer/Contents/Right" unique_id=588101842 instance=ExtResource("11_n1qqq")]
+layout_mode = 2
+is_correct = false
+frames = Array[Texture2D]([ExtResource("14_sacgg"), ExtResource("15_6svjj")])
+
+[node name="Option3" parent="MarginContainer/Contents/Right" unique_id=857832238 instance=ExtResource("11_n1qqq")]
+layout_mode = 2
+is_correct = false
+frames = Array[Texture2D]([ExtResource("16_sawnt"), ExtResource("17_jjswr")])
+
+[node name="Popup" parent="MarginContainer" unique_id=1497230596 instance=ExtResource("18_knoda")]
+visible = false
+layout_mode = 2
+next_scene = ExtResource("19_eolfy")
+
+[node name="CharacterInfo" parent="MarginContainer" unique_id=100588087 instance=ExtResource("20_st83n")]
+visible = false
+layout_mode = 2
+
+[node name="CorrectSound" type="AudioStreamPlayer2D" parent="." unique_id=840971757]
+
+[node name="WrongSound" type="AudioStreamPlayer2D" parent="." unique_id=224716404]
+stream = ExtResource("21_1ky73")
+
+[connection signal="pressed" from="MarginContainer/Contents/Left/AboutButton" to="." method="_on_about_button_pressed"]
+[connection signal="answered" from="MarginContainer/Contents/Middle/QuestionDragTarget" to="." method="_on_animated_texture_answered"]
