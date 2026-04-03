@@ -12,11 +12,10 @@ enum Character { EDDY, REIZY, MAKTY }
 @export var reizy_frames: Array[Texture2D]
 @export var makty_frames: Array[Texture2D]
 
-@onready var popup: PanelContainer
-@onready var popup_title: Label
-@onready var popup_text: Label
-@onready
-var _anim: AnimatedTextureRect = $PanelContainer/MarginContainer/Contents/Right/AnimatedTextureRect
+var popup: PanelContainer
+var popup_title: Label
+var popup_text: Label
+var _anim: AnimatedTextureRect
 
 
 func _apply_properties() -> void:
@@ -33,6 +32,7 @@ func _ready() -> void:
 	popup = find_child("InfoPopup")
 	popup_title = find_child("PopupTitleLabel")
 	popup_text = find_child("PopupTextLabel")
+	_anim = find_child("AnimatedTextureRect")
 	_apply_properties()
 
 

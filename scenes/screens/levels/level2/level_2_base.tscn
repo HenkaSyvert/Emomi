@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://cjqnacg2nyuiy"]
+
+[ext_resource type="PackedScene" uid="uid://dultb67w4vfq1" path="res://scenes/screens/levels/level1/level_1_base.tscn" id="1_uo5cb"]
+[ext_resource type="Texture2D" uid="uid://bx0ja2icw23jv" path="res://sprites/situations/dog/Dog 1 Loop.png" id="2_2u8k3"]
+[ext_resource type="Texture2D" uid="uid://btgcuj518v3x1" path="res://sprites/situations/dog/Dog 2 Loop.png" id="3_b1swf"]
+[ext_resource type="Texture2D" uid="uid://c853bjot2l44l" path="res://sprites/eddy/drag_source/0.png" id="4_spxip"]
+[ext_resource type="Texture2D" uid="uid://djal12vj1frgp" path="res://sprites/eddy/drag_source/1.png" id="5_v26dn"]
+[ext_resource type="Texture2D" uid="uid://ct3pllgpgtsix" path="res://sprites/eddy/drag_source/3.png" id="6_c4jm2"]
+[ext_resource type="Texture2D" uid="uid://dtj6lid7ja0xg" path="res://sprites/eddy/drag_source/2.png" id="7_xtrir"]
+[ext_resource type="Texture2D" uid="uid://dgeg2024llgqr" path="res://sprites/reizy/drag_source/0.png" id="8_8gke6"]
+[ext_resource type="Texture2D" uid="uid://dqgyuyuhqssjk" path="res://sprites/reizy/drag_source/1.png" id="9_qfwwa"]
+[ext_resource type="Texture2D" uid="uid://beipxpgc4ejnm" path="res://sprites/reizy/drag_source/3.png" id="10_riqy4"]
+[ext_resource type="Texture2D" uid="uid://swvkt7n7ib4y" path="res://sprites/reizy/drag_source/2.png" id="11_0rxwj"]
+[ext_resource type="Texture2D" uid="uid://cnr1om4nfgchc" path="res://sprites/makty/drag_source/0.png" id="12_av65t"]
+[ext_resource type="Texture2D" uid="uid://4xoo0p3yqv4a" path="res://sprites/makty/drag_source/1.png" id="13_uw8sy"]
+[ext_resource type="Texture2D" uid="uid://c4t85mqjak2t6" path="res://sprites/makty/drag_source/3.png" id="14_ghgkv"]
+[ext_resource type="Texture2D" uid="uid://bubois1y122ss" path="res://sprites/makty/drag_source/2.png" id="15_lnuog"]
+
+[node name="Level2" unique_id=120889486 instance=ExtResource("1_uo5cb")]
+
+[node name="AboutBar" parent="MarginContainer/Contents/Left" parent_id_path=PackedInt32Array(1167998286) index="4" unique_id=2033146772]
+visible = false
+
+[node name="QuestionDragTarget" parent="MarginContainer/Contents/Middle" parent_id_path=PackedInt32Array(992920742) index="2" unique_id=900728642]
+frames = Array[Texture2D]([ExtResource("2_2u8k3"), ExtResource("3_b1swf")])
+
+[node name="Option1" parent="MarginContainer/Contents/Right" parent_id_path=PackedInt32Array(534911238) index="0" unique_id=1779106198]
+is_correct = false
+frames = Array[Texture2D]([ExtResource("4_spxip"), ExtResource("5_v26dn")])
+frame_correct = ExtResource("6_c4jm2")
+frame_wrong = ExtResource("7_xtrir")
+
+[node name="Option2" parent="MarginContainer/Contents/Right" parent_id_path=PackedInt32Array(534911238) index="1" unique_id=588101842]
+frames = Array[Texture2D]([ExtResource("8_8gke6"), ExtResource("9_qfwwa")])
+frame_correct = ExtResource("10_riqy4")
+frame_wrong = ExtResource("11_0rxwj")
+
+[node name="Option3" parent="MarginContainer/Contents/Right" parent_id_path=PackedInt32Array(534911238) index="2" unique_id=857832238]
+frames = Array[Texture2D]([ExtResource("12_av65t"), ExtResource("13_uw8sy")])
+frame_correct = ExtResource("14_ghgkv")
+frame_wrong = ExtResource("15_lnuog")
+
+[node name="Popup" parent="MarginContainer" parent_id_path=PackedInt32Array(864518872) index="1" unique_id=1497230596]
+level_index = 2

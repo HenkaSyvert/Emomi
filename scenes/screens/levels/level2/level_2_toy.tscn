@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://538c0qagka0f"]
+
+[ext_resource type="PackedScene" uid="uid://cjqnacg2nyuiy" path="res://scenes/screens/levels/level2/level_2_base.tscn" id="1_idx71"]
+[ext_resource type="Texture2D" uid="uid://q4y1ku44cgdd" path="res://sprites/situations/toy/toy 1 loop.png" id="2_hojqt"]
+[ext_resource type="Texture2D" uid="uid://1osqbxscikn8" path="res://sprites/situations/toy/toy 2 loop.png" id="3_doot7"]
+[ext_resource type="PackedScene" uid="uid://c7uw6mqp13cm3" path="res://scenes/screens/level_select_menu/level_select_menu.tscn" id="4_doot7"]
+
+[node name="Level2Toy" unique_id=120889486 instance=ExtResource("1_idx71")]
+
+[node name="QuestionDragTarget" parent="MarginContainer/Contents/Middle" parent_id_path=PackedInt32Array(992920742) index="2" unique_id=900728642]
+frames = Array[Texture2D]([ExtResource("2_hojqt"), ExtResource("3_doot7")])
+
+[node name="Option1" parent="MarginContainer/Contents/Right" parent_id_path=PackedInt32Array(534911238) index="0" unique_id=1779106198]
+is_correct = true
+
+[node name="Popup" parent="MarginContainer" parent_id_path=PackedInt32Array(864518872) index="1" unique_id=1497230596]
+next_scene = ExtResource("4_doot7")
+is_end_of_level = true

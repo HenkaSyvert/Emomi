@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://c7g2irlfxgcwe"]
+
+[ext_resource type="PackedScene" uid="uid://cjqnacg2nyuiy" path="res://scenes/screens/levels/level2/level_2_base.tscn" id="1_aul44"]
+[ext_resource type="PackedScene" uid="uid://dc2m0llxuv7nk" path="res://scenes/screens/levels/level2/level_2_draw.tscn" id="2_x4jw2"]
+
+[node name="Level2Dog" unique_id=120889486 instance=ExtResource("1_aul44")]
+
+[node name="Option1" parent="MarginContainer/Contents/Right" parent_id_path=PackedInt32Array(534911238) index="0" unique_id=1779106198]
+is_correct = true
+
+[node name="Popup" parent="MarginContainer" parent_id_path=PackedInt32Array(864518872) index="1" unique_id=1497230596]
+next_scene = ExtResource("2_x4jw2")

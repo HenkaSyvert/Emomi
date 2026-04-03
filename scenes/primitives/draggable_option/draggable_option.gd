@@ -35,8 +35,10 @@ func _on_drag_source_drag_started() -> void:
 	else:
 		_anim.texture = frame_wrong if frame_wrong else frames[0]
 
-	var drag_preview: AnimatedTextureRect = _anim.duplicate()
-	drag_preview.pause()
+	var drag_preview: TextureRect = TextureRect.new()
+	drag_preview.texture = _anim.texture
+	drag_preview.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+	drag_preview.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT
 	_drag_source.drag_preview = drag_preview
 
 

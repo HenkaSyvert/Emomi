@@ -103,7 +103,7 @@ layout_mode = 2
 disabled = true
 texture_normal = ExtResource("8_gqg0r")
 texture_disabled = ExtResource("9_pl33s")
-scene_path = "uid://cj1onqqcxwl16"
+scene_path = "uid://c7g2irlfxgcwe"
 
 [node name="Level3Button" parent="Background/MarginContainer/Contents/Bottom/Buttons" unique_id=1253051907 instance=ExtResource("3_bqjpd")]
 layout_mode = 2

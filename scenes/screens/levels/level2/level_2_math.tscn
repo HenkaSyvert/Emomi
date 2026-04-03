@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://caedycgcqglua"]
+
+[ext_resource type="PackedScene" uid="uid://cjqnacg2nyuiy" path="res://scenes/screens/levels/level2/level_2_base.tscn" id="1_q0va1"]
+[ext_resource type="Texture2D" uid="uid://dn808kmh8nh7n" path="res://sprites/situations/math/math 1 loop.png" id="2_5u5mg"]
+[ext_resource type="Texture2D" uid="uid://bv3q8whvwob41" path="res://sprites/situations/math/math 2 loop.png" id="3_aubum"]
+[ext_resource type="PackedScene" uid="uid://2yrrqxb4kje4" path="res://scenes/screens/levels/level2/level_2_mine.tscn" id="4_aubum"]
+
+[node name="Level2Math" unique_id=120889486 instance=ExtResource("1_q0va1")]
+
+[node name="QuestionDragTarget" parent="MarginContainer/Contents/Middle" parent_id_path=PackedInt32Array(992920742) index="2" unique_id=900728642]
+frames = Array[Texture2D]([ExtResource("2_5u5mg"), ExtResource("3_aubum")])
+
+[node name="Option3" parent="MarginContainer/Contents/Right" parent_id_path=PackedInt32Array(534911238) index="2" unique_id=857832238]
+is_correct = true
+
+[node name="Popup" parent="MarginContainer" parent_id_path=PackedInt32Array(864518872) index="1" unique_id=1497230596]
+next_scene = ExtResource("4_aubum")
