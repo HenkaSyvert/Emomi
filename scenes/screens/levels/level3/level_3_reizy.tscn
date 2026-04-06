@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://bltobggfloh3w"]
+
+[ext_resource type="PackedScene" uid="uid://2ghamxuom2dl" path="res://scenes/screens/levels/level3/level_3_base.tscn" id="1_88a8l"]
+[ext_resource type="PackedScene" uid="uid://6hsvkwut0wwp" path="res://scenes/screens/levels/level3/level_3_eddy.tscn" id="2_e80aw"]
+
+[node name="Level3Reizy" unique_id=120889486 instance=ExtResource("1_88a8l")]
+
+[node name="Popup" parent="MarginContainer" parent_id_path=PackedInt32Array(864518872) index="1" unique_id=1497230596]
+next_scene = ExtResource("2_e80aw")
+level_index = 3

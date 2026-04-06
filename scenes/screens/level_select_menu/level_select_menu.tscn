@@ -110,7 +110,7 @@ layout_mode = 2
 disabled = true
 texture_normal = ExtResource("10_t8cmi")
 texture_disabled = ExtResource("11_r3nop")
-scene_path = "uid://br2ox5sejwof5"
+scene_path = "uid://bltobggfloh3w"
 
 [node name="Middle" type="Control" parent="Background/MarginContainer/Contents/Bottom/Buttons" unique_id=978541098]
 layout_mode = 2

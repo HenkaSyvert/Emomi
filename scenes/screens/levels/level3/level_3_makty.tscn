@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://dvg8ks2sdbq1s"]
+
+[ext_resource type="PackedScene" uid="uid://2ghamxuom2dl" path="res://scenes/screens/levels/level3/level_3_base.tscn" id="1_drf4q"]
+[ext_resource type="Texture2D" uid="uid://i6ortcmrfg3y" path="res://sprites/makty/Makty Correct.png" id="2_4tlj7"]
+[ext_resource type="Texture2D" uid="uid://doy86nxmkhl7u" path="res://sprites/makty/Makty 1.png" id="3_vge27"]
+[ext_resource type="Texture2D" uid="uid://daun1aq8tyib0" path="res://sprites/makty/Makty 2.png" id="4_iokhh"]
+[ext_resource type="Texture2D" uid="uid://dfv7dueefkb6q" path="res://sprites/makty/Makty wrong.png" id="5_a7yms"]
+[ext_resource type="PackedScene" uid="uid://c7uw6mqp13cm3" path="res://scenes/screens/level_select_menu/level_select_menu.tscn" id="6_vge27"]
+
+[node name="Level3Makty" unique_id=120889486 instance=ExtResource("1_drf4q")]
+frames = Array[Texture2D]([ExtResource("2_4tlj7"), ExtResource("3_vge27"), ExtResource("4_iokhh"), ExtResource("5_a7yms")])
+
+[node name="AboutBar" parent="MarginContainer/Contents/Left" parent_id_path=PackedInt32Array(1167998286) index="4" unique_id=2033146772]
+character = 2
+
+[node name="Popup" parent="MarginContainer" parent_id_path=PackedInt32Array(864518872) index="1" unique_id=1497230596]
+next_scene = ExtResource("6_vge27")
+is_end_of_level = true
+level_index = 3
+
+[node name="CharacterInfo" parent="MarginContainer" parent_id_path=PackedInt32Array(864518872) index="2" unique_id=100588087]
+character = 2

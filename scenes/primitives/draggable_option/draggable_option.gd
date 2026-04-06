@@ -49,3 +49,4 @@ func _on_drag_source_drag_stopped(is_successful: bool) -> void:
 		frames = [d["texture"]]
 		_anim.frames = frames
 		is_correct = d["is_correct"]
+		_drag_source.drag_data = is_correct

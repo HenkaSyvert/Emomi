@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://6hsvkwut0wwp"]
+
+[ext_resource type="PackedScene" uid="uid://2ghamxuom2dl" path="res://scenes/screens/levels/level3/level_3_base.tscn" id="1_fmaw7"]
+[ext_resource type="Texture2D" uid="uid://baklicufa3nai" path="res://sprites/eddy/Eddy Correct.png" id="2_vsxri"]
+[ext_resource type="Texture2D" uid="uid://bwgb3ecse23fx" path="res://sprites/eddy/Eddy 2.png" id="3_liplh"]
+[ext_resource type="Texture2D" uid="uid://bxr3o81w5rgtx" path="res://sprites/eddy/Eddy 1.png" id="4_1augb"]
+[ext_resource type="Texture2D" uid="uid://gc4vqcy2atjt" path="res://sprites/eddy/Eddy wrong.png" id="5_twdxf"]
+[ext_resource type="PackedScene" uid="uid://dvg8ks2sdbq1s" path="res://scenes/screens/levels/level3/level_3_makty.tscn" id="6_liplh"]
+
+[node name="Level3Eddy" unique_id=120889486 instance=ExtResource("1_fmaw7")]
+frames = Array[Texture2D]([ExtResource("2_vsxri"), ExtResource("3_liplh"), ExtResource("4_1augb"), ExtResource("5_twdxf")])
+
+[node name="AboutBar" parent="MarginContainer/Contents/Left" parent_id_path=PackedInt32Array(1167998286) index="4" unique_id=2033146772]
+character = 0
+
+[node name="Popup" parent="MarginContainer" parent_id_path=PackedInt32Array(864518872) index="1" unique_id=1497230596]
+next_scene = ExtResource("6_liplh")
+level_index = 3
+
+[node name="CharacterInfo" parent="MarginContainer" parent_id_path=PackedInt32Array(864518872) index="2" unique_id=100588087]
+character = 0

@@ -57,6 +57,11 @@ layout_mode = 2
 size_flags_vertical = 3
 character_screen = NodePath("../../../CharacterInfo")
 
+[node name="AboutBarPlaceholder" type="Control" parent="MarginContainer/Contents/Left" unique_id=1960146747]
+visible = false
+layout_mode = 2
+size_flags_vertical = 3
+
 [node name="Bottom" type="Control" parent="MarginContainer/Contents/Left" unique_id=506364803]
 layout_mode = 2
 size_flags_vertical = 3

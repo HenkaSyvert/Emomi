@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://2ghamxuom2dl"]
+
+[ext_resource type="PackedScene" uid="uid://dultb67w4vfq1" path="res://scenes/screens/levels/level1/level_1_base.tscn" id="1_ugd6d"]
+[ext_resource type="Script" uid="uid://c4ep23mdxojok" path="res://scenes/screens/levels/level3/level_3.gd" id="2_364te"]
+[ext_resource type="Texture2D" uid="uid://lox0t5mp6r0q" path="res://scenes/screens/levels/level3/sprites/pos/unnamed (32).png" id="3_j5vi8"]
+[ext_resource type="Texture2D" uid="uid://df7520n7wkemv" path="res://sprites/reizy/Reizy wrong.png" id="3_p0sds"]
+[ext_resource type="Texture2D" uid="uid://beehh1pvpb53" path="res://scenes/screens/levels/level3/sprites/pos/unnamed (33).png" id="4_maqyo"]
+[ext_resource type="Texture2D" uid="uid://d3e66kbf7ncd3" path="res://sprites/reizy/Reizy 1.png" id="4_pkcvm"]
+[ext_resource type="Texture2D" uid="uid://bwm7sbcvcix6l" path="res://scenes/screens/levels/level3/sprites/neg/unnamed (39).png" id="12_c1ef0"]
+[ext_resource type="Texture2D" uid="uid://d2w6hp8i0svbw" path="res://scenes/screens/levels/level3/sprites/neg/unnamed (40).png" id="13_ji1yn"]
+[ext_resource type="Texture2D" uid="uid://dgtthlesw4crr" path="res://scenes/screens/levels/level3/sprites/neg/unnamed (41).png" id="14_4wjvc"]
+
+[node name="Level3" unique_id=120889486 node_paths=PackedStringArray("opts") instance=ExtResource("1_ugd6d")]
+script = ExtResource("2_364te")
+poss = Array[Texture2D]([ExtResource("3_j5vi8"), ExtResource("4_maqyo")])
+negs = Array[Texture2D]([ExtResource("12_c1ef0"), ExtResource("13_ji1yn")])
+opts = [NodePath("MarginContainer/Contents/Right/Option1"), NodePath("MarginContainer/Contents/Right/Option2"), NodePath("MarginContainer/Contents/Right/Option3")]
+balance = -1
+frames = Array[Texture2D]([])
+anger = 3
+
+[node name="AboutBar" parent="MarginContainer/Contents/Left" parent_id_path=PackedInt32Array(1167998286) index="4" unique_id=2033146772]
+character = 1
+
+[node name="QuestionDragTarget" parent="MarginContainer/Contents/Middle" parent_id_path=PackedInt32Array(992920742) index="2" unique_id=900728642]
+frames = Array[Texture2D]([ExtResource("3_p0sds"), ExtResource("4_pkcvm")])
+
+[node name="Option1" parent="MarginContainer/Contents/Right" parent_id_path=PackedInt32Array(534911238) index="0" unique_id=1779106198 node_paths=PackedStringArray("level_3")]
+frames = Array[Texture2D]([ExtResource("3_j5vi8")])
+is_level_3 = true
+level_3 = NodePath("../../../..")
+
+[node name="Option2" parent="MarginContainer/Contents/Right" parent_id_path=PackedInt32Array(534911238) index="1" unique_id=588101842 node_paths=PackedStringArray("level_3")]
+frames = Array[Texture2D]([ExtResource("12_c1ef0")])
+is_level_3 = true
+level_3 = NodePath("../../../..")
+
+[node name="Option3" parent="MarginContainer/Contents/Right" parent_id_path=PackedInt32Array(534911238) index="2" unique_id=857832238 node_paths=PackedStringArray("level_3")]
+frames = Array[Texture2D]([ExtResource("14_4wjvc")])
+is_level_3 = true
+level_3 = NodePath("../../../..")
+
+[node name="CharacterInfo" parent="MarginContainer" parent_id_path=PackedInt32Array(864518872) index="2" unique_id=100588087]
+character = 1

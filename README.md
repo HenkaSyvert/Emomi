@@ -3,6 +3,9 @@
 - make into apple app
 - add spalsh loading screen
 - add proper icon
+- fix music looping
+- add random offset for anim
+
 
 screens:
 	- set fixed width for all buttons?
@@ -36,3 +39,4 @@ character info
 programming
 	- mayhaps rename signals to less redundant
 	- expose sub-objects through getters or properties, ie questionDragTarget.animatedTexture
+	- fix proper is_correct dragOption propagate to dragSource
