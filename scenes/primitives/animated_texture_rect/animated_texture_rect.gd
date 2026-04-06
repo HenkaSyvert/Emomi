@@ -15,6 +15,11 @@ var _is_playing: bool = true
 var _time_left: float = 1.0 / FPS
 
 
+func _ready() -> void:
+	var max_time: float = 1.0 / FPS
+	_time_left = randf_range(0.1 * max_time, max_time)
+
+
 func stop() -> void:
 	_is_playing = false
 	_time_left = 1.0 / FPS

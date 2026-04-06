@@ -11,6 +11,7 @@ script = ExtResource("1_32w33")
 [node name="BackgroundMusicPlayer" type="AudioStreamPlayer2D" parent="." unique_id=927213764]
 stream = ExtResource("2_1innd")
 autoplay = true
+parameters/looping = true
 
 [node name="ButtonClickPlayer" type="AudioStreamPlayer2D" parent="." unique_id=2056618592]
 stream = ExtResource("3_gsgju")

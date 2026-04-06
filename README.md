@@ -3,8 +3,6 @@
 - make into apple app
 - add spalsh loading screen
 - add proper icon
-- fix music looping
-- add random offset for anim
 
 
 screens:
@@ -25,7 +23,6 @@ rewards menu
 	- click outside popup closes it
 
 levels
-	- fix så levels work again
 	- gör tutorial: visa dra en opt, loop, med dialog ok button
 	- add text: draw correct emotion to eddy
 	- find correct/wrong sounds per character
