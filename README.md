@@ -15,10 +15,8 @@ dann
 	- vilka scenes har all-white vs background?
 	- ska level select ha både return + home button?
 	- ska alla levels ha en translate button?
+	- download button
+	- general esthetic opinions on all scenes
 
 rewards menu
-	- add popup download button
-	- make popup look better
-	- ska det va nån border runt clickable images?
 	- unlock images based on nr stars
-	- click outside popup closes it

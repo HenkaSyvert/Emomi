@@ -112,6 +112,7 @@ ignore_texture_size = true
 stretch_mode = 5
 
 [node name="ImageViewer" type="VBoxContainer" parent="Background/MarginContainer" unique_id=1481212989]
+visible = false
 layout_mode = 2
 
 [node name="Top" type="Control" parent="Background/MarginContainer/ImageViewer" unique_id=57833540]
