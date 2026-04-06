@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://qb6v72gtm3bf" path="res://scenes/components/background/background.tscn" id="2_for7e"]
 [ext_resource type="PackedScene" uid="uid://cxw1nqmejgk5v" path="res://scenes/components/menu_top/menu_top.tscn" id="3_3pp2v"]
 [ext_resource type="Texture2D" uid="uid://b5m3g6tcpyrm4" path="res://scenes/screens/rewards_menu/sprites/reward1.png" id="12_e6hfi"]
+[ext_resource type="PackedScene" uid="uid://csxhvsfhsnoav" path="res://scenes/components/download_button/download_button.tscn" id="12_i1r43"]
 [ext_resource type="Texture2D" uid="uid://d0dbrexnsik5v" path="res://scenes/screens/rewards_menu/sprites/reward2.png" id="13_vy0a1"]
 [ext_resource type="Texture2D" uid="uid://11a11qy6aou3" path="res://scenes/screens/rewards_menu/sprites/reward3.png" id="14_tfmse"]
 [ext_resource type="Texture2D" uid="uid://c2jms72pvciv7" path="res://scenes/screens/rewards_menu/sprites/reward4.png" id="15_sjwty"]
@@ -111,7 +112,6 @@ ignore_texture_size = true
 stretch_mode = 5
 
 [node name="ImageViewer" type="VBoxContainer" parent="Background/MarginContainer" unique_id=1481212989]
-visible = false
 layout_mode = 2
 
 [node name="Top" type="Control" parent="Background/MarginContainer/ImageViewer" unique_id=57833540]
@@ -144,6 +144,9 @@ size_flags_vertical = 3
 [node name="CloseButton" type="TextureButton" parent="Background/MarginContainer/ImageViewer/Middle/Popup/VBoxContainer/HBoxContainer" unique_id=1464317765]
 layout_mode = 2
 texture_normal = ExtResource("19_sjwty")
+
+[node name="DownloadButton" parent="Background/MarginContainer/ImageViewer/Middle/Popup/VBoxContainer/HBoxContainer" unique_id=1882100326 instance=ExtResource("12_i1r43")]
+layout_mode = 2
 
 [node name="ViewedImage" type="TextureRect" parent="Background/MarginContainer/ImageViewer/Middle/Popup/VBoxContainer" unique_id=1293606628]
 layout_mode = 2

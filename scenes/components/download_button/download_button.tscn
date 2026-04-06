@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://csxhvsfhsnoav"]
+
+[ext_resource type="Script" uid="uid://cfrg1bndqj7sy" path="res://scenes/components/download_button/download_button.gd" id="1_76uye"]
+[ext_resource type="Texture2D" uid="uid://brku8tgcimsjg" path="res://sprites/reizy/Reizy Correct.png" id="1_t3xi4"]
+[ext_resource type="Texture2D" uid="uid://df7520n7wkemv" path="res://sprites/reizy/Reizy wrong.png" id="2_roqqg"]
+
+[node name="DownloadButton" type="TextureButton" unique_id=1882100326]
+offset_right = 40.0
+offset_bottom = 40.0
+texture_normal = ExtResource("1_t3xi4")
+script = ExtResource("1_76uye")
+texture = ExtResource("2_roqqg")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

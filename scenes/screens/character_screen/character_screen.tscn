@@ -22,52 +22,52 @@
 [ext_resource type="Script" uid="uid://bboq2mnurak57" path="res://scenes/primitives/animated_texture_rect/animated_texture_rect.gd" id="16_8ut3d"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1c50o"]
-corner_radius_top_left = 305
-corner_radius_top_right = 305
-corner_radius_bottom_right = 305
-corner_radius_bottom_left = 305
+corner_radius_top_left = 240
+corner_radius_top_right = 240
+corner_radius_bottom_right = 240
+corner_radius_bottom_left = 240
 corner_detail = 20
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_b6ire"]
-corner_radius_top_left = 216
-corner_radius_top_right = 216
-corner_radius_bottom_right = 216
-corner_radius_bottom_left = 216
+corner_radius_top_left = 160
+corner_radius_top_right = 160
+corner_radius_bottom_right = 160
+corner_radius_bottom_left = 160
 corner_detail = 20
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ohoys"]
-corner_radius_top_left = 196
-corner_radius_top_right = 196
-corner_radius_bottom_right = 196
-corner_radius_bottom_left = 196
+corner_radius_top_left = 130
+corner_radius_top_right = 130
+corner_radius_bottom_right = 130
+corner_radius_bottom_left = 130
 corner_detail = 20
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oimik"]
-corner_radius_top_left = 214
-corner_radius_top_right = 214
-corner_radius_bottom_right = 214
-corner_radius_bottom_left = 214
+corner_radius_top_left = 167
+corner_radius_top_right = 167
+corner_radius_bottom_right = 167
+corner_radius_bottom_left = 167
 corner_detail = 20
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ol3si"]
-corner_radius_top_left = 243
-corner_radius_top_right = 243
-corner_radius_bottom_right = 243
-corner_radius_bottom_left = 243
+corner_radius_top_left = 187
+corner_radius_top_right = 187
+corner_radius_bottom_right = 187
+corner_radius_bottom_left = 187
 corner_detail = 20
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_q0me0"]
-corner_radius_top_left = 146
-corner_radius_top_right = 146
-corner_radius_bottom_right = 146
-corner_radius_bottom_left = 146
+corner_radius_top_left = 82
+corner_radius_top_right = 82
+corner_radius_bottom_right = 82
+corner_radius_bottom_left = 82
 corner_detail = 20
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4q1kj"]
-corner_radius_top_left = 198
-corner_radius_top_right = 198
-corner_radius_bottom_right = 198
-corner_radius_bottom_left = 198
+corner_radius_top_left = 144
+corner_radius_top_right = 144
+corner_radius_bottom_right = 144
+corner_radius_bottom_left = 144
 corner_detail = 20
 
 [node name="CharacterInfo" type="Control" unique_id=100588087]
@@ -106,11 +106,11 @@ size_flags_horizontal = 3
 [node name="Personality" parent="PanelContainer/MarginContainer/Contents/Buttons" unique_id=1042425011 instance=ExtResource("1_eb023")]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.36912066
-anchor_top = 0.4225352
-anchor_right = 0.89366055
-anchor_bottom = 0.7838028
-offset_right = 98.0
+anchor_left = 0.37218815
+anchor_top = 0.2746479
+anchor_right = 0.6728016
+anchor_bottom = 0.54366195
+offset_right = 186.0
 offset_bottom = 98.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_1c50o")
 text = "info.personality"
@@ -119,11 +119,11 @@ metadata/_edit_use_anchors_ = true
 [node name="Likes" parent="PanelContainer/MarginContainer/Contents/Buttons" unique_id=2020452787 instance=ExtResource("1_eb023")]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = -0.042944785
-anchor_top = 0.39929578
-anchor_right = 0.299591
-anchor_bottom = 0.6352113
-offset_right = 98.0
+anchor_left = -0.073619634
+anchor_top = 0.3161972
+anchor_right = 0.12269939
+anchor_bottom = 0.47323942
+offset_right = 129.0
 offset_bottom = 98.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_b6ire")
 text = "info.likes"
@@ -132,12 +132,12 @@ metadata/_edit_use_anchors_ = true
 [node name="Dislikes" parent="PanelContainer/MarginContainer/Contents/Buttons" unique_id=2062597979 instance=ExtResource("1_eb023")]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.5
-anchor_top = 0.14647888
-anchor_right = 0.8006135
-anchor_bottom = 0.35352114
+anchor_left = 0.6482618
+anchor_top = 0.042957745
+anchor_right = 0.8149284
+anchor_bottom = 0.14014086
 offset_right = 98.0
-offset_bottom = 97.99997
+offset_bottom = 122.99997
 theme_override_styles/normal = SubResource("StyleBoxFlat_ohoys")
 text = "info.dislikes"
 metadata/_edit_use_anchors_ = true
@@ -145,12 +145,12 @@ metadata/_edit_use_anchors_ = true
 [node name="FavFood" parent="PanelContainer/MarginContainer/Contents/Buttons" unique_id=817268203 instance=ExtResource("1_eb023")]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.1206544
-anchor_top = 0.8176056
-anchor_right = 0.4580777
-anchor_bottom = 1.05
+anchor_left = 0.03374233
+anchor_top = 0.7521127
+anchor_right = 0.2760736
+anchor_bottom = 0.9063379
 offset_right = 98.0
-offset_bottom = 98.00012
+offset_bottom = 116.00012
 theme_override_styles/normal = SubResource("StyleBoxFlat_oimik")
 text = "info.fav_food"
 metadata/_edit_use_anchors_ = true
@@ -160,10 +160,10 @@ layout_mode = 1
 anchors_preset = -1
 anchor_left = -0.0040899795
 anchor_top = 0.04859155
-anchor_right = 0.39366055
-anchor_bottom = 0.32253525
+anchor_right = 0.27811855
+anchor_bottom = 0.23098591
 offset_right = 98.00006
-offset_bottom = 98.0
+offset_bottom = 115.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_ol3si")
 text = "info.bad_food"
 metadata/_edit_use_anchors_ = true
@@ -172,10 +172,10 @@ metadata/_edit_use_anchors_ = true
 layout_mode = 1
 anchors_preset = -1
 anchor_left = -0.038854804
-anchor_top = 0.71549296
-anchor_right = 0.1595092
-anchor_bottom = 0.85211265
-offset_right = 98.0
+anchor_top = 0.6084507
+anchor_right = 0.016359918
+anchor_bottom = 0.6549296
+offset_right = 110.0
 offset_bottom = 98.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_q0me0")
 text = "info.weight"
@@ -184,11 +184,11 @@ metadata/_edit_use_anchors_ = true
 [node name="Texture" parent="PanelContainer/MarginContainer/Contents/Buttons" unique_id=1687960032 instance=ExtResource("1_eb023")]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.48977506
-anchor_top = 0.8176056
-anchor_right = 0.79447854
-anchor_bottom = 1.0274649
-offset_right = 98.00012
+anchor_left = 0.5306749
+anchor_top = 0.71760565
+anchor_right = 0.69018394
+anchor_bottom = 0.85211265
+offset_right = 133.00012
 offset_bottom = 98.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_4q1kj")
 text = "info.texture"
@@ -274,7 +274,7 @@ text = "info.eddy.emotion"
 [node name="AnimatedTextureRect" type="TextureRect" parent="PanelContainer/MarginContainer/Contents/Right" unique_id=1357413796]
 layout_mode = 2
 size_flags_vertical = 3
-texture = ExtResource("8_ravl0")
+texture = ExtResource("7_cma1x")
 script = ExtResource("16_8ut3d")
 frames = Array[Texture2D]([ExtResource("2_tvv3w"), ExtResource("7_cma1x"), ExtResource("8_ravl0"), ExtResource("9_dfop4")])
 metadata/_custom_type_script = "uid://bboq2mnurak57"
