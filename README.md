@@ -17,6 +17,7 @@ dann
 	- ska alla levels ha en translate button?
 	- download button
 	- general esthetic opinions on all scenes
+	- liten hand select drag icon
 
 rewards menu
 	- unlock images based on nr stars
