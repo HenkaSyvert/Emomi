@@ -251,6 +251,7 @@ vertical_alignment = 1
 autowrap_mode = 3
 
 [node name="InfoPopup" type="PanelContainer" parent="PanelContainer/MarginContainer/Contents/Buttons" unique_id=589833269]
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -334,13 +335,13 @@ text = "Reizy"
 layout_mode = 2
 size_flags_horizontal = 4
 theme_override_font_sizes/font_size = 71
-text = "(enojo)"
+text = "info.reizy.emotion"
 
 [node name="AnimatedTextureRect" type="TextureRect" parent="PanelContainer/MarginContainer/Contents/Right" unique_id=1357413796]
 layout_mode = 2
 size_flags_vertical = 3
 size_flags_stretch_ratio = 3.25
-texture = ExtResource("6_4ikyg")
+texture = ExtResource("8_b6ire")
 script = ExtResource("16_8ut3d")
 frames = Array[Texture2D]([ExtResource("6_4ikyg"), ExtResource("7_1c50o"), ExtResource("8_b6ire"), ExtResource("9_ohoys")])
 metadata/_custom_type_script = "uid://bboq2mnurak57"
