@@ -1,17 +1,24 @@
+class_name Tutorial
 extends Sprite2D
 
-@export var source: Control
-@export var target: Control
+@export var target: Node2D
+
+@export var show_tutorial: bool = true:
+	set(value):
+		show_tutorial = value
+		visible = value
 
 
 func _ready() -> void:
+	var start_pos: Vector2 = position
 	var tween: Tween = create_tween()
 
-	var pos: Vector2 = target.global_position + target.size / 2
 	@warning_ignore("return_value_discarded")
-	tween.tween_property(self, "position", pos, 2)
+	tween.tween_property(self, "position", target.position, 2)
 
 	@warning_ignore("return_value_discarded")
-	tween.tween_interval(3)
+	tween.tween_interval(1)
 	@warning_ignore("return_value_discarded")
-	tween.set_loops(5)
+	tween.tween_property(self, "position", start_pos, 0)
+	@warning_ignore("return_value_discarded")
+	tween.set_loops(2)

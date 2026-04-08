@@ -3,7 +3,6 @@
 [ext_resource type="Script" uid="uid://byot3krayoyu6" path="res://scenes/screens/levels/level1/level_1_base.gd" id="1_sk6mx"]
 [ext_resource type="PackedScene" uid="uid://bjmccii1ugoyr" path="res://scenes/components/navigation_bar/navigation_bar.tscn" id="2_1ky73"]
 [ext_resource type="Script" uid="uid://cv4hjqvvv31yb" path="res://scenes/screens/levels/level1/tutorial.gd" id="2_15apt"]
-[ext_resource type="Texture2D" uid="uid://dc1t8yrrsbrpi" path="res://scenes/screens/character_screen/cross.png" id="3_m4hs8"]
 [ext_resource type="PackedScene" uid="uid://ctoicx2ven6ek" path="res://scenes/components/star_counter/star_counter.tscn" id="3_pkx2s"]
 [ext_resource type="PackedScene" uid="uid://bvvb57ga0cd1i" path="res://scenes/components/audio_bar/audio_bar.tscn" id="4_pjuag"]
 [ext_resource type="PackedScene" uid="uid://bh2ve5k2mpamu" path="res://scenes/components/about_bar/about_bar.tscn" id="5_1d8ox"]
@@ -14,6 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://cmtc6bsgmxvwv" path="res://sprites/situations/mine/mine 1 loop.png" id="14_sacgg"]
 [ext_resource type="Texture2D" uid="uid://1xcmn1cf81wa" path="res://sprites/situations/mine/mine 2 loop.png" id="15_6svjj"]
 [ext_resource type="Texture2D" uid="uid://dn808kmh8nh7n" path="res://sprites/situations/math/math 1 loop.png" id="16_sawnt"]
+[ext_resource type="Texture2D" uid="uid://b6p3wc6ijx3gf" path="res://scenes/screens/levels/level1/drag_hand.png" id="17_15apt"]
 [ext_resource type="Texture2D" uid="uid://bv3q8whvwob41" path="res://sprites/situations/math/math 2 loop.png" id="17_jjswr"]
 [ext_resource type="PackedScene" uid="uid://do1blbrdmk38b" path="res://scenes/components/popup/popup.tscn" id="18_knoda"]
 [ext_resource type="PackedScene" uid="uid://dxbpakctk1gcs" path="res://scenes/screens/character_screen/character_screen.tscn" id="20_st83n"]
@@ -124,17 +124,22 @@ level_index = 1
 [node name="CharacterInfo" parent="MarginContainer" unique_id=100588087 instance=ExtResource("20_st83n")]
 visible = false
 layout_mode = 2
+character = 0
 
 [node name="CorrectSound" type="AudioStreamPlayer2D" parent="." unique_id=840971757]
 
 [node name="WrongSound" type="AudioStreamPlayer2D" parent="." unique_id=224716404]
 stream = ExtResource("21_1ky73")
 
-[node name="TutorialHand" type="Sprite2D" parent="." unique_id=1316170109 node_paths=PackedStringArray("source", "target")]
+[node name="TutorialHand" type="Sprite2D" parent="." unique_id=1316170109 node_paths=PackedStringArray("target")]
+visible = false
 position = Vector2(1895, 297)
-texture = ExtResource("3_m4hs8")
+texture = ExtResource("17_15apt")
 script = ExtResource("2_15apt")
-source = NodePath("../MarginContainer/Contents/Right/Option1")
-target = NodePath("../MarginContainer/Contents/Middle/QuestionDragTarget")
+target = NodePath("../TutorialTarget")
+
+[node name="TutorialTarget" type="Node2D" parent="." unique_id=533389452]
+visible = false
+position = Vector2(1003, 991)
 
 [connection signal="answered" from="MarginContainer/Contents/Middle/QuestionDragTarget" to="." method="_on_animated_texture_answered"]

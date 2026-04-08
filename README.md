@@ -11,7 +11,6 @@
 # Todo in future
 
 - make into apple app
-- char info: fixa dynamic character name text color
 - hitta fler sound effects
 - se över translations
 
