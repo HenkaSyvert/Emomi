@@ -9,6 +9,8 @@
 [ext_resource type="Texture2D" uid="uid://ifqwoeqhuttk" path="res://scenes/screens/level_select_menu/sprites/level_2_locked.png" id="9_pl33s"]
 [ext_resource type="Texture2D" uid="uid://dvc2bqj1a1ods" path="res://scenes/screens/level_select_menu/sprites/level_3.png" id="10_t8cmi"]
 [ext_resource type="Texture2D" uid="uid://cwks30haneg0n" path="res://scenes/screens/level_select_menu/sprites/level_3_locked.png" id="11_r3nop"]
+[ext_resource type="Script" uid="uid://ck13hmwm04qrp" path="res://scenes/screens/level_select_menu/demo_popup.gd" id="11_turym"]
+[ext_resource type="StyleBox" uid="uid://bnp6m13wovw7n" path="res://ui/themes/popup_theme.tres" id="12_il0m2"]
 [ext_resource type="Texture2D" uid="uid://bevbp5p6ar5oy" path="res://scenes/screens/level_select_menu/sprites/rewards.png" id="17_bqjpd"]
 
 [node name="LevelSelectMenu" type="Control" unique_id=1074194068]
@@ -132,3 +134,43 @@ size_flags_stretch_ratio = 0.5
 [node name="Control" type="Control" parent="Background/MarginContainer/Contents/Bottom" unique_id=1278849311]
 layout_mode = 2
 size_flags_vertical = 3
+
+[node name="DemoPopup" type="MarginContainer" parent="." unique_id=1545742000]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 500
+theme_override_constants/margin_top = 500
+theme_override_constants/margin_right = 500
+theme_override_constants/margin_bottom = 500
+script = ExtResource("11_turym")
+
+[node name="PanelContainer" type="PanelContainer" parent="DemoPopup" unique_id=1172223283]
+layout_mode = 2
+theme_override_styles/panel = ExtResource("12_il0m2")
+
+[node name="MarginContainer" type="MarginContainer" parent="DemoPopup/PanelContainer" unique_id=922648877]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="DemoPopup/PanelContainer/MarginContainer" unique_id=695358008]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="DemoPopup/PanelContainer/MarginContainer/VBoxContainer" unique_id=433595192]
+layout_mode = 2
+size_flags_vertical = 6
+text = "menu.demo"
+autowrap_mode = 3
+
+[node name="Control" type="Control" parent="DemoPopup/PanelContainer/MarginContainer/VBoxContainer" unique_id=1835655015]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Button" type="Button" parent="DemoPopup/PanelContainer/MarginContainer/VBoxContainer" unique_id=865486583]
+layout_mode = 2
+size_flags_vertical = 3
+text = "OK"
+
+[connection signal="pressed" from="DemoPopup/PanelContainer/MarginContainer/VBoxContainer/Button" to="DemoPopup" method="_on_button_pressed"]
