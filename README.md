@@ -6,13 +6,10 @@
 - fix download actually download
 
 - character info screen
- 	- options buttons are same size
-	- eddy is bigger
-	- use dann new circles
 	- decrease font size of circle text
 	- decrease spacing between lines for circle text
 	- make popup have thicker borders
-
+	
 - reward menu
 	- re-add star counter
 	- put x close button to right top corner

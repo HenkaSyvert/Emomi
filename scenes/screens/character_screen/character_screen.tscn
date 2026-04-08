@@ -1,9 +1,7 @@
 [gd_scene format=3 uid="uid://dxbpakctk1gcs"]
 
 [ext_resource type="Theme" uid="uid://dap40rvjqooam" path="res://scenes/screens/character_screen/themes/eddy/eddy_theme.tres" id="1_1c50o"]
-[ext_resource type="PackedScene" uid="uid://bceb0okbt6ny0" path="res://scenes/primitives/circular_button/cicular_button.tscn" id="1_eb023"]
 [ext_resource type="Script" uid="uid://c72vxihoslrvg" path="res://scenes/screens/character_screen/character_screen.gd" id="1_v5erc"]
-[ext_resource type="StyleBox" uid="uid://bnp6m13wovw7n" path="res://ui/themes/popup_theme.tres" id="2_dnguo"]
 [ext_resource type="Texture2D" uid="uid://bxr3o81w5rgtx" path="res://sprites/eddy/Eddy 1.png" id="2_tvv3w"]
 [ext_resource type="PackedScene" uid="uid://bvvb57ga0cd1i" path="res://scenes/components/audio_bar/audio_bar.tscn" id="3_5y6rq"]
 [ext_resource type="Texture2D" uid="uid://d3e66kbf7ncd3" path="res://sprites/reizy/Reizy 1.png" id="6_4ikyg"]
@@ -18,59 +16,16 @@
 [ext_resource type="Texture2D" uid="uid://i6ortcmrfg3y" path="res://sprites/makty/Makty Correct.png" id="12_q0me0"]
 [ext_resource type="Texture2D" uid="uid://dfv7dueefkb6q" path="res://sprites/makty/Makty wrong.png" id="13_4q1kj"]
 [ext_resource type="PackedScene" uid="uid://dcnps1ubh4p87" path="res://scenes/components/localization_bar/localization_bar.tscn" id="14_8ut3d"]
+[ext_resource type="Texture2D" uid="uid://cq7nswp007lkv" path="res://scenes/screens/character_screen/eddy_circle.png" id="15_1c50o"]
 [ext_resource type="Texture2D" uid="uid://dc1t8yrrsbrpi" path="res://scenes/screens/character_screen/cross.png" id="15_gv133"]
 [ext_resource type="Script" uid="uid://bboq2mnurak57" path="res://scenes/primitives/animated_texture_rect/animated_texture_rect.gd" id="16_8ut3d"]
+[ext_resource type="Texture2D" uid="uid://c0mxlsbvnn0wr" path="res://scenes/screens/character_screen/reizy_circle.png" id="16_ohoys"]
+[ext_resource type="Texture2D" uid="uid://cpes52kp5v0d6" path="res://scenes/screens/character_screen/makty_circle.png" id="17_oimik"]
+[ext_resource type="StyleBox" uid="uid://bc342t0ayjj4d" path="res://scenes/screens/character_screen/themes/eddy/eddy_title_panel.tres" id="18_ohoys"]
+[ext_resource type="StyleBox" uid="uid://bggl2be5exi34" path="res://scenes/screens/character_screen/themes/reizy/reizy_title_panel.tres" id="19_ol3si"]
+[ext_resource type="StyleBox" uid="uid://tb7756k0vu3n" path="res://scenes/screens/character_screen/themes/makty/makty_title_panel.tres" id="20_q0me0"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1c50o"]
-corner_radius_top_left = 168
-corner_radius_top_right = 168
-corner_radius_bottom_right = 168
-corner_radius_bottom_left = 168
-corner_detail = 20
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_b6ire"]
-corner_radius_top_left = 160
-corner_radius_top_right = 160
-corner_radius_bottom_right = 160
-corner_radius_bottom_left = 160
-corner_detail = 20
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ohoys"]
-corner_radius_top_left = 130
-corner_radius_top_right = 130
-corner_radius_bottom_right = 130
-corner_radius_bottom_left = 130
-corner_detail = 20
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oimik"]
-corner_radius_top_left = 167
-corner_radius_top_right = 167
-corner_radius_bottom_right = 167
-corner_radius_bottom_left = 167
-corner_detail = 20
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ol3si"]
-corner_radius_top_left = 187
-corner_radius_top_right = 187
-corner_radius_bottom_right = 187
-corner_radius_bottom_left = 187
-corner_detail = 20
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_q0me0"]
-corner_radius_top_left = 147
-corner_radius_top_right = 147
-corner_radius_bottom_right = 147
-corner_radius_bottom_left = 147
-corner_detail = 20
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4q1kj"]
-corner_radius_top_left = 144
-corner_radius_top_right = 144
-corner_radius_bottom_right = 144
-corner_radius_bottom_left = 144
-corner_detail = 20
-
-[node name="CharacterInfo" type="Control" unique_id=100588087]
+[node name="CharacterInfo" type="Control" unique_id=100588087 node_paths=PackedStringArray("buttons", "char_name", "emotion_label", "popup")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -81,9 +36,20 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 theme = ExtResource("1_1c50o")
 script = ExtResource("1_v5erc")
+character = 1
 eddy_frames = Array[Texture2D]([ExtResource("2_tvv3w"), ExtResource("7_cma1x"), ExtResource("8_ravl0"), ExtResource("9_dfop4")])
 reizy_frames = Array[Texture2D]([ExtResource("6_4ikyg"), ExtResource("7_1c50o"), ExtResource("8_b6ire"), ExtResource("9_ohoys")])
 makty_frames = Array[Texture2D]([ExtResource("10_oimik"), ExtResource("11_ol3si"), ExtResource("12_q0me0"), ExtResource("13_4q1kj")])
+eddy_button = ExtResource("15_1c50o")
+reizy_button = ExtResource("16_ohoys")
+makty_button = ExtResource("17_oimik")
+buttons = [NodePath("PanelContainer/MarginContainer/Contents/Buttons/Personality"), NodePath("PanelContainer/MarginContainer/Contents/Buttons/Likes"), NodePath("PanelContainer/MarginContainer/Contents/Buttons/Dislikes"), NodePath("PanelContainer/MarginContainer/Contents/Buttons/FavFood"), NodePath("PanelContainer/MarginContainer/Contents/Buttons/BadFood"), NodePath("PanelContainer/MarginContainer/Contents/Buttons/Weight"), NodePath("PanelContainer/MarginContainer/Contents/Buttons/Texture")]
+char_name = NodePath("PanelContainer/MarginContainer/Contents/Right/Title/NameLabel")
+emotion_label = NodePath("PanelContainer/MarginContainer/Contents/Right/EmotionLabel")
+eddy_style = ExtResource("18_ohoys")
+reizy_style = ExtResource("19_ol3si")
+makty_style = ExtResource("20_q0me0")
+popup = NodePath("PanelContainer/MarginContainer/Contents/Buttons/InfoPopup")
 
 [node name="PanelContainer" type="PanelContainer" parent="." unique_id=1973348732]
 layout_mode = 1
@@ -103,108 +69,195 @@ layout_mode = 2
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="Personality" parent="PanelContainer/MarginContainer/Contents/Buttons" unique_id=1042425011 instance=ExtResource("1_eb023")]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.37218815
-anchor_top = 0.2746479
-anchor_right = 0.52658486
-anchor_bottom = 0.42676055
-offset_right = 186.0
-offset_bottom = 121.0
-theme_override_font_sizes/font_size = 50
-theme_override_styles/normal = SubResource("StyleBoxFlat_1c50o")
-text = "info.personality"
-metadata/_edit_use_anchors_ = true
+[node name="Personality" type="TextureButton" parent="PanelContainer/MarginContainer/Contents/Buttons" unique_id=1899292012]
+layout_mode = 0
+offset_left = 328.0
+offset_top = 565.0
+offset_right = 784.0
+offset_bottom = 1003.0
+texture_normal = ExtResource("16_ohoys")
+texture_pressed = ExtResource("16_ohoys")
+texture_hover = ExtResource("16_ohoys")
+ignore_texture_size = true
+stretch_mode = 5
 
-[node name="Likes" parent="PanelContainer/MarginContainer/Contents/Buttons" unique_id=2020452787 instance=ExtResource("1_eb023")]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = -0.073619634
-anchor_top = 0.3161972
-anchor_right = 0.12269939
-anchor_bottom = 0.47323942
-offset_right = 129.0
-offset_bottom = 98.0
-theme_override_styles/normal = SubResource("StyleBoxFlat_b6ire")
-text = "info.likes"
-metadata/_edit_use_anchors_ = true
-
-[node name="Dislikes" parent="PanelContainer/MarginContainer/Contents/Buttons" unique_id=2062597979 instance=ExtResource("1_eb023")]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.6482618
-anchor_top = 0.042957745
-anchor_right = 0.8149284
-anchor_bottom = 0.14014086
-offset_right = 98.0
-offset_bottom = 122.99997
-theme_override_styles/normal = SubResource("StyleBoxFlat_ohoys")
-text = "info.dislikes"
-metadata/_edit_use_anchors_ = true
-
-[node name="FavFood" parent="PanelContainer/MarginContainer/Contents/Buttons" unique_id=817268203 instance=ExtResource("1_eb023")]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.03374233
-anchor_top = 0.7521127
-anchor_right = 0.2760736
-anchor_bottom = 0.9063379
-offset_right = 98.0
-offset_bottom = 116.00012
-theme_override_styles/normal = SubResource("StyleBoxFlat_oimik")
-text = "info.fav_food"
-metadata/_edit_use_anchors_ = true
-
-[node name="BadFood" parent="PanelContainer/MarginContainer/Contents/Buttons" unique_id=1219183711 instance=ExtResource("1_eb023")]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = -0.0040899795
-anchor_top = 0.04859155
-anchor_right = 0.27811855
-anchor_bottom = 0.23098591
-offset_right = 98.00006
-offset_bottom = 115.0
-theme_override_constants/line_spacing = -27
-theme_override_styles/normal = SubResource("StyleBoxFlat_ol3si")
-text = "info.bad_food"
-metadata/_edit_use_anchors_ = true
-
-[node name="Weight" parent="PanelContainer/MarginContainer/Contents/Buttons" unique_id=121048714 instance=ExtResource("1_eb023")]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = -0.038854804
-anchor_top = 0.6084507
-anchor_right = 0.016359918
-anchor_bottom = 0.6549296
-offset_right = 240.0
-offset_bottom = 228.0
-theme_override_styles/normal = SubResource("StyleBoxFlat_q0me0")
-text = "info.weight"
-metadata/_edit_use_anchors_ = true
-
-[node name="Texture" parent="PanelContainer/MarginContainer/Contents/Buttons" unique_id=1687960032 instance=ExtResource("1_eb023")]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.5306749
-anchor_top = 0.71760565
-anchor_right = 0.69018394
-anchor_bottom = 0.85211265
-offset_right = 133.00012
-offset_bottom = 98.0
-theme_override_styles/normal = SubResource("StyleBoxFlat_4q1kj")
-text = "info.texture"
-metadata/_edit_use_anchors_ = true
-
-[node name="InfoPopup" type="PanelContainer" parent="PanelContainer/MarginContainer/Contents/Buttons" unique_id=589833269]
-visible = false
+[node name="Label" type="Label" parent="PanelContainer/MarginContainer/Contents/Buttons/Personality" unique_id=1272583550]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_styles/panel = ExtResource("2_dnguo")
+size_flags_horizontal = 4
+text = "info.personality"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Likes" type="TextureButton" parent="PanelContainer/MarginContainer/Contents/Buttons" unique_id=1561046842]
+layout_mode = 0
+offset_left = 441.0
+offset_top = 232.0
+offset_right = 723.0
+offset_bottom = 526.0
+texture_normal = ExtResource("16_ohoys")
+texture_pressed = ExtResource("16_ohoys")
+texture_hover = ExtResource("16_ohoys")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="PanelContainer/MarginContainer/Contents/Buttons/Likes" unique_id=64453472]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+text = "info.likes"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Dislikes" type="TextureButton" parent="PanelContainer/MarginContainer/Contents/Buttons" unique_id=1427652787]
+layout_mode = 0
+offset_left = 54.0
+offset_top = 260.0
+offset_right = 278.0
+offset_bottom = 499.0
+texture_normal = ExtResource("16_ohoys")
+texture_pressed = ExtResource("16_ohoys")
+texture_hover = ExtResource("16_ohoys")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="PanelContainer/MarginContainer/Contents/Buttons/Dislikes" unique_id=1773090295]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+text = "info.dislikes"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="FavFood" type="TextureButton" parent="PanelContainer/MarginContainer/Contents/Buttons" unique_id=2065440026]
+layout_mode = 0
+offset_left = 501.0
+offset_top = 1033.0
+offset_right = 764.0
+offset_bottom = 1308.0
+texture_normal = ExtResource("16_ohoys")
+texture_pressed = ExtResource("16_ohoys")
+texture_hover = ExtResource("16_ohoys")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="PanelContainer/MarginContainer/Contents/Buttons/FavFood" unique_id=1940779969]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+text = "info.fav_food"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="BadFood" type="TextureButton" parent="PanelContainer/MarginContainer/Contents/Buttons" unique_id=1957506127]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 1088.0
+offset_right = 350.0
+offset_bottom = 1388.0
+texture_normal = ExtResource("16_ohoys")
+texture_pressed = ExtResource("16_ohoys")
+texture_hover = ExtResource("16_ohoys")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="PanelContainer/MarginContainer/Contents/Buttons/BadFood" unique_id=66733322]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+text = "info.bad_food"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Weight" type="TextureButton" parent="PanelContainer/MarginContainer/Contents/Buttons" unique_id=2025206486]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 738.0
+offset_right = 296.0
+offset_bottom = 938.0
+texture_normal = ExtResource("16_ohoys")
+texture_pressed = ExtResource("16_ohoys")
+texture_hover = ExtResource("16_ohoys")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="PanelContainer/MarginContainer/Contents/Buttons/Weight" unique_id=475336622]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+text = "info.weight"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Texture" type="TextureButton" parent="PanelContainer/MarginContainer/Contents/Buttons" unique_id=1175085517]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.706544
+anchor_top = 0.28450704
+anchor_right = 0.7965235
+anchor_bottom = 0.3028169
+offset_left = 63.0
+offset_top = 47.0
+offset_right = 295.0
+offset_bottom = 292.0
+texture_normal = ExtResource("16_ohoys")
+texture_pressed = ExtResource("16_ohoys")
+texture_hover = ExtResource("16_ohoys")
+ignore_texture_size = true
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="PanelContainer/MarginContainer/Contents/Buttons/Texture" unique_id=743280149]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+text = "info.texture"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="InfoPopup" type="PanelContainer" parent="PanelContainer/MarginContainer/Contents/Buttons" unique_id=589833269]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = ExtResource("18_ohoys")
 
 [node name="MarginContainer" type="MarginContainer" parent="PanelContainer/MarginContainer/Contents/Buttons/InfoPopup" unique_id=636856870]
 layout_mode = 2
@@ -240,6 +293,15 @@ layout_mode = 2
 size_flags_vertical = 3
 size_flags_stretch_ratio = 0.37
 
+[node name="Control" type="Control" parent="PanelContainer/MarginContainer/Contents/Right/OptionsBar" unique_id=883982413]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Control2" type="Control" parent="PanelContainer/MarginContainer/Contents/Right/OptionsBar" unique_id=1037213889]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.0
+
 [node name="LocalizationBar" parent="PanelContainer/MarginContainer/Contents/Right/OptionsBar" unique_id=2110673369 instance=ExtResource("14_8ut3d")]
 layout_mode = 2
 size_flags_vertical = 1
@@ -264,23 +326,23 @@ text = "info.prefix"
 
 [node name="NameLabel" type="Label" parent="PanelContainer/MarginContainer/Contents/Right/Title" unique_id=1772331814]
 layout_mode = 2
-theme_override_colors/font_color = Color(0, 0, 0.88235295, 1)
+theme_override_colors/font_color = Color(0.84705883, 0.2901961, 0.22745098, 1)
 theme_override_font_sizes/font_size = 113
-text = "Eddy"
+text = "Reizy"
 
 [node name="EmotionLabel" type="Label" parent="PanelContainer/MarginContainer/Contents/Right" unique_id=117345089]
 layout_mode = 2
 size_flags_horizontal = 4
 theme_override_font_sizes/font_size = 71
-text = "info.eddy.emotion"
+text = "(enojo)"
 
 [node name="AnimatedTextureRect" type="TextureRect" parent="PanelContainer/MarginContainer/Contents/Right" unique_id=1357413796]
 layout_mode = 2
 size_flags_vertical = 3
 size_flags_stretch_ratio = 3.25
-texture = ExtResource("7_cma1x")
+texture = ExtResource("8_b6ire")
 script = ExtResource("16_8ut3d")
-frames = Array[Texture2D]([ExtResource("2_tvv3w"), ExtResource("7_cma1x"), ExtResource("8_ravl0"), ExtResource("9_dfop4")])
+frames = Array[Texture2D]([ExtResource("6_4ikyg"), ExtResource("7_1c50o"), ExtResource("8_b6ire"), ExtResource("9_ohoys")])
 metadata/_custom_type_script = "uid://bboq2mnurak57"
 
 [connection signal="pressed" from="PanelContainer/MarginContainer/Contents/Buttons/Personality" to="." method="_on_personality_pressed"]
