@@ -54,6 +54,7 @@ size_flags_stretch_ratio = 0.14
 
 [node name="Labels" type="HBoxContainer" parent="Background/MarginContainer/Contents/Bottom" unique_id=1095226667]
 layout_mode = 2
+size_flags_vertical = 10
 
 [node name="Left" type="Control" parent="Background/MarginContainer/Contents/Bottom/Labels" unique_id=1079756062]
 layout_mode = 2
@@ -64,6 +65,7 @@ size_flags_stretch_ratio = 2.04
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 1
+theme_override_font_sizes/font_size = 130
 text = "menu.levels"
 vertical_alignment = 1
 
@@ -76,6 +78,7 @@ size_flags_stretch_ratio = 2.74
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 1
+theme_override_font_sizes/font_size = 130
 text = "menu.rewards"
 vertical_alignment = 1
 
@@ -125,3 +128,7 @@ scene_path = "uid://7uwmwgor6fdm"
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 0.5
+
+[node name="Control" type="Control" parent="Background/MarginContainer/Contents/Bottom" unique_id=1278849311]
+layout_mode = 2
+size_flags_vertical = 3

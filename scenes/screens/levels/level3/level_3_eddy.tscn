@@ -13,6 +13,9 @@ frames = Array[Texture2D]([ExtResource("2_vsxri"), ExtResource("3_liplh"), ExtRe
 [node name="AboutBar" parent="MarginContainer/Contents/Left" parent_id_path=PackedInt32Array(1167998286) index="4" unique_id=2033146772]
 character = 0
 
+[node name="Label" parent="MarginContainer/Contents/Middle" parent_id_path=PackedInt32Array(992920742) index="1" unique_id=540570896]
+text = "prompt.level3.eddy"
+
 [node name="Popup" parent="MarginContainer" parent_id_path=PackedInt32Array(864518872) index="1" unique_id=1497230596]
 next_scene = ExtResource("6_liplh")
 level_index = 3

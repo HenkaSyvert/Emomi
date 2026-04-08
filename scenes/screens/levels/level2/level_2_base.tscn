@@ -24,6 +24,9 @@ visible = false
 [node name="AboutBarPlaceholder" parent="MarginContainer/Contents/Left" parent_id_path=PackedInt32Array(1167998286) index="5" unique_id=1960146747]
 visible = true
 
+[node name="Label" parent="MarginContainer/Contents/Middle" parent_id_path=PackedInt32Array(992920742) index="1" unique_id=540570896]
+text = "prompt.level2"
+
 [node name="QuestionDragTarget" parent="MarginContainer/Contents/Middle" parent_id_path=PackedInt32Array(992920742) index="2" unique_id=900728642]
 frames = Array[Texture2D]([ExtResource("2_2u8k3"), ExtResource("3_b1swf")])
 

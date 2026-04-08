@@ -22,10 +22,10 @@
 [ext_resource type="Script" uid="uid://bboq2mnurak57" path="res://scenes/primitives/animated_texture_rect/animated_texture_rect.gd" id="16_8ut3d"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1c50o"]
-corner_radius_top_left = 240
-corner_radius_top_right = 240
-corner_radius_bottom_right = 240
-corner_radius_bottom_left = 240
+corner_radius_top_left = 168
+corner_radius_top_right = 168
+corner_radius_bottom_right = 168
+corner_radius_bottom_left = 168
 corner_detail = 20
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_b6ire"]
@@ -57,10 +57,10 @@ corner_radius_bottom_left = 187
 corner_detail = 20
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_q0me0"]
-corner_radius_top_left = 82
-corner_radius_top_right = 82
-corner_radius_bottom_right = 82
-corner_radius_bottom_left = 82
+corner_radius_top_left = 147
+corner_radius_top_right = 147
+corner_radius_bottom_right = 147
+corner_radius_bottom_left = 147
 corner_detail = 20
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4q1kj"]
@@ -108,10 +108,11 @@ layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.37218815
 anchor_top = 0.2746479
-anchor_right = 0.6728016
-anchor_bottom = 0.54366195
+anchor_right = 0.52658486
+anchor_bottom = 0.42676055
 offset_right = 186.0
-offset_bottom = 98.0
+offset_bottom = 121.0
+theme_override_font_sizes/font_size = 50
 theme_override_styles/normal = SubResource("StyleBoxFlat_1c50o")
 text = "info.personality"
 metadata/_edit_use_anchors_ = true
@@ -164,6 +165,7 @@ anchor_right = 0.27811855
 anchor_bottom = 0.23098591
 offset_right = 98.00006
 offset_bottom = 115.0
+theme_override_constants/line_spacing = -27
 theme_override_styles/normal = SubResource("StyleBoxFlat_ol3si")
 text = "info.bad_food"
 metadata/_edit_use_anchors_ = true
@@ -175,8 +177,8 @@ anchor_left = -0.038854804
 anchor_top = 0.6084507
 anchor_right = 0.016359918
 anchor_bottom = 0.6549296
-offset_right = 110.0
-offset_bottom = 98.0
+offset_right = 240.0
+offset_bottom = 228.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_q0me0")
 text = "info.weight"
 metadata/_edit_use_anchors_ = true
@@ -233,22 +235,23 @@ autowrap_mode = 3
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="CloseButton" type="TextureButton" parent="PanelContainer/MarginContainer/Contents/Right" unique_id=1645929876]
-layout_mode = 2
-size_flags_horizontal = 8
-size_flags_vertical = 3
-texture_normal = ExtResource("15_gv133")
-
 [node name="OptionsBar" type="HBoxContainer" parent="PanelContainer/MarginContainer/Contents/Right" unique_id=539816482]
 layout_mode = 2
 size_flags_vertical = 3
+size_flags_stretch_ratio = 0.37
 
 [node name="LocalizationBar" parent="PanelContainer/MarginContainer/Contents/Right/OptionsBar" unique_id=2110673369 instance=ExtResource("14_8ut3d")]
 layout_mode = 2
+size_flags_vertical = 1
 
 [node name="AudioBar" parent="PanelContainer/MarginContainer/Contents/Right/OptionsBar" unique_id=984182281 instance=ExtResource("3_5y6rq")]
 layout_mode = 2
 size_flags_horizontal = 3
+
+[node name="CloseButton" type="TextureButton" parent="PanelContainer/MarginContainer/Contents/Right/OptionsBar" unique_id=1645929876]
+layout_mode = 2
+size_flags_horizontal = 3
+texture_normal = ExtResource("15_gv133")
 
 [node name="Title" type="HBoxContainer" parent="PanelContainer/MarginContainer/Contents/Right" unique_id=1575928700]
 layout_mode = 2
@@ -274,6 +277,7 @@ text = "info.eddy.emotion"
 [node name="AnimatedTextureRect" type="TextureRect" parent="PanelContainer/MarginContainer/Contents/Right" unique_id=1357413796]
 layout_mode = 2
 size_flags_vertical = 3
+size_flags_stretch_ratio = 3.25
 texture = ExtResource("7_cma1x")
 script = ExtResource("16_8ut3d")
 frames = Array[Texture2D]([ExtResource("2_tvv3w"), ExtResource("7_cma1x"), ExtResource("8_ravl0"), ExtResource("9_dfop4")])
@@ -287,4 +291,4 @@ metadata/_custom_type_script = "uid://bboq2mnurak57"
 [connection signal="pressed" from="PanelContainer/MarginContainer/Contents/Buttons/Weight" to="." method="_on_weight_pressed"]
 [connection signal="pressed" from="PanelContainer/MarginContainer/Contents/Buttons/Texture" to="." method="_on_texture_pressed"]
 [connection signal="pressed" from="PanelContainer/MarginContainer/Contents/Buttons/InfoPopup/MarginContainer/Contents/ClosePopupButton" to="." method="_on_close_popup_button_pressed"]
-[connection signal="pressed" from="PanelContainer/MarginContainer/Contents/Right/CloseButton" to="." method="_on_close_button_pressed"]
+[connection signal="pressed" from="PanelContainer/MarginContainer/Contents/Right/OptionsBar/CloseButton" to="." method="_on_close_button_pressed"]

@@ -16,6 +16,9 @@
 [node name="AboutBar" parent="MarginContainer/Contents/Left" parent_id_path=PackedInt32Array(1167998286) index="4" unique_id=2033146772]
 character = 1
 
+[node name="Label" parent="MarginContainer/Contents/Middle" parent_id_path=PackedInt32Array(992920742) index="1" unique_id=540570896]
+text = "prompt.level1.reizy"
+
 [node name="QuestionDragTarget" parent="MarginContainer/Contents/Middle" parent_id_path=PackedInt32Array(992920742) index="2" unique_id=900728642]
 frames = Array[Texture2D]([ExtResource("2_ysbv3"), ExtResource("3_onlya")])
 wrong_frame = ExtResource("4_mictc")

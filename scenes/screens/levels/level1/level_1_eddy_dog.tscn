@@ -9,6 +9,9 @@
 
 [node name="Level1EddyDog" unique_id=120889486 instance=ExtResource("1_br3ua")]
 
+[node name="Label" parent="MarginContainer/Contents/Middle" parent_id_path=PackedInt32Array(992920742) index="1" unique_id=540570896]
+text = "prompt.level1.eddy"
+
 [node name="QuestionDragTarget" parent="MarginContainer/Contents/Middle" parent_id_path=PackedInt32Array(992920742) index="2" unique_id=900728642]
 frames = Array[Texture2D]([ExtResource("2_bugp4"), ExtResource("3_t1iu4")])
 wrong_frame = ExtResource("4_i0bbf")
@@ -16,4 +19,3 @@ correct_frame = ExtResource("5_22fdw")
 
 [node name="Popup" parent="MarginContainer" parent_id_path=PackedInt32Array(864518872) index="1" unique_id=1497230596]
 next_scene = ExtResource("6_t1iu4")
-level_index = 1

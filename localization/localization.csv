@@ -3,12 +3,17 @@ keys,en,es,sv
 menu.start,Start,Empezar,Börja
 menu.levels,Levels,Niveles,Nivåer
 menu.rewards,Rewards,Premios,Priser
+menu.demo,"This app is currently a demo, but you can follow updates at: @_emomi_","Esta app por ahora es un demo, pero puedes seguir las actualizaciones en: @_emomi_","Den här appen är för närvarande en demo, men du kan följa uppdateringar på: @_emomi_"
 
-prompt.level_1,"How does the child feel?","Señala que emoción reina en esta acción","Hur känner sig barnet?"
-prompt.level_2a,"What's bothering Makty?","Qué señales frustran a Makty","Vad har hänt med Makty?"
-prompt.level_2b,"Why is Eddy sad?","Qué señales ponen triste a Eddy?", "Varför är Eddy ledsen?"
-prompt.level_3a,"What would make Reizy feel better?","Qué haría sentir mejor a Reizy?","Vad skulle få Reizy att må bättre?"
-prompt.level_3b,"What would make Makty feel better?","Qué haría que Makty se sienta mejor?","Hur kan Makty lugna ner sig?"
+prompt.level1.eddy,"Point out what makes Eddy sad","Señala lo que pone a Eddy triste","Peka på vad som gör Eddy ledsen"
+prompt.level1.makty,"Point out what frustrates Makty","Señala lo que frustra a Makty","Peka ut vad som frustrerar Makty"
+prompt.level1.reizy,"Point out what angers Reizy","Señala lo que enoja a Reizy","Peka ut vad som gör Reizy arg"
+
+prompt.level2,"Choose which emotion dominates in this situation","Elige qué emoción reina en esta situación","Välj vilken känsla som dominerar i den här situationen"
+
+prompt.level3.eddy,"Which of these actions would help Eddy feel better?","¿Cual de estas acciones ayudaría  a que Eddy se sienta mejor?","Vilken av dessa åtgärder skulle få Eddy att må bättre?"
+prompt.level3.makty,"What would help Makty feel better?","¿Qué ayudaría a que Makty se sienta mejor?","Vad skulle få Makty att må bättre?"
+prompt.level3.reizy,"What could help calm Reizy down?","¿Que podría ayudar a calmar a Reizy?","Vad skulle kunna hjälpa Reizy att lugna ner sig?"
 
 popup.title,"Correct!", "¡correcto!", "Rätt!"
 popup.reward,"You won a star!","¡Ganaste una estrella!","Du vann en stjärna!"
@@ -25,7 +30,7 @@ info.weight,"Weight","Peso","Vikt"
 info.texture,"Texture","Textura","textur"
 
 info.eddy.emotion,"(Sadness)","(Tristeza)","(Ledsen)"
-info.eddy.personality,"He is friendly, kind, and very emotional. He is patient, sweet, and affectionate with everyone, but especially with animals. He worries a lot about others and faints easily. He is patient, sweet, and affectionate with everyone, but especially with animals. He worries a lot about others and faints easily.","Es amigable, amable, y muy emotivo con sus estados de ánimo. Es paciente, dulce y cariñoso con todos pero especialmente con los animalitos, se preocupa mucho por los demás, se desmaya fácilmente. paciente, dulce y cariñoso con todos pero especialmente con los animalitos, se preocupa mucho por los demás, se desmaya fácilmente.","Han är vänlig, snäll och väldigt känslosam. Han är tålmodig, söt och tillgiven mot alla, men särskilt mot djur. Han oroar sig mycket för andra och svimmar lätt. Han är tålmodig, söt och tillgiven mot alla, men särskilt mot djur. Han oroar sig mycket för andra och svimmar lätt."
+info.eddy.personality,"He is friendly, kind, patient, sweet, and affectionate with everyone, but especially with animals; he cares deeply for others. He loves Reizy and Makty very much.","Es amigable, amable, paciente, dulce y cariñoso con todos pero especialmente con los animalitos, se preocupa mucho por los demás. Quiere mucho a Reizy y a Makty","Han är vänlig, snäll, tålmodig, söt och tillgiven mot alla, men särskilt mot djur; han bryr sig djupt om andra. Han älskar Reizy och Makty väldigt mycket."
 info.eddy.likes,"Watching sunsets, taking nature photos, running, helping animals, meditating, painting with watercolors, eating with company, and watching romantic movies.","Ver los atardeceres, tomar fotos a la naturaleza, correr, ayudar a los animalitos, meditar, pintar con acuarela, comer con compañía y ver películas románticas.","Titta på solnedgångar, ta naturbilder, springa, hjälpa djur, meditera, måla med akvareller, äta i sällskap och titta på romantiska filmer."
 info.eddy.dislikes,"When they call him sensitive, when they rush him when he's getting ready to go out, when his feet get wet in the rain, when he has to train with very heavy dumbbells, and when animal abuse occurs.","cuando lo llaman sensible, que lo apresuren cuando se arregla para salir, que se le mojen los pies en la lluvia, entrenar con mancuernas muy pesadas y el maltrato animal","När de kallar honom känslig, när de stressar honom när han ska gå ut, när hans fötter blir blöta i regnet, när han måste träna med väldigt tunga hantlar och när djurplågeri förekommer."
 info.eddy.fav_food,"Chocolate cookies","Pastel de chocolate","chokladkakor"

@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://cf4oajb2fcyoi" path="res://scenes/screens/main_menu/main_menu.gd" id="1_oic2i"]
 [ext_resource type="PackedScene" uid="uid://qb6v72gtm3bf" path="res://scenes/components/background/background.tscn" id="2_g4j36"]
 [ext_resource type="PackedScene" uid="uid://7ygu5amhj7gr" path="res://scenes/components/animated_logo/animated_logo.tscn" id="3_g4j36"]
-[ext_resource type="Texture2D" uid="uid://dvp6tff322483" path="res://scenes/components/animated_logo/logo3.png" id="4_g4j36"]
+[ext_resource type="Texture2D" uid="uid://cgv1dmmki55rb" path="res://scenes/components/animated_logo/logo2.png" id="4_g4j36"]
 [ext_resource type="PackedScene" uid="uid://dcnps1ubh4p87" path="res://scenes/components/localization_bar/localization_bar.tscn" id="6_t6bnd"]
 [ext_resource type="PackedScene" uid="uid://bvvb57ga0cd1i" path="res://scenes/components/audio_bar/audio_bar.tscn" id="9_6at21"]
 
@@ -36,7 +36,7 @@ layout_mode = 2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-size_flags_stretch_ratio = 25.0
+size_flags_stretch_ratio = 15.77
 
 [node name="Middle" type="HBoxContainer" parent="Background/MarginContainer/Contents" unique_id=1890335202]
 layout_mode = 2
@@ -57,13 +57,20 @@ size_flags_stretch_ratio = 50.0
 
 [node name="AnimatedLogo" parent="Background/MarginContainer/Contents/Middle/Middle" unique_id=2011953226 instance=ExtResource("3_g4j36")]
 layout_mode = 2
+size_flags_stretch_ratio = 14.96
 texture = ExtResource("4_g4j36")
 
-[node name="StartButton" type="Button" parent="Background/MarginContainer/Contents/Middle/Middle" unique_id=332772898]
-custom_minimum_size = Vector2(600, 140)
+[node name="Control" type="Control" parent="Background/MarginContainer/Contents/Middle/Middle" unique_id=1718979604]
 layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 6
+size_flags_vertical = 3
+size_flags_stretch_ratio = 6.4
+
+[node name="StartButton" type="Button" parent="Background/MarginContainer/Contents/Middle/Middle" unique_id=332772898]
+custom_minimum_size = Vector2(600, 200)
+layout_mode = 2
+size_flags_vertical = 4
+size_flags_stretch_ratio = 14.96
+theme_override_font_sizes/font_size = 90
 text = "menu.start"
 autowrap_trim_flags = 0
 
@@ -88,6 +95,6 @@ alignment_vertical = 0
 [node name="Bottom" type="Control" parent="Background/MarginContainer/Contents" unique_id=1106697991]
 layout_mode = 2
 size_flags_vertical = 3
-size_flags_stretch_ratio = 25.0
+size_flags_stretch_ratio = 16.31
 
 [connection signal="pressed" from="Background/MarginContainer/Contents/Middle/Middle/StartButton" to="." method="_on_start_button_pressed"]
