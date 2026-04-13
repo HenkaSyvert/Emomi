@@ -35,13 +35,3 @@ func _on_pic_3_pressed() -> void:
 func _on_pic_4_pressed() -> void:
 	_viewed_image.texture = _pictures[3].texture_normal
 	image_viewer.visible = true
-
-
-func _on_pic_5_pressed() -> void:
-	_viewed_image.texture = _pictures[4].texture_normal
-	image_viewer.visible = true
-
-
-func _on_pic_6_pressed() -> void:
-	_viewed_image.texture = _pictures[5].texture_normal
-	image_viewer.visible = true

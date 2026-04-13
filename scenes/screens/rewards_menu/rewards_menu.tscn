@@ -79,7 +79,7 @@ size_flags_stretch_ratio = 0.8
 [node name="GridContainer" type="GridContainer" parent="PanelContainer/MarginContainer/Contents/Bottom" unique_id=905130901]
 layout_mode = 2
 size_flags_vertical = 3
-columns = 3
+columns = 2
 
 [node name="PanelContainer" type="PanelContainer" parent="PanelContainer/MarginContainer/Contents/Bottom/GridContainer" unique_id=1667557701]
 layout_mode = 2
@@ -130,34 +130,6 @@ size_flags_vertical = 3
 theme_override_styles/panel = ExtResource("3_iaym2")
 
 [node name="Picture1" type="TextureButton" parent="PanelContainer/MarginContainer/Contents/Bottom/GridContainer/PanelContainer4" unique_id=516661778]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-texture_normal = ExtResource("19_sjwty")
-ignore_texture_size = true
-stretch_mode = 5
-
-[node name="PanelContainer5" type="PanelContainer" parent="PanelContainer/MarginContainer/Contents/Bottom/GridContainer" unique_id=614569410]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-theme_override_styles/panel = ExtResource("3_iaym2")
-
-[node name="Picture1" type="TextureButton" parent="PanelContainer/MarginContainer/Contents/Bottom/GridContainer/PanelContainer5" unique_id=686402146]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-texture_normal = ExtResource("19_sjwty")
-ignore_texture_size = true
-stretch_mode = 5
-
-[node name="PanelContainer6" type="PanelContainer" parent="PanelContainer/MarginContainer/Contents/Bottom/GridContainer" unique_id=1038185263]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-theme_override_styles/panel = ExtResource("3_iaym2")
-
-[node name="Picture1" type="TextureButton" parent="PanelContainer/MarginContainer/Contents/Bottom/GridContainer/PanelContainer6" unique_id=1876296073]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
